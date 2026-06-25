@@ -1,0 +1,20 @@
+{
+  "contract": 1,
+  "source": "sdk",
+  "suite": "sdk-unit",
+  "commit": "seed",
+  "branch": "main",
+  "run_id": "seed",
+  "finished_at": "2026-06-25T05:40:00Z",
+  "results": [
+    { "test_id": "code.test.mjs::run echo", "features": ["sdk.code.run"], "status": "passed", "duration_ms": 220 },
+    { "test_id": "code.test.mjs::shExec sort|head", "features": ["sdk.code.exec"], "status": "passed", "duration_ms": 260 },
+    { "test_id": "vfs.test.mjs::write then read", "features": ["sdk.vfs.rw"], "status": "passed", "duration_ms": 180 },
+    { "test_id": "shell.test.mjs::export persists", "features": ["sdk.shell.session"], "status": "passed", "duration_ms": 210 },
+    { "test_id": "terminal.test.mjs::attach terminal", "features": ["sdk.mode.terminal"], "status": "passed", "duration_ms": 240 },
+    { "test_id": "serve.test.mjs::http round trip", "features": ["sdk.serve.http"], "status": "passed", "duration_ms": 320 },
+    { "test_id": "scripting.test.mjs::eval and marshal", "features": ["sdk.scripting.eval"], "status": "passed", "duration_ms": 190 },
+    { "test_id": "scripting.test.mjs::capability denied", "features": ["sdk.scripting.capability"], "status": "passed", "duration_ms": 150 },
+    { "test_id": "node.test.mjs::node runtime", "features": ["sdk.node.runtime"], "status": "skipped", "duration_ms": 0 }
+  ]
+}

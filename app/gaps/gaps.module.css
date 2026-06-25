@@ -1,0 +1,94 @@
+/* SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-UEL */
+
+.section {
+  margin-bottom: 30px;
+}
+.h2 {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-label);
+  margin: 0 0 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.count {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-faint);
+  background: var(--elevated);
+  border-radius: var(--r-full);
+  padding: 1px 8px;
+  letter-spacing: 0;
+}
+.note {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin: 0 0 14px;
+}
+.empty {
+  font-size: 13.5px;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  background: var(--surface);
+}
+.item.fail {
+  border-color: var(--fail-soft);
+}
+.item.warn {
+  border-left: 2px solid var(--warn);
+}
+.itemMain {
+  min-width: 0;
+}
+.id {
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  color: var(--fg-strong);
+}
+.desc {
+  display: block;
+  font-size: 12.5px;
+  color: var(--text-muted);
+  margin-top: 3px;
+}
+.actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+}
+.area,
+.kind {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  color: var(--text-faint);
+}
+.trace {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  color: var(--accent);
+}
+.trace:hover {
+  color: var(--accent-hover);
+}

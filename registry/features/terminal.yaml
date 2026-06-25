@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-UEL
+# Copyright (C) 2026 And The Next GmbH - https://userland.run
+#
+# The WebGPU console. Phases follow the approved console-terminal-roadmap.
+
+- { id: terminal.boot.shell, title: boots an interactive shell, area: terminal, status: shipped, since: "2026-05" }
+- { id: terminal.cli.echo, title: type a command, see output, area: terminal, status: shipped, since: "2026-05" }
+- { id: terminal.palette.command, title: command palette (Cmd-K), area: terminal, status: shipped, since: "2026-05" }
+- { id: terminal.phase.0, title: "Phase 0 — bootstrap (80x25 grid, ANSI)", area: terminal, status: shipped, since: "2026-05" }
+- { id: terminal.phase.1, title: "Phase 1 — Vello/WebGPU renderer", area: terminal, status: in-progress, since: "2026-06" }
+- { id: terminal.phase.2, title: "Phase 2 — font atlas / GPU text", area: terminal, status: planned }
+- { id: terminal.phase.3, title: "Phase 3 — chrome & sessions", area: terminal, status: planned }
+- { id: terminal.phase.4, title: "Phase 4 — file tree & live stats", area: terminal, status: planned }
+- { id: terminal.a11y.mirror, title: renderer-agnostic DOM text mirror, area: terminal, status: shipped, since: "2026-05" }

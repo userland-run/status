@@ -1,0 +1,13 @@
+{
+  "contract": 1,
+  "source": "catalog",
+  "suite": "catalog-conformance",
+  "commit": "seed",
+  "branch": "main",
+  "run_id": "seed",
+  "finished_at": "2026-06-25T04:00:00Z",
+  "results": [
+    { "test_id": "recipes/hello-c/test/run.json", "features": ["catalog.recipe.hello-c", "catalog.pipeline.conformance", "catalog.pipeline.gate"], "status": "passed", "duration_ms": 90 },
+    { "test_id": "recipes/ripgrep/test/run.json", "features": ["catalog.recipe.ripgrep", "catalog.pipeline.conformance", "catalog.pipeline.gate"], "status": "passed", "duration_ms": 410 }
+  ]
+}

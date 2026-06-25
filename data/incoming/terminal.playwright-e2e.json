@@ -1,0 +1,14 @@
+{
+  "contract": 1,
+  "source": "terminal",
+  "suite": "playwright-e2e",
+  "commit": "seed",
+  "branch": "main",
+  "run_id": "seed",
+  "finished_at": "2026-06-25T05:20:00Z",
+  "results": [
+    { "test_id": "terminal.spec.ts::shell boots and echoes", "features": ["terminal.boot.shell", "terminal.cli.echo"], "status": "passed", "duration_ms": 4200 },
+    { "test_id": "terminal.spec.ts::a11y mirror reflects screen", "features": ["terminal.a11y.mirror"], "status": "passed", "duration_ms": 3800 },
+    { "test_id": "terminal.spec.ts::Cmd-K palette filters and runs", "features": ["terminal.palette.command"], "status": "passed", "duration_ms": 3100 }
+  ]
+}

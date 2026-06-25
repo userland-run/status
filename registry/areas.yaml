@@ -1,0 +1,48 @@
+# SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-UEL
+# Copyright (C) 2026 And The Next GmbH - https://userland.run
+#
+# The feature taxonomy for userland.run / NanoVM. Areas are the top-level
+# surfaces; every feature in registry/features/*.yaml must reference one.
+contract: 1
+
+# Conformance ladder used by areas with `leveled: true`. A capability climbs:
+# specified -> implemented -> tested -> conformant.
+levels: [specified, implemented, tested, conformant]
+
+areas:
+  - id: emulator
+    title: RISC-V emulator & Linux syscalls
+    owner: nano
+    repo: userland-run/nano
+    leveled: true
+    blurb: The RV64GC CPU, memory, ELF loader, TTY, and the Linux syscall surface.
+
+  - id: busybox
+    title: BusyBox applets
+    owner: nano
+    repo: userland-run/nano
+    blurb: Coreutils and the ash shell running as guest userland under emulation.
+
+  - id: devenv
+    title: Dev toolchain
+    owner: nano
+    repo: userland-run/nano
+    blurb: Node.js, npm, the TypeScript compiler, ESLint and Prettier, in a tab.
+
+  - id: sdk
+    title: TypeScript SDK
+    owner: sdk
+    repo: userland-run/sdk
+    blurb: The browser API that drives NanoVM — code, terminal, serve and scripting modes.
+
+  - id: terminal
+    title: WebGPU console
+    owner: terminal
+    repo: userland-run/terminal
+    blurb: The Vello/WebGPU terminal frontend and its command surface.
+
+  - id: catalog
+    title: App conformance & distribution
+    owner: catalog
+    repo: userland-run/catalog
+    blurb: Real RISC-V apps verified against the nano runtime and published to the CDN.

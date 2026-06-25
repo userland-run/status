@@ -1,0 +1,18 @@
+# Third-Party Notices — userland.run status portal
+
+The status portal is licensed as described in LICENSE.md (AGPL-3.0-only OR
+LicenseRef-UEL). This file lists third-party software the project *depends on* at
+build time; each such component remains under its own license. None of it is
+redistributed in the static export beyond what Next.js inlines.
+
+| Component          | Upstream license | Source                              |
+| ------------------ | ---------------- | ----------------------------------- |
+| Next.js            | MIT              | https://nextjs.org                  |
+| React / React DOM  | MIT              | https://react.dev                   |
+| eemeli/yaml        | ISC              | https://github.com/eemeli/yaml      |
+| tsx                | MIT              | https://github.com/privatenumber/tsx |
+| TypeScript         | Apache-2.0       | https://www.typescriptlang.org      |
+| ESLint             | MIT              | https://eslint.org                  |
+
+Fonts (Newsreader, IBM Plex Sans, JetBrains Mono) are served via `next/font`
+from Google Fonts and remain under the SIL Open Font License 1.1.

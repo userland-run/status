@@ -1,0 +1,19 @@
+{
+  "contract": 1,
+  "source": "nano",
+  "suite": "cargo-unit",
+  "commit": "seed",
+  "branch": "main",
+  "run_id": "seed",
+  "finished_at": "2026-06-25T06:00:00Z",
+  "results": [
+    { "test_id": "decode::tests::addi_sign_extends", "features": ["emulator.cpu.decode-rv64"], "status": "passed", "duration_ms": 2 },
+    { "test_id": "decode::tests::rvc_expands_addi", "features": ["emulator.cpu.decode-rvc"], "status": "passed", "duration_ms": 2 },
+    { "test_id": "elf::tests::rejects_bad_magic", "features": ["emulator.elf.load"], "status": "passed", "duration_ms": 1 },
+    { "test_id": "elf::tests::loads_program_headers", "features": ["emulator.elf.load"], "status": "passed", "duration_ms": 1 },
+    { "test_id": "mem::tests::bounds_checks_guest_write", "features": ["emulator.mem.bounds"], "status": "passed", "duration_ms": 1 },
+    { "test_id": "term::tests::sgr_and_cursor", "features": ["emulator.term.vte"], "status": "passed", "duration_ms": 3 },
+    { "test_id": "tty::tests::icanon_echo_backspace", "features": ["emulator.tty.termios"], "status": "passed", "duration_ms": 2 },
+    { "test_id": "types::tests::vm_layout_offsets", "features": ["emulator.types.layout"], "status": "passed", "duration_ms": 1 }
+  ]
+}

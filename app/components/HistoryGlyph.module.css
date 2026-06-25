@@ -1,0 +1,28 @@
+/* SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-UEL */
+
+.row {
+  display: inline-flex;
+  gap: 3px;
+  align-items: center;
+}
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: var(--r-full);
+  background: var(--untested);
+}
+.passed {
+  background: var(--ok);
+}
+.failed {
+  background: var(--fail);
+}
+.flaky {
+  background: var(--warn);
+}
+.skipped {
+  background: var(--skip);
+}
+.untested {
+  background: var(--untested);
+}

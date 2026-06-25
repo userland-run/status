@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-UEL
+# Copyright (C) 2026 And The Next GmbH - https://userland.run
+#
+# The @userland-run/nano-sdk public surface (MPL-2.0 OR LicenseRef-UEL).
+
+- { id: sdk.code.run, title: "run() — execute a command", area: sdk, status: shipped, since: "2026-05" }
+- { id: sdk.code.exec, title: "shExec() — pipeline exec", area: sdk, status: shipped, since: "2026-05" }
+- { id: sdk.vfs.rw, title: virtual filesystem read/write, area: sdk, status: shipped, since: "2026-05" }
+- { id: sdk.shell.session, title: persistent shell session (env, cwd), area: sdk, status: shipped, since: "2026-05" }
+- { id: sdk.mode.terminal, title: terminal mode, area: sdk, status: shipped, since: "2026-05" }
+- { id: sdk.serve.http, title: serve mode (virtual HTTP), area: sdk, status: shipped, since: "2026-06" }
+- { id: sdk.scripting.eval, title: scripting eval + marshal (boa.wasm), area: sdk, status: partial, since: "2026-06", notes: "boa.wasm engine done; ScriptEngine SDK surface not yet fully wired" }
+- { id: sdk.scripting.capability, title: scripting capability gating, area: sdk, status: partial, notes: "capability denial path exists; surface in flux" }
+- { id: sdk.node.runtime, title: node runner path, area: sdk, status: shipped, since: "2026-06", notes: "smoke 12/12; warm-restore exit-134 caveat (check stdout not exitCode)" }

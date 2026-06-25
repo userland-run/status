@@ -1,0 +1,89 @@
+/* SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-UEL */
+/* Copyright (C) 2026 And The Next GmbH - https://userland.run */
+/*
+ * Design tokens for the userland.run site — the "space register" dark palette,
+ * ported from the style guide (style-guide/website: colors_and_type.css + the
+ * Userland Run/Docs comps). Font family vars (--font-display/-sans/-mono) are
+ * injected by next/font in app/layout.tsx.
+ */
+
+:root {
+  /* — surfaces — */
+  --bg: #0e0e10;
+  --surface: #121217;       /* feature cards, use-case cards */
+  --surface-code: #131318;  /* code blocks */
+  --surface-panel: #15151b; /* table headers, pipeline boxes */
+  --surface-deep: #0b0b0d;  /* alternating sections */
+  --elevated: #17171c;      /* secondary buttons */
+
+  /* — text — */
+  --fg: #ededf3;            /* primary */
+  --fg-title: #f4f2fb;      /* display headings */
+  --fg-strong: #e7e3f5;
+  --text: #b7b7c0;          /* docs body */
+  --text-dim: #a8a8b3;      /* ledes */
+  --text-muted: #9b9ba4;    /* secondary */
+  --text-faint: #7e7e8a;    /* mono meta */
+  --text-meta: #6c6c76;     /* code header labels */
+  --text-label: #5a5a64;    /* section labels */
+  --nav-link: #a3a3ae;
+
+  /* — accent (violet) — */
+  --accent: #a984f5;
+  --accent-bright: #7c5cff;
+  --accent-hover: #bb9cf7;
+  --accent-soft: #c4b6f2;
+  --accent-strong: #d9ccfb;
+  --on-accent: #1a1430;
+  --accent-tint: rgba(124, 92, 255, 0.08);
+  --accent-tint-2: rgba(124, 92, 255, 0.1);
+  --accent-tint-12: rgba(169, 132, 245, 0.12);
+  --accent-glow: rgba(124, 92, 255, 0.16);
+  --accent-ring: rgba(169, 132, 245, 0.32);
+  --accent-halo: rgba(169, 132, 245, 0.35);
+  --note-bg: rgba(124, 92, 255, 0.07);
+  --note-border: rgba(124, 92, 255, 0.24);
+  --pipeline-core: rgba(169, 132, 245, 0.45);
+
+  /* — lines — */
+  --hairline: #1f1f25;
+  --border: #232329;
+  --border-strong: #2c2c33;
+  --border-hover: #46464f;
+  --divider: #18181d;
+  --row-divider: #1c1c22;
+  --grid-line: #16161c;
+  --dot-idle: #3a3a42;
+
+  /* — status — */
+  --ok: #57b87a;          /* passed / green */
+  --ok-soft: rgba(87, 184, 122, 0.14);
+  --fail: #e0666f;        /* failed / red */
+  --fail-soft: rgba(224, 102, 111, 0.14);
+  --warn: #d8a657;        /* flaky / amber */
+  --warn-soft: rgba(216, 166, 87, 0.14);
+  --skip: #8a8a94;        /* skipped */
+  --untested: #3a3a42;    /* no test yet */
+
+  /* — radii — */
+  --r-sm: 5px;
+  --r-md: 7px;
+  --r-lg: 9px;
+  --r-xl: 11px;
+  --r-2xl: 12px;
+  --r-3xl: 14px;
+  --r-full: 999px;
+
+  /* — elevation — */
+  --shadow-pop: 0 6px 20px rgba(0, 0, 0, 0.18);
+  --shadow-terminal: 0 30px 80px rgba(0, 0, 0, 0.6);
+
+  /* — motion — */
+  --ease-out: cubic-bezier(0.2, 0.6, 0.2, 1);
+  --dur-fast: 120ms;
+  --dur-base: 200ms;
+
+  /* — layout — */
+  --nav-h: 56px;
+  --maxw: 1180px;
+}

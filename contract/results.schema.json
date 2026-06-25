@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://status.userland.run/schema/results.schema.json",
+  "title": "userland-results.json",
+  "description": "The result file every producing repo emits on each default-branch CI run.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["contract", "source", "suite", "commit", "branch", "finished_at", "results"],
+  "properties": {
+    "contract": { "const": 1 },
+    "source": { "type": "string", "pattern": "^[a-z0-9-]+$", "description": "Repo short name (matches an area owner)" },
+    "suite": { "type": "string", "pattern": "^[a-z0-9-]+$", "description": "Unique per (source, suite)" },
+    "commit": { "type": "string", "minLength": 1 },
+    "branch": { "type": "string", "minLength": 1 },
+    "run_id": { "type": "string" },
+    "finished_at": { "type": "string", "format": "date-time" },
+    "results": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["test_id", "features", "status"],
+        "properties": {
+          "test_id": { "type": "string", "minLength": 1 },
+          "features": {
+            "type": "array",
+            "items": { "type": "string", "pattern": "^[a-z0-9]+(\\.[a-z0-9-]+)+$" },
+            "minItems": 1
+          },
+          "status": { "enum": ["passed", "failed", "skipped", "flaky"] },
+          "duration_ms": { "type": "number", "minimum": 0 },
+          "retries": { "type": "integer", "minimum": 0 },
+          "trace_url": { "type": "string" }
+        }
+      }
+    }
+  }
+}

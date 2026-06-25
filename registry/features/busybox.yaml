@@ -1,0 +1,25 @@
+# SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-UEL
+# Copyright (C) 2026 And The Next GmbH - https://userland.run
+#
+# BusyBox applets exercised as guest userland. The smoke set is the 17 applets
+# asserted by nano/test/run_tests.sh (--cmd <applet>).
+
+- { id: busybox.shell.ash, title: ash shell (/bin/sh), area: busybox, status: shipped, since: "2026-03" }
+- { id: busybox.echo, title: echo, area: busybox, status: shipped }
+- { id: busybox.true, title: "true", area: busybox, status: shipped }
+- { id: busybox.false, title: "false", area: busybox, status: shipped }
+- { id: busybox.uname, title: uname, area: busybox, status: shipped }
+- { id: busybox.basename, title: basename, area: busybox, status: shipped }
+- { id: busybox.dirname, title: dirname, area: busybox, status: shipped }
+- { id: busybox.cat, title: cat, area: busybox, status: shipped }
+- { id: busybox.head, title: head, area: busybox, status: shipped }
+- { id: busybox.tail, title: tail, area: busybox, status: shipped }
+- { id: busybox.sort, title: sort, area: busybox, status: shipped }
+- { id: busybox.id, title: id, area: busybox, status: shipped }
+- { id: busybox.pwd, title: pwd, area: busybox, status: shipped }
+- { id: busybox.env, title: env, area: busybox, status: shipped }
+- { id: busybox.whoami, title: whoami, area: busybox, status: shipped }
+- { id: busybox.hostname, title: hostname, area: busybox, status: shipped }
+- { id: busybox.printf, title: printf, area: busybox, status: shipped }
+- { id: busybox.seq, title: seq, area: busybox, status: shipped }
+- { id: busybox.ls, title: ls, area: busybox, status: shipped, notes: "exercised via SDK/terminal boot, not the nano smoke set" }

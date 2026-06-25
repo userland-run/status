@@ -1,0 +1,75 @@
+# SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-UEL
+# Copyright (C) 2026 And The Next GmbH - https://userland.run
+#
+# The RISC-V emulator core and the Linux syscall surface. Sourced from
+# nano/docs/syscalls.md and catalog/tools/nano-syscalls.json (83 supported).
+# `level` follows the ladder in areas.yaml: specified|implemented|tested|conformant.
+
+# ── CPU / core (unit-tested in nano via cargo) ───────────────────────────────
+- { id: emulator.cpu.decode-rv64, title: RV64I instruction decode, area: emulator, status: shipped, level: tested, spec: nano/src/decode.rs, since: "2026-04" }
+- { id: emulator.cpu.decode-rvc, title: RVC (compressed) expansion, area: emulator, status: shipped, level: tested, spec: nano/src/decode.rs, since: "2026-04" }
+- { id: emulator.cpu.fpu, title: RV64F/D floating point, area: emulator, status: shipped, level: tested, spec: nano/test/test_float.S, since: "2026-04" }
+- { id: emulator.mem.bounds, title: Guest memory bounds & paging, area: emulator, status: shipped, level: tested, spec: nano/src/mem.rs, since: "2026-04" }
+- { id: emulator.elf.load, title: ELF64 loader, area: emulator, status: shipped, level: tested, spec: nano/src/elf.rs, since: "2026-04" }
+- { id: emulator.tty.termios, title: TTY line discipline (termios), area: emulator, status: shipped, level: tested, spec: nano/src/tty.rs, since: "2026-05", notes: "ICANON/ECHO/ISIG; ONLCR on output" }
+- { id: emulator.term.vte, title: VTE terminal grid, area: emulator, status: shipped, level: tested, spec: nano/src/term.rs, since: "2026-05" }
+- { id: emulator.types.layout, title: Vm struct layout (host-shared offsets), area: emulator, status: shipped, level: tested, spec: nano/src/types.rs, since: "2026-04", notes: "size 12680; CWD@3680, a0@80, sp@16, status@528" }
+
+# ── Process / thread ─────────────────────────────────────────────────────────
+- { id: emulator.process.fork, title: "clone/fork", area: emulator, status: shipped, level: tested, syscall: 220, spec: nano/docs/syscalls.md, since: "2026-05" }
+- { id: emulator.process.execve, title: execve (tty/termios preserved), area: emulator, status: shipped, level: tested, spec: nano/src/syscall.rs, since: "2026-05" }
+- { id: emulator.process.exit, title: exit / exit_group, area: emulator, status: shipped, level: tested, syscall: 93 }
+- { id: emulator.thread.futex, title: futex (WAIT/WAKE), area: emulator, status: shipped, level: tested, syscall: 98, since: "2026-05" }
+- { id: emulator.thread.sched-yield, title: sched_yield, area: emulator, status: shipped, level: implemented, syscall: 124 }
+- { id: emulator.ipc.pipe, title: pipe2, area: emulator, status: shipped, level: tested, syscall: 59, since: "2026-05" }
+
+# ── File system (FS_PENDING → JS MemFS) ──────────────────────────────────────
+- { id: emulator.syscall.openat, title: openat(2), area: emulator, status: shipped, level: tested, syscall: 56 }
+- { id: emulator.syscall.close, title: close(2), area: emulator, status: shipped, level: tested, syscall: 57 }
+- { id: emulator.syscall.read, title: read(2), area: emulator, status: shipped, level: tested, syscall: 63 }
+- { id: emulator.syscall.write, title: write(2), area: emulator, status: shipped, level: tested, syscall: 64, notes: "ONLCR in sys_write" }
+- { id: emulator.syscall.readv, title: readv(2), area: emulator, status: shipped, level: implemented, syscall: 65 }
+- { id: emulator.syscall.writev, title: writev(2), area: emulator, status: shipped, level: tested, syscall: 66 }
+- { id: emulator.syscall.pread64, title: pread64(2), area: emulator, status: shipped, level: tested, syscall: 67, spec: "node v25 internalModuleReadJSON" }
+- { id: emulator.syscall.preadv, title: preadv(2), area: emulator, status: partial, level: implemented, syscall: 69, notes: "implemented but node uses pread64; thin direct coverage" }
+- { id: emulator.syscall.lseek, title: lseek(2), area: emulator, status: shipped, level: tested, syscall: 62 }
+- { id: emulator.syscall.getdents64, title: getdents64(2), area: emulator, status: shipped, level: tested, syscall: 61 }
+- { id: emulator.syscall.newfstatat, title: newfstatat(2), area: emulator, status: shipped, level: tested, syscall: 79 }
+- { id: emulator.syscall.fstat, title: fstat(2), area: emulator, status: shipped, level: tested, syscall: 80 }
+- { id: emulator.syscall.statx, title: statx(2), area: emulator, status: shipped, level: implemented, syscall: 291 }
+- { id: emulator.syscall.readlinkat, title: readlinkat(2), area: emulator, status: shipped, level: implemented, syscall: 78 }
+- { id: emulator.syscall.mkdirat, title: mkdirat(2), area: emulator, status: shipped, level: tested, syscall: 34 }
+- { id: emulator.syscall.unlinkat, title: unlinkat(2), area: emulator, status: shipped, level: tested, syscall: 35 }
+- { id: emulator.syscall.renameat2, title: renameat2(2), area: emulator, status: shipped, level: implemented, syscall: 276 }
+- { id: emulator.syscall.faccessat, title: faccessat(2), area: emulator, status: shipped, level: implemented, syscall: 48 }
+- { id: emulator.syscall.utimensat, title: utimensat(2), area: emulator, status: shipped, level: implemented, syscall: 88 }
+- { id: emulator.syscall.getcwd, title: getcwd(2), area: emulator, status: shipped, level: tested, syscall: 17 }
+- { id: emulator.syscall.chdir, title: chdir(2), area: emulator, status: shipped, level: tested, syscall: 49 }
+
+# ── Memory management ────────────────────────────────────────────────────────
+- { id: emulator.syscall.brk, title: brk(2), area: emulator, status: shipped, level: tested, syscall: 214 }
+- { id: emulator.syscall.mmap, title: mmap(2), area: emulator, status: shipped, level: tested, syscall: 222 }
+- { id: emulator.syscall.mremap, title: mremap(2), area: emulator, status: shipped, level: implemented, syscall: 216, notes: "in-place grow or MREMAP_MAYMOVE (V8 heap growth)" }
+- { id: emulator.syscall.munmap, title: munmap(2), area: emulator, status: partial, level: implemented, syscall: 215, notes: "stub no-op; bump allocator never frees" }
+- { id: emulator.syscall.mprotect, title: mprotect(2), area: emulator, status: partial, level: implemented, syscall: 226, notes: "stub returns 0" }
+- { id: emulator.syscall.madvise, title: madvise(2), area: emulator, status: partial, level: implemented, syscall: 233, notes: "stub returns 0" }
+
+# ── Epoll / event / sockets (virtual server) ─────────────────────────────────
+- { id: emulator.syscall.epoll, title: epoll (create1/ctl/pwait), area: emulator, status: shipped, level: implemented, syscall: 22 }
+- { id: emulator.syscall.eventfd2, title: eventfd2(2), area: emulator, status: shipped, level: implemented, syscall: 19 }
+- { id: emulator.syscall.ppoll, title: ppoll(2), area: emulator, status: partial, level: implemented, syscall: 73, notes: "stub returns 0" }
+- { id: emulator.net.socket, title: socket (AF_INET/INET6), area: emulator, status: shipped, level: implemented, syscall: 198, notes: "AF_UNIX -> EAFNOSUPPORT" }
+- { id: emulator.net.socketpair, title: socketpair(2), area: emulator, status: planned, level: specified, syscall: 199, notes: "ENOSYS — not supported" }
+- { id: emulator.net.bind-listen-accept, title: bind / listen / accept4, area: emulator, status: shipped, level: implemented, syscall: 242 }
+- { id: emulator.net.connect, title: connect(2), area: emulator, status: shipped, level: implemented, syscall: 203 }
+- { id: emulator.net.sendto-recvfrom, title: sendto / recvfrom, area: emulator, status: shipped, level: implemented, syscall: 206 }
+
+# ── I/O control / identity / time ────────────────────────────────────────────
+- { id: emulator.syscall.ioctl, title: ioctl (TIOCGWINSZ/TCGETS), area: emulator, status: shipped, level: tested, syscall: 29, notes: "ENOTTY so isatty() is false (V8 init)" }
+- { id: emulator.syscall.fcntl, title: fcntl(2), area: emulator, status: shipped, level: tested, syscall: 25 }
+- { id: emulator.syscall.dup, title: dup / dup3, area: emulator, status: shipped, level: tested, syscall: 23 }
+- { id: emulator.syscall.uname, title: uname(2), area: emulator, status: shipped, level: tested, syscall: 160 }
+- { id: emulator.syscall.getrandom, title: getrandom(2), area: emulator, status: shipped, level: implemented, syscall: 278, notes: "host Math.random via emscripten_random" }
+- { id: emulator.syscall.clock-gettime, title: clock_gettime(2), area: emulator, status: shipped, level: tested, syscall: 113 }
+- { id: emulator.syscall.prlimit64, title: prlimit64(2), area: emulator, status: shipped, level: implemented, syscall: 261 }
+- { id: emulator.signal.stubs, title: signal syscalls (sigaction/procmask/kill), area: emulator, status: partial, level: implemented, syscall: 134, notes: "stubs return 0; handlers never delivered" }

@@ -1,0 +1,13 @@
+# SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-UEL
+# Copyright (C) 2026 And The Next GmbH - https://userland.run
+#
+# Central test cadence — "world changed" freshness. scheduler.yml ticks every
+# 15 min, reads this file, and fires workflow_dispatch at the producing repo's
+# workflow when a suite is due. (Push-triggered runs cover "code changed".)
+contract: 1
+schedules:
+  - { source: nano,     suite: cargo-unit,          repo: userland-run/nano,     workflow: test.yml,        cron: "0 */6 * * *" }
+  - { source: nano,     suite: node-harness,        repo: userland-run/nano,     workflow: test.yml,        cron: "0 3 * * *" }
+  - { source: sdk,      suite: sdk-unit,            repo: userland-run/sdk,      workflow: test.yml,        cron: "0 4 * * *" }
+  - { source: terminal, suite: playwright-e2e,      repo: userland-run/terminal, workflow: e2e.yml,         cron: "0 5 * * *" }
+  - { source: catalog,  suite: catalog-conformance, repo: userland-run/catalog,  workflow: conformance.yml, cron: "0 2 * * *" }

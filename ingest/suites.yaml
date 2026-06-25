@@ -1,0 +1,13 @@
+# SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-UEL
+# Copyright (C) 2026 And The Next GmbH - https://userland.run
+#
+# Maps each (source, suite) a producer emits to a display layer + column. The
+# generator uses `layer` as the matrix column; an unknown (source, suite) in
+# data/incoming is still ingested but flagged in suite health.
+contract: 1
+suites:
+  - { source: nano,     suite: cargo-unit,          layer: Core,     title: "Rust unit tests (nextest)" }
+  - { source: nano,     suite: node-harness,        layer: Runtime,  title: "ELF + BusyBox + devenv (node harness)" }
+  - { source: sdk,      suite: sdk-unit,            layer: SDK,      title: "SDK node:test" }
+  - { source: terminal, suite: playwright-e2e,      layer: Terminal, title: "Playwright E2E" }
+  - { source: catalog,  suite: catalog-conformance, layer: Catalog,  title: "Recipe conformance" }

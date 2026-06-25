@@ -1,0 +1,26 @@
+name: ci
+
+# PR gate for the hub itself: lint, typecheck, the test suite, and a check that
+# the committed state.json/STATUS.md are in sync with the registry + incoming.
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm run generate -- --check

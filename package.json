@@ -1,0 +1,42 @@
+{
+  "name": "@userland-run/status",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Status portal + continuous monitoring for userland.run / NanoVM. Feature registry, test-result ingestion, and a live dashboard (Next.js static export).",
+  "type": "module",
+  "license": "AGPL-3.0-only OR LicenseRef-UEL",
+  "author": "Dietmar Rietsch / And The Next GmbH",
+  "homepage": "https://status.userland.run",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/userland-run/status.git"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "prebuild": "node scripts/copy-data.mjs",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "generate": "node --import tsx generator/src/generate.ts",
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "dependencies": {
+    "next": "^15.1.6",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "yaml": "^2.6.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.7",
+    "@types/react": "^19.0.7",
+    "@types/react-dom": "^19.0.3",
+    "eslint": "^9.18.0",
+    "eslint-config-next": "^15.1.6",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  }
+}

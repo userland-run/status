@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <rect width="32" height="32" rx="7" fill="#0e0e10"/>
+  <rect x="0.5" y="0.5" width="31" height="31" rx="6.5" fill="none" stroke="#2c2c33"/>
+  <!-- terminal prompt: violet chevron + caret -->
+  <path d="M8 11 L13 16 L8 21" fill="none" stroke="#a984f5" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="15.5" y="19" width="8.5" height="2.4" rx="1.2" fill="#a984f5"/>
+</svg>

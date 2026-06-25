@@ -1,0 +1,69 @@
+name: generate
+
+# Ingest results → join with the registry → regenerate state.json + STATUS.md →
+# build the static dashboard → deploy to GitHub Pages (status.userland.run).
+# Producers commit data/incoming/<source>.<suite>.json; that push lands here.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "data/incoming/**"
+      - "registry/**"
+      - "ingest/**"
+      - "generator/**"
+      - "contract/**"
+      - "app/**"
+      - "scripts/**"
+      - "package.json"
+      - ".github/workflows/generate.yml"
+  repository_dispatch:
+    types: [results-published] # fallback delivery path (artifact + dispatch)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+# One writer at a time so concurrent producer pushes can't race the commit.
+concurrency:
+  group: status-generate
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: npm run generate
+      - name: Commit regenerated state
+        run: |
+          git config user.name  "userland-status-bot"
+          git config user.email "bot@userland.run"
+          git add data/state.json data/meta.json STATUS.md
+          if git diff --staged --quiet; then
+            echo "no state changes"
+          else
+            git commit -m "chore(state): regenerate [skip ci]"
+            git push
+          fi
+      - run: npm run build
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: out
+
+  deploy:
+    needs: generate
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

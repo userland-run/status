@@ -1,0 +1,27 @@
+{
+  "contract": 1,
+  "source": "nano",
+  "suite": "cargo-unit",
+  "commit": "a1b2c3d",
+  "branch": "main",
+  "run_id": "9182736455",
+  "finished_at": "2026-06-25T14:32:11Z",
+  "results": [
+    {
+      "test_id": "decode::tests::addi_sign_extends",
+      "features": ["emulator.cpu.decode-rv64"],
+      "status": "passed",
+      "duration_ms": 3,
+      "retries": 0,
+      "trace_url": "https://github.com/userland-run/nano/actions/runs/9182736455"
+    },
+    {
+      "test_id": "types::tests::vm_layout_offsets",
+      "features": ["emulator.types.layout"],
+      "status": "passed",
+      "duration_ms": 1,
+      "retries": 0,
+      "trace_url": "https://github.com/userland-run/nano/actions/runs/9182736455"
+    }
+  ]
+}

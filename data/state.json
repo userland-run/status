@@ -1,0 +1,3090 @@
+{
+  "contract": 1,
+  "generated_at": "2026-06-25T16:28:09.339Z",
+  "layers": [
+    "Core",
+    "Runtime",
+    "SDK",
+    "Terminal",
+    "Catalog"
+  ],
+  "headline": {
+    "total": 104,
+    "shipped": 91,
+    "shippedPct": 0.875,
+    "tested": 51,
+    "green": 50,
+    "greenPct": 0.9803921568627451,
+    "failingNow": 0,
+    "untestedShipped": 42,
+    "driftCount": 0
+  },
+  "areaRollups": [
+    {
+      "id": "emulator",
+      "title": "RISC-V emulator & Linux syscalls",
+      "total": 57,
+      "byStatus": {
+        "planned": 1,
+        "in-progress": 0,
+        "shipped": 50,
+        "partial": 6,
+        "deprecated": 0
+      },
+      "shippedPct": 0.8771929824561403,
+      "greenPct": 1,
+      "tested": 11,
+      "green": 11
+    },
+    {
+      "id": "busybox",
+      "title": "BusyBox applets",
+      "total": 19,
+      "byStatus": {
+        "planned": 0,
+        "in-progress": 0,
+        "shipped": 19,
+        "partial": 0,
+        "deprecated": 0
+      },
+      "shippedPct": 1,
+      "greenPct": 1,
+      "tested": 18,
+      "green": 18
+    },
+    {
+      "id": "devenv",
+      "title": "Dev toolchain",
+      "total": 5,
+      "byStatus": {
+        "planned": 0,
+        "in-progress": 0,
+        "shipped": 5,
+        "partial": 0,
+        "deprecated": 0
+      },
+      "shippedPct": 1,
+      "greenPct": 1,
+      "tested": 5,
+      "green": 5
+    },
+    {
+      "id": "sdk",
+      "title": "TypeScript SDK",
+      "total": 9,
+      "byStatus": {
+        "planned": 0,
+        "in-progress": 0,
+        "shipped": 7,
+        "partial": 2,
+        "deprecated": 0
+      },
+      "shippedPct": 0.7777777777777778,
+      "greenPct": 0.8888888888888888,
+      "tested": 9,
+      "green": 8
+    },
+    {
+      "id": "terminal",
+      "title": "WebGPU console",
+      "total": 9,
+      "byStatus": {
+        "planned": 3,
+        "in-progress": 1,
+        "shipped": 5,
+        "partial": 0,
+        "deprecated": 0
+      },
+      "shippedPct": 0.5555555555555556,
+      "greenPct": 1,
+      "tested": 4,
+      "green": 4
+    },
+    {
+      "id": "catalog",
+      "title": "App conformance & distribution",
+      "total": 5,
+      "byStatus": {
+        "planned": 0,
+        "in-progress": 0,
+        "shipped": 5,
+        "partial": 0,
+        "deprecated": 0
+      },
+      "shippedPct": 1,
+      "greenPct": 1,
+      "tested": 4,
+      "green": 4
+    }
+  ],
+  "suiteHealth": [
+    {
+      "source": "nano",
+      "suite": "cargo-unit",
+      "layer": "Core",
+      "title": "Rust unit tests (nextest)",
+      "present": true,
+      "commit": "seed",
+      "finished_at": "2026-06-25T06:00:00Z",
+      "age_min": 628,
+      "passRate": 1,
+      "health": "ok"
+    },
+    {
+      "source": "nano",
+      "suite": "node-harness",
+      "layer": "Runtime",
+      "title": "ELF + BusyBox + devenv (node harness)",
+      "present": true,
+      "commit": "seed",
+      "finished_at": "2026-06-25T06:05:00Z",
+      "age_min": 623,
+      "passRate": 1,
+      "health": "ok"
+    },
+    {
+      "source": "sdk",
+      "suite": "sdk-unit",
+      "layer": "SDK",
+      "title": "SDK node:test",
+      "present": true,
+      "commit": "seed",
+      "finished_at": "2026-06-25T05:40:00Z",
+      "age_min": 648,
+      "passRate": 0.8888888888888888,
+      "health": "ok"
+    },
+    {
+      "source": "terminal",
+      "suite": "playwright-e2e",
+      "layer": "Terminal",
+      "title": "Playwright E2E",
+      "present": true,
+      "commit": "seed",
+      "finished_at": "2026-06-25T05:20:00Z",
+      "age_min": 668,
+      "passRate": 1,
+      "health": "ok"
+    },
+    {
+      "source": "catalog",
+      "suite": "catalog-conformance",
+      "layer": "Catalog",
+      "title": "Recipe conformance",
+      "present": true,
+      "commit": "seed",
+      "finished_at": "2026-06-25T04:00:00Z",
+      "age_min": 748,
+      "passRate": 1,
+      "health": "ok"
+    }
+  ],
+  "redNow": [],
+  "shippedUntested": [
+    {
+      "id": "busybox.ls",
+      "title": "ls",
+      "area": "busybox"
+    },
+    {
+      "id": "catalog.pipeline.publish",
+      "title": "package + sign + publish (CDN)",
+      "area": "catalog"
+    },
+    {
+      "id": "emulator.process.fork",
+      "title": "clone/fork",
+      "area": "emulator"
+    },
+    {
+      "id": "emulator.process.execve",
+      "title": "execve (tty/termios preserved)",
+      "area": "emulator"
+    },
+    {
+      "id": "emulator.thread.futex",
+      "title": "futex (WAIT/WAKE)",
+      "area": "emulator"
+    },
+    {
+      "id": "emulator.thread.sched-yield",
+      "title": "sched_yield",
+      "area": "emulator"
+    },
+    {
+      "id": "emulator.ipc.pipe",
+      "title": "pipe2",
+      "area": "emulator"
+    },
+    {
+      "id": "emulator.syscall.openat",
+      "title": "openat(2)",
+      "area": "emulator"
+    },
+    {
+      "id": "emulator.syscall.close",
+      "title": "close(2)",
+      "area": "emulator"
+    },
+    {
+      "id": "emulator.syscall.read",
+      "title": "read(2)",
+      "area": "emulator"
+    },
+    {
+      "id": "emulator.syscall.write",
+      "title": "write(2)",
+      "area": "emulator"
+    },
+    {
+      "id": "emulator.syscall.readv",
+      "title": "readv(2)",
+      "area": "emulator"
+    },
+    {
+      "id": "emulator.syscall.writev",
+      "title": "writev(2)",
+      "area": "emulator"
+    },
+    {
+      "id": "emulator.syscall.pread64",
+      "title": "pread64(2)",
+      "area": "emulator"
+    },
+    {
+      "id": "emulator.syscall.lseek",
+      "title": "lseek(2)",
+      "area": "emulator"
+    },
+    {
+      "id": "emulator.syscall.getdents64",
+      "title": "getdents64(2)",
+      "area": "emulator"
+    },
+    {
+      "id": "emulator.syscall.newfstatat",
+      "title": "newfstatat(2)",
+      "area": "emulator"
+    },
+    {
+      "id": "emulator.syscall.fstat",
+      "title": "fstat(2)",
+      "area": "emulator"
+    },
+    {
+      "id": "emulator.syscall.statx",
+      "title": "statx(2)",
+      "area": "emulator"
+    },
+    {
+      "id": "emulator.syscall.readlinkat",
+      "title": "readlinkat(2)",
+      "area": "emulator"
+    },
+    {
+      "id": "emulator.syscall.mkdirat",
+      "title": "mkdirat(2)",
+      "area": "emulator"
+    },
+    {
+      "id": "emulator.syscall.unlinkat",
+      "title": "unlinkat(2)",
+      "area": "emulator"
+    },
+    {
+      "id": "emulator.syscall.renameat2",
+      "title": "renameat2(2)",
+      "area": "emulator"
+    },
+    {
+      "id": "emulator.syscall.faccessat",
+      "title": "faccessat(2)",
+      "area": "emulator"
+    },
+    {
+      "id": "emulator.syscall.utimensat",
+      "title": "utimensat(2)",
+      "area": "emulator"
+    },
+    {
+      "id": "emulator.syscall.chdir",
+      "title": "chdir(2)",
+      "area": "emulator"
+    },
+    {
+      "id": "emulator.syscall.brk",
+      "title": "brk(2)",
+      "area": "emulator"
+    },
+    {
+      "id": "emulator.syscall.mmap",
+      "title": "mmap(2)",
+      "area": "emulator"
+    },
+    {
+      "id": "emulator.syscall.mremap",
+      "title": "mremap(2)",
+      "area": "emulator"
+    },
+    {
+      "id": "emulator.syscall.epoll",
+      "title": "epoll (create1/ctl/pwait)",
+      "area": "emulator"
+    },
+    {
+      "id": "emulator.syscall.eventfd2",
+      "title": "eventfd2(2)",
+      "area": "emulator"
+    },
+    {
+      "id": "emulator.net.socket",
+      "title": "socket (AF_INET/INET6)",
+      "area": "emulator"
+    },
+    {
+      "id": "emulator.net.bind-listen-accept",
+      "title": "bind / listen / accept4",
+      "area": "emulator"
+    },
+    {
+      "id": "emulator.net.connect",
+      "title": "connect(2)",
+      "area": "emulator"
+    },
+    {
+      "id": "emulator.net.sendto-recvfrom",
+      "title": "sendto / recvfrom",
+      "area": "emulator"
+    },
+    {
+      "id": "emulator.syscall.ioctl",
+      "title": "ioctl (TIOCGWINSZ/TCGETS)",
+      "area": "emulator"
+    },
+    {
+      "id": "emulator.syscall.fcntl",
+      "title": "fcntl(2)",
+      "area": "emulator"
+    },
+    {
+      "id": "emulator.syscall.dup",
+      "title": "dup / dup3",
+      "area": "emulator"
+    },
+    {
+      "id": "emulator.syscall.getrandom",
+      "title": "getrandom(2)",
+      "area": "emulator"
+    },
+    {
+      "id": "emulator.syscall.clock-gettime",
+      "title": "clock_gettime(2)",
+      "area": "emulator"
+    },
+    {
+      "id": "emulator.syscall.prlimit64",
+      "title": "prlimit64(2)",
+      "area": "emulator"
+    },
+    {
+      "id": "terminal.phase.0",
+      "title": "Phase 0 — bootstrap (80x25 grid, ANSI)",
+      "area": "terminal"
+    }
+  ],
+  "drift": {
+    "unknownIds": [],
+    "staleInProgress": [],
+    "partialNoNotes": [],
+    "superseded": []
+  },
+  "features": [
+    {
+      "id": "busybox.shell.ash",
+      "title": "ash shell (/bin/sh)",
+      "area": "busybox",
+      "status": "shipped",
+      "since": "2026-03",
+      "cells": {
+        "Runtime": {
+          "layer": "Runtime",
+          "state": "passed",
+          "counts": {
+            "passed": 1,
+            "failed": 0,
+            "skipped": 0,
+            "flaky": 0
+          },
+          "history": [
+            "passed"
+          ],
+          "lastRun": "nano/node-harness@seed@2026-06-25T06:05:00Z",
+          "freshness": {
+            "source": "nano",
+            "suite": "node-harness",
+            "commit": "seed",
+            "finished_at": "2026-06-25T06:05:00Z",
+            "age_min": 623
+          },
+          "tests": [
+            {
+              "test_id": "busybox/sh",
+              "status": "passed",
+              "duration_ms": 35
+            }
+          ]
+        }
+      },
+      "tested": true,
+      "green": true
+    },
+    {
+      "id": "busybox.echo",
+      "title": "echo",
+      "area": "busybox",
+      "status": "shipped",
+      "cells": {
+        "Runtime": {
+          "layer": "Runtime",
+          "state": "passed",
+          "counts": {
+            "passed": 1,
+            "failed": 0,
+            "skipped": 0,
+            "flaky": 0
+          },
+          "history": [
+            "passed"
+          ],
+          "lastRun": "nano/node-harness@seed@2026-06-25T06:05:00Z",
+          "freshness": {
+            "source": "nano",
+            "suite": "node-harness",
+            "commit": "seed",
+            "finished_at": "2026-06-25T06:05:00Z",
+            "age_min": 623
+          },
+          "tests": [
+            {
+              "test_id": "busybox/echo",
+              "status": "passed",
+              "duration_ms": 30
+            }
+          ]
+        }
+      },
+      "tested": true,
+      "green": true
+    },
+    {
+      "id": "busybox.true",
+      "title": "true",
+      "area": "busybox",
+      "status": "shipped",
+      "cells": {
+        "Runtime": {
+          "layer": "Runtime",
+          "state": "passed",
+          "counts": {
+            "passed": 1,
+            "failed": 0,
+            "skipped": 0,
+            "flaky": 0
+          },
+          "history": [
+            "passed"
+          ],
+          "lastRun": "nano/node-harness@seed@2026-06-25T06:05:00Z",
+          "freshness": {
+            "source": "nano",
+            "suite": "node-harness",
+            "commit": "seed",
+            "finished_at": "2026-06-25T06:05:00Z",
+            "age_min": 623
+          },
+          "tests": [
+            {
+              "test_id": "busybox/true",
+              "status": "passed",
+              "duration_ms": 28
+            }
+          ]
+        }
+      },
+      "tested": true,
+      "green": true
+    },
+    {
+      "id": "busybox.false",
+      "title": "false",
+      "area": "busybox",
+      "status": "shipped",
+      "cells": {
+        "Runtime": {
+          "layer": "Runtime",
+          "state": "passed",
+          "counts": {
+            "passed": 1,
+            "failed": 0,
+            "skipped": 0,
+            "flaky": 0
+          },
+          "history": [
+            "passed"
+          ],
+          "lastRun": "nano/node-harness@seed@2026-06-25T06:05:00Z",
+          "freshness": {
+            "source": "nano",
+            "suite": "node-harness",
+            "commit": "seed",
+            "finished_at": "2026-06-25T06:05:00Z",
+            "age_min": 623
+          },
+          "tests": [
+            {
+              "test_id": "busybox/false",
+              "status": "passed",
+              "duration_ms": 28
+            }
+          ]
+        }
+      },
+      "tested": true,
+      "green": true
+    },
+    {
+      "id": "busybox.uname",
+      "title": "uname",
+      "area": "busybox",
+      "status": "shipped",
+      "cells": {
+        "Runtime": {
+          "layer": "Runtime",
+          "state": "passed",
+          "counts": {
+            "passed": 1,
+            "failed": 0,
+            "skipped": 0,
+            "flaky": 0
+          },
+          "history": [
+            "passed"
+          ],
+          "lastRun": "nano/node-harness@seed@2026-06-25T06:05:00Z",
+          "freshness": {
+            "source": "nano",
+            "suite": "node-harness",
+            "commit": "seed",
+            "finished_at": "2026-06-25T06:05:00Z",
+            "age_min": 623
+          },
+          "tests": [
+            {
+              "test_id": "busybox/uname",
+              "status": "passed",
+              "duration_ms": 31
+            }
+          ]
+        }
+      },
+      "tested": true,
+      "green": true
+    },
+    {
+      "id": "busybox.basename",
+      "title": "basename",
+      "area": "busybox",
+      "status": "shipped",
+      "cells": {
+        "Runtime": {
+          "layer": "Runtime",
+          "state": "passed",
+          "counts": {
+            "passed": 1,
+            "failed": 0,
+            "skipped": 0,
+            "flaky": 0
+          },
+          "history": [
+            "passed"
+          ],
+          "lastRun": "nano/node-harness@seed@2026-06-25T06:05:00Z",
+          "freshness": {
+            "source": "nano",
+            "suite": "node-harness",
+            "commit": "seed",
+            "finished_at": "2026-06-25T06:05:00Z",
+            "age_min": 623
+          },
+          "tests": [
+            {
+              "test_id": "busybox/basename",
+              "status": "passed",
+              "duration_ms": 29
+            }
+          ]
+        }
+      },
+      "tested": true,
+      "green": true
+    },
+    {
+      "id": "busybox.dirname",
+      "title": "dirname",
+      "area": "busybox",
+      "status": "shipped",
+      "cells": {
+        "Runtime": {
+          "layer": "Runtime",
+          "state": "passed",
+          "counts": {
+            "passed": 1,
+            "failed": 0,
+            "skipped": 0,
+            "flaky": 0
+          },
+          "history": [
+            "passed"
+          ],
+          "lastRun": "nano/node-harness@seed@2026-06-25T06:05:00Z",
+          "freshness": {
+            "source": "nano",
+            "suite": "node-harness",
+            "commit": "seed",
+            "finished_at": "2026-06-25T06:05:00Z",
+            "age_min": 623
+          },
+          "tests": [
+            {
+              "test_id": "busybox/dirname",
+              "status": "passed",
+              "duration_ms": 29
+            }
+          ]
+        }
+      },
+      "tested": true,
+      "green": true
+    },
+    {
+      "id": "busybox.cat",
+      "title": "cat",
+      "area": "busybox",
+      "status": "shipped",
+      "cells": {
+        "Runtime": {
+          "layer": "Runtime",
+          "state": "passed",
+          "counts": {
+            "passed": 1,
+            "failed": 0,
+            "skipped": 0,
+            "flaky": 0
+          },
+          "history": [
+            "passed"
+          ],
+          "lastRun": "nano/node-harness@seed@2026-06-25T06:05:00Z",
+          "freshness": {
+            "source": "nano",
+            "suite": "node-harness",
+            "commit": "seed",
+            "finished_at": "2026-06-25T06:05:00Z",
+            "age_min": 623
+          },
+          "tests": [
+            {
+              "test_id": "busybox/cat",
+              "status": "passed",
+              "duration_ms": 30
+            }
+          ]
+        }
+      },
+      "tested": true,
+      "green": true
+    },
+    {
+      "id": "busybox.head",
+      "title": "head",
+      "area": "busybox",
+      "status": "shipped",
+      "cells": {
+        "Runtime": {
+          "layer": "Runtime",
+          "state": "passed",
+          "counts": {
+            "passed": 1,
+            "failed": 0,
+            "skipped": 0,
+            "flaky": 0
+          },
+          "history": [
+            "passed"
+          ],
+          "lastRun": "nano/node-harness@seed@2026-06-25T06:05:00Z",
+          "freshness": {
+            "source": "nano",
+            "suite": "node-harness",
+            "commit": "seed",
+            "finished_at": "2026-06-25T06:05:00Z",
+            "age_min": 623
+          },
+          "tests": [
+            {
+              "test_id": "busybox/head",
+              "status": "passed",
+              "duration_ms": 30
+            }
+          ]
+        }
+      },
+      "tested": true,
+      "green": true
+    },
+    {
+      "id": "busybox.tail",
+      "title": "tail",
+      "area": "busybox",
+      "status": "shipped",
+      "cells": {
+        "Runtime": {
+          "layer": "Runtime",
+          "state": "passed",
+          "counts": {
+            "passed": 1,
+            "failed": 0,
+            "skipped": 0,
+            "flaky": 0
+          },
+          "history": [
+            "passed"
+          ],
+          "lastRun": "nano/node-harness@seed@2026-06-25T06:05:00Z",
+          "freshness": {
+            "source": "nano",
+            "suite": "node-harness",
+            "commit": "seed",
+            "finished_at": "2026-06-25T06:05:00Z",
+            "age_min": 623
+          },
+          "tests": [
+            {
+              "test_id": "busybox/tail",
+              "status": "passed",
+              "duration_ms": 30
+            }
+          ]
+        }
+      },
+      "tested": true,
+      "green": true
+    },
+    {
+      "id": "busybox.sort",
+      "title": "sort",
+      "area": "busybox",
+      "status": "shipped",
+      "cells": {
+        "Runtime": {
+          "layer": "Runtime",
+          "state": "passed",
+          "counts": {
+            "passed": 1,
+            "failed": 0,
+            "skipped": 0,
+            "flaky": 0
+          },
+          "history": [
+            "passed"
+          ],
+          "lastRun": "nano/node-harness@seed@2026-06-25T06:05:00Z",
+          "freshness": {
+            "source": "nano",
+            "suite": "node-harness",
+            "commit": "seed",
+            "finished_at": "2026-06-25T06:05:00Z",
+            "age_min": 623
+          },
+          "tests": [
+            {
+              "test_id": "busybox/sort",
+              "status": "passed",
+              "duration_ms": 32
+            }
+          ]
+        }
+      },
+      "tested": true,
+      "green": true
+    },
+    {
+      "id": "busybox.id",
+      "title": "id",
+      "area": "busybox",
+      "status": "shipped",
+      "cells": {
+        "Runtime": {
+          "layer": "Runtime",
+          "state": "passed",
+          "counts": {
+            "passed": 1,
+            "failed": 0,
+            "skipped": 0,
+            "flaky": 0
+          },
+          "history": [
+            "passed"
+          ],
+          "lastRun": "nano/node-harness@seed@2026-06-25T06:05:00Z",
+          "freshness": {
+            "source": "nano",
+            "suite": "node-harness",
+            "commit": "seed",
+            "finished_at": "2026-06-25T06:05:00Z",
+            "age_min": 623
+          },
+          "tests": [
+            {
+              "test_id": "busybox/id",
+              "status": "passed",
+              "duration_ms": 29
+            }
+          ]
+        }
+      },
+      "tested": true,
+      "green": true
+    },
+    {
+      "id": "busybox.pwd",
+      "title": "pwd",
+      "area": "busybox",
+      "status": "shipped",
+      "cells": {
+        "Runtime": {
+          "layer": "Runtime",
+          "state": "passed",
+          "counts": {
+            "passed": 1,
+            "failed": 0,
+            "skipped": 0,
+            "flaky": 0
+          },
+          "history": [
+            "passed"
+          ],
+          "lastRun": "nano/node-harness@seed@2026-06-25T06:05:00Z",
+          "freshness": {
+            "source": "nano",
+            "suite": "node-harness",
+            "commit": "seed",
+            "finished_at": "2026-06-25T06:05:00Z",
+            "age_min": 623
+          },
+          "tests": [
+            {
+              "test_id": "busybox/pwd",
+              "status": "passed",
+              "duration_ms": 29
+            }
+          ]
+        }
+      },
+      "tested": true,
+      "green": true
+    },
+    {
+      "id": "busybox.env",
+      "title": "env",
+      "area": "busybox",
+      "status": "shipped",
+      "cells": {
+        "Runtime": {
+          "layer": "Runtime",
+          "state": "passed",
+          "counts": {
+            "passed": 1,
+            "failed": 0,
+            "skipped": 0,
+            "flaky": 0
+          },
+          "history": [
+            "passed"
+          ],
+          "lastRun": "nano/node-harness@seed@2026-06-25T06:05:00Z",
+          "freshness": {
+            "source": "nano",
+            "suite": "node-harness",
+            "commit": "seed",
+            "finished_at": "2026-06-25T06:05:00Z",
+            "age_min": 623
+          },
+          "tests": [
+            {
+              "test_id": "busybox/env",
+              "status": "passed",
+              "duration_ms": 29
+            }
+          ]
+        }
+      },
+      "tested": true,
+      "green": true
+    },
+    {
+      "id": "busybox.whoami",
+      "title": "whoami",
+      "area": "busybox",
+      "status": "shipped",
+      "cells": {
+        "Runtime": {
+          "layer": "Runtime",
+          "state": "passed",
+          "counts": {
+            "passed": 1,
+            "failed": 0,
+            "skipped": 0,
+            "flaky": 0
+          },
+          "history": [
+            "passed"
+          ],
+          "lastRun": "nano/node-harness@seed@2026-06-25T06:05:00Z",
+          "freshness": {
+            "source": "nano",
+            "suite": "node-harness",
+            "commit": "seed",
+            "finished_at": "2026-06-25T06:05:00Z",
+            "age_min": 623
+          },
+          "tests": [
+            {
+              "test_id": "busybox/whoami",
+              "status": "passed",
+              "duration_ms": 29
+            }
+          ]
+        }
+      },
+      "tested": true,
+      "green": true
+    },
+    {
+      "id": "busybox.hostname",
+      "title": "hostname",
+      "area": "busybox",
+      "status": "shipped",
+      "cells": {
+        "Runtime": {
+          "layer": "Runtime",
+          "state": "passed",
+          "counts": {
+            "passed": 1,
+            "failed": 0,
+            "skipped": 0,
+            "flaky": 0
+          },
+          "history": [
+            "passed"
+          ],
+          "lastRun": "nano/node-harness@seed@2026-06-25T06:05:00Z",
+          "freshness": {
+            "source": "nano",
+            "suite": "node-harness",
+            "commit": "seed",
+            "finished_at": "2026-06-25T06:05:00Z",
+            "age_min": 623
+          },
+          "tests": [
+            {
+              "test_id": "busybox/hostname",
+              "status": "passed",
+              "duration_ms": 29
+            }
+          ]
+        }
+      },
+      "tested": true,
+      "green": true
+    },
+    {
+      "id": "busybox.printf",
+      "title": "printf",
+      "area": "busybox",
+      "status": "shipped",
+      "cells": {
+        "Runtime": {
+          "layer": "Runtime",
+          "state": "passed",
+          "counts": {
+            "passed": 1,
+            "failed": 0,
+            "skipped": 0,
+            "flaky": 0
+          },
+          "history": [
+            "passed"
+          ],
+          "lastRun": "nano/node-harness@seed@2026-06-25T06:05:00Z",
+          "freshness": {
+            "source": "nano",
+            "suite": "node-harness",
+            "commit": "seed",
+            "finished_at": "2026-06-25T06:05:00Z",
+            "age_min": 623
+          },
+          "tests": [
+            {
+              "test_id": "busybox/printf",
+              "status": "passed",
+              "duration_ms": 29
+            }
+          ]
+        }
+      },
+      "tested": true,
+      "green": true
+    },
+    {
+      "id": "busybox.seq",
+      "title": "seq",
+      "area": "busybox",
+      "status": "shipped",
+      "cells": {
+        "Runtime": {
+          "layer": "Runtime",
+          "state": "passed",
+          "counts": {
+            "passed": 1,
+            "failed": 0,
+            "skipped": 0,
+            "flaky": 0
+          },
+          "history": [
+            "passed"
+          ],
+          "lastRun": "nano/node-harness@seed@2026-06-25T06:05:00Z",
+          "freshness": {
+            "source": "nano",
+            "suite": "node-harness",
+            "commit": "seed",
+            "finished_at": "2026-06-25T06:05:00Z",
+            "age_min": 623
+          },
+          "tests": [
+            {
+              "test_id": "busybox/seq",
+              "status": "passed",
+              "duration_ms": 29
+            }
+          ]
+        }
+      },
+      "tested": true,
+      "green": true
+    },
+    {
+      "id": "busybox.ls",
+      "title": "ls",
+      "area": "busybox",
+      "status": "shipped",
+      "notes": "exercised via SDK/terminal boot, not the nano smoke set",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "catalog.recipe.hello-c",
+      "title": "hello-c",
+      "area": "catalog",
+      "status": "shipped",
+      "since": "2026-06",
+      "cells": {
+        "Catalog": {
+          "layer": "Catalog",
+          "state": "passed",
+          "counts": {
+            "passed": 1,
+            "failed": 0,
+            "skipped": 0,
+            "flaky": 0
+          },
+          "history": [
+            "passed"
+          ],
+          "lastRun": "catalog/catalog-conformance@seed@2026-06-25T04:00:00Z",
+          "freshness": {
+            "source": "catalog",
+            "suite": "catalog-conformance",
+            "commit": "seed",
+            "finished_at": "2026-06-25T04:00:00Z",
+            "age_min": 748
+          },
+          "tests": [
+            {
+              "test_id": "recipes/hello-c/test/run.json",
+              "status": "passed",
+              "duration_ms": 90
+            }
+          ]
+        }
+      },
+      "tested": true,
+      "green": true
+    },
+    {
+      "id": "catalog.recipe.ripgrep",
+      "title": "ripgrep",
+      "area": "catalog",
+      "status": "shipped",
+      "since": "2026-06",
+      "cells": {
+        "Catalog": {
+          "layer": "Catalog",
+          "state": "passed",
+          "counts": {
+            "passed": 1,
+            "failed": 0,
+            "skipped": 0,
+            "flaky": 0
+          },
+          "history": [
+            "passed"
+          ],
+          "lastRun": "catalog/catalog-conformance@seed@2026-06-25T04:00:00Z",
+          "freshness": {
+            "source": "catalog",
+            "suite": "catalog-conformance",
+            "commit": "seed",
+            "finished_at": "2026-06-25T04:00:00Z",
+            "age_min": 748
+          },
+          "tests": [
+            {
+              "test_id": "recipes/ripgrep/test/run.json",
+              "status": "passed",
+              "duration_ms": 410
+            }
+          ]
+        }
+      },
+      "tested": true,
+      "green": true
+    },
+    {
+      "id": "catalog.pipeline.conformance",
+      "title": "conformance harness",
+      "area": "catalog",
+      "status": "shipped",
+      "since": "2026-06",
+      "cells": {
+        "Catalog": {
+          "layer": "Catalog",
+          "state": "passed",
+          "counts": {
+            "passed": 2,
+            "failed": 0,
+            "skipped": 0,
+            "flaky": 0
+          },
+          "history": [
+            "passed"
+          ],
+          "lastRun": "catalog/catalog-conformance@seed@2026-06-25T04:00:00Z",
+          "freshness": {
+            "source": "catalog",
+            "suite": "catalog-conformance",
+            "commit": "seed",
+            "finished_at": "2026-06-25T04:00:00Z",
+            "age_min": 748
+          },
+          "tests": [
+            {
+              "test_id": "recipes/hello-c/test/run.json",
+              "status": "passed",
+              "duration_ms": 90
+            },
+            {
+              "test_id": "recipes/ripgrep/test/run.json",
+              "status": "passed",
+              "duration_ms": 410
+            }
+          ]
+        }
+      },
+      "tested": true,
+      "green": true
+    },
+    {
+      "id": "catalog.pipeline.gate",
+      "title": "syscall gate (pinned manifest)",
+      "area": "catalog",
+      "status": "shipped",
+      "since": "2026-06",
+      "cells": {
+        "Catalog": {
+          "layer": "Catalog",
+          "state": "passed",
+          "counts": {
+            "passed": 2,
+            "failed": 0,
+            "skipped": 0,
+            "flaky": 0
+          },
+          "history": [
+            "passed"
+          ],
+          "lastRun": "catalog/catalog-conformance@seed@2026-06-25T04:00:00Z",
+          "freshness": {
+            "source": "catalog",
+            "suite": "catalog-conformance",
+            "commit": "seed",
+            "finished_at": "2026-06-25T04:00:00Z",
+            "age_min": 748
+          },
+          "tests": [
+            {
+              "test_id": "recipes/hello-c/test/run.json",
+              "status": "passed",
+              "duration_ms": 90
+            },
+            {
+              "test_id": "recipes/ripgrep/test/run.json",
+              "status": "passed",
+              "duration_ms": 410
+            }
+          ]
+        }
+      },
+      "tested": true,
+      "green": true
+    },
+    {
+      "id": "catalog.pipeline.publish",
+      "title": "package + sign + publish (CDN)",
+      "area": "catalog",
+      "status": "shipped",
+      "since": "2026-06",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "devenv.node",
+      "title": "Node.js v25.4.0",
+      "area": "devenv",
+      "status": "shipped",
+      "since": "2026-05",
+      "cells": {
+        "Runtime": {
+          "layer": "Runtime",
+          "state": "passed",
+          "counts": {
+            "passed": 1,
+            "failed": 0,
+            "skipped": 0,
+            "flaky": 0
+          },
+          "history": [
+            "passed"
+          ],
+          "lastRun": "nano/node-harness@seed@2026-06-25T06:05:00Z",
+          "freshness": {
+            "source": "nano",
+            "suite": "node-harness",
+            "commit": "seed",
+            "finished_at": "2026-06-25T06:05:00Z",
+            "age_min": 623
+          },
+          "tests": [
+            {
+              "test_id": "devenv/node",
+              "status": "passed",
+              "duration_ms": 4200
+            }
+          ]
+        }
+      },
+      "tested": true,
+      "green": true
+    },
+    {
+      "id": "devenv.npm",
+      "title": "npm 11.7.0",
+      "area": "devenv",
+      "status": "shipped",
+      "since": "2026-05",
+      "cells": {
+        "Runtime": {
+          "layer": "Runtime",
+          "state": "passed",
+          "counts": {
+            "passed": 1,
+            "failed": 0,
+            "skipped": 0,
+            "flaky": 0
+          },
+          "history": [
+            "passed"
+          ],
+          "lastRun": "nano/node-harness@seed@2026-06-25T06:05:00Z",
+          "freshness": {
+            "source": "nano",
+            "suite": "node-harness",
+            "commit": "seed",
+            "finished_at": "2026-06-25T06:05:00Z",
+            "age_min": 623
+          },
+          "tests": [
+            {
+              "test_id": "devenv/npm",
+              "status": "passed",
+              "duration_ms": 5100
+            }
+          ]
+        }
+      },
+      "tested": true,
+      "green": true
+    },
+    {
+      "id": "devenv.tsc",
+      "title": "TypeScript 5.9.3 (tsc)",
+      "area": "devenv",
+      "status": "shipped",
+      "since": "2026-05",
+      "cells": {
+        "Runtime": {
+          "layer": "Runtime",
+          "state": "passed",
+          "counts": {
+            "passed": 1,
+            "failed": 0,
+            "skipped": 0,
+            "flaky": 0
+          },
+          "history": [
+            "passed"
+          ],
+          "lastRun": "nano/node-harness@seed@2026-06-25T06:05:00Z",
+          "freshness": {
+            "source": "nano",
+            "suite": "node-harness",
+            "commit": "seed",
+            "finished_at": "2026-06-25T06:05:00Z",
+            "age_min": 623
+          },
+          "tests": [
+            {
+              "test_id": "devenv/tsc",
+              "status": "passed",
+              "duration_ms": 6300
+            }
+          ]
+        }
+      },
+      "tested": true,
+      "green": true
+    },
+    {
+      "id": "devenv.eslint",
+      "title": "ESLint 10.0.0",
+      "area": "devenv",
+      "status": "shipped",
+      "since": "2026-05",
+      "cells": {
+        "Runtime": {
+          "layer": "Runtime",
+          "state": "passed",
+          "counts": {
+            "passed": 1,
+            "failed": 0,
+            "skipped": 0,
+            "flaky": 0
+          },
+          "history": [
+            "passed"
+          ],
+          "lastRun": "nano/node-harness@seed@2026-06-25T06:05:00Z",
+          "freshness": {
+            "source": "nano",
+            "suite": "node-harness",
+            "commit": "seed",
+            "finished_at": "2026-06-25T06:05:00Z",
+            "age_min": 623
+          },
+          "tests": [
+            {
+              "test_id": "devenv/eslint",
+              "status": "passed",
+              "duration_ms": 5800
+            }
+          ]
+        }
+      },
+      "tested": true,
+      "green": true
+    },
+    {
+      "id": "devenv.prettier",
+      "title": "Prettier 3.8.1",
+      "area": "devenv",
+      "status": "shipped",
+      "since": "2026-05",
+      "cells": {
+        "Runtime": {
+          "layer": "Runtime",
+          "state": "passed",
+          "counts": {
+            "passed": 1,
+            "failed": 0,
+            "skipped": 0,
+            "flaky": 0
+          },
+          "history": [
+            "passed"
+          ],
+          "lastRun": "nano/node-harness@seed@2026-06-25T06:05:00Z",
+          "freshness": {
+            "source": "nano",
+            "suite": "node-harness",
+            "commit": "seed",
+            "finished_at": "2026-06-25T06:05:00Z",
+            "age_min": 623
+          },
+          "tests": [
+            {
+              "test_id": "devenv/prettier",
+              "status": "passed",
+              "duration_ms": 4900
+            }
+          ]
+        }
+      },
+      "tested": true,
+      "green": true
+    },
+    {
+      "id": "emulator.cpu.decode-rv64",
+      "title": "RV64I instruction decode",
+      "area": "emulator",
+      "status": "shipped",
+      "level": "tested",
+      "spec": "nano/src/decode.rs",
+      "since": "2026-04",
+      "cells": {
+        "Core": {
+          "layer": "Core",
+          "state": "passed",
+          "counts": {
+            "passed": 1,
+            "failed": 0,
+            "skipped": 0,
+            "flaky": 0
+          },
+          "history": [
+            "passed"
+          ],
+          "lastRun": "nano/cargo-unit@seed@2026-06-25T06:00:00Z",
+          "freshness": {
+            "source": "nano",
+            "suite": "cargo-unit",
+            "commit": "seed",
+            "finished_at": "2026-06-25T06:00:00Z",
+            "age_min": 628
+          },
+          "tests": [
+            {
+              "test_id": "decode::tests::addi_sign_extends",
+              "status": "passed",
+              "duration_ms": 2
+            }
+          ]
+        }
+      },
+      "tested": true,
+      "green": true
+    },
+    {
+      "id": "emulator.cpu.decode-rvc",
+      "title": "RVC (compressed) expansion",
+      "area": "emulator",
+      "status": "shipped",
+      "level": "tested",
+      "spec": "nano/src/decode.rs",
+      "since": "2026-04",
+      "cells": {
+        "Core": {
+          "layer": "Core",
+          "state": "passed",
+          "counts": {
+            "passed": 1,
+            "failed": 0,
+            "skipped": 0,
+            "flaky": 0
+          },
+          "history": [
+            "passed"
+          ],
+          "lastRun": "nano/cargo-unit@seed@2026-06-25T06:00:00Z",
+          "freshness": {
+            "source": "nano",
+            "suite": "cargo-unit",
+            "commit": "seed",
+            "finished_at": "2026-06-25T06:00:00Z",
+            "age_min": 628
+          },
+          "tests": [
+            {
+              "test_id": "decode::tests::rvc_expands_addi",
+              "status": "passed",
+              "duration_ms": 2
+            }
+          ]
+        },
+        "Runtime": {
+          "layer": "Runtime",
+          "state": "passed",
+          "counts": {
+            "passed": 1,
+            "failed": 0,
+            "skipped": 0,
+            "flaky": 0
+          },
+          "history": [
+            "passed"
+          ],
+          "lastRun": "nano/node-harness@seed@2026-06-25T06:05:00Z",
+          "freshness": {
+            "source": "nano",
+            "suite": "node-harness",
+            "commit": "seed",
+            "finished_at": "2026-06-25T06:05:00Z",
+            "age_min": 623
+          },
+          "tests": [
+            {
+              "test_id": "elf/test_rvc",
+              "status": "passed",
+              "duration_ms": 55
+            }
+          ]
+        }
+      },
+      "tested": true,
+      "green": true
+    },
+    {
+      "id": "emulator.cpu.fpu",
+      "title": "RV64F/D floating point",
+      "area": "emulator",
+      "status": "shipped",
+      "level": "tested",
+      "spec": "nano/test/test_float.S",
+      "since": "2026-04",
+      "cells": {
+        "Runtime": {
+          "layer": "Runtime",
+          "state": "passed",
+          "counts": {
+            "passed": 1,
+            "failed": 0,
+            "skipped": 0,
+            "flaky": 0
+          },
+          "history": [
+            "passed"
+          ],
+          "lastRun": "nano/node-harness@seed@2026-06-25T06:05:00Z",
+          "freshness": {
+            "source": "nano",
+            "suite": "node-harness",
+            "commit": "seed",
+            "finished_at": "2026-06-25T06:05:00Z",
+            "age_min": 623
+          },
+          "tests": [
+            {
+              "test_id": "elf/test_float",
+              "status": "passed",
+              "duration_ms": 58
+            }
+          ]
+        }
+      },
+      "tested": true,
+      "green": true
+    },
+    {
+      "id": "emulator.mem.bounds",
+      "title": "Guest memory bounds & paging",
+      "area": "emulator",
+      "status": "shipped",
+      "level": "tested",
+      "spec": "nano/src/mem.rs",
+      "since": "2026-04",
+      "cells": {
+        "Core": {
+          "layer": "Core",
+          "state": "passed",
+          "counts": {
+            "passed": 1,
+            "failed": 0,
+            "skipped": 0,
+            "flaky": 0
+          },
+          "history": [
+            "passed"
+          ],
+          "lastRun": "nano/cargo-unit@seed@2026-06-25T06:00:00Z",
+          "freshness": {
+            "source": "nano",
+            "suite": "cargo-unit",
+            "commit": "seed",
+            "finished_at": "2026-06-25T06:00:00Z",
+            "age_min": 628
+          },
+          "tests": [
+            {
+              "test_id": "mem::tests::bounds_checks_guest_write",
+              "status": "passed",
+              "duration_ms": 1
+            }
+          ]
+        },
+        "Runtime": {
+          "layer": "Runtime",
+          "state": "passed",
+          "counts": {
+            "passed": 1,
+            "failed": 0,
+            "skipped": 0,
+            "flaky": 0
+          },
+          "history": [
+            "passed"
+          ],
+          "lastRun": "nano/node-harness@seed@2026-06-25T06:05:00Z",
+          "freshness": {
+            "source": "nano",
+            "suite": "node-harness",
+            "commit": "seed",
+            "finished_at": "2026-06-25T06:05:00Z",
+            "age_min": 623
+          },
+          "tests": [
+            {
+              "test_id": "elf/test_memory",
+              "status": "passed",
+              "duration_ms": 60
+            }
+          ]
+        }
+      },
+      "tested": true,
+      "green": true
+    },
+    {
+      "id": "emulator.elf.load",
+      "title": "ELF64 loader",
+      "area": "emulator",
+      "status": "shipped",
+      "level": "tested",
+      "spec": "nano/src/elf.rs",
+      "since": "2026-04",
+      "cells": {
+        "Core": {
+          "layer": "Core",
+          "state": "passed",
+          "counts": {
+            "passed": 2,
+            "failed": 0,
+            "skipped": 0,
+            "flaky": 0
+          },
+          "history": [
+            "passed"
+          ],
+          "lastRun": "nano/cargo-unit@seed@2026-06-25T06:00:00Z",
+          "freshness": {
+            "source": "nano",
+            "suite": "cargo-unit",
+            "commit": "seed",
+            "finished_at": "2026-06-25T06:00:00Z",
+            "age_min": 628
+          },
+          "tests": [
+            {
+              "test_id": "elf::tests::rejects_bad_magic",
+              "status": "passed",
+              "duration_ms": 1
+            },
+            {
+              "test_id": "elf::tests::loads_program_headers",
+              "status": "passed",
+              "duration_ms": 1
+            }
+          ]
+        },
+        "Runtime": {
+          "layer": "Runtime",
+          "state": "passed",
+          "counts": {
+            "passed": 1,
+            "failed": 0,
+            "skipped": 0,
+            "flaky": 0
+          },
+          "history": [
+            "passed"
+          ],
+          "lastRun": "nano/node-harness@seed@2026-06-25T06:05:00Z",
+          "freshness": {
+            "source": "nano",
+            "suite": "node-harness",
+            "commit": "seed",
+            "finished_at": "2026-06-25T06:05:00Z",
+            "age_min": 623
+          },
+          "tests": [
+            {
+              "test_id": "elf/hello",
+              "status": "passed",
+              "duration_ms": 40
+            }
+          ]
+        }
+      },
+      "tested": true,
+      "green": true
+    },
+    {
+      "id": "emulator.tty.termios",
+      "title": "TTY line discipline (termios)",
+      "area": "emulator",
+      "status": "shipped",
+      "level": "tested",
+      "spec": "nano/src/tty.rs",
+      "since": "2026-05",
+      "notes": "ICANON/ECHO/ISIG; ONLCR on output",
+      "cells": {
+        "Core": {
+          "layer": "Core",
+          "state": "passed",
+          "counts": {
+            "passed": 1,
+            "failed": 0,
+            "skipped": 0,
+            "flaky": 0
+          },
+          "history": [
+            "passed"
+          ],
+          "lastRun": "nano/cargo-unit@seed@2026-06-25T06:00:00Z",
+          "freshness": {
+            "source": "nano",
+            "suite": "cargo-unit",
+            "commit": "seed",
+            "finished_at": "2026-06-25T06:00:00Z",
+            "age_min": 628
+          },
+          "tests": [
+            {
+              "test_id": "tty::tests::icanon_echo_backspace",
+              "status": "passed",
+              "duration_ms": 2
+            }
+          ]
+        }
+      },
+      "tested": true,
+      "green": true
+    },
+    {
+      "id": "emulator.term.vte",
+      "title": "VTE terminal grid",
+      "area": "emulator",
+      "status": "shipped",
+      "level": "tested",
+      "spec": "nano/src/term.rs",
+      "since": "2026-05",
+      "cells": {
+        "Core": {
+          "layer": "Core",
+          "state": "passed",
+          "counts": {
+            "passed": 1,
+            "failed": 0,
+            "skipped": 0,
+            "flaky": 0
+          },
+          "history": [
+            "passed"
+          ],
+          "lastRun": "nano/cargo-unit@seed@2026-06-25T06:00:00Z",
+          "freshness": {
+            "source": "nano",
+            "suite": "cargo-unit",
+            "commit": "seed",
+            "finished_at": "2026-06-25T06:00:00Z",
+            "age_min": 628
+          },
+          "tests": [
+            {
+              "test_id": "term::tests::sgr_and_cursor",
+              "status": "passed",
+              "duration_ms": 3
+            }
+          ]
+        }
+      },
+      "tested": true,
+      "green": true
+    },
+    {
+      "id": "emulator.types.layout",
+      "title": "Vm struct layout (host-shared offsets)",
+      "area": "emulator",
+      "status": "shipped",
+      "level": "tested",
+      "spec": "nano/src/types.rs",
+      "since": "2026-04",
+      "notes": "size 12680; CWD@3680, a0@80, sp@16, status@528",
+      "cells": {
+        "Core": {
+          "layer": "Core",
+          "state": "passed",
+          "counts": {
+            "passed": 1,
+            "failed": 0,
+            "skipped": 0,
+            "flaky": 0
+          },
+          "history": [
+            "passed"
+          ],
+          "lastRun": "nano/cargo-unit@seed@2026-06-25T06:00:00Z",
+          "freshness": {
+            "source": "nano",
+            "suite": "cargo-unit",
+            "commit": "seed",
+            "finished_at": "2026-06-25T06:00:00Z",
+            "age_min": 628
+          },
+          "tests": [
+            {
+              "test_id": "types::tests::vm_layout_offsets",
+              "status": "passed",
+              "duration_ms": 1
+            }
+          ]
+        }
+      },
+      "tested": true,
+      "green": true
+    },
+    {
+      "id": "emulator.process.fork",
+      "title": "clone/fork",
+      "area": "emulator",
+      "status": "shipped",
+      "level": "tested",
+      "syscall": 220,
+      "spec": "nano/docs/syscalls.md",
+      "since": "2026-05",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "emulator.process.execve",
+      "title": "execve (tty/termios preserved)",
+      "area": "emulator",
+      "status": "shipped",
+      "level": "tested",
+      "spec": "nano/src/syscall.rs",
+      "since": "2026-05",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "emulator.process.exit",
+      "title": "exit / exit_group",
+      "area": "emulator",
+      "status": "shipped",
+      "level": "tested",
+      "syscall": 93,
+      "cells": {
+        "Runtime": {
+          "layer": "Runtime",
+          "state": "passed",
+          "counts": {
+            "passed": 1,
+            "failed": 0,
+            "skipped": 0,
+            "flaky": 0
+          },
+          "history": [
+            "passed"
+          ],
+          "lastRun": "nano/node-harness@seed@2026-06-25T06:05:00Z",
+          "freshness": {
+            "source": "nano",
+            "suite": "node-harness",
+            "commit": "seed",
+            "finished_at": "2026-06-25T06:05:00Z",
+            "age_min": 623
+          },
+          "tests": [
+            {
+              "test_id": "elf/test_syscalls",
+              "status": "passed",
+              "duration_ms": 62
+            }
+          ]
+        }
+      },
+      "tested": true,
+      "green": true
+    },
+    {
+      "id": "emulator.thread.futex",
+      "title": "futex (WAIT/WAKE)",
+      "area": "emulator",
+      "status": "shipped",
+      "level": "tested",
+      "syscall": 98,
+      "since": "2026-05",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "emulator.thread.sched-yield",
+      "title": "sched_yield",
+      "area": "emulator",
+      "status": "shipped",
+      "level": "implemented",
+      "syscall": 124,
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "emulator.ipc.pipe",
+      "title": "pipe2",
+      "area": "emulator",
+      "status": "shipped",
+      "level": "tested",
+      "syscall": 59,
+      "since": "2026-05",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "emulator.syscall.openat",
+      "title": "openat(2)",
+      "area": "emulator",
+      "status": "shipped",
+      "level": "tested",
+      "syscall": 56,
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "emulator.syscall.close",
+      "title": "close(2)",
+      "area": "emulator",
+      "status": "shipped",
+      "level": "tested",
+      "syscall": 57,
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "emulator.syscall.read",
+      "title": "read(2)",
+      "area": "emulator",
+      "status": "shipped",
+      "level": "tested",
+      "syscall": 63,
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "emulator.syscall.write",
+      "title": "write(2)",
+      "area": "emulator",
+      "status": "shipped",
+      "level": "tested",
+      "syscall": 64,
+      "notes": "ONLCR in sys_write",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "emulator.syscall.readv",
+      "title": "readv(2)",
+      "area": "emulator",
+      "status": "shipped",
+      "level": "implemented",
+      "syscall": 65,
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "emulator.syscall.writev",
+      "title": "writev(2)",
+      "area": "emulator",
+      "status": "shipped",
+      "level": "tested",
+      "syscall": 66,
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "emulator.syscall.pread64",
+      "title": "pread64(2)",
+      "area": "emulator",
+      "status": "shipped",
+      "level": "tested",
+      "syscall": 67,
+      "spec": "node v25 internalModuleReadJSON",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "emulator.syscall.preadv",
+      "title": "preadv(2)",
+      "area": "emulator",
+      "status": "partial",
+      "level": "implemented",
+      "syscall": 69,
+      "notes": "implemented but node uses pread64; thin direct coverage",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "emulator.syscall.lseek",
+      "title": "lseek(2)",
+      "area": "emulator",
+      "status": "shipped",
+      "level": "tested",
+      "syscall": 62,
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "emulator.syscall.getdents64",
+      "title": "getdents64(2)",
+      "area": "emulator",
+      "status": "shipped",
+      "level": "tested",
+      "syscall": 61,
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "emulator.syscall.newfstatat",
+      "title": "newfstatat(2)",
+      "area": "emulator",
+      "status": "shipped",
+      "level": "tested",
+      "syscall": 79,
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "emulator.syscall.fstat",
+      "title": "fstat(2)",
+      "area": "emulator",
+      "status": "shipped",
+      "level": "tested",
+      "syscall": 80,
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "emulator.syscall.statx",
+      "title": "statx(2)",
+      "area": "emulator",
+      "status": "shipped",
+      "level": "implemented",
+      "syscall": 291,
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "emulator.syscall.readlinkat",
+      "title": "readlinkat(2)",
+      "area": "emulator",
+      "status": "shipped",
+      "level": "implemented",
+      "syscall": 78,
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "emulator.syscall.mkdirat",
+      "title": "mkdirat(2)",
+      "area": "emulator",
+      "status": "shipped",
+      "level": "tested",
+      "syscall": 34,
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "emulator.syscall.unlinkat",
+      "title": "unlinkat(2)",
+      "area": "emulator",
+      "status": "shipped",
+      "level": "tested",
+      "syscall": 35,
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "emulator.syscall.renameat2",
+      "title": "renameat2(2)",
+      "area": "emulator",
+      "status": "shipped",
+      "level": "implemented",
+      "syscall": 276,
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "emulator.syscall.faccessat",
+      "title": "faccessat(2)",
+      "area": "emulator",
+      "status": "shipped",
+      "level": "implemented",
+      "syscall": 48,
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "emulator.syscall.utimensat",
+      "title": "utimensat(2)",
+      "area": "emulator",
+      "status": "shipped",
+      "level": "implemented",
+      "syscall": 88,
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "emulator.syscall.getcwd",
+      "title": "getcwd(2)",
+      "area": "emulator",
+      "status": "shipped",
+      "level": "tested",
+      "syscall": 17,
+      "cells": {
+        "Runtime": {
+          "layer": "Runtime",
+          "state": "passed",
+          "counts": {
+            "passed": 1,
+            "failed": 0,
+            "skipped": 0,
+            "flaky": 0
+          },
+          "history": [
+            "passed"
+          ],
+          "lastRun": "nano/node-harness@seed@2026-06-25T06:05:00Z",
+          "freshness": {
+            "source": "nano",
+            "suite": "node-harness",
+            "commit": "seed",
+            "finished_at": "2026-06-25T06:05:00Z",
+            "age_min": 623
+          },
+          "tests": [
+            {
+              "test_id": "busybox/pwd",
+              "status": "passed",
+              "duration_ms": 29
+            }
+          ]
+        }
+      },
+      "tested": true,
+      "green": true
+    },
+    {
+      "id": "emulator.syscall.chdir",
+      "title": "chdir(2)",
+      "area": "emulator",
+      "status": "shipped",
+      "level": "tested",
+      "syscall": 49,
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "emulator.syscall.brk",
+      "title": "brk(2)",
+      "area": "emulator",
+      "status": "shipped",
+      "level": "tested",
+      "syscall": 214,
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "emulator.syscall.mmap",
+      "title": "mmap(2)",
+      "area": "emulator",
+      "status": "shipped",
+      "level": "tested",
+      "syscall": 222,
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "emulator.syscall.mremap",
+      "title": "mremap(2)",
+      "area": "emulator",
+      "status": "shipped",
+      "level": "implemented",
+      "syscall": 216,
+      "notes": "in-place grow or MREMAP_MAYMOVE (V8 heap growth)",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "emulator.syscall.munmap",
+      "title": "munmap(2)",
+      "area": "emulator",
+      "status": "partial",
+      "level": "implemented",
+      "syscall": 215,
+      "notes": "stub no-op; bump allocator never frees",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "emulator.syscall.mprotect",
+      "title": "mprotect(2)",
+      "area": "emulator",
+      "status": "partial",
+      "level": "implemented",
+      "syscall": 226,
+      "notes": "stub returns 0",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "emulator.syscall.madvise",
+      "title": "madvise(2)",
+      "area": "emulator",
+      "status": "partial",
+      "level": "implemented",
+      "syscall": 233,
+      "notes": "stub returns 0",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "emulator.syscall.epoll",
+      "title": "epoll (create1/ctl/pwait)",
+      "area": "emulator",
+      "status": "shipped",
+      "level": "implemented",
+      "syscall": 22,
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "emulator.syscall.eventfd2",
+      "title": "eventfd2(2)",
+      "area": "emulator",
+      "status": "shipped",
+      "level": "implemented",
+      "syscall": 19,
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "emulator.syscall.ppoll",
+      "title": "ppoll(2)",
+      "area": "emulator",
+      "status": "partial",
+      "level": "implemented",
+      "syscall": 73,
+      "notes": "stub returns 0",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "emulator.net.socket",
+      "title": "socket (AF_INET/INET6)",
+      "area": "emulator",
+      "status": "shipped",
+      "level": "implemented",
+      "syscall": 198,
+      "notes": "AF_UNIX -> EAFNOSUPPORT",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "emulator.net.socketpair",
+      "title": "socketpair(2)",
+      "area": "emulator",
+      "status": "planned",
+      "level": "specified",
+      "syscall": 199,
+      "notes": "ENOSYS — not supported",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "emulator.net.bind-listen-accept",
+      "title": "bind / listen / accept4",
+      "area": "emulator",
+      "status": "shipped",
+      "level": "implemented",
+      "syscall": 242,
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "emulator.net.connect",
+      "title": "connect(2)",
+      "area": "emulator",
+      "status": "shipped",
+      "level": "implemented",
+      "syscall": 203,
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "emulator.net.sendto-recvfrom",
+      "title": "sendto / recvfrom",
+      "area": "emulator",
+      "status": "shipped",
+      "level": "implemented",
+      "syscall": 206,
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "emulator.syscall.ioctl",
+      "title": "ioctl (TIOCGWINSZ/TCGETS)",
+      "area": "emulator",
+      "status": "shipped",
+      "level": "tested",
+      "syscall": 29,
+      "notes": "ENOTTY so isatty() is false (V8 init)",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "emulator.syscall.fcntl",
+      "title": "fcntl(2)",
+      "area": "emulator",
+      "status": "shipped",
+      "level": "tested",
+      "syscall": 25,
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "emulator.syscall.dup",
+      "title": "dup / dup3",
+      "area": "emulator",
+      "status": "shipped",
+      "level": "tested",
+      "syscall": 23,
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "emulator.syscall.uname",
+      "title": "uname(2)",
+      "area": "emulator",
+      "status": "shipped",
+      "level": "tested",
+      "syscall": 160,
+      "cells": {
+        "Runtime": {
+          "layer": "Runtime",
+          "state": "passed",
+          "counts": {
+            "passed": 1,
+            "failed": 0,
+            "skipped": 0,
+            "flaky": 0
+          },
+          "history": [
+            "passed"
+          ],
+          "lastRun": "nano/node-harness@seed@2026-06-25T06:05:00Z",
+          "freshness": {
+            "source": "nano",
+            "suite": "node-harness",
+            "commit": "seed",
+            "finished_at": "2026-06-25T06:05:00Z",
+            "age_min": 623
+          },
+          "tests": [
+            {
+              "test_id": "busybox/uname",
+              "status": "passed",
+              "duration_ms": 31
+            }
+          ]
+        }
+      },
+      "tested": true,
+      "green": true
+    },
+    {
+      "id": "emulator.syscall.getrandom",
+      "title": "getrandom(2)",
+      "area": "emulator",
+      "status": "shipped",
+      "level": "implemented",
+      "syscall": 278,
+      "notes": "host Math.random via emscripten_random",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "emulator.syscall.clock-gettime",
+      "title": "clock_gettime(2)",
+      "area": "emulator",
+      "status": "shipped",
+      "level": "tested",
+      "syscall": 113,
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "emulator.syscall.prlimit64",
+      "title": "prlimit64(2)",
+      "area": "emulator",
+      "status": "shipped",
+      "level": "implemented",
+      "syscall": 261,
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "emulator.signal.stubs",
+      "title": "signal syscalls (sigaction/procmask/kill)",
+      "area": "emulator",
+      "status": "partial",
+      "level": "implemented",
+      "syscall": 134,
+      "notes": "stubs return 0; handlers never delivered",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "sdk.code.run",
+      "title": "run() — execute a command",
+      "area": "sdk",
+      "status": "shipped",
+      "since": "2026-05",
+      "cells": {
+        "SDK": {
+          "layer": "SDK",
+          "state": "passed",
+          "counts": {
+            "passed": 1,
+            "failed": 0,
+            "skipped": 0,
+            "flaky": 0
+          },
+          "history": [
+            "passed"
+          ],
+          "lastRun": "sdk/sdk-unit@seed@2026-06-25T05:40:00Z",
+          "freshness": {
+            "source": "sdk",
+            "suite": "sdk-unit",
+            "commit": "seed",
+            "finished_at": "2026-06-25T05:40:00Z",
+            "age_min": 648
+          },
+          "tests": [
+            {
+              "test_id": "code.test.mjs::run echo",
+              "status": "passed",
+              "duration_ms": 220
+            }
+          ]
+        }
+      },
+      "tested": true,
+      "green": true
+    },
+    {
+      "id": "sdk.code.exec",
+      "title": "shExec() — pipeline exec",
+      "area": "sdk",
+      "status": "shipped",
+      "since": "2026-05",
+      "cells": {
+        "SDK": {
+          "layer": "SDK",
+          "state": "passed",
+          "counts": {
+            "passed": 1,
+            "failed": 0,
+            "skipped": 0,
+            "flaky": 0
+          },
+          "history": [
+            "passed"
+          ],
+          "lastRun": "sdk/sdk-unit@seed@2026-06-25T05:40:00Z",
+          "freshness": {
+            "source": "sdk",
+            "suite": "sdk-unit",
+            "commit": "seed",
+            "finished_at": "2026-06-25T05:40:00Z",
+            "age_min": 648
+          },
+          "tests": [
+            {
+              "test_id": "code.test.mjs::shExec sort|head",
+              "status": "passed",
+              "duration_ms": 260
+            }
+          ]
+        }
+      },
+      "tested": true,
+      "green": true
+    },
+    {
+      "id": "sdk.vfs.rw",
+      "title": "virtual filesystem read/write",
+      "area": "sdk",
+      "status": "shipped",
+      "since": "2026-05",
+      "cells": {
+        "SDK": {
+          "layer": "SDK",
+          "state": "passed",
+          "counts": {
+            "passed": 1,
+            "failed": 0,
+            "skipped": 0,
+            "flaky": 0
+          },
+          "history": [
+            "passed"
+          ],
+          "lastRun": "sdk/sdk-unit@seed@2026-06-25T05:40:00Z",
+          "freshness": {
+            "source": "sdk",
+            "suite": "sdk-unit",
+            "commit": "seed",
+            "finished_at": "2026-06-25T05:40:00Z",
+            "age_min": 648
+          },
+          "tests": [
+            {
+              "test_id": "vfs.test.mjs::write then read",
+              "status": "passed",
+              "duration_ms": 180
+            }
+          ]
+        }
+      },
+      "tested": true,
+      "green": true
+    },
+    {
+      "id": "sdk.shell.session",
+      "title": "persistent shell session (env",
+      "cwd)": null,
+      "area": "sdk",
+      "status": "shipped",
+      "since": "2026-05",
+      "cells": {
+        "SDK": {
+          "layer": "SDK",
+          "state": "passed",
+          "counts": {
+            "passed": 1,
+            "failed": 0,
+            "skipped": 0,
+            "flaky": 0
+          },
+          "history": [
+            "passed"
+          ],
+          "lastRun": "sdk/sdk-unit@seed@2026-06-25T05:40:00Z",
+          "freshness": {
+            "source": "sdk",
+            "suite": "sdk-unit",
+            "commit": "seed",
+            "finished_at": "2026-06-25T05:40:00Z",
+            "age_min": 648
+          },
+          "tests": [
+            {
+              "test_id": "shell.test.mjs::export persists",
+              "status": "passed",
+              "duration_ms": 210
+            }
+          ]
+        }
+      },
+      "tested": true,
+      "green": true
+    },
+    {
+      "id": "sdk.mode.terminal",
+      "title": "terminal mode",
+      "area": "sdk",
+      "status": "shipped",
+      "since": "2026-05",
+      "cells": {
+        "SDK": {
+          "layer": "SDK",
+          "state": "passed",
+          "counts": {
+            "passed": 1,
+            "failed": 0,
+            "skipped": 0,
+            "flaky": 0
+          },
+          "history": [
+            "passed"
+          ],
+          "lastRun": "sdk/sdk-unit@seed@2026-06-25T05:40:00Z",
+          "freshness": {
+            "source": "sdk",
+            "suite": "sdk-unit",
+            "commit": "seed",
+            "finished_at": "2026-06-25T05:40:00Z",
+            "age_min": 648
+          },
+          "tests": [
+            {
+              "test_id": "terminal.test.mjs::attach terminal",
+              "status": "passed",
+              "duration_ms": 240
+            }
+          ]
+        }
+      },
+      "tested": true,
+      "green": true
+    },
+    {
+      "id": "sdk.serve.http",
+      "title": "serve mode (virtual HTTP)",
+      "area": "sdk",
+      "status": "shipped",
+      "since": "2026-06",
+      "cells": {
+        "SDK": {
+          "layer": "SDK",
+          "state": "passed",
+          "counts": {
+            "passed": 1,
+            "failed": 0,
+            "skipped": 0,
+            "flaky": 0
+          },
+          "history": [
+            "passed"
+          ],
+          "lastRun": "sdk/sdk-unit@seed@2026-06-25T05:40:00Z",
+          "freshness": {
+            "source": "sdk",
+            "suite": "sdk-unit",
+            "commit": "seed",
+            "finished_at": "2026-06-25T05:40:00Z",
+            "age_min": 648
+          },
+          "tests": [
+            {
+              "test_id": "serve.test.mjs::http round trip",
+              "status": "passed",
+              "duration_ms": 320
+            }
+          ]
+        }
+      },
+      "tested": true,
+      "green": true
+    },
+    {
+      "id": "sdk.scripting.eval",
+      "title": "scripting eval + marshal (boa.wasm)",
+      "area": "sdk",
+      "status": "partial",
+      "since": "2026-06",
+      "notes": "boa.wasm engine done; ScriptEngine SDK surface not yet fully wired",
+      "cells": {
+        "SDK": {
+          "layer": "SDK",
+          "state": "passed",
+          "counts": {
+            "passed": 1,
+            "failed": 0,
+            "skipped": 0,
+            "flaky": 0
+          },
+          "history": [
+            "passed"
+          ],
+          "lastRun": "sdk/sdk-unit@seed@2026-06-25T05:40:00Z",
+          "freshness": {
+            "source": "sdk",
+            "suite": "sdk-unit",
+            "commit": "seed",
+            "finished_at": "2026-06-25T05:40:00Z",
+            "age_min": 648
+          },
+          "tests": [
+            {
+              "test_id": "scripting.test.mjs::eval and marshal",
+              "status": "passed",
+              "duration_ms": 190
+            }
+          ]
+        }
+      },
+      "tested": true,
+      "green": true
+    },
+    {
+      "id": "sdk.scripting.capability",
+      "title": "scripting capability gating",
+      "area": "sdk",
+      "status": "partial",
+      "notes": "capability denial path exists; surface in flux",
+      "cells": {
+        "SDK": {
+          "layer": "SDK",
+          "state": "passed",
+          "counts": {
+            "passed": 1,
+            "failed": 0,
+            "skipped": 0,
+            "flaky": 0
+          },
+          "history": [
+            "passed"
+          ],
+          "lastRun": "sdk/sdk-unit@seed@2026-06-25T05:40:00Z",
+          "freshness": {
+            "source": "sdk",
+            "suite": "sdk-unit",
+            "commit": "seed",
+            "finished_at": "2026-06-25T05:40:00Z",
+            "age_min": 648
+          },
+          "tests": [
+            {
+              "test_id": "scripting.test.mjs::capability denied",
+              "status": "passed",
+              "duration_ms": 150
+            }
+          ]
+        }
+      },
+      "tested": true,
+      "green": true
+    },
+    {
+      "id": "sdk.node.runtime",
+      "title": "node runner path",
+      "area": "sdk",
+      "status": "shipped",
+      "since": "2026-06",
+      "notes": "smoke 12/12; warm-restore exit-134 caveat (check stdout not exitCode)",
+      "cells": {
+        "SDK": {
+          "layer": "SDK",
+          "state": "skipped",
+          "counts": {
+            "passed": 0,
+            "failed": 0,
+            "skipped": 1,
+            "flaky": 0
+          },
+          "history": [
+            "skipped"
+          ],
+          "lastRun": "sdk/sdk-unit@seed@2026-06-25T05:40:00Z",
+          "freshness": {
+            "source": "sdk",
+            "suite": "sdk-unit",
+            "commit": "seed",
+            "finished_at": "2026-06-25T05:40:00Z",
+            "age_min": 648
+          },
+          "tests": [
+            {
+              "test_id": "node.test.mjs::node runtime",
+              "status": "skipped",
+              "duration_ms": 0
+            }
+          ]
+        }
+      },
+      "tested": true,
+      "green": false
+    },
+    {
+      "id": "terminal.boot.shell",
+      "title": "boots an interactive shell",
+      "area": "terminal",
+      "status": "shipped",
+      "since": "2026-05",
+      "cells": {
+        "Terminal": {
+          "layer": "Terminal",
+          "state": "passed",
+          "counts": {
+            "passed": 1,
+            "failed": 0,
+            "skipped": 0,
+            "flaky": 0
+          },
+          "history": [
+            "passed"
+          ],
+          "lastRun": "terminal/playwright-e2e@seed@2026-06-25T05:20:00Z",
+          "freshness": {
+            "source": "terminal",
+            "suite": "playwright-e2e",
+            "commit": "seed",
+            "finished_at": "2026-06-25T05:20:00Z",
+            "age_min": 668
+          },
+          "tests": [
+            {
+              "test_id": "terminal.spec.ts::shell boots and echoes",
+              "status": "passed",
+              "duration_ms": 4200
+            }
+          ]
+        }
+      },
+      "tested": true,
+      "green": true
+    },
+    {
+      "id": "terminal.cli.echo",
+      "title": "type a command",
+      "see output": null,
+      "area": "terminal",
+      "status": "shipped",
+      "since": "2026-05",
+      "cells": {
+        "Terminal": {
+          "layer": "Terminal",
+          "state": "passed",
+          "counts": {
+            "passed": 1,
+            "failed": 0,
+            "skipped": 0,
+            "flaky": 0
+          },
+          "history": [
+            "passed"
+          ],
+          "lastRun": "terminal/playwright-e2e@seed@2026-06-25T05:20:00Z",
+          "freshness": {
+            "source": "terminal",
+            "suite": "playwright-e2e",
+            "commit": "seed",
+            "finished_at": "2026-06-25T05:20:00Z",
+            "age_min": 668
+          },
+          "tests": [
+            {
+              "test_id": "terminal.spec.ts::shell boots and echoes",
+              "status": "passed",
+              "duration_ms": 4200
+            }
+          ]
+        }
+      },
+      "tested": true,
+      "green": true
+    },
+    {
+      "id": "terminal.palette.command",
+      "title": "command palette (Cmd-K)",
+      "area": "terminal",
+      "status": "shipped",
+      "since": "2026-05",
+      "cells": {
+        "Terminal": {
+          "layer": "Terminal",
+          "state": "passed",
+          "counts": {
+            "passed": 1,
+            "failed": 0,
+            "skipped": 0,
+            "flaky": 0
+          },
+          "history": [
+            "passed"
+          ],
+          "lastRun": "terminal/playwright-e2e@seed@2026-06-25T05:20:00Z",
+          "freshness": {
+            "source": "terminal",
+            "suite": "playwright-e2e",
+            "commit": "seed",
+            "finished_at": "2026-06-25T05:20:00Z",
+            "age_min": 668
+          },
+          "tests": [
+            {
+              "test_id": "terminal.spec.ts::Cmd-K palette filters and runs",
+              "status": "passed",
+              "duration_ms": 3100
+            }
+          ]
+        }
+      },
+      "tested": true,
+      "green": true
+    },
+    {
+      "id": "terminal.phase.0",
+      "title": "Phase 0 — bootstrap (80x25 grid, ANSI)",
+      "area": "terminal",
+      "status": "shipped",
+      "since": "2026-05",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "terminal.phase.1",
+      "title": "Phase 1 — Vello/WebGPU renderer",
+      "area": "terminal",
+      "status": "in-progress",
+      "since": "2026-06",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "terminal.phase.2",
+      "title": "Phase 2 — font atlas / GPU text",
+      "area": "terminal",
+      "status": "planned",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "terminal.phase.3",
+      "title": "Phase 3 — chrome & sessions",
+      "area": "terminal",
+      "status": "planned",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "terminal.phase.4",
+      "title": "Phase 4 — file tree & live stats",
+      "area": "terminal",
+      "status": "planned",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "terminal.a11y.mirror",
+      "title": "renderer-agnostic DOM text mirror",
+      "area": "terminal",
+      "status": "shipped",
+      "since": "2026-05",
+      "cells": {
+        "Terminal": {
+          "layer": "Terminal",
+          "state": "passed",
+          "counts": {
+            "passed": 1,
+            "failed": 0,
+            "skipped": 0,
+            "flaky": 0
+          },
+          "history": [
+            "passed"
+          ],
+          "lastRun": "terminal/playwright-e2e@seed@2026-06-25T05:20:00Z",
+          "freshness": {
+            "source": "terminal",
+            "suite": "playwright-e2e",
+            "commit": "seed",
+            "finished_at": "2026-06-25T05:20:00Z",
+            "age_min": 668
+          },
+          "tests": [
+            {
+              "test_id": "terminal.spec.ts::a11y mirror reflects screen",
+              "status": "passed",
+              "duration_ms": 3800
+            }
+          ]
+        }
+      },
+      "tested": true,
+      "green": true
+    }
+  ]
+}
