@@ -1,16 +1,15 @@
 # userland.run — status
 
-> Generated 2026-06-25T17:19:20.821Z · live at https://status.userland.run
+> Generated 2026-06-25T17:25:21.885Z · live at https://status.userland.run
 
-**47 / 48 tested features green** (98%) · 91 shipped (88%) · 0 failing now · 45 shipped-but-untested · 0 drift
+**48 / 49 tested features green** (98%) · 91 shipped (88%) · 0 failing now · 44 shipped-but-untested · 0 drift
 
 ## Red now
 Nothing failing. 🟢
 
-## Shipped but untested (45)
+## Shipped but untested (44)
 - `busybox.ls` — ls
 - `catalog.pipeline.publish` — package + sign + publish (CDN)
-- `emulator.cpu.decode-rv64` — RV64I instruction decode
 - `emulator.tty.termios` — TTY line discipline (termios)
 - `emulator.term.vte` — VTE terminal grid
 - `emulator.process.fork` — clone/fork
@@ -23,7 +22,8 @@ Nothing failing. 🟢
 - `emulator.syscall.read` — read(2)
 - `emulator.syscall.write` — write(2)
 - `emulator.syscall.readv` — readv(2)
-- …and 30 more
+- `emulator.syscall.writev` — writev(2)
+- …and 29 more
 
 ## Drift (0)
 No drift. 🟢
@@ -31,7 +31,7 @@ No drift. 🟢
 ## Areas
 | Area | Features | Shipped | Green (of tested) |
 | ---- | -------- | ------- | ----------------- |
-| RISC-V emulator & Linux syscalls | 57 | 88% | 100% (8/8) |
+| RISC-V emulator & Linux syscalls | 57 | 88% | 100% (9/9) |
 | BusyBox applets | 19 | 100% | 100% (18/18) |
 | Dev toolchain | 5 | 100% | 100% (5/5) |
 | TypeScript SDK | 9 | 78% | 89% (8/9) |
@@ -41,10 +41,10 @@ No drift. 🟢
 ## Suites
 | Suite | Layer | Health | Pass rate | Age (min) |
 | ----- | ----- | ------ | --------- | --------- |
-| nano/cargo-unit | Core | ok | 100% | 679 |
-| nano/node-harness | Runtime | ok | 100% | 674 |
-| sdk/sdk-unit | SDK | ok | 89% | 699 |
-| terminal/playwright-e2e | Terminal | ok | 100% | 719 |
-| catalog/catalog-conformance | Catalog | ok | 100% | 799 |
+| nano/cargo-unit | Core | ok | 100% | 685 |
+| nano/node-harness | Runtime | ok | 100% | 680 |
+| sdk/sdk-unit | SDK | ok | 89% | 705 |
+| terminal/playwright-e2e | Terminal | ok | 100% | 725 |
+| catalog/catalog-conformance | Catalog | ok | 100% | 805 |
 
 _Regenerated on every result push. Edit features in `registry/`, never this file._

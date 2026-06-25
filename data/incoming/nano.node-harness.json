@@ -8,6 +8,7 @@
   "finished_at": "2026-06-25T06:05:00Z",
   "results": [
     { "test_id": "elf/hello", "features": ["emulator.elf.load"], "status": "passed", "duration_ms": 40 },
+    { "test_id": "elf/test_suite", "features": ["emulator.cpu.decode-rv64"], "status": "passed", "duration_ms": 52 },
     { "test_id": "elf/test_rvc", "features": ["emulator.cpu.decode-rvc"], "status": "passed", "duration_ms": 55 },
     { "test_id": "elf/test_memory", "features": ["emulator.mem.bounds"], "status": "passed", "duration_ms": 60 },
     { "test_id": "elf/test_float", "features": ["emulator.cpu.fpu"], "status": "passed", "duration_ms": 58 },
