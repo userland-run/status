@@ -16,6 +16,7 @@ import { loadSuites } from "./suites";
 import { loadResults } from "./loadResults";
 import { join } from "./join";
 import { buildState } from "./drift";
+import { detectTransitions, type BugsJson } from "./bugs";
 import { writeState, serializeState } from "./emitState";
 import { renderStatusMd } from "./emitStatusMd";
 
@@ -34,6 +35,7 @@ function normalize(state: StateJson): unknown {
 export interface RunResult {
   state: StateJson;
   statusMd: string;
+  bugs: BugsJson;
   errors: string[];
 }
 
@@ -49,14 +51,15 @@ export function generate(root: string, now: Date): RunResult {
   const joinResult = join(registry, suites, files, prev, now);
   const state = buildState(registry, suites, joinResult, files, malformed.map((m) => m.path), now);
   const statusMd = renderStatusMd(state);
+  const bugs = detectTransitions(prev, joinResult.features, now);
 
   const errors = [...regErrors, ...resErrors];
-  return { state, statusMd, errors };
+  return { state, statusMd, bugs, errors };
 }
 
 function main(): void {
   const check = process.argv.includes("--check");
-  const { state, statusMd, errors } = generate(ROOT, new Date());
+  const { state, statusMd, bugs, errors } = generate(ROOT, new Date());
 
   if (errors.length) {
     console.error(`✗ ${errors.length} validation error(s):`);
@@ -80,12 +83,14 @@ function main(): void {
   }
 
   writeState(pjoin(ROOT, "data"), state);
+  writeFileSync(pjoin(ROOT, "data", "bugs.json"), JSON.stringify(bugs, null, 2) + "\n");
   writeFileSync(pjoin(ROOT, "STATUS.md"), statusMd);
 
   const h = state.headline;
+  const transitions = bugs.findings.length ? ` · ${bugs.findings.length} transition(s)` : "";
   console.log(
     `✓ generated · ${h.tested}/${h.total} tested · ${h.green} green · ` +
-      `${h.failingNow} failing · ${h.untestedShipped} untested-shipped · ${h.driftCount} drift`,
+      `${h.failingNow} failing · ${h.untestedShipped} untested-shipped · ${h.driftCount} drift${transitions}`,
   );
 }
 

@@ -1,0 +1,34 @@
+name: scheduler
+
+# Central test cadence. Every 15 min, fire a workflow_dispatch at each producer
+# suite whose cron (ingest/schedules.yaml) is due. Covers "world changed"
+# freshness (dependency/runner drift) that push-triggered runs miss.
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+    inputs:
+      dry-run:
+        description: "List due suites without dispatching"
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  dispatch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - name: Fire due suites
+        # Needs actions:write on the producer repos (a PAT, not the default token).
+        env:
+          GH_TOKEN: ${{ secrets.SCHEDULER_DISPATCH_TOKEN }}
+        run: node --import tsx generator/src/scheduleTick.ts ${{ inputs.dry-run && '--dry-run' || '' }}

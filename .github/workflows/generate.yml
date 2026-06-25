@@ -46,7 +46,7 @@ jobs:
         run: |
           git config user.name  "userland-status-bot"
           git config user.email "bot@userland.run"
-          git add data/state.json data/meta.json STATUS.md
+          git add data/state.json data/meta.json data/bugs.json STATUS.md
           if git diff --staged --quiet; then
             echo "no state changes"
           else

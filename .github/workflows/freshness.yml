@@ -1,0 +1,29 @@
+name: freshness
+
+# Backstop: hourly check that every declared suite is still publishing. A suite
+# that's silent (>48h) or missing gets a tracking issue so a broken ingestion
+# path can't hide behind a stale-but-green dashboard.
+
+on:
+  schedule:
+    - cron: "0 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - name: Detect silent / missing suites
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node --import tsx generator/src/freshness.ts
