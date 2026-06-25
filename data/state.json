@@ -1,6 +1,6 @@
 {
   "contract": 1,
-  "generated_at": "2026-06-25T16:28:09.339Z",
+  "generated_at": "2026-06-25T17:19:20.821Z",
   "layers": [
     "Core",
     "Runtime",
@@ -12,11 +12,11 @@
     "total": 104,
     "shipped": 91,
     "shippedPct": 0.875,
-    "tested": 51,
-    "green": 50,
-    "greenPct": 0.9803921568627451,
+    "tested": 48,
+    "green": 47,
+    "greenPct": 0.9791666666666666,
     "failingNow": 0,
-    "untestedShipped": 42,
+    "untestedShipped": 45,
     "driftCount": 0
   },
   "areaRollups": [
@@ -33,8 +33,8 @@
       },
       "shippedPct": 0.8771929824561403,
       "greenPct": 1,
-      "tested": 11,
-      "green": 11
+      "tested": 8,
+      "green": 8
     },
     {
       "id": "busybox",
@@ -126,7 +126,7 @@
       "present": true,
       "commit": "seed",
       "finished_at": "2026-06-25T06:00:00Z",
-      "age_min": 628,
+      "age_min": 679,
       "passRate": 1,
       "health": "ok"
     },
@@ -138,7 +138,7 @@
       "present": true,
       "commit": "seed",
       "finished_at": "2026-06-25T06:05:00Z",
-      "age_min": 623,
+      "age_min": 674,
       "passRate": 1,
       "health": "ok"
     },
@@ -150,7 +150,7 @@
       "present": true,
       "commit": "seed",
       "finished_at": "2026-06-25T05:40:00Z",
-      "age_min": 648,
+      "age_min": 699,
       "passRate": 0.8888888888888888,
       "health": "ok"
     },
@@ -162,7 +162,7 @@
       "present": true,
       "commit": "seed",
       "finished_at": "2026-06-25T05:20:00Z",
-      "age_min": 668,
+      "age_min": 719,
       "passRate": 1,
       "health": "ok"
     },
@@ -174,7 +174,7 @@
       "present": true,
       "commit": "seed",
       "finished_at": "2026-06-25T04:00:00Z",
-      "age_min": 748,
+      "age_min": 799,
       "passRate": 1,
       "health": "ok"
     }
@@ -190,6 +190,21 @@
       "id": "catalog.pipeline.publish",
       "title": "package + sign + publish (CDN)",
       "area": "catalog"
+    },
+    {
+      "id": "emulator.cpu.decode-rv64",
+      "title": "RV64I instruction decode",
+      "area": "emulator"
+    },
+    {
+      "id": "emulator.tty.termios",
+      "title": "TTY line discipline (termios)",
+      "area": "emulator"
+    },
+    {
+      "id": "emulator.term.vte",
+      "title": "VTE terminal grid",
+      "area": "emulator"
     },
     {
       "id": "emulator.process.fork",
@@ -424,7 +439,7 @@
             "suite": "node-harness",
             "commit": "seed",
             "finished_at": "2026-06-25T06:05:00Z",
-            "age_min": 623
+            "age_min": 674
           },
           "tests": [
             {
@@ -462,7 +477,7 @@
             "suite": "node-harness",
             "commit": "seed",
             "finished_at": "2026-06-25T06:05:00Z",
-            "age_min": 623
+            "age_min": 674
           },
           "tests": [
             {
@@ -500,7 +515,7 @@
             "suite": "node-harness",
             "commit": "seed",
             "finished_at": "2026-06-25T06:05:00Z",
-            "age_min": 623
+            "age_min": 674
           },
           "tests": [
             {
@@ -538,7 +553,7 @@
             "suite": "node-harness",
             "commit": "seed",
             "finished_at": "2026-06-25T06:05:00Z",
-            "age_min": 623
+            "age_min": 674
           },
           "tests": [
             {
@@ -576,7 +591,7 @@
             "suite": "node-harness",
             "commit": "seed",
             "finished_at": "2026-06-25T06:05:00Z",
-            "age_min": 623
+            "age_min": 674
           },
           "tests": [
             {
@@ -614,7 +629,7 @@
             "suite": "node-harness",
             "commit": "seed",
             "finished_at": "2026-06-25T06:05:00Z",
-            "age_min": 623
+            "age_min": 674
           },
           "tests": [
             {
@@ -652,7 +667,7 @@
             "suite": "node-harness",
             "commit": "seed",
             "finished_at": "2026-06-25T06:05:00Z",
-            "age_min": 623
+            "age_min": 674
           },
           "tests": [
             {
@@ -690,7 +705,7 @@
             "suite": "node-harness",
             "commit": "seed",
             "finished_at": "2026-06-25T06:05:00Z",
-            "age_min": 623
+            "age_min": 674
           },
           "tests": [
             {
@@ -728,7 +743,7 @@
             "suite": "node-harness",
             "commit": "seed",
             "finished_at": "2026-06-25T06:05:00Z",
-            "age_min": 623
+            "age_min": 674
           },
           "tests": [
             {
@@ -766,7 +781,7 @@
             "suite": "node-harness",
             "commit": "seed",
             "finished_at": "2026-06-25T06:05:00Z",
-            "age_min": 623
+            "age_min": 674
           },
           "tests": [
             {
@@ -804,7 +819,7 @@
             "suite": "node-harness",
             "commit": "seed",
             "finished_at": "2026-06-25T06:05:00Z",
-            "age_min": 623
+            "age_min": 674
           },
           "tests": [
             {
@@ -842,7 +857,7 @@
             "suite": "node-harness",
             "commit": "seed",
             "finished_at": "2026-06-25T06:05:00Z",
-            "age_min": 623
+            "age_min": 674
           },
           "tests": [
             {
@@ -880,7 +895,7 @@
             "suite": "node-harness",
             "commit": "seed",
             "finished_at": "2026-06-25T06:05:00Z",
-            "age_min": 623
+            "age_min": 674
           },
           "tests": [
             {
@@ -918,7 +933,7 @@
             "suite": "node-harness",
             "commit": "seed",
             "finished_at": "2026-06-25T06:05:00Z",
-            "age_min": 623
+            "age_min": 674
           },
           "tests": [
             {
@@ -956,7 +971,7 @@
             "suite": "node-harness",
             "commit": "seed",
             "finished_at": "2026-06-25T06:05:00Z",
-            "age_min": 623
+            "age_min": 674
           },
           "tests": [
             {
@@ -994,7 +1009,7 @@
             "suite": "node-harness",
             "commit": "seed",
             "finished_at": "2026-06-25T06:05:00Z",
-            "age_min": 623
+            "age_min": 674
           },
           "tests": [
             {
@@ -1032,7 +1047,7 @@
             "suite": "node-harness",
             "commit": "seed",
             "finished_at": "2026-06-25T06:05:00Z",
-            "age_min": 623
+            "age_min": 674
           },
           "tests": [
             {
@@ -1070,7 +1085,7 @@
             "suite": "node-harness",
             "commit": "seed",
             "finished_at": "2026-06-25T06:05:00Z",
-            "age_min": 623
+            "age_min": 674
           },
           "tests": [
             {
@@ -1119,7 +1134,7 @@
             "suite": "catalog-conformance",
             "commit": "seed",
             "finished_at": "2026-06-25T04:00:00Z",
-            "age_min": 748
+            "age_min": 799
           },
           "tests": [
             {
@@ -1158,7 +1173,7 @@
             "suite": "catalog-conformance",
             "commit": "seed",
             "finished_at": "2026-06-25T04:00:00Z",
-            "age_min": 748
+            "age_min": 799
           },
           "tests": [
             {
@@ -1197,7 +1212,7 @@
             "suite": "catalog-conformance",
             "commit": "seed",
             "finished_at": "2026-06-25T04:00:00Z",
-            "age_min": 748
+            "age_min": 799
           },
           "tests": [
             {
@@ -1241,7 +1256,7 @@
             "suite": "catalog-conformance",
             "commit": "seed",
             "finished_at": "2026-06-25T04:00:00Z",
-            "age_min": 748
+            "age_min": 799
           },
           "tests": [
             {
@@ -1295,7 +1310,7 @@
             "suite": "node-harness",
             "commit": "seed",
             "finished_at": "2026-06-25T06:05:00Z",
-            "age_min": 623
+            "age_min": 674
           },
           "tests": [
             {
@@ -1334,7 +1349,7 @@
             "suite": "node-harness",
             "commit": "seed",
             "finished_at": "2026-06-25T06:05:00Z",
-            "age_min": 623
+            "age_min": 674
           },
           "tests": [
             {
@@ -1373,7 +1388,7 @@
             "suite": "node-harness",
             "commit": "seed",
             "finished_at": "2026-06-25T06:05:00Z",
-            "age_min": 623
+            "age_min": 674
           },
           "tests": [
             {
@@ -1412,7 +1427,7 @@
             "suite": "node-harness",
             "commit": "seed",
             "finished_at": "2026-06-25T06:05:00Z",
-            "age_min": 623
+            "age_min": 674
           },
           "tests": [
             {
@@ -1451,7 +1466,7 @@
             "suite": "node-harness",
             "commit": "seed",
             "finished_at": "2026-06-25T06:05:00Z",
-            "age_min": 623
+            "age_min": 674
           },
           "tests": [
             {
@@ -1473,38 +1488,9 @@
       "level": "tested",
       "spec": "nano/src/decode.rs",
       "since": "2026-04",
-      "cells": {
-        "Core": {
-          "layer": "Core",
-          "state": "passed",
-          "counts": {
-            "passed": 1,
-            "failed": 0,
-            "skipped": 0,
-            "flaky": 0
-          },
-          "history": [
-            "passed"
-          ],
-          "lastRun": "nano/cargo-unit@seed@2026-06-25T06:00:00Z",
-          "freshness": {
-            "source": "nano",
-            "suite": "cargo-unit",
-            "commit": "seed",
-            "finished_at": "2026-06-25T06:00:00Z",
-            "age_min": 628
-          },
-          "tests": [
-            {
-              "test_id": "decode::tests::addi_sign_extends",
-              "status": "passed",
-              "duration_ms": 2
-            }
-          ]
-        }
-      },
-      "tested": true,
-      "green": true
+      "cells": {},
+      "tested": false,
+      "green": null
     },
     {
       "id": "emulator.cpu.decode-rvc",
@@ -1519,7 +1505,7 @@
           "layer": "Core",
           "state": "passed",
           "counts": {
-            "passed": 1,
+            "passed": 6,
             "failed": 0,
             "skipped": 0,
             "flaky": 0
@@ -1533,13 +1519,38 @@
             "suite": "cargo-unit",
             "commit": "seed",
             "finished_at": "2026-06-25T06:00:00Z",
-            "age_min": 628
+            "age_min": 679
           },
           "tests": [
             {
-              "test_id": "decode::tests::rvc_expands_addi",
+              "test_id": "decode::tests::c_nop_is_canonical_nop",
               "status": "passed",
-              "duration_ms": 2
+              "duration_ms": 1
+            },
+            {
+              "test_id": "decode::tests::illegal_compressed_returns_zero",
+              "status": "passed",
+              "duration_ms": 1
+            },
+            {
+              "test_id": "decode::tests::non_compressed_returns_zero",
+              "status": "passed",
+              "duration_ms": 1
+            },
+            {
+              "test_id": "decode::tests::c_lw_expands_to_load_opcode",
+              "status": "passed",
+              "duration_ms": 1
+            },
+            {
+              "test_id": "decode::tests::c_sw_expands_to_store_opcode",
+              "status": "passed",
+              "duration_ms": 1
+            },
+            {
+              "test_id": "decode::tests::c_addi_expands_to_opimm",
+              "status": "passed",
+              "duration_ms": 1
             }
           ]
         },
@@ -1561,7 +1572,7 @@
             "suite": "node-harness",
             "commit": "seed",
             "finished_at": "2026-06-25T06:05:00Z",
-            "age_min": 623
+            "age_min": 674
           },
           "tests": [
             {
@@ -1602,7 +1613,7 @@
             "suite": "node-harness",
             "commit": "seed",
             "finished_at": "2026-06-25T06:05:00Z",
-            "age_min": 623
+            "age_min": 674
           },
           "tests": [
             {
@@ -1625,34 +1636,6 @@
       "spec": "nano/src/mem.rs",
       "since": "2026-04",
       "cells": {
-        "Core": {
-          "layer": "Core",
-          "state": "passed",
-          "counts": {
-            "passed": 1,
-            "failed": 0,
-            "skipped": 0,
-            "flaky": 0
-          },
-          "history": [
-            "passed"
-          ],
-          "lastRun": "nano/cargo-unit@seed@2026-06-25T06:00:00Z",
-          "freshness": {
-            "source": "nano",
-            "suite": "cargo-unit",
-            "commit": "seed",
-            "finished_at": "2026-06-25T06:00:00Z",
-            "age_min": 628
-          },
-          "tests": [
-            {
-              "test_id": "mem::tests::bounds_checks_guest_write",
-              "status": "passed",
-              "duration_ms": 1
-            }
-          ]
-        },
         "Runtime": {
           "layer": "Runtime",
           "state": "passed",
@@ -1671,7 +1654,7 @@
             "suite": "node-harness",
             "commit": "seed",
             "finished_at": "2026-06-25T06:05:00Z",
-            "age_min": 623
+            "age_min": 674
           },
           "tests": [
             {
@@ -1694,39 +1677,6 @@
       "spec": "nano/src/elf.rs",
       "since": "2026-04",
       "cells": {
-        "Core": {
-          "layer": "Core",
-          "state": "passed",
-          "counts": {
-            "passed": 2,
-            "failed": 0,
-            "skipped": 0,
-            "flaky": 0
-          },
-          "history": [
-            "passed"
-          ],
-          "lastRun": "nano/cargo-unit@seed@2026-06-25T06:00:00Z",
-          "freshness": {
-            "source": "nano",
-            "suite": "cargo-unit",
-            "commit": "seed",
-            "finished_at": "2026-06-25T06:00:00Z",
-            "age_min": 628
-          },
-          "tests": [
-            {
-              "test_id": "elf::tests::rejects_bad_magic",
-              "status": "passed",
-              "duration_ms": 1
-            },
-            {
-              "test_id": "elf::tests::loads_program_headers",
-              "status": "passed",
-              "duration_ms": 1
-            }
-          ]
-        },
         "Runtime": {
           "layer": "Runtime",
           "state": "passed",
@@ -1745,7 +1695,7 @@
             "suite": "node-harness",
             "commit": "seed",
             "finished_at": "2026-06-25T06:05:00Z",
-            "age_min": 623
+            "age_min": 674
           },
           "tests": [
             {
@@ -1768,38 +1718,9 @@
       "spec": "nano/src/tty.rs",
       "since": "2026-05",
       "notes": "ICANON/ECHO/ISIG; ONLCR on output",
-      "cells": {
-        "Core": {
-          "layer": "Core",
-          "state": "passed",
-          "counts": {
-            "passed": 1,
-            "failed": 0,
-            "skipped": 0,
-            "flaky": 0
-          },
-          "history": [
-            "passed"
-          ],
-          "lastRun": "nano/cargo-unit@seed@2026-06-25T06:00:00Z",
-          "freshness": {
-            "source": "nano",
-            "suite": "cargo-unit",
-            "commit": "seed",
-            "finished_at": "2026-06-25T06:00:00Z",
-            "age_min": 628
-          },
-          "tests": [
-            {
-              "test_id": "tty::tests::icanon_echo_backspace",
-              "status": "passed",
-              "duration_ms": 2
-            }
-          ]
-        }
-      },
-      "tested": true,
-      "green": true
+      "cells": {},
+      "tested": false,
+      "green": null
     },
     {
       "id": "emulator.term.vte",
@@ -1809,38 +1730,9 @@
       "level": "tested",
       "spec": "nano/src/term.rs",
       "since": "2026-05",
-      "cells": {
-        "Core": {
-          "layer": "Core",
-          "state": "passed",
-          "counts": {
-            "passed": 1,
-            "failed": 0,
-            "skipped": 0,
-            "flaky": 0
-          },
-          "history": [
-            "passed"
-          ],
-          "lastRun": "nano/cargo-unit@seed@2026-06-25T06:00:00Z",
-          "freshness": {
-            "source": "nano",
-            "suite": "cargo-unit",
-            "commit": "seed",
-            "finished_at": "2026-06-25T06:00:00Z",
-            "age_min": 628
-          },
-          "tests": [
-            {
-              "test_id": "term::tests::sgr_and_cursor",
-              "status": "passed",
-              "duration_ms": 3
-            }
-          ]
-        }
-      },
-      "tested": true,
-      "green": true
+      "cells": {},
+      "tested": false,
+      "green": null
     },
     {
       "id": "emulator.types.layout",
@@ -1856,7 +1748,7 @@
           "layer": "Core",
           "state": "passed",
           "counts": {
-            "passed": 1,
+            "passed": 4,
             "failed": 0,
             "skipped": 0,
             "flaky": 0
@@ -1870,11 +1762,26 @@
             "suite": "cargo-unit",
             "commit": "seed",
             "finished_at": "2026-06-25T06:00:00Z",
-            "age_min": 628
+            "age_min": 679
           },
           "tests": [
             {
-              "test_id": "types::tests::vm_layout_offsets",
+              "test_id": "types::tests::vm_size_is_locked",
+              "status": "passed",
+              "duration_ms": 1
+            },
+            {
+              "test_id": "types::tests::host_shared_offsets_are_stable",
+              "status": "passed",
+              "duration_ms": 1
+            },
+            {
+              "test_id": "types::tests::a0_and_sp_register_offsets",
+              "status": "passed",
+              "duration_ms": 1
+            },
+            {
+              "test_id": "types::tests::fsrequest_path_buffers_are_256",
               "status": "passed",
               "duration_ms": 1
             }
@@ -1935,7 +1842,7 @@
             "suite": "node-harness",
             "commit": "seed",
             "finished_at": "2026-06-25T06:05:00Z",
-            "age_min": 623
+            "age_min": 674
           },
           "tests": [
             {
@@ -2222,7 +2129,7 @@
             "suite": "node-harness",
             "commit": "seed",
             "finished_at": "2026-06-25T06:05:00Z",
-            "age_min": 623
+            "age_min": 674
           },
           "tests": [
             {
@@ -2468,7 +2375,7 @@
             "suite": "node-harness",
             "commit": "seed",
             "finished_at": "2026-06-25T06:05:00Z",
-            "age_min": 623
+            "age_min": 674
           },
           "tests": [
             {
@@ -2553,7 +2460,7 @@
             "suite": "sdk-unit",
             "commit": "seed",
             "finished_at": "2026-06-25T05:40:00Z",
-            "age_min": 648
+            "age_min": 699
           },
           "tests": [
             {
@@ -2592,7 +2499,7 @@
             "suite": "sdk-unit",
             "commit": "seed",
             "finished_at": "2026-06-25T05:40:00Z",
-            "age_min": 648
+            "age_min": 699
           },
           "tests": [
             {
@@ -2631,7 +2538,7 @@
             "suite": "sdk-unit",
             "commit": "seed",
             "finished_at": "2026-06-25T05:40:00Z",
-            "age_min": 648
+            "age_min": 699
           },
           "tests": [
             {
@@ -2671,7 +2578,7 @@
             "suite": "sdk-unit",
             "commit": "seed",
             "finished_at": "2026-06-25T05:40:00Z",
-            "age_min": 648
+            "age_min": 699
           },
           "tests": [
             {
@@ -2710,7 +2617,7 @@
             "suite": "sdk-unit",
             "commit": "seed",
             "finished_at": "2026-06-25T05:40:00Z",
-            "age_min": 648
+            "age_min": 699
           },
           "tests": [
             {
@@ -2749,7 +2656,7 @@
             "suite": "sdk-unit",
             "commit": "seed",
             "finished_at": "2026-06-25T05:40:00Z",
-            "age_min": 648
+            "age_min": 699
           },
           "tests": [
             {
@@ -2789,7 +2696,7 @@
             "suite": "sdk-unit",
             "commit": "seed",
             "finished_at": "2026-06-25T05:40:00Z",
-            "age_min": 648
+            "age_min": 699
           },
           "tests": [
             {
@@ -2828,7 +2735,7 @@
             "suite": "sdk-unit",
             "commit": "seed",
             "finished_at": "2026-06-25T05:40:00Z",
-            "age_min": 648
+            "age_min": 699
           },
           "tests": [
             {
@@ -2868,7 +2775,7 @@
             "suite": "sdk-unit",
             "commit": "seed",
             "finished_at": "2026-06-25T05:40:00Z",
-            "age_min": 648
+            "age_min": 699
           },
           "tests": [
             {
@@ -2907,7 +2814,7 @@
             "suite": "playwright-e2e",
             "commit": "seed",
             "finished_at": "2026-06-25T05:20:00Z",
-            "age_min": 668
+            "age_min": 719
           },
           "tests": [
             {
@@ -2947,7 +2854,7 @@
             "suite": "playwright-e2e",
             "commit": "seed",
             "finished_at": "2026-06-25T05:20:00Z",
-            "age_min": 668
+            "age_min": 719
           },
           "tests": [
             {
@@ -2986,7 +2893,7 @@
             "suite": "playwright-e2e",
             "commit": "seed",
             "finished_at": "2026-06-25T05:20:00Z",
-            "age_min": 668
+            "age_min": 719
           },
           "tests": [
             {
@@ -3072,7 +2979,7 @@
             "suite": "playwright-e2e",
             "commit": "seed",
             "finished_at": "2026-06-25T05:20:00Z",
-            "age_min": 668
+            "age_min": 719
           },
           "tests": [
             {

@@ -7,13 +7,15 @@
   "run_id": "seed",
   "finished_at": "2026-06-25T06:00:00Z",
   "results": [
-    { "test_id": "decode::tests::addi_sign_extends", "features": ["emulator.cpu.decode-rv64"], "status": "passed", "duration_ms": 2 },
-    { "test_id": "decode::tests::rvc_expands_addi", "features": ["emulator.cpu.decode-rvc"], "status": "passed", "duration_ms": 2 },
-    { "test_id": "elf::tests::rejects_bad_magic", "features": ["emulator.elf.load"], "status": "passed", "duration_ms": 1 },
-    { "test_id": "elf::tests::loads_program_headers", "features": ["emulator.elf.load"], "status": "passed", "duration_ms": 1 },
-    { "test_id": "mem::tests::bounds_checks_guest_write", "features": ["emulator.mem.bounds"], "status": "passed", "duration_ms": 1 },
-    { "test_id": "term::tests::sgr_and_cursor", "features": ["emulator.term.vte"], "status": "passed", "duration_ms": 3 },
-    { "test_id": "tty::tests::icanon_echo_backspace", "features": ["emulator.tty.termios"], "status": "passed", "duration_ms": 2 },
-    { "test_id": "types::tests::vm_layout_offsets", "features": ["emulator.types.layout"], "status": "passed", "duration_ms": 1 }
+    { "test_id": "decode::tests::c_nop_is_canonical_nop", "features": ["emulator.cpu.decode-rvc"], "status": "passed", "duration_ms": 1 },
+    { "test_id": "decode::tests::illegal_compressed_returns_zero", "features": ["emulator.cpu.decode-rvc"], "status": "passed", "duration_ms": 1 },
+    { "test_id": "decode::tests::non_compressed_returns_zero", "features": ["emulator.cpu.decode-rvc"], "status": "passed", "duration_ms": 1 },
+    { "test_id": "decode::tests::c_lw_expands_to_load_opcode", "features": ["emulator.cpu.decode-rvc"], "status": "passed", "duration_ms": 1 },
+    { "test_id": "decode::tests::c_sw_expands_to_store_opcode", "features": ["emulator.cpu.decode-rvc"], "status": "passed", "duration_ms": 1 },
+    { "test_id": "decode::tests::c_addi_expands_to_opimm", "features": ["emulator.cpu.decode-rvc"], "status": "passed", "duration_ms": 1 },
+    { "test_id": "types::tests::vm_size_is_locked", "features": ["emulator.types.layout"], "status": "passed", "duration_ms": 1 },
+    { "test_id": "types::tests::host_shared_offsets_are_stable", "features": ["emulator.types.layout"], "status": "passed", "duration_ms": 1 },
+    { "test_id": "types::tests::a0_and_sp_register_offsets", "features": ["emulator.types.layout"], "status": "passed", "duration_ms": 1 },
+    { "test_id": "types::tests::fsrequest_path_buffers_are_256", "features": ["emulator.types.layout"], "status": "passed", "duration_ms": 1 }
   ]
 }

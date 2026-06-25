@@ -1,0 +1,53 @@
+# SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-UEL
+# Copyright (C) 2026 And The Next GmbH - https://userland.run
+#
+# Producers add this as the last step of their default-branch CI. It validates a
+# userland-results.json against the contract + the live registry (the unknown-id
+# gate) and commits it to userland-run/status at data/incoming/<source>.<suite>.json,
+# which triggers the hub's generate workflow.
+#
+#   - uses: userland-run/status/.github/actions/publish-results@main
+#     if: github.ref == 'refs/heads/main'
+#     with:
+#       source: nano
+#       suite: cargo-unit
+#       results-file: userland-results.json
+#       token: ${{ secrets.STATUS_DISPATCH_TOKEN }}
+
+name: Publish results to userland.run status
+description: Validate a userland-results.json and commit it to the status hub.
+
+inputs:
+  source:
+    description: Producer repo short name (matches an area owner, e.g. nano).
+    required: true
+  suite:
+    description: Suite name, unique per source (e.g. cargo-unit).
+    required: true
+  results-file:
+    description: Path to the userland-results.json to publish.
+    required: true
+    default: userland-results.json
+  token:
+    description: PAT with Contents write on userland-run/status. If empty, validate-only.
+    required: false
+    default: ""
+  status-repo:
+    description: The hub repo to publish into.
+    required: false
+    default: userland-run/status
+
+runs:
+  using: composite
+  steps:
+    - name: Validate and publish
+      shell: bash
+      env:
+        STATUS_TOKEN: ${{ inputs.token }}
+      run: |
+        node "$GITHUB_ACTION_PATH/publish.mjs" \
+          --source "${{ inputs.source }}" \
+          --suite "${{ inputs.suite }}" \
+          --results "${{ inputs.results-file }}" \
+          --status-repo "${{ inputs.status-repo }}" \
+          --action-path "$GITHUB_ACTION_PATH"
