@@ -2,19 +2,217 @@
   "contract": 1,
   "source": "sdk",
   "suite": "sdk-unit",
-  "commit": "seed",
+  "commit": "cdf811c",
   "branch": "main",
-  "run_id": "seed",
-  "finished_at": "2026-06-25T05:40:00Z",
+  "run_id": "28228790732",
+  "finished_at": "2026-06-26T10:22:21.657Z",
   "results": [
-    { "test_id": "code.test.mjs::run echo", "features": ["sdk.code.run"], "status": "passed", "duration_ms": 220 },
-    { "test_id": "code.test.mjs::shExec sort|head", "features": ["sdk.code.exec"], "status": "passed", "duration_ms": 260 },
-    { "test_id": "vfs.test.mjs::write then read", "features": ["sdk.vfs.rw"], "status": "passed", "duration_ms": 180 },
-    { "test_id": "shell.test.mjs::export persists", "features": ["sdk.shell.session"], "status": "passed", "duration_ms": 210 },
-    { "test_id": "terminal.test.mjs::attach terminal", "features": ["sdk.mode.terminal"], "status": "passed", "duration_ms": 240 },
-    { "test_id": "serve.test.mjs::http round trip", "features": ["sdk.serve.http"], "status": "passed", "duration_ms": 320 },
-    { "test_id": "scripting.test.mjs::eval and marshal", "features": ["sdk.scripting.eval"], "status": "passed", "duration_ms": 190 },
-    { "test_id": "scripting.test.mjs::capability denied", "features": ["sdk.scripting.capability"], "status": "passed", "duration_ms": 150 },
-    { "test_id": "node.test.mjs::node runtime", "features": ["sdk.node.runtime"], "status": "skipped", "duration_ms": 0 }
+    {
+      "test_id": "code.test.mjs::run() executes a BusyBox command and captures stdout [feat:sdk.code.run]",
+      "features": [
+        "sdk.code.run"
+      ],
+      "status": "passed",
+      "duration_ms": 89,
+      "retries": 0
+    },
+    {
+      "test_id": "code.test.mjs::shExec() runs a real sh pipeline [feat:sdk.code.exec]",
+      "features": [
+        "sdk.code.exec"
+      ],
+      "status": "passed",
+      "duration_ms": 330,
+      "retries": 0
+    },
+    {
+      "test_id": "code.test.mjs::exec() single-quotes argv and runs it through sh [feat:sdk.code.exec]",
+      "features": [
+        "sdk.code.exec"
+      ],
+      "status": "passed",
+      "duration_ms": 2,
+      "retries": 0
+    },
+    {
+      "test_id": "node.test.mjs::node() cold-runs a script and prints its output [feat:sdk.node.runtime]",
+      "features": [
+        "sdk.node.runtime"
+      ],
+      "status": "skipped",
+      "duration_ms": 1,
+      "retries": 0
+    },
+    {
+      "test_id": "node.test.mjs::nodeRuntime warms a snapshot and restores it [feat:sdk.node.runtime]",
+      "features": [
+        "sdk.node.runtime"
+      ],
+      "status": "skipped",
+      "duration_ms": 0,
+      "retries": 0
+    },
+    {
+      "test_id": "node.test.mjs::nodeRuntime restores are isolated from each other [feat:sdk.node.runtime]",
+      "features": [
+        "sdk.node.runtime"
+      ],
+      "status": "skipped",
+      "duration_ms": 0,
+      "retries": 0
+    },
+    {
+      "test_id": "scripting.test.mjs::script eval marshals a JSON result [feat:sdk.scripting.eval]",
+      "features": [
+        "sdk.scripting.eval"
+      ],
+      "status": "passed",
+      "duration_ms": 133,
+      "retries": 0
+    },
+    {
+      "test_id": "scripting.test.mjs::registerFunction + defineGlobal drive a long-lived engine [feat:sdk.scripting.eval]",
+      "features": [
+        "sdk.scripting.eval"
+      ],
+      "status": "passed",
+      "duration_ms": 6,
+      "retries": 0
+    },
+    {
+      "test_id": "scripting.test.mjs::a script with no run grant cannot reach nano.run [feat:sdk.scripting.capability]",
+      "features": [
+        "sdk.scripting.capability"
+      ],
+      "status": "passed",
+      "duration_ms": 2,
+      "retries": 0
+    },
+    {
+      "test_id": "scripting.test.mjs::fs:readonly + run grants let a script drive the VM [feat:sdk.scripting.capability]",
+      "features": [
+        "sdk.scripting.capability"
+      ],
+      "status": "passed",
+      "duration_ms": 8,
+      "retries": 0
+    },
+    {
+      "test_id": "serve.test.mjs::parseHttpResponse parses status line, headers, and body [feat:sdk.serve.http]",
+      "features": [
+        "sdk.serve.http"
+      ],
+      "status": "passed",
+      "duration_ms": 88,
+      "retries": 0
+    },
+    {
+      "test_id": "serve.test.mjs::parseHttpResponse decodes Transfer-Encoding: chunked [feat:sdk.serve.http]",
+      "features": [
+        "sdk.serve.http"
+      ],
+      "status": "passed",
+      "duration_ms": 0,
+      "retries": 0
+    },
+    {
+      "test_id": "serve.test.mjs::startServer rejects when the launch exits before readiness [feat:sdk.serve.http]",
+      "features": [
+        "sdk.serve.http"
+      ],
+      "status": "passed",
+      "duration_ms": 4,
+      "retries": 0
+    },
+    {
+      "test_id": "shell.test.mjs::export persists across shell.run() calls [feat:sdk.shell.session]",
+      "features": [
+        "sdk.shell.session"
+      ],
+      "status": "passed",
+      "duration_ms": 92,
+      "retries": 0
+    },
+    {
+      "test_id": "shell.test.mjs::cd tracks cwd across runs [feat:sdk.shell.session]",
+      "features": [
+        "sdk.shell.session"
+      ],
+      "status": "passed",
+      "duration_ms": 169,
+      "retries": 0
+    },
+    {
+      "test_id": "shell.test.mjs::constructor env seeds the session environment [feat:sdk.shell.session]",
+      "features": [
+        "sdk.shell.session"
+      ],
+      "status": "passed",
+      "duration_ms": 2,
+      "retries": 0
+    },
+    {
+      "test_id": "terminal.test.mjs::clear builtin emits the terminal reset sequence [feat:sdk.mode.terminal]",
+      "features": [
+        "sdk.mode.terminal"
+      ],
+      "status": "passed",
+      "duration_ms": 85,
+      "retries": 0
+    },
+    {
+      "test_id": "terminal.test.mjs::pwd builtin renders the tracked cwd without spawning [feat:sdk.mode.terminal]",
+      "features": [
+        "sdk.mode.terminal"
+      ],
+      "status": "passed",
+      "duration_ms": 0,
+      "retries": 0
+    },
+    {
+      "test_id": "terminal.test.mjs::onData streams command output as it is produced [feat:sdk.mode.terminal]",
+      "features": [
+        "sdk.mode.terminal"
+      ],
+      "status": "passed",
+      "duration_ms": 7,
+      "retries": 0
+    },
+    {
+      "test_id": "vfs.test.mjs::writeFile + readText round-trip through MemFS [feat:sdk.vfs.rw]",
+      "features": [
+        "sdk.vfs.rw"
+      ],
+      "status": "passed",
+      "duration_ms": 88,
+      "retries": 0
+    },
+    {
+      "test_id": "vfs.test.mjs::exists reflects file presence [feat:sdk.vfs.rw]",
+      "features": [
+        "sdk.vfs.rw"
+      ],
+      "status": "passed",
+      "duration_ms": 0,
+      "retries": 0
+    },
+    {
+      "test_id": "vfs.test.mjs::mkdir + copy + walk via BusyBox [feat:sdk.vfs.rw]",
+      "features": [
+        "sdk.vfs.rw"
+      ],
+      "status": "passed",
+      "duration_ms": 331,
+      "retries": 0
+    },
+    {
+      "test_id": "vfs.test.mjs::list returns typed directory entries [feat:sdk.vfs.rw]",
+      "features": [
+        "sdk.vfs.rw"
+      ],
+      "status": "passed",
+      "duration_ms": 0,
+      "retries": 0
+    }
   ]
 }
