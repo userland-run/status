@@ -2,10 +2,10 @@
   "contract": 1,
   "source": "catalog",
   "suite": "catalog-conformance",
-  "commit": "46b49fd",
+  "commit": "0a7efd0",
   "branch": "main",
-  "run_id": "28232315437",
-  "finished_at": "2026-06-26T10:27:39.857Z",
+  "run_id": "28232562174",
+  "finished_at": "2026-06-26T10:33:00.578Z",
   "results": [
     {
       "test_id": "recipes/hello-c/test/run.json",
@@ -17,7 +17,7 @@
       "status": "passed",
       "duration_ms": 3,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28232315437"
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28232562174"
     }
   ]
 }
