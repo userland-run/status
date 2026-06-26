@@ -1,6 +1,6 @@
 {
   "contract": 1,
-  "generated_at": "2026-06-25T17:30:34.672Z",
+  "generated_at": "2026-06-26T09:13:31.827Z",
   "layers": [
     "Core",
     "Runtime",
@@ -126,7 +126,7 @@
       "present": true,
       "commit": "seed",
       "finished_at": "2026-06-25T06:00:00Z",
-      "age_min": 690,
+      "age_min": 1633,
       "passRate": 1,
       "health": "ok"
     },
@@ -138,7 +138,7 @@
       "present": true,
       "commit": "seed",
       "finished_at": "2026-06-25T06:05:00Z",
-      "age_min": 685,
+      "age_min": 1628,
       "passRate": 1,
       "health": "ok"
     },
@@ -150,7 +150,7 @@
       "present": true,
       "commit": "seed",
       "finished_at": "2026-06-25T05:40:00Z",
-      "age_min": 710,
+      "age_min": 1653,
       "passRate": 0.8888888888888888,
       "health": "ok"
     },
@@ -162,7 +162,7 @@
       "present": true,
       "commit": "seed",
       "finished_at": "2026-06-25T05:20:00Z",
-      "age_min": 730,
+      "age_min": 1673,
       "passRate": 1,
       "health": "ok"
     },
@@ -174,7 +174,7 @@
       "present": true,
       "commit": "seed",
       "finished_at": "2026-06-25T04:00:00Z",
-      "age_min": 810,
+      "age_min": 1753,
       "passRate": 1,
       "health": "ok"
     }
@@ -434,7 +434,7 @@
             "suite": "node-harness",
             "commit": "seed",
             "finished_at": "2026-06-25T06:05:00Z",
-            "age_min": 685
+            "age_min": 1628
           },
           "tests": [
             {
@@ -472,7 +472,7 @@
             "suite": "node-harness",
             "commit": "seed",
             "finished_at": "2026-06-25T06:05:00Z",
-            "age_min": 685
+            "age_min": 1628
           },
           "tests": [
             {
@@ -510,7 +510,7 @@
             "suite": "node-harness",
             "commit": "seed",
             "finished_at": "2026-06-25T06:05:00Z",
-            "age_min": 685
+            "age_min": 1628
           },
           "tests": [
             {
@@ -548,7 +548,7 @@
             "suite": "node-harness",
             "commit": "seed",
             "finished_at": "2026-06-25T06:05:00Z",
-            "age_min": 685
+            "age_min": 1628
           },
           "tests": [
             {
@@ -586,7 +586,7 @@
             "suite": "node-harness",
             "commit": "seed",
             "finished_at": "2026-06-25T06:05:00Z",
-            "age_min": 685
+            "age_min": 1628
           },
           "tests": [
             {
@@ -624,7 +624,7 @@
             "suite": "node-harness",
             "commit": "seed",
             "finished_at": "2026-06-25T06:05:00Z",
-            "age_min": 685
+            "age_min": 1628
           },
           "tests": [
             {
@@ -662,7 +662,7 @@
             "suite": "node-harness",
             "commit": "seed",
             "finished_at": "2026-06-25T06:05:00Z",
-            "age_min": 685
+            "age_min": 1628
           },
           "tests": [
             {
@@ -700,7 +700,7 @@
             "suite": "node-harness",
             "commit": "seed",
             "finished_at": "2026-06-25T06:05:00Z",
-            "age_min": 685
+            "age_min": 1628
           },
           "tests": [
             {
@@ -738,7 +738,7 @@
             "suite": "node-harness",
             "commit": "seed",
             "finished_at": "2026-06-25T06:05:00Z",
-            "age_min": 685
+            "age_min": 1628
           },
           "tests": [
             {
@@ -776,7 +776,7 @@
             "suite": "node-harness",
             "commit": "seed",
             "finished_at": "2026-06-25T06:05:00Z",
-            "age_min": 685
+            "age_min": 1628
           },
           "tests": [
             {
@@ -814,7 +814,7 @@
             "suite": "node-harness",
             "commit": "seed",
             "finished_at": "2026-06-25T06:05:00Z",
-            "age_min": 685
+            "age_min": 1628
           },
           "tests": [
             {
@@ -852,7 +852,7 @@
             "suite": "node-harness",
             "commit": "seed",
             "finished_at": "2026-06-25T06:05:00Z",
-            "age_min": 685
+            "age_min": 1628
           },
           "tests": [
             {
@@ -890,7 +890,7 @@
             "suite": "node-harness",
             "commit": "seed",
             "finished_at": "2026-06-25T06:05:00Z",
-            "age_min": 685
+            "age_min": 1628
           },
           "tests": [
             {
@@ -928,7 +928,7 @@
             "suite": "node-harness",
             "commit": "seed",
             "finished_at": "2026-06-25T06:05:00Z",
-            "age_min": 685
+            "age_min": 1628
           },
           "tests": [
             {
@@ -966,7 +966,7 @@
             "suite": "node-harness",
             "commit": "seed",
             "finished_at": "2026-06-25T06:05:00Z",
-            "age_min": 685
+            "age_min": 1628
           },
           "tests": [
             {
@@ -1004,7 +1004,7 @@
             "suite": "node-harness",
             "commit": "seed",
             "finished_at": "2026-06-25T06:05:00Z",
-            "age_min": 685
+            "age_min": 1628
           },
           "tests": [
             {
@@ -1042,7 +1042,7 @@
             "suite": "node-harness",
             "commit": "seed",
             "finished_at": "2026-06-25T06:05:00Z",
-            "age_min": 685
+            "age_min": 1628
           },
           "tests": [
             {
@@ -1080,7 +1080,7 @@
             "suite": "node-harness",
             "commit": "seed",
             "finished_at": "2026-06-25T06:05:00Z",
-            "age_min": 685
+            "age_min": 1628
           },
           "tests": [
             {
@@ -1129,7 +1129,7 @@
             "suite": "catalog-conformance",
             "commit": "seed",
             "finished_at": "2026-06-25T04:00:00Z",
-            "age_min": 810
+            "age_min": 1753
           },
           "tests": [
             {
@@ -1168,7 +1168,7 @@
             "suite": "catalog-conformance",
             "commit": "seed",
             "finished_at": "2026-06-25T04:00:00Z",
-            "age_min": 810
+            "age_min": 1753
           },
           "tests": [
             {
@@ -1207,7 +1207,7 @@
             "suite": "catalog-conformance",
             "commit": "seed",
             "finished_at": "2026-06-25T04:00:00Z",
-            "age_min": 810
+            "age_min": 1753
           },
           "tests": [
             {
@@ -1251,7 +1251,7 @@
             "suite": "catalog-conformance",
             "commit": "seed",
             "finished_at": "2026-06-25T04:00:00Z",
-            "age_min": 810
+            "age_min": 1753
           },
           "tests": [
             {
@@ -1305,7 +1305,7 @@
             "suite": "node-harness",
             "commit": "seed",
             "finished_at": "2026-06-25T06:05:00Z",
-            "age_min": 685
+            "age_min": 1628
           },
           "tests": [
             {
@@ -1344,7 +1344,7 @@
             "suite": "node-harness",
             "commit": "seed",
             "finished_at": "2026-06-25T06:05:00Z",
-            "age_min": 685
+            "age_min": 1628
           },
           "tests": [
             {
@@ -1383,7 +1383,7 @@
             "suite": "node-harness",
             "commit": "seed",
             "finished_at": "2026-06-25T06:05:00Z",
-            "age_min": 685
+            "age_min": 1628
           },
           "tests": [
             {
@@ -1422,7 +1422,7 @@
             "suite": "node-harness",
             "commit": "seed",
             "finished_at": "2026-06-25T06:05:00Z",
-            "age_min": 685
+            "age_min": 1628
           },
           "tests": [
             {
@@ -1461,7 +1461,7 @@
             "suite": "node-harness",
             "commit": "seed",
             "finished_at": "2026-06-25T06:05:00Z",
-            "age_min": 685
+            "age_min": 1628
           },
           "tests": [
             {
@@ -1502,7 +1502,7 @@
             "suite": "node-harness",
             "commit": "seed",
             "finished_at": "2026-06-25T06:05:00Z",
-            "age_min": 685
+            "age_min": 1628
           },
           "tests": [
             {
@@ -1543,7 +1543,7 @@
             "suite": "cargo-unit",
             "commit": "seed",
             "finished_at": "2026-06-25T06:00:00Z",
-            "age_min": 690
+            "age_min": 1633
           },
           "tests": [
             {
@@ -1596,7 +1596,7 @@
             "suite": "node-harness",
             "commit": "seed",
             "finished_at": "2026-06-25T06:05:00Z",
-            "age_min": 685
+            "age_min": 1628
           },
           "tests": [
             {
@@ -1637,7 +1637,7 @@
             "suite": "node-harness",
             "commit": "seed",
             "finished_at": "2026-06-25T06:05:00Z",
-            "age_min": 685
+            "age_min": 1628
           },
           "tests": [
             {
@@ -1678,7 +1678,7 @@
             "suite": "node-harness",
             "commit": "seed",
             "finished_at": "2026-06-25T06:05:00Z",
-            "age_min": 685
+            "age_min": 1628
           },
           "tests": [
             {
@@ -1719,7 +1719,7 @@
             "suite": "node-harness",
             "commit": "seed",
             "finished_at": "2026-06-25T06:05:00Z",
-            "age_min": 685
+            "age_min": 1628
           },
           "tests": [
             {
@@ -1786,7 +1786,7 @@
             "suite": "cargo-unit",
             "commit": "seed",
             "finished_at": "2026-06-25T06:00:00Z",
-            "age_min": 690
+            "age_min": 1633
           },
           "tests": [
             {
@@ -1866,7 +1866,7 @@
             "suite": "node-harness",
             "commit": "seed",
             "finished_at": "2026-06-25T06:05:00Z",
-            "age_min": 685
+            "age_min": 1628
           },
           "tests": [
             {
@@ -2153,7 +2153,7 @@
             "suite": "node-harness",
             "commit": "seed",
             "finished_at": "2026-06-25T06:05:00Z",
-            "age_min": 685
+            "age_min": 1628
           },
           "tests": [
             {
@@ -2399,7 +2399,7 @@
             "suite": "node-harness",
             "commit": "seed",
             "finished_at": "2026-06-25T06:05:00Z",
-            "age_min": 685
+            "age_min": 1628
           },
           "tests": [
             {
@@ -2484,7 +2484,7 @@
             "suite": "sdk-unit",
             "commit": "seed",
             "finished_at": "2026-06-25T05:40:00Z",
-            "age_min": 710
+            "age_min": 1653
           },
           "tests": [
             {
@@ -2523,7 +2523,7 @@
             "suite": "sdk-unit",
             "commit": "seed",
             "finished_at": "2026-06-25T05:40:00Z",
-            "age_min": 710
+            "age_min": 1653
           },
           "tests": [
             {
@@ -2562,7 +2562,7 @@
             "suite": "sdk-unit",
             "commit": "seed",
             "finished_at": "2026-06-25T05:40:00Z",
-            "age_min": 710
+            "age_min": 1653
           },
           "tests": [
             {
@@ -2602,7 +2602,7 @@
             "suite": "sdk-unit",
             "commit": "seed",
             "finished_at": "2026-06-25T05:40:00Z",
-            "age_min": 710
+            "age_min": 1653
           },
           "tests": [
             {
@@ -2641,7 +2641,7 @@
             "suite": "sdk-unit",
             "commit": "seed",
             "finished_at": "2026-06-25T05:40:00Z",
-            "age_min": 710
+            "age_min": 1653
           },
           "tests": [
             {
@@ -2680,7 +2680,7 @@
             "suite": "sdk-unit",
             "commit": "seed",
             "finished_at": "2026-06-25T05:40:00Z",
-            "age_min": 710
+            "age_min": 1653
           },
           "tests": [
             {
@@ -2720,7 +2720,7 @@
             "suite": "sdk-unit",
             "commit": "seed",
             "finished_at": "2026-06-25T05:40:00Z",
-            "age_min": 710
+            "age_min": 1653
           },
           "tests": [
             {
@@ -2759,7 +2759,7 @@
             "suite": "sdk-unit",
             "commit": "seed",
             "finished_at": "2026-06-25T05:40:00Z",
-            "age_min": 710
+            "age_min": 1653
           },
           "tests": [
             {
@@ -2799,7 +2799,7 @@
             "suite": "sdk-unit",
             "commit": "seed",
             "finished_at": "2026-06-25T05:40:00Z",
-            "age_min": 710
+            "age_min": 1653
           },
           "tests": [
             {
@@ -2838,7 +2838,7 @@
             "suite": "playwright-e2e",
             "commit": "seed",
             "finished_at": "2026-06-25T05:20:00Z",
-            "age_min": 730
+            "age_min": 1673
           },
           "tests": [
             {
@@ -2878,7 +2878,7 @@
             "suite": "playwright-e2e",
             "commit": "seed",
             "finished_at": "2026-06-25T05:20:00Z",
-            "age_min": 730
+            "age_min": 1673
           },
           "tests": [
             {
@@ -2917,7 +2917,7 @@
             "suite": "playwright-e2e",
             "commit": "seed",
             "finished_at": "2026-06-25T05:20:00Z",
-            "age_min": 730
+            "age_min": 1673
           },
           "tests": [
             {
@@ -3003,7 +3003,7 @@
             "suite": "playwright-e2e",
             "commit": "seed",
             "finished_at": "2026-06-25T05:20:00Z",
-            "age_min": 730
+            "age_min": 1673
           },
           "tests": [
             {
