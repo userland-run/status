@@ -2,12 +2,22 @@
   "contract": 1,
   "source": "catalog",
   "suite": "catalog-conformance",
-  "commit": "seed",
+  "commit": "46b49fd",
   "branch": "main",
-  "run_id": "seed",
-  "finished_at": "2026-06-25T04:00:00Z",
+  "run_id": "28232315437",
+  "finished_at": "2026-06-26T10:27:39.857Z",
   "results": [
-    { "test_id": "recipes/hello-c/test/run.json", "features": ["catalog.recipe.hello-c", "catalog.pipeline.conformance", "catalog.pipeline.gate"], "status": "passed", "duration_ms": 90 },
-    { "test_id": "recipes/ripgrep/test/run.json", "features": ["catalog.recipe.ripgrep", "catalog.pipeline.conformance", "catalog.pipeline.gate"], "status": "passed", "duration_ms": 410 }
+    {
+      "test_id": "recipes/hello-c/test/run.json",
+      "features": [
+        "catalog.recipe.hello-c",
+        "catalog.pipeline.conformance",
+        "catalog.pipeline.gate"
+      ],
+      "status": "passed",
+      "duration_ms": 3,
+      "retries": 0,
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28232315437"
+    }
   ]
 }
