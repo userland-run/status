@@ -2,10 +2,10 @@
   "contract": 1,
   "source": "catalog",
   "suite": "catalog-conformance",
-  "commit": "89e5d20",
+  "commit": "708377e",
   "branch": "main",
-  "run_id": "28281606845",
-  "finished_at": "2026-06-27T06:47:58.725Z",
+  "run_id": "28283080106",
+  "finished_at": "2026-06-27T07:54:01.279Z",
   "results": [
     {
       "test_id": "recipes/busybox/test/run.json",
@@ -17,7 +17,7 @@
       "status": "passed",
       "duration_ms": 3,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28281606845"
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28283080106"
     },
     {
       "test_id": "recipes/eslint/test/run.json",
@@ -27,9 +27,9 @@
         "catalog.pipeline.gate"
       ],
       "status": "passed",
-      "duration_ms": 9715,
+      "duration_ms": 6119,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28281606845"
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28283080106"
     },
     {
       "test_id": "recipes/hello-c/test/run.json",
@@ -39,9 +39,9 @@
         "catalog.pipeline.gate"
       ],
       "status": "passed",
-      "duration_ms": 2,
+      "duration_ms": 3,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28281606845"
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28283080106"
     },
     {
       "test_id": "recipes/node/test/run.json",
@@ -51,9 +51,9 @@
         "catalog.pipeline.gate"
       ],
       "status": "passed",
-      "duration_ms": 75,
+      "duration_ms": 86,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28281606845"
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28283080106"
     },
     {
       "test_id": "recipes/typescript/test/run.json",
@@ -63,9 +63,9 @@
         "catalog.pipeline.gate"
       ],
       "status": "passed",
-      "duration_ms": 9895,
+      "duration_ms": 9961,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28281606845"
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28283080106"
     }
   ]
 }
