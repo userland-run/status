@@ -2,11 +2,23 @@
   "contract": 1,
   "source": "catalog",
   "suite": "catalog-conformance",
-  "commit": "0a7efd0",
+  "commit": "41baa61",
   "branch": "main",
-  "run_id": "28274910849",
-  "finished_at": "2026-06-27T01:48:42.219Z",
+  "run_id": "28278631384",
+  "finished_at": "2026-06-27T04:51:57.216Z",
   "results": [
+    {
+      "test_id": "recipes/busybox/test/run.json",
+      "features": [
+        "catalog.recipe.busybox",
+        "catalog.pipeline.conformance",
+        "catalog.pipeline.gate"
+      ],
+      "status": "passed",
+      "duration_ms": 4,
+      "retries": 0,
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28278631384"
+    },
     {
       "test_id": "recipes/hello-c/test/run.json",
       "features": [
@@ -17,7 +29,19 @@
       "status": "passed",
       "duration_ms": 2,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28274910849"
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28278631384"
+    },
+    {
+      "test_id": "recipes/node/test/run.json",
+      "features": [
+        "catalog.recipe.node",
+        "catalog.pipeline.conformance",
+        "catalog.pipeline.gate"
+      ],
+      "status": "passed",
+      "duration_ms": 96,
+      "retries": 0,
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28278631384"
     }
   ]
 }
