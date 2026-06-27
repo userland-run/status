@@ -1,11 +1,13 @@
 # SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-UEL
 # Copyright (C) 2026 And The Next GmbH - https://userland.run
 #
-# The dev toolchain that runs under emulation. Versions confirmed by the nano
-# devenv test suite (make test-devenv).
+# The dev toolchain that runs under emulation. Migrated out of the embedded
+# devenv tarball into per-tool catalog recipes (see catalog.recipe.*); these ids
+# are kept as deprecated aliases, superseded by their recipe, and now verified by
+# the catalog-conformance suite rather than make test-devenv.
 
-- { id: devenv.node, title: Node.js v25.4.0, area: devenv, status: shipped, since: "2026-05" }
-- { id: devenv.npm, title: npm 11.7.0, area: devenv, status: shipped, since: "2026-05" }
-- { id: devenv.tsc, title: TypeScript 5.9.3 (tsc), area: devenv, status: shipped, since: "2026-05" }
-- { id: devenv.eslint, title: ESLint 10.0.0, area: devenv, status: shipped, since: "2026-05" }
-- { id: devenv.prettier, title: Prettier 3.8.1, area: devenv, status: shipped, since: "2026-05" }
+- { id: devenv.node, title: Node.js v25.4.0, area: devenv, status: deprecated, since: "2026-05", notes: "now distributed via the catalog", superseded_by: "catalog.recipe.node" }
+- { id: devenv.tsc, title: TypeScript 5.9.3 (tsc), area: devenv, status: deprecated, since: "2026-05", notes: "now a catalog recipe", superseded_by: "catalog.recipe.typescript" }
+- { id: devenv.eslint, title: ESLint 10.0.0, area: devenv, status: deprecated, since: "2026-05", notes: "now a catalog recipe", superseded_by: "catalog.recipe.eslint" }
+- { id: devenv.prettier, title: Prettier 3.8.1, area: devenv, status: deprecated, since: "2026-05", notes: "now a catalog recipe (pending the full-ICU node build)", superseded_by: "catalog.recipe.prettier" }
+- { id: devenv.npm, title: npm 11.7.0, area: devenv, status: deprecated, since: "2026-05", notes: "the catalog node is built --without-npm; no npm recipe yet" }

@@ -1,6 +1,6 @@
 {
   "contract": 1,
-  "generated_at": "2026-06-27T05:41:08.126Z",
+  "generated_at": "2026-06-27T07:23:31.383Z",
   "layers": [
     "Core",
     "Runtime",
@@ -10,13 +10,13 @@
   ],
   "headline": {
     "total": 110,
-    "shipped": 95,
-    "shippedPct": 0.8636363636363636,
+    "shipped": 90,
+    "shippedPct": 0.8181818181818182,
     "tested": 44,
     "green": 43,
     "greenPct": 0.9772727272727273,
     "failingNow": 0,
-    "untestedShipped": 53,
+    "untestedShipped": 48,
     "driftCount": 0
   },
   "areaRollups": [
@@ -59,11 +59,11 @@
       "byStatus": {
         "planned": 0,
         "in-progress": 0,
-        "shipped": 5,
+        "shipped": 0,
         "partial": 0,
-        "deprecated": 0
+        "deprecated": 5
       },
-      "shippedPct": 1,
+      "shippedPct": 0,
       "greenPct": 0,
       "tested": 0,
       "green": 0
@@ -126,7 +126,7 @@
       "present": true,
       "commit": "5bdf731",
       "finished_at": "2026-06-27T04:30:53.898Z",
-      "age_min": 70,
+      "age_min": 172,
       "passRate": 1,
       "health": "ok"
     },
@@ -134,11 +134,11 @@
       "source": "nano",
       "suite": "node-harness",
       "layer": "Runtime",
-      "title": "ELF + BusyBox + devenv (node harness)",
+      "title": "ELF + BusyBox integration (nightly)",
       "present": true,
       "commit": "d44f22e",
       "finished_at": "2026-06-27T04:00:49.074Z",
-      "age_min": 100,
+      "age_min": 202,
       "passRate": 1,
       "health": "ok"
     },
@@ -150,7 +150,7 @@
       "present": true,
       "commit": "2b5c49e",
       "finished_at": "2026-06-27T04:49:29.486Z",
-      "age_min": 51,
+      "age_min": 154,
       "passRate": 0.8695652173913043,
       "health": "ok"
     },
@@ -162,7 +162,7 @@
       "present": true,
       "commit": "6640c09",
       "finished_at": "2026-06-27T03:48:02.426Z",
-      "age_min": 113,
+      "age_min": 215,
       "passRate": 1,
       "health": "ok"
     },
@@ -174,7 +174,7 @@
       "present": true,
       "commit": "7c25ecf",
       "finished_at": "2026-06-27T05:31:42.586Z",
-      "age_min": 9,
+      "age_min": 111,
       "passRate": 1,
       "health": "ok"
     }
@@ -210,31 +210,6 @@
       "id": "catalog.pipeline.publish",
       "title": "package + sign + publish (CDN)",
       "area": "catalog"
-    },
-    {
-      "id": "devenv.node",
-      "title": "Node.js v25.4.0",
-      "area": "devenv"
-    },
-    {
-      "id": "devenv.npm",
-      "title": "npm 11.7.0",
-      "area": "devenv"
-    },
-    {
-      "id": "devenv.tsc",
-      "title": "TypeScript 5.9.3 (tsc)",
-      "area": "devenv"
-    },
-    {
-      "id": "devenv.eslint",
-      "title": "ESLint 10.0.0",
-      "area": "devenv"
-    },
-    {
-      "id": "devenv.prettier",
-      "title": "Prettier 3.8.1",
-      "area": "devenv"
     },
     {
       "id": "emulator.tty.termios",
@@ -489,7 +464,7 @@
             "suite": "node-harness",
             "commit": "d44f22e",
             "finished_at": "2026-06-27T04:00:49.074Z",
-            "age_min": 100
+            "age_min": 202
           },
           "tests": [
             {
@@ -528,7 +503,7 @@
             "suite": "node-harness",
             "commit": "d44f22e",
             "finished_at": "2026-06-27T04:00:49.074Z",
-            "age_min": 100
+            "age_min": 202
           },
           "tests": [
             {
@@ -567,7 +542,7 @@
             "suite": "node-harness",
             "commit": "d44f22e",
             "finished_at": "2026-06-27T04:00:49.074Z",
-            "age_min": 100
+            "age_min": 202
           },
           "tests": [
             {
@@ -606,7 +581,7 @@
             "suite": "node-harness",
             "commit": "d44f22e",
             "finished_at": "2026-06-27T04:00:49.074Z",
-            "age_min": 100
+            "age_min": 202
           },
           "tests": [
             {
@@ -645,7 +620,7 @@
             "suite": "node-harness",
             "commit": "d44f22e",
             "finished_at": "2026-06-27T04:00:49.074Z",
-            "age_min": 100
+            "age_min": 202
           },
           "tests": [
             {
@@ -684,7 +659,7 @@
             "suite": "node-harness",
             "commit": "d44f22e",
             "finished_at": "2026-06-27T04:00:49.074Z",
-            "age_min": 100
+            "age_min": 202
           },
           "tests": [
             {
@@ -723,7 +698,7 @@
             "suite": "node-harness",
             "commit": "d44f22e",
             "finished_at": "2026-06-27T04:00:49.074Z",
-            "age_min": 100
+            "age_min": 202
           },
           "tests": [
             {
@@ -762,7 +737,7 @@
             "suite": "node-harness",
             "commit": "d44f22e",
             "finished_at": "2026-06-27T04:00:49.074Z",
-            "age_min": 100
+            "age_min": 202
           },
           "tests": [
             {
@@ -801,7 +776,7 @@
             "suite": "node-harness",
             "commit": "d44f22e",
             "finished_at": "2026-06-27T04:00:49.074Z",
-            "age_min": 100
+            "age_min": 202
           },
           "tests": [
             {
@@ -840,7 +815,7 @@
             "suite": "node-harness",
             "commit": "d44f22e",
             "finished_at": "2026-06-27T04:00:49.074Z",
-            "age_min": 100
+            "age_min": 202
           },
           "tests": [
             {
@@ -879,7 +854,7 @@
             "suite": "node-harness",
             "commit": "d44f22e",
             "finished_at": "2026-06-27T04:00:49.074Z",
-            "age_min": 100
+            "age_min": 202
           },
           "tests": [
             {
@@ -918,7 +893,7 @@
             "suite": "node-harness",
             "commit": "d44f22e",
             "finished_at": "2026-06-27T04:00:49.074Z",
-            "age_min": 100
+            "age_min": 202
           },
           "tests": [
             {
@@ -957,7 +932,7 @@
             "suite": "node-harness",
             "commit": "d44f22e",
             "finished_at": "2026-06-27T04:00:49.074Z",
-            "age_min": 100
+            "age_min": 202
           },
           "tests": [
             {
@@ -996,7 +971,7 @@
             "suite": "node-harness",
             "commit": "d44f22e",
             "finished_at": "2026-06-27T04:00:49.074Z",
-            "age_min": 100
+            "age_min": 202
           },
           "tests": [
             {
@@ -1035,7 +1010,7 @@
             "suite": "node-harness",
             "commit": "d44f22e",
             "finished_at": "2026-06-27T04:00:49.074Z",
-            "age_min": 100
+            "age_min": 202
           },
           "tests": [
             {
@@ -1074,7 +1049,7 @@
             "suite": "node-harness",
             "commit": "d44f22e",
             "finished_at": "2026-06-27T04:00:49.074Z",
-            "age_min": 100
+            "age_min": 202
           },
           "tests": [
             {
@@ -1113,7 +1088,7 @@
             "suite": "node-harness",
             "commit": "d44f22e",
             "finished_at": "2026-06-27T04:00:49.074Z",
-            "age_min": 100
+            "age_min": 202
           },
           "tests": [
             {
@@ -1164,7 +1139,7 @@
             "suite": "catalog-conformance",
             "commit": "7c25ecf",
             "finished_at": "2026-06-27T05:31:42.586Z",
-            "age_min": 9
+            "age_min": 111
           },
           "tests": [
             {
@@ -1215,7 +1190,7 @@
             "suite": "catalog-conformance",
             "commit": "7c25ecf",
             "finished_at": "2026-06-27T05:31:42.586Z",
-            "age_min": 9
+            "age_min": 111
           },
           "tests": [
             {
@@ -1256,7 +1231,7 @@
             "suite": "catalog-conformance",
             "commit": "7c25ecf",
             "finished_at": "2026-06-27T05:31:42.586Z",
-            "age_min": 9
+            "age_min": 111
           },
           "tests": [
             {
@@ -1343,7 +1318,7 @@
             "suite": "catalog-conformance",
             "commit": "7c25ecf",
             "finished_at": "2026-06-27T05:31:42.586Z",
-            "age_min": 9
+            "age_min": 111
           },
           "tests": [
             {
@@ -1397,7 +1372,7 @@
             "suite": "catalog-conformance",
             "commit": "7c25ecf",
             "finished_at": "2026-06-27T05:31:42.586Z",
-            "age_min": 9
+            "age_min": 111
           },
           "tests": [
             {
@@ -1438,18 +1413,10 @@
       "id": "devenv.node",
       "title": "Node.js v25.4.0",
       "area": "devenv",
-      "status": "shipped",
+      "status": "deprecated",
       "since": "2026-05",
-      "cells": {},
-      "tested": false,
-      "green": null
-    },
-    {
-      "id": "devenv.npm",
-      "title": "npm 11.7.0",
-      "area": "devenv",
-      "status": "shipped",
-      "since": "2026-05",
+      "notes": "now distributed via the catalog",
+      "superseded_by": "catalog.recipe.node",
       "cells": {},
       "tested": false,
       "green": null
@@ -1458,8 +1425,10 @@
       "id": "devenv.tsc",
       "title": "TypeScript 5.9.3 (tsc)",
       "area": "devenv",
-      "status": "shipped",
+      "status": "deprecated",
       "since": "2026-05",
+      "notes": "now a catalog recipe",
+      "superseded_by": "catalog.recipe.typescript",
       "cells": {},
       "tested": false,
       "green": null
@@ -1468,8 +1437,10 @@
       "id": "devenv.eslint",
       "title": "ESLint 10.0.0",
       "area": "devenv",
-      "status": "shipped",
+      "status": "deprecated",
       "since": "2026-05",
+      "notes": "now a catalog recipe",
+      "superseded_by": "catalog.recipe.eslint",
       "cells": {},
       "tested": false,
       "green": null
@@ -1478,8 +1449,21 @@
       "id": "devenv.prettier",
       "title": "Prettier 3.8.1",
       "area": "devenv",
-      "status": "shipped",
+      "status": "deprecated",
       "since": "2026-05",
+      "notes": "now a catalog recipe (pending the full-ICU node build)",
+      "superseded_by": "catalog.recipe.prettier",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "devenv.npm",
+      "title": "npm 11.7.0",
+      "area": "devenv",
+      "status": "deprecated",
+      "since": "2026-05",
+      "notes": "the catalog node is built --without-npm; no npm recipe yet",
       "cells": {},
       "tested": false,
       "green": null
@@ -1512,7 +1496,7 @@
             "suite": "node-harness",
             "commit": "d44f22e",
             "finished_at": "2026-06-27T04:00:49.074Z",
-            "age_min": 100
+            "age_min": 202
           },
           "tests": [
             {
@@ -1554,7 +1538,7 @@
             "suite": "cargo-unit",
             "commit": "5bdf731",
             "finished_at": "2026-06-27T04:30:53.898Z",
-            "age_min": 70
+            "age_min": 172
           },
           "tests": [
             {
@@ -1614,7 +1598,7 @@
             "suite": "node-harness",
             "commit": "d44f22e",
             "finished_at": "2026-06-27T04:00:49.074Z",
-            "age_min": 100
+            "age_min": 202
           },
           "tests": [
             {
@@ -1656,7 +1640,7 @@
             "suite": "node-harness",
             "commit": "d44f22e",
             "finished_at": "2026-06-27T04:00:49.074Z",
-            "age_min": 100
+            "age_min": 202
           },
           "tests": [
             {
@@ -1698,7 +1682,7 @@
             "suite": "node-harness",
             "commit": "d44f22e",
             "finished_at": "2026-06-27T04:00:49.074Z",
-            "age_min": 100
+            "age_min": 202
           },
           "tests": [
             {
@@ -1740,7 +1724,7 @@
             "suite": "node-harness",
             "commit": "d44f22e",
             "finished_at": "2026-06-27T04:00:49.074Z",
-            "age_min": 100
+            "age_min": 202
           },
           "tests": [
             {
@@ -1808,7 +1792,7 @@
             "suite": "cargo-unit",
             "commit": "5bdf731",
             "finished_at": "2026-06-27T04:30:53.898Z",
-            "age_min": 70
+            "age_min": 172
           },
           "tests": [
             {
@@ -1893,7 +1877,7 @@
             "suite": "node-harness",
             "commit": "d44f22e",
             "finished_at": "2026-06-27T04:00:49.074Z",
-            "age_min": 100
+            "age_min": 202
           },
           "tests": [
             {
@@ -2181,7 +2165,7 @@
             "suite": "node-harness",
             "commit": "d44f22e",
             "finished_at": "2026-06-27T04:00:49.074Z",
-            "age_min": 100
+            "age_min": 202
           },
           "tests": [
             {
@@ -2428,7 +2412,7 @@
             "suite": "node-harness",
             "commit": "d44f22e",
             "finished_at": "2026-06-27T04:00:49.074Z",
-            "age_min": 100
+            "age_min": 202
           },
           "tests": [
             {
@@ -2515,7 +2499,7 @@
             "suite": "sdk-unit",
             "commit": "2b5c49e",
             "finished_at": "2026-06-27T04:49:29.486Z",
-            "age_min": 51
+            "age_min": 154
           },
           "tests": [
             {
@@ -2556,7 +2540,7 @@
             "suite": "sdk-unit",
             "commit": "2b5c49e",
             "finished_at": "2026-06-27T04:49:29.486Z",
-            "age_min": 51
+            "age_min": 154
           },
           "tests": [
             {
@@ -2602,7 +2586,7 @@
             "suite": "sdk-unit",
             "commit": "2b5c49e",
             "finished_at": "2026-06-27T04:49:29.486Z",
-            "age_min": 51
+            "age_min": 154
           },
           "tests": [
             {
@@ -2659,7 +2643,7 @@
             "suite": "sdk-unit",
             "commit": "2b5c49e",
             "finished_at": "2026-06-27T04:49:29.486Z",
-            "age_min": 51
+            "age_min": 154
           },
           "tests": [
             {
@@ -2710,7 +2694,7 @@
             "suite": "sdk-unit",
             "commit": "2b5c49e",
             "finished_at": "2026-06-27T04:49:29.486Z",
-            "age_min": 51
+            "age_min": 154
           },
           "tests": [
             {
@@ -2761,7 +2745,7 @@
             "suite": "sdk-unit",
             "commit": "2b5c49e",
             "finished_at": "2026-06-27T04:49:29.486Z",
-            "age_min": 51
+            "age_min": 154
           },
           "tests": [
             {
@@ -2813,7 +2797,7 @@
             "suite": "sdk-unit",
             "commit": "2b5c49e",
             "finished_at": "2026-06-27T04:49:29.486Z",
-            "age_min": 51
+            "age_min": 154
           },
           "tests": [
             {
@@ -2859,7 +2843,7 @@
             "suite": "sdk-unit",
             "commit": "2b5c49e",
             "finished_at": "2026-06-27T04:49:29.486Z",
-            "age_min": 51
+            "age_min": 154
           },
           "tests": [
             {
@@ -2906,7 +2890,7 @@
             "suite": "sdk-unit",
             "commit": "2b5c49e",
             "finished_at": "2026-06-27T04:49:29.486Z",
-            "age_min": 51
+            "age_min": 154
           },
           "tests": [
             {
@@ -2956,7 +2940,7 @@
             "suite": "playwright-e2e",
             "commit": "6640c09",
             "finished_at": "2026-06-27T03:48:02.426Z",
-            "age_min": 113
+            "age_min": 215
           },
           "tests": [
             {
@@ -2997,7 +2981,7 @@
             "suite": "playwright-e2e",
             "commit": "6640c09",
             "finished_at": "2026-06-27T03:48:02.426Z",
-            "age_min": 113
+            "age_min": 215
           },
           "tests": [
             {
@@ -3037,7 +3021,7 @@
             "suite": "playwright-e2e",
             "commit": "6640c09",
             "finished_at": "2026-06-27T03:48:02.426Z",
-            "age_min": 113
+            "age_min": 215
           },
           "tests": [
             {
@@ -3124,7 +3108,7 @@
             "suite": "playwright-e2e",
             "commit": "6640c09",
             "finished_at": "2026-06-27T03:48:02.426Z",
-            "age_min": 113
+            "age_min": 215
           },
           "tests": [
             {
