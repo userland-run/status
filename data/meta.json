@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-27T05:40:56.234Z",
+  "generated_at": "2026-06-27T05:41:08.126Z",
   "generator_version": 1,
   "sources": [
     {
@@ -19,22 +19,22 @@
     {
       "source": "sdk",
       "suite": "sdk-unit",
-      "commit": "e7cbe36",
-      "age_min": 70,
+      "commit": "2b5c49e",
+      "age_min": 51,
       "health": "ok"
     },
     {
       "source": "terminal",
       "suite": "playwright-e2e",
       "commit": "6640c09",
-      "age_min": 112,
+      "age_min": 113,
       "health": "ok"
     },
     {
       "source": "catalog",
       "suite": "catalog-conformance",
-      "commit": "0a7efd0",
-      "age_min": 232,
+      "commit": "7c25ecf",
+      "age_min": 9,
       "health": "ok"
     }
   ]
