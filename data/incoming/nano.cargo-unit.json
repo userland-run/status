@@ -2,11 +2,21 @@
   "contract": 1,
   "source": "nano",
   "suite": "cargo-unit",
-  "commit": "c5a0b57",
+  "commit": "7f3162a",
   "branch": "main",
-  "run_id": "28284769036",
-  "finished_at": "2026-06-27T09:09:25.243Z",
+  "run_id": "28284796491",
+  "finished_at": "2026-06-27T09:10:42.736Z",
   "results": [
+    {
+      "test_id": "decode::tests::c_nop_is_canonical_nop",
+      "features": [
+        "emulator.cpu.decode-rvc"
+      ],
+      "status": "passed",
+      "duration_ms": 4,
+      "retries": 0,
+      "trace_url": "https://github.com/userland-run/nano/actions/runs/28284796491"
+    },
     {
       "test_id": "decode::tests::c_sw_expands_to_store_opcode",
       "features": [
@@ -15,7 +25,7 @@
       "status": "passed",
       "duration_ms": 4,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/nano/actions/runs/28284769036"
+      "trace_url": "https://github.com/userland-run/nano/actions/runs/28284796491"
     },
     {
       "test_id": "decode::tests::c_addi_expands_to_opimm",
@@ -25,7 +35,7 @@
       "status": "passed",
       "duration_ms": 4,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/nano/actions/runs/28284769036"
+      "trace_url": "https://github.com/userland-run/nano/actions/runs/28284796491"
     },
     {
       "test_id": "decode::tests::c_lw_expands_to_load_opcode",
@@ -33,39 +43,9 @@
         "emulator.cpu.decode-rvc"
       ],
       "status": "passed",
-      "duration_ms": 4,
+      "duration_ms": 6,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/nano/actions/runs/28284769036"
-    },
-    {
-      "test_id": "decode::tests::c_nop_is_canonical_nop",
-      "features": [
-        "emulator.cpu.decode-rvc"
-      ],
-      "status": "passed",
-      "duration_ms": 5,
-      "retries": 0,
-      "trace_url": "https://github.com/userland-run/nano/actions/runs/28284769036"
-    },
-    {
-      "test_id": "types::tests::a0_and_sp_register_offsets",
-      "features": [
-        "emulator.types.layout"
-      ],
-      "status": "passed",
-      "duration_ms": 4,
-      "retries": 0,
-      "trace_url": "https://github.com/userland-run/nano/actions/runs/28284769036"
-    },
-    {
-      "test_id": "decode::tests::illegal_compressed_returns_zero",
-      "features": [
-        "emulator.cpu.decode-rvc"
-      ],
-      "status": "passed",
-      "duration_ms": 4,
-      "retries": 0,
-      "trace_url": "https://github.com/userland-run/nano/actions/runs/28284769036"
+      "trace_url": "https://github.com/userland-run/nano/actions/runs/28284796491"
     },
     {
       "test_id": "decode::tests::non_compressed_returns_zero",
@@ -75,7 +55,27 @@
       "status": "passed",
       "duration_ms": 4,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/nano/actions/runs/28284769036"
+      "trace_url": "https://github.com/userland-run/nano/actions/runs/28284796491"
+    },
+    {
+      "test_id": "decode::tests::illegal_compressed_returns_zero",
+      "features": [
+        "emulator.cpu.decode-rvc"
+      ],
+      "status": "passed",
+      "duration_ms": 4,
+      "retries": 0,
+      "trace_url": "https://github.com/userland-run/nano/actions/runs/28284796491"
+    },
+    {
+      "test_id": "types::tests::a0_and_sp_register_offsets",
+      "features": [
+        "emulator.types.layout"
+      ],
+      "status": "passed",
+      "duration_ms": 4,
+      "retries": 0,
+      "trace_url": "https://github.com/userland-run/nano/actions/runs/28284796491"
     },
     {
       "test_id": "types::tests::fsrequest_path_buffers_are_256",
@@ -83,9 +83,19 @@
         "emulator.types.layout"
       ],
       "status": "passed",
-      "duration_ms": 6,
+      "duration_ms": 4,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/nano/actions/runs/28284769036"
+      "trace_url": "https://github.com/userland-run/nano/actions/runs/28284796491"
+    },
+    {
+      "test_id": "types::tests::host_shared_offsets_are_stable",
+      "features": [
+        "emulator.types.layout"
+      ],
+      "status": "passed",
+      "duration_ms": 3,
+      "retries": 0,
+      "trace_url": "https://github.com/userland-run/nano/actions/runs/28284796491"
     },
     {
       "test_id": "types::tests::vm_size_is_locked",
@@ -95,17 +105,7 @@
       "status": "passed",
       "duration_ms": 4,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/nano/actions/runs/28284769036"
-    },
-    {
-      "test_id": "types::tests::host_shared_offsets_are_stable",
-      "features": [
-        "emulator.types.layout"
-      ],
-      "status": "passed",
-      "duration_ms": 4,
-      "retries": 0,
-      "trace_url": "https://github.com/userland-run/nano/actions/runs/28284769036"
+      "trace_url": "https://github.com/userland-run/nano/actions/runs/28284796491"
     }
   ]
 }
