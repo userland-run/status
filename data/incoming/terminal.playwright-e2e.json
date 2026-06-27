@@ -2,13 +2,38 @@
   "contract": 1,
   "source": "terminal",
   "suite": "playwright-e2e",
-  "commit": "seed",
+  "commit": "6640c09",
   "branch": "main",
-  "run_id": "seed",
-  "finished_at": "2026-06-25T05:20:00Z",
+  "run_id": "28277680310",
+  "finished_at": "2026-06-27T03:48:02.426Z",
   "results": [
-    { "test_id": "terminal.spec.ts::shell boots and echoes", "features": ["terminal.boot.shell", "terminal.cli.echo"], "status": "passed", "duration_ms": 4200 },
-    { "test_id": "terminal.spec.ts::a11y mirror reflects screen", "features": ["terminal.a11y.mirror"], "status": "passed", "duration_ms": 3800 },
-    { "test_id": "terminal.spec.ts::Cmd-K palette filters and runs", "features": ["terminal.palette.command"], "status": "passed", "duration_ms": 3100 }
+    {
+      "test_id": "tests/e2e/terminal.spec.ts::shell boots and echoes a typed command",
+      "features": [
+        "terminal.boot.shell",
+        "terminal.cli.echo"
+      ],
+      "status": "passed",
+      "duration_ms": 661,
+      "retries": 0
+    },
+    {
+      "test_id": "tests/e2e/terminal.spec.ts::a11y mirror reflects the screen",
+      "features": [
+        "terminal.a11y.mirror"
+      ],
+      "status": "passed",
+      "duration_ms": 588,
+      "retries": 0
+    },
+    {
+      "test_id": "tests/e2e/terminal.spec.ts::Cmd-K command palette filters and runs",
+      "features": [
+        "terminal.palette.command"
+      ],
+      "status": "passed",
+      "duration_ms": 426,
+      "retries": 0
+    }
   ]
 }
