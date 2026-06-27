@@ -1,29 +1,31 @@
 # userland.run — status
 
-> Generated 2026-06-27T11:46:34.519Z · live at https://status.userland.run
+> Generated 2026-06-27T11:47:13.618Z · live at https://status.userland.run
 
-**45 / 46 tested features green** (98%) · 107 shipped (84%) · 0 failing now · 63 shipped-but-untested · 0 drift
+**58 / 62 tested features green** (94%) · 107 shipped (84%) · 3 failing now · 48 shipped-but-untested · 0 drift
 
 ## Red now
-Nothing failing. 🟢
+- `catalog.recipe.prettier` — Prettier 3.8.1 (Catalog) · https://github.com/userland-run/catalog/actions/runs/28287378339
+- `catalog.pipeline.conformance` — conformance harness (Catalog) · https://github.com/userland-run/catalog/actions/runs/28287378339
+- `catalog.pipeline.gate` — syscall gate (pinned manifest) (Catalog) · https://github.com/userland-run/catalog/actions/runs/28287378339
 
-## Shipped but untested (63)
+## Shipped but untested (48)
 - `busybox.shell.ash` — ash shell (/bin/sh)
 - `busybox.ls` — ls
-- `catalog.recipe.ripgrep` — ripgrep
-- `catalog.recipe.fd` — fd (find)
-- `catalog.recipe.sd` — sd (sed alt)
-- `catalog.recipe.hexyl` — hexyl (hex viewer)
-- `catalog.recipe.oxipng` — oxipng (PNG optimizer)
-- `catalog.recipe.ast-grep` — ast-grep (structural search)
-- `catalog.recipe.delta` — delta (diff pager)
-- `catalog.recipe.yq` — yq (YAML/JSON)
-- `catalog.recipe.gron` — gron (greppable JSON)
-- `catalog.recipe.glow` — glow (markdown render)
-- `catalog.recipe.dasel` — dasel (data selector)
-- `catalog.recipe.gix` — gix (gitoxide)
-- `catalog.recipe.nfetch` — nfetch (HTTP shim)
-- …and 48 more
+- `catalog.net.bridge` — host-fetch bridge (/dev/__net__)
+- `catalog.net.cors-proxy` — Tier-1.5 CORS-proxy Worker
+- `catalog.pipeline.bottling` — topic bundles
+- `catalog.pipeline.publish` — package + sign + publish (CDN)
+- `emulator.tty.termios` — TTY line discipline (termios)
+- `emulator.term.vte` — VTE terminal grid
+- `emulator.process.fork` — clone/fork
+- `emulator.process.execve` — execve (tty/termios preserved)
+- `emulator.thread.futex` — futex (WAIT/WAKE)
+- `emulator.thread.sched-yield` — sched_yield
+- `emulator.ipc.pipe` — pipe2
+- `emulator.syscall.openat` — openat(2)
+- `emulator.syscall.close` — close(2)
+- …and 33 more
 
 ## Drift (0)
 No drift. 🟢
@@ -36,15 +38,15 @@ No drift. 🟢
 | Dev toolchain | 5 | 0% | 0% (0/0) |
 | TypeScript SDK | 9 | 78% | 89% (8/9) |
 | WebGPU console | 9 | 56% | 100% (4/4) |
-| App conformance & distribution | 29 | 90% | 100% (7/7) |
+| App conformance & distribution | 29 | 90% | 87% (20/23) |
 
 ## Suites
 | Suite | Layer | Health | Pass rate | Age (min) |
 | ----- | ----- | ------ | --------- | --------- |
-| nano/cargo-unit | Core | ok | 100% | 155 |
+| nano/cargo-unit | Core | ok | 100% | 69 |
 | nano/node-harness | Runtime | ok | 100% | 326 |
-| sdk/sdk-unit | SDK | ok | 87% | 178 |
-| terminal/playwright-e2e | Terminal | ok | 100% | 478 |
-| catalog/catalog-conformance | Catalog | ok | 100% | 152 |
+| sdk/sdk-unit | SDK | ok | 87% | 179 |
+| terminal/playwright-e2e | Terminal | ok | 100% | 479 |
+| catalog/catalog-conformance | Catalog | ok | 95% | 33 |
 
 _Regenerated on every result push. Edit features in `registry/`, never this file._
