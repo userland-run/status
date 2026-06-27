@@ -4,8 +4,8 @@
   "suite": "catalog-conformance",
   "commit": "0a7efd0",
   "branch": "main",
-  "run_id": "28232562174",
-  "finished_at": "2026-06-26T10:33:00.578Z",
+  "run_id": "28274910849",
+  "finished_at": "2026-06-27T01:48:42.219Z",
   "results": [
     {
       "test_id": "recipes/hello-c/test/run.json",
@@ -15,9 +15,9 @@
         "catalog.pipeline.gate"
       ],
       "status": "passed",
-      "duration_ms": 3,
+      "duration_ms": 2,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28232562174"
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28274910849"
     }
   ]
 }
