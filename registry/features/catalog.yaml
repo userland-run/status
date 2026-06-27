@@ -12,6 +12,33 @@
 - { id: catalog.recipe.eslint, title: "ESLint 10.0.0", area: catalog, status: shipped, since: "2026-06", notes: "per-tool multi-file recipe, runs on the node recipe" }
 - { id: catalog.recipe.prettier, title: "Prettier 3.8.1", area: catalog, status: in-progress, since: "2026-06", notes: "blocked: the nano node's small-ICU V8 rejects prettier's \\p{Lu} regex" }
 - { id: catalog.recipe.devenv, title: "devenv toolchain (per-tool recipes)", area: catalog, status: deprecated, since: "2026-06", notes: "split into per-tool recipes (typescript/eslint/prettier)", superseded_by: "catalog.recipe.typescript" }
+
+# Marketplace tools (specs/catalog/enhancements.md) — Easy single-binary Rust/Go
+# recipes added via the scaffold→CI-build→capture→publish pipeline.
+- { id: catalog.recipe.fd, title: "fd (find)", area: catalog, status: shipped, since: "2026-06" }
+- { id: catalog.recipe.sd, title: "sd (sed alt)", area: catalog, status: shipped, since: "2026-06" }
+- { id: catalog.recipe.hexyl, title: "hexyl (hex viewer)", area: catalog, status: shipped, since: "2026-06" }
+- { id: catalog.recipe.oxipng, title: "oxipng (PNG optimizer)", area: catalog, status: shipped, since: "2026-06" }
+- { id: catalog.recipe.ast-grep, title: "ast-grep (structural search)", area: catalog, status: shipped, since: "2026-06" }
+- { id: catalog.recipe.delta, title: "delta (diff pager)", area: catalog, status: shipped, since: "2026-06" }
+- { id: catalog.recipe.yq, title: "yq (YAML/JSON)", area: catalog, status: shipped, since: "2026-06" }
+- { id: catalog.recipe.gron, title: "gron (greppable JSON)", area: catalog, status: shipped, since: "2026-06" }
+- { id: catalog.recipe.glow, title: "glow (markdown render)", area: catalog, status: shipped, since: "2026-06" }
+- { id: catalog.recipe.dasel, title: "dasel (data selector)", area: catalog, status: shipped, since: "2026-06" }
+- { id: catalog.recipe.gix, title: "gix (gitoxide)", area: catalog, status: shipped, since: "2026-06", notes: "local git offline; remote-over-HTTPS needs the network bridge + CORS proxy" }
+- { id: catalog.recipe.nfetch, title: "nfetch (HTTP shim)", area: catalog, status: shipped, since: "2026-06", notes: "talks the /dev/__net__ bridge; conformed via NET record/replay fixtures" }
+- { id: catalog.recipe.mdcat, title: "mdcat (markdown cat)", area: catalog, status: in-progress, since: "2026-06", notes: "2021-era crate deps don't compile on rust 1.96 (c_char/c_long)" }
+- { id: catalog.recipe.htmlq, title: "htmlq (HTML select)", area: catalog, status: in-progress, since: "2026-06", notes: "stale crate deps don't compile on rust 1.96" }
+
+# Network-bridge story (Tier 1 + 1.5) and bottling.
+- { id: catalog.net.bridge, title: "host-fetch bridge (/dev/__net__)", area: catalog, status: shipped, since: "2026-06", notes: "Tier-1 HTTP via host fetch; verified guest GET example.com" }
+- { id: catalog.net.cors-proxy, title: "Tier-1.5 CORS-proxy Worker", area: catalog, status: shipped, since: "2026-06" }
+- { id: catalog.pipeline.bottling, title: "topic bundles", area: catalog, status: shipped, since: "2026-06", notes: "signed bundle manifests grouped from recipe [bundle] topics" }
+
+# Internal conformance smoke tests (not published apps).
+- { id: catalog.test.net-fixture, title: "NET record/replay conformance", area: catalog, status: shipped, since: "2026-06" }
+- { id: catalog.test.stdin-fixture, title: "scripted-stdin conformance", area: catalog, status: shipped, since: "2026-06" }
+
 - { id: catalog.pipeline.conformance, title: conformance harness, area: catalog, status: shipped, since: "2026-06" }
 - { id: catalog.pipeline.gate, title: syscall gate (pinned manifest), area: catalog, status: shipped, since: "2026-06" }
 - { id: catalog.pipeline.publish, title: package + sign + publish (CDN), area: catalog, status: shipped, since: "2026-06" }

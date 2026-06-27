@@ -1,6 +1,6 @@
 {
   "contract": 1,
-  "generated_at": "2026-06-27T07:24:12.586Z",
+  "generated_at": "2026-06-27T10:16:53.558Z",
   "layers": [
     "Core",
     "Runtime",
@@ -9,14 +9,14 @@
     "Catalog"
   ],
   "headline": {
-    "total": 110,
-    "shipped": 90,
-    "shippedPct": 0.8181818181818182,
+    "total": 129,
+    "shipped": 107,
+    "shippedPct": 0.8294573643410853,
     "tested": 46,
     "green": 45,
     "greenPct": 0.9782608695652174,
     "failingNow": 0,
-    "untestedShipped": 46,
+    "untestedShipped": 63,
     "driftCount": 0
   },
   "areaRollups": [
@@ -103,15 +103,15 @@
     {
       "id": "catalog",
       "title": "App conformance & distribution",
-      "total": 11,
+      "total": 30,
       "byStatus": {
         "planned": 0,
-        "in-progress": 1,
-        "shipped": 9,
+        "in-progress": 3,
+        "shipped": 26,
         "partial": 0,
         "deprecated": 1
       },
-      "shippedPct": 0.8181818181818182,
+      "shippedPct": 0.8666666666666667,
       "greenPct": 1,
       "tested": 7,
       "green": 7
@@ -126,7 +126,7 @@
       "present": true,
       "commit": "7ccded0",
       "finished_at": "2026-06-27T07:18:19.972Z",
-      "age_min": 5,
+      "age_min": 178,
       "passRate": 1,
       "health": "ok"
     },
@@ -138,7 +138,7 @@
       "present": true,
       "commit": "5bdf731",
       "finished_at": "2026-06-27T06:20:29.674Z",
-      "age_min": 63,
+      "age_min": 236,
       "passRate": 1,
       "health": "ok"
     },
@@ -150,7 +150,7 @@
       "present": true,
       "commit": "2b5c49e",
       "finished_at": "2026-06-27T04:49:29.486Z",
-      "age_min": 154,
+      "age_min": 327,
       "passRate": 0.8695652173913043,
       "health": "ok"
     },
@@ -162,7 +162,7 @@
       "present": true,
       "commit": "6640c09",
       "finished_at": "2026-06-27T03:48:02.426Z",
-      "age_min": 216,
+      "age_min": 388,
       "passRate": 1,
       "health": "ok"
     },
@@ -174,7 +174,7 @@
       "present": true,
       "commit": "89e5d20",
       "finished_at": "2026-06-27T06:47:58.725Z",
-      "age_min": 36,
+      "age_min": 208,
       "passRate": 1,
       "health": "ok"
     }
@@ -194,6 +194,91 @@
     {
       "id": "catalog.recipe.ripgrep",
       "title": "ripgrep",
+      "area": "catalog"
+    },
+    {
+      "id": "catalog.recipe.fd",
+      "title": "fd (find)",
+      "area": "catalog"
+    },
+    {
+      "id": "catalog.recipe.sd",
+      "title": "sd (sed alt)",
+      "area": "catalog"
+    },
+    {
+      "id": "catalog.recipe.hexyl",
+      "title": "hexyl (hex viewer)",
+      "area": "catalog"
+    },
+    {
+      "id": "catalog.recipe.oxipng",
+      "title": "oxipng (PNG optimizer)",
+      "area": "catalog"
+    },
+    {
+      "id": "catalog.recipe.ast-grep",
+      "title": "ast-grep (structural search)",
+      "area": "catalog"
+    },
+    {
+      "id": "catalog.recipe.delta",
+      "title": "delta (diff pager)",
+      "area": "catalog"
+    },
+    {
+      "id": "catalog.recipe.yq",
+      "title": "yq (YAML/JSON)",
+      "area": "catalog"
+    },
+    {
+      "id": "catalog.recipe.gron",
+      "title": "gron (greppable JSON)",
+      "area": "catalog"
+    },
+    {
+      "id": "catalog.recipe.glow",
+      "title": "glow (markdown render)",
+      "area": "catalog"
+    },
+    {
+      "id": "catalog.recipe.dasel",
+      "title": "dasel (data selector)",
+      "area": "catalog"
+    },
+    {
+      "id": "catalog.recipe.gix",
+      "title": "gix (gitoxide)",
+      "area": "catalog"
+    },
+    {
+      "id": "catalog.recipe.nfetch",
+      "title": "nfetch (HTTP shim)",
+      "area": "catalog"
+    },
+    {
+      "id": "catalog.net.bridge",
+      "title": "host-fetch bridge (/dev/__net__)",
+      "area": "catalog"
+    },
+    {
+      "id": "catalog.net.cors-proxy",
+      "title": "Tier-1.5 CORS-proxy Worker",
+      "area": "catalog"
+    },
+    {
+      "id": "catalog.pipeline.bottling",
+      "title": "topic bundles",
+      "area": "catalog"
+    },
+    {
+      "id": "catalog.test.net-fixture",
+      "title": "NET record/replay conformance",
+      "area": "catalog"
+    },
+    {
+      "id": "catalog.test.stdin-fixture",
+      "title": "scripted-stdin conformance",
       "area": "catalog"
     },
     {
@@ -455,7 +540,7 @@
             "suite": "node-harness",
             "commit": "5bdf731",
             "finished_at": "2026-06-27T06:20:29.674Z",
-            "age_min": 63
+            "age_min": 236
           },
           "tests": [
             {
@@ -495,7 +580,7 @@
             "suite": "node-harness",
             "commit": "5bdf731",
             "finished_at": "2026-06-27T06:20:29.674Z",
-            "age_min": 63
+            "age_min": 236
           },
           "tests": [
             {
@@ -535,7 +620,7 @@
             "suite": "node-harness",
             "commit": "5bdf731",
             "finished_at": "2026-06-27T06:20:29.674Z",
-            "age_min": 63
+            "age_min": 236
           },
           "tests": [
             {
@@ -575,7 +660,7 @@
             "suite": "node-harness",
             "commit": "5bdf731",
             "finished_at": "2026-06-27T06:20:29.674Z",
-            "age_min": 63
+            "age_min": 236
           },
           "tests": [
             {
@@ -615,7 +700,7 @@
             "suite": "node-harness",
             "commit": "5bdf731",
             "finished_at": "2026-06-27T06:20:29.674Z",
-            "age_min": 63
+            "age_min": 236
           },
           "tests": [
             {
@@ -655,7 +740,7 @@
             "suite": "node-harness",
             "commit": "5bdf731",
             "finished_at": "2026-06-27T06:20:29.674Z",
-            "age_min": 63
+            "age_min": 236
           },
           "tests": [
             {
@@ -695,7 +780,7 @@
             "suite": "node-harness",
             "commit": "5bdf731",
             "finished_at": "2026-06-27T06:20:29.674Z",
-            "age_min": 63
+            "age_min": 236
           },
           "tests": [
             {
@@ -735,7 +820,7 @@
             "suite": "node-harness",
             "commit": "5bdf731",
             "finished_at": "2026-06-27T06:20:29.674Z",
-            "age_min": 63
+            "age_min": 236
           },
           "tests": [
             {
@@ -775,7 +860,7 @@
             "suite": "node-harness",
             "commit": "5bdf731",
             "finished_at": "2026-06-27T06:20:29.674Z",
-            "age_min": 63
+            "age_min": 236
           },
           "tests": [
             {
@@ -815,7 +900,7 @@
             "suite": "node-harness",
             "commit": "5bdf731",
             "finished_at": "2026-06-27T06:20:29.674Z",
-            "age_min": 63
+            "age_min": 236
           },
           "tests": [
             {
@@ -855,7 +940,7 @@
             "suite": "node-harness",
             "commit": "5bdf731",
             "finished_at": "2026-06-27T06:20:29.674Z",
-            "age_min": 63
+            "age_min": 236
           },
           "tests": [
             {
@@ -895,7 +980,7 @@
             "suite": "node-harness",
             "commit": "5bdf731",
             "finished_at": "2026-06-27T06:20:29.674Z",
-            "age_min": 63
+            "age_min": 236
           },
           "tests": [
             {
@@ -935,7 +1020,7 @@
             "suite": "node-harness",
             "commit": "5bdf731",
             "finished_at": "2026-06-27T06:20:29.674Z",
-            "age_min": 63
+            "age_min": 236
           },
           "tests": [
             {
@@ -975,7 +1060,7 @@
             "suite": "node-harness",
             "commit": "5bdf731",
             "finished_at": "2026-06-27T06:20:29.674Z",
-            "age_min": 63
+            "age_min": 236
           },
           "tests": [
             {
@@ -1015,7 +1100,7 @@
             "suite": "node-harness",
             "commit": "5bdf731",
             "finished_at": "2026-06-27T06:20:29.674Z",
-            "age_min": 63
+            "age_min": 236
           },
           "tests": [
             {
@@ -1055,7 +1140,7 @@
             "suite": "node-harness",
             "commit": "5bdf731",
             "finished_at": "2026-06-27T06:20:29.674Z",
-            "age_min": 63
+            "age_min": 236
           },
           "tests": [
             {
@@ -1095,7 +1180,7 @@
             "suite": "node-harness",
             "commit": "5bdf731",
             "finished_at": "2026-06-27T06:20:29.674Z",
-            "age_min": 63
+            "age_min": 236
           },
           "tests": [
             {
@@ -1147,7 +1232,7 @@
             "suite": "catalog-conformance",
             "commit": "89e5d20",
             "finished_at": "2026-06-27T06:47:58.725Z",
-            "age_min": 36
+            "age_min": 208
           },
           "tests": [
             {
@@ -1199,7 +1284,7 @@
             "suite": "catalog-conformance",
             "commit": "89e5d20",
             "finished_at": "2026-06-27T06:47:58.725Z",
-            "age_min": 36
+            "age_min": 208
           },
           "tests": [
             {
@@ -1241,7 +1326,7 @@
             "suite": "catalog-conformance",
             "commit": "89e5d20",
             "finished_at": "2026-06-27T06:47:58.725Z",
-            "age_min": 36
+            "age_min": 208
           },
           "tests": [
             {
@@ -1282,7 +1367,7 @@
             "suite": "catalog-conformance",
             "commit": "89e5d20",
             "finished_at": "2026-06-27T06:47:58.725Z",
-            "age_min": 36
+            "age_min": 208
           },
           "tests": [
             {
@@ -1323,7 +1408,7 @@
             "suite": "catalog-conformance",
             "commit": "89e5d20",
             "finished_at": "2026-06-27T06:47:58.725Z",
-            "age_min": 36
+            "age_min": 208
           },
           "tests": [
             {
@@ -1362,6 +1447,202 @@
       "green": null
     },
     {
+      "id": "catalog.recipe.fd",
+      "title": "fd (find)",
+      "area": "catalog",
+      "status": "shipped",
+      "since": "2026-06",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "catalog.recipe.sd",
+      "title": "sd (sed alt)",
+      "area": "catalog",
+      "status": "shipped",
+      "since": "2026-06",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "catalog.recipe.hexyl",
+      "title": "hexyl (hex viewer)",
+      "area": "catalog",
+      "status": "shipped",
+      "since": "2026-06",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "catalog.recipe.oxipng",
+      "title": "oxipng (PNG optimizer)",
+      "area": "catalog",
+      "status": "shipped",
+      "since": "2026-06",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "catalog.recipe.ast-grep",
+      "title": "ast-grep (structural search)",
+      "area": "catalog",
+      "status": "shipped",
+      "since": "2026-06",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "catalog.recipe.delta",
+      "title": "delta (diff pager)",
+      "area": "catalog",
+      "status": "shipped",
+      "since": "2026-06",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "catalog.recipe.yq",
+      "title": "yq (YAML/JSON)",
+      "area": "catalog",
+      "status": "shipped",
+      "since": "2026-06",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "catalog.recipe.gron",
+      "title": "gron (greppable JSON)",
+      "area": "catalog",
+      "status": "shipped",
+      "since": "2026-06",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "catalog.recipe.glow",
+      "title": "glow (markdown render)",
+      "area": "catalog",
+      "status": "shipped",
+      "since": "2026-06",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "catalog.recipe.dasel",
+      "title": "dasel (data selector)",
+      "area": "catalog",
+      "status": "shipped",
+      "since": "2026-06",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "catalog.recipe.gix",
+      "title": "gix (gitoxide)",
+      "area": "catalog",
+      "status": "shipped",
+      "since": "2026-06",
+      "notes": "local git offline; remote-over-HTTPS needs the network bridge + CORS proxy",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "catalog.recipe.nfetch",
+      "title": "nfetch (HTTP shim)",
+      "area": "catalog",
+      "status": "shipped",
+      "since": "2026-06",
+      "notes": "talks the /dev/__net__ bridge; conformed via NET record/replay fixtures",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "catalog.recipe.mdcat",
+      "title": "mdcat (markdown cat)",
+      "area": "catalog",
+      "status": "in-progress",
+      "since": "2026-06",
+      "notes": "2021-era crate deps don't compile on rust 1.96 (c_char/c_long)",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "catalog.recipe.htmlq",
+      "title": "htmlq (HTML select)",
+      "area": "catalog",
+      "status": "in-progress",
+      "since": "2026-06",
+      "notes": "stale crate deps don't compile on rust 1.96",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "catalog.net.bridge",
+      "title": "host-fetch bridge (/dev/__net__)",
+      "area": "catalog",
+      "status": "shipped",
+      "since": "2026-06",
+      "notes": "Tier-1 HTTP via host fetch; verified guest GET example.com",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "catalog.net.cors-proxy",
+      "title": "Tier-1.5 CORS-proxy Worker",
+      "area": "catalog",
+      "status": "shipped",
+      "since": "2026-06",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "catalog.pipeline.bottling",
+      "title": "topic bundles",
+      "area": "catalog",
+      "status": "shipped",
+      "since": "2026-06",
+      "notes": "signed bundle manifests grouped from recipe [bundle] topics",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "catalog.test.net-fixture",
+      "title": "NET record/replay conformance",
+      "area": "catalog",
+      "status": "shipped",
+      "since": "2026-06",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "catalog.test.stdin-fixture",
+      "title": "scripted-stdin conformance",
+      "area": "catalog",
+      "status": "shipped",
+      "since": "2026-06",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
       "id": "catalog.pipeline.conformance",
       "title": "conformance harness",
       "area": "catalog",
@@ -1389,7 +1670,7 @@
             "suite": "catalog-conformance",
             "commit": "89e5d20",
             "finished_at": "2026-06-27T06:47:58.725Z",
-            "age_min": 36
+            "age_min": 208
           },
           "tests": [
             {
@@ -1456,7 +1737,7 @@
             "suite": "catalog-conformance",
             "commit": "89e5d20",
             "finished_at": "2026-06-27T06:47:58.725Z",
-            "age_min": 36
+            "age_min": 208
           },
           "tests": [
             {
@@ -1593,7 +1874,7 @@
             "suite": "node-harness",
             "commit": "5bdf731",
             "finished_at": "2026-06-27T06:20:29.674Z",
-            "age_min": 63
+            "age_min": 236
           },
           "tests": [
             {
@@ -1636,7 +1917,7 @@
             "suite": "cargo-unit",
             "commit": "7ccded0",
             "finished_at": "2026-06-27T07:18:19.972Z",
-            "age_min": 5
+            "age_min": 178
           },
           "tests": [
             {
@@ -1697,7 +1978,7 @@
             "suite": "node-harness",
             "commit": "5bdf731",
             "finished_at": "2026-06-27T06:20:29.674Z",
-            "age_min": 63
+            "age_min": 236
           },
           "tests": [
             {
@@ -1740,7 +2021,7 @@
             "suite": "node-harness",
             "commit": "5bdf731",
             "finished_at": "2026-06-27T06:20:29.674Z",
-            "age_min": 63
+            "age_min": 236
           },
           "tests": [
             {
@@ -1783,7 +2064,7 @@
             "suite": "node-harness",
             "commit": "5bdf731",
             "finished_at": "2026-06-27T06:20:29.674Z",
-            "age_min": 63
+            "age_min": 236
           },
           "tests": [
             {
@@ -1826,7 +2107,7 @@
             "suite": "node-harness",
             "commit": "5bdf731",
             "finished_at": "2026-06-27T06:20:29.674Z",
-            "age_min": 63
+            "age_min": 236
           },
           "tests": [
             {
@@ -1895,7 +2176,7 @@
             "suite": "cargo-unit",
             "commit": "7ccded0",
             "finished_at": "2026-06-27T07:18:19.972Z",
-            "age_min": 5
+            "age_min": 178
           },
           "tests": [
             {
@@ -1981,7 +2262,7 @@
             "suite": "node-harness",
             "commit": "5bdf731",
             "finished_at": "2026-06-27T06:20:29.674Z",
-            "age_min": 63
+            "age_min": 236
           },
           "tests": [
             {
@@ -2270,7 +2551,7 @@
             "suite": "node-harness",
             "commit": "5bdf731",
             "finished_at": "2026-06-27T06:20:29.674Z",
-            "age_min": 63
+            "age_min": 236
           },
           "tests": [
             {
@@ -2518,7 +2799,7 @@
             "suite": "node-harness",
             "commit": "5bdf731",
             "finished_at": "2026-06-27T06:20:29.674Z",
-            "age_min": 63
+            "age_min": 236
           },
           "tests": [
             {
@@ -2605,7 +2886,7 @@
             "suite": "sdk-unit",
             "commit": "2b5c49e",
             "finished_at": "2026-06-27T04:49:29.486Z",
-            "age_min": 154
+            "age_min": 327
           },
           "tests": [
             {
@@ -2646,7 +2927,7 @@
             "suite": "sdk-unit",
             "commit": "2b5c49e",
             "finished_at": "2026-06-27T04:49:29.486Z",
-            "age_min": 154
+            "age_min": 327
           },
           "tests": [
             {
@@ -2692,7 +2973,7 @@
             "suite": "sdk-unit",
             "commit": "2b5c49e",
             "finished_at": "2026-06-27T04:49:29.486Z",
-            "age_min": 154
+            "age_min": 327
           },
           "tests": [
             {
@@ -2749,7 +3030,7 @@
             "suite": "sdk-unit",
             "commit": "2b5c49e",
             "finished_at": "2026-06-27T04:49:29.486Z",
-            "age_min": 154
+            "age_min": 327
           },
           "tests": [
             {
@@ -2800,7 +3081,7 @@
             "suite": "sdk-unit",
             "commit": "2b5c49e",
             "finished_at": "2026-06-27T04:49:29.486Z",
-            "age_min": 154
+            "age_min": 327
           },
           "tests": [
             {
@@ -2851,7 +3132,7 @@
             "suite": "sdk-unit",
             "commit": "2b5c49e",
             "finished_at": "2026-06-27T04:49:29.486Z",
-            "age_min": 154
+            "age_min": 327
           },
           "tests": [
             {
@@ -2903,7 +3184,7 @@
             "suite": "sdk-unit",
             "commit": "2b5c49e",
             "finished_at": "2026-06-27T04:49:29.486Z",
-            "age_min": 154
+            "age_min": 327
           },
           "tests": [
             {
@@ -2949,7 +3230,7 @@
             "suite": "sdk-unit",
             "commit": "2b5c49e",
             "finished_at": "2026-06-27T04:49:29.486Z",
-            "age_min": 154
+            "age_min": 327
           },
           "tests": [
             {
@@ -2996,7 +3277,7 @@
             "suite": "sdk-unit",
             "commit": "2b5c49e",
             "finished_at": "2026-06-27T04:49:29.486Z",
-            "age_min": 154
+            "age_min": 327
           },
           "tests": [
             {
@@ -3046,7 +3327,7 @@
             "suite": "playwright-e2e",
             "commit": "6640c09",
             "finished_at": "2026-06-27T03:48:02.426Z",
-            "age_min": 216
+            "age_min": 388
           },
           "tests": [
             {
@@ -3087,7 +3368,7 @@
             "suite": "playwright-e2e",
             "commit": "6640c09",
             "finished_at": "2026-06-27T03:48:02.426Z",
-            "age_min": 216
+            "age_min": 388
           },
           "tests": [
             {
@@ -3127,7 +3408,7 @@
             "suite": "playwright-e2e",
             "commit": "6640c09",
             "finished_at": "2026-06-27T03:48:02.426Z",
-            "age_min": 216
+            "age_min": 388
           },
           "tests": [
             {
@@ -3214,7 +3495,7 @@
             "suite": "playwright-e2e",
             "commit": "6640c09",
             "finished_at": "2026-06-27T03:48:02.426Z",
-            "age_min": 216
+            "age_min": 388
           },
           "tests": [
             {

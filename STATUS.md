@@ -1,29 +1,29 @@
 # userland.run — status
 
-> Generated 2026-06-27T07:24:12.586Z · live at https://status.userland.run
+> Generated 2026-06-27T10:16:53.558Z · live at https://status.userland.run
 
-**45 / 46 tested features green** (98%) · 90 shipped (82%) · 0 failing now · 46 shipped-but-untested · 0 drift
+**45 / 46 tested features green** (98%) · 107 shipped (83%) · 0 failing now · 63 shipped-but-untested · 0 drift
 
 ## Red now
 Nothing failing. 🟢
 
-## Shipped but untested (46)
+## Shipped but untested (63)
 - `busybox.shell.ash` — ash shell (/bin/sh)
 - `busybox.ls` — ls
 - `catalog.recipe.ripgrep` — ripgrep
-- `catalog.pipeline.publish` — package + sign + publish (CDN)
-- `emulator.tty.termios` — TTY line discipline (termios)
-- `emulator.term.vte` — VTE terminal grid
-- `emulator.process.fork` — clone/fork
-- `emulator.process.execve` — execve (tty/termios preserved)
-- `emulator.thread.futex` — futex (WAIT/WAKE)
-- `emulator.thread.sched-yield` — sched_yield
-- `emulator.ipc.pipe` — pipe2
-- `emulator.syscall.openat` — openat(2)
-- `emulator.syscall.close` — close(2)
-- `emulator.syscall.read` — read(2)
-- `emulator.syscall.write` — write(2)
-- …and 31 more
+- `catalog.recipe.fd` — fd (find)
+- `catalog.recipe.sd` — sd (sed alt)
+- `catalog.recipe.hexyl` — hexyl (hex viewer)
+- `catalog.recipe.oxipng` — oxipng (PNG optimizer)
+- `catalog.recipe.ast-grep` — ast-grep (structural search)
+- `catalog.recipe.delta` — delta (diff pager)
+- `catalog.recipe.yq` — yq (YAML/JSON)
+- `catalog.recipe.gron` — gron (greppable JSON)
+- `catalog.recipe.glow` — glow (markdown render)
+- `catalog.recipe.dasel` — dasel (data selector)
+- `catalog.recipe.gix` — gix (gitoxide)
+- `catalog.recipe.nfetch` — nfetch (HTTP shim)
+- …and 48 more
 
 ## Drift (0)
 No drift. 🟢
@@ -36,15 +36,15 @@ No drift. 🟢
 | Dev toolchain | 5 | 0% | 0% (0/0) |
 | TypeScript SDK | 9 | 78% | 89% (8/9) |
 | WebGPU console | 9 | 56% | 100% (4/4) |
-| App conformance & distribution | 11 | 82% | 100% (7/7) |
+| App conformance & distribution | 30 | 87% | 100% (7/7) |
 
 ## Suites
 | Suite | Layer | Health | Pass rate | Age (min) |
 | ----- | ----- | ------ | --------- | --------- |
-| nano/cargo-unit | Core | ok | 100% | 5 |
-| nano/node-harness | Runtime | ok | 100% | 63 |
-| sdk/sdk-unit | SDK | ok | 87% | 154 |
-| terminal/playwright-e2e | Terminal | ok | 100% | 216 |
-| catalog/catalog-conformance | Catalog | ok | 100% | 36 |
+| nano/cargo-unit | Core | ok | 100% | 178 |
+| nano/node-harness | Runtime | ok | 100% | 236 |
+| sdk/sdk-unit | SDK | ok | 87% | 327 |
+| terminal/playwright-e2e | Terminal | ok | 100% | 388 |
+| catalog/catalog-conformance | Catalog | ok | 100% | 208 |
 
 _Regenerated on every result push. Edit features in `registry/`, never this file._
