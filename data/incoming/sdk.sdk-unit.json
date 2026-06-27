@@ -2,10 +2,10 @@
   "contract": 1,
   "source": "sdk",
   "suite": "sdk-unit",
-  "commit": "aca62dc",
+  "commit": "7186d2f",
   "branch": "main",
-  "run_id": "28283080575",
-  "finished_at": "2026-06-27T07:53:06.508Z",
+  "run_id": "28283460425",
+  "finished_at": "2026-06-27T08:09:33.161Z",
   "results": [
     {
       "test_id": "code.test.mjs::run() executes a BusyBox command and captures stdout [feat:sdk.code.run]",
@@ -22,7 +22,7 @@
         "sdk.code.exec"
       ],
       "status": "passed",
-      "duration_ms": 348,
+      "duration_ms": 341,
       "retries": 0
     },
     {
@@ -31,7 +31,7 @@
         "sdk.code.exec"
       ],
       "status": "passed",
-      "duration_ms": 2,
+      "duration_ms": 1,
       "retries": 0
     },
     {
@@ -67,7 +67,7 @@
         "sdk.scripting.eval"
       ],
       "status": "passed",
-      "duration_ms": 135,
+      "duration_ms": 128,
       "retries": 0
     },
     {
@@ -76,7 +76,7 @@
         "sdk.scripting.eval"
       ],
       "status": "passed",
-      "duration_ms": 6,
+      "duration_ms": 7,
       "retries": 0
     },
     {
@@ -85,7 +85,7 @@
         "sdk.scripting.capability"
       ],
       "status": "passed",
-      "duration_ms": 2,
+      "duration_ms": 1,
       "retries": 0
     },
     {
@@ -94,7 +94,7 @@
         "sdk.scripting.capability"
       ],
       "status": "passed",
-      "duration_ms": 8,
+      "duration_ms": 7,
       "retries": 0
     },
     {
@@ -103,7 +103,7 @@
         "sdk.serve.http"
       ],
       "status": "passed",
-      "duration_ms": 101,
+      "duration_ms": 88,
       "retries": 0
     },
     {
@@ -112,7 +112,7 @@
         "sdk.serve.http"
       ],
       "status": "passed",
-      "duration_ms": 0,
+      "duration_ms": 1,
       "retries": 0
     },
     {
@@ -121,7 +121,7 @@
         "sdk.serve.http"
       ],
       "status": "passed",
-      "duration_ms": 3,
+      "duration_ms": 6,
       "retries": 0
     },
     {
@@ -130,7 +130,7 @@
         "sdk.shell.session"
       ],
       "status": "passed",
-      "duration_ms": 93,
+      "duration_ms": 90,
       "retries": 0
     },
     {
@@ -139,7 +139,7 @@
         "sdk.shell.session"
       ],
       "status": "passed",
-      "duration_ms": 179,
+      "duration_ms": 167,
       "retries": 0
     },
     {
@@ -157,7 +157,7 @@
         "sdk.mode.terminal"
       ],
       "status": "passed",
-      "duration_ms": 89,
+      "duration_ms": 83,
       "retries": 0
     },
     {
@@ -175,7 +175,7 @@
         "sdk.mode.terminal"
       ],
       "status": "passed",
-      "duration_ms": 5,
+      "duration_ms": 4,
       "retries": 0
     },
     {
@@ -184,7 +184,7 @@
         "sdk.vfs.rw"
       ],
       "status": "passed",
-      "duration_ms": 90,
+      "duration_ms": 82,
       "retries": 0
     },
     {
@@ -193,7 +193,7 @@
         "sdk.vfs.rw"
       ],
       "status": "passed",
-      "duration_ms": 1,
+      "duration_ms": 0,
       "retries": 0
     },
     {
@@ -202,7 +202,7 @@
         "sdk.vfs.rw"
       ],
       "status": "passed",
-      "duration_ms": 364,
+      "duration_ms": 331,
       "retries": 0
     },
     {
