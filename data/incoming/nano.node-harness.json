@@ -2,39 +2,219 @@
   "contract": 1,
   "source": "nano",
   "suite": "node-harness",
-  "commit": "seed",
+  "commit": "d44f22e",
   "branch": "main",
-  "run_id": "seed",
-  "finished_at": "2026-06-25T06:05:00Z",
+  "run_id": "28277951452",
+  "finished_at": "2026-06-27T04:00:49.074Z",
   "results": [
-    { "test_id": "elf/hello", "features": ["emulator.elf.load"], "status": "passed", "duration_ms": 40 },
-    { "test_id": "elf/test_suite", "features": ["emulator.cpu.decode-rv64"], "status": "passed", "duration_ms": 52 },
-    { "test_id": "elf/test_rvc", "features": ["emulator.cpu.decode-rvc"], "status": "passed", "duration_ms": 55 },
-    { "test_id": "elf/test_memory", "features": ["emulator.mem.bounds"], "status": "passed", "duration_ms": 60 },
-    { "test_id": "elf/test_float", "features": ["emulator.cpu.fpu"], "status": "passed", "duration_ms": 58 },
-    { "test_id": "elf/test_syscalls", "features": ["emulator.process.exit"], "status": "passed", "duration_ms": 62 },
-    { "test_id": "busybox/echo", "features": ["busybox.echo"], "status": "passed", "duration_ms": 30 },
-    { "test_id": "busybox/true", "features": ["busybox.true"], "status": "passed", "duration_ms": 28 },
-    { "test_id": "busybox/false", "features": ["busybox.false"], "status": "passed", "duration_ms": 28 },
-    { "test_id": "busybox/uname", "features": ["busybox.uname", "emulator.syscall.uname"], "status": "passed", "duration_ms": 31 },
-    { "test_id": "busybox/basename", "features": ["busybox.basename"], "status": "passed", "duration_ms": 29 },
-    { "test_id": "busybox/dirname", "features": ["busybox.dirname"], "status": "passed", "duration_ms": 29 },
-    { "test_id": "busybox/cat", "features": ["busybox.cat"], "status": "passed", "duration_ms": 30 },
-    { "test_id": "busybox/head", "features": ["busybox.head"], "status": "passed", "duration_ms": 30 },
-    { "test_id": "busybox/tail", "features": ["busybox.tail"], "status": "passed", "duration_ms": 30 },
-    { "test_id": "busybox/sort", "features": ["busybox.sort"], "status": "passed", "duration_ms": 32 },
-    { "test_id": "busybox/id", "features": ["busybox.id"], "status": "passed", "duration_ms": 29 },
-    { "test_id": "busybox/pwd", "features": ["busybox.pwd", "emulator.syscall.getcwd"], "status": "passed", "duration_ms": 29 },
-    { "test_id": "busybox/env", "features": ["busybox.env"], "status": "passed", "duration_ms": 29 },
-    { "test_id": "busybox/whoami", "features": ["busybox.whoami"], "status": "passed", "duration_ms": 29 },
-    { "test_id": "busybox/hostname", "features": ["busybox.hostname"], "status": "passed", "duration_ms": 29 },
-    { "test_id": "busybox/printf", "features": ["busybox.printf"], "status": "passed", "duration_ms": 29 },
-    { "test_id": "busybox/seq", "features": ["busybox.seq"], "status": "passed", "duration_ms": 29 },
-    { "test_id": "busybox/sh", "features": ["busybox.shell.ash"], "status": "passed", "duration_ms": 35 },
-    { "test_id": "devenv/node", "features": ["devenv.node"], "status": "passed", "duration_ms": 4200 },
-    { "test_id": "devenv/npm", "features": ["devenv.npm"], "status": "passed", "duration_ms": 5100 },
-    { "test_id": "devenv/tsc", "features": ["devenv.tsc"], "status": "passed", "duration_ms": 6300 },
-    { "test_id": "devenv/eslint", "features": ["devenv.eslint"], "status": "passed", "duration_ms": 5800 },
-    { "test_id": "devenv/prettier", "features": ["devenv.prettier"], "status": "passed", "duration_ms": 4900 }
+    {
+      "test_id": "hello",
+      "features": [
+        "emulator.elf.load"
+      ],
+      "status": "passed",
+      "retries": 0,
+      "trace_url": "https://github.com/userland-run/nano/actions/runs/28277951452"
+    },
+    {
+      "test_id": "test_suite",
+      "features": [
+        "emulator.cpu.decode-rv64"
+      ],
+      "status": "passed",
+      "retries": 0,
+      "trace_url": "https://github.com/userland-run/nano/actions/runs/28277951452"
+    },
+    {
+      "test_id": "test_rvc",
+      "features": [
+        "emulator.cpu.decode-rvc"
+      ],
+      "status": "passed",
+      "retries": 0,
+      "trace_url": "https://github.com/userland-run/nano/actions/runs/28277951452"
+    },
+    {
+      "test_id": "test_memory",
+      "features": [
+        "emulator.mem.bounds"
+      ],
+      "status": "passed",
+      "retries": 0,
+      "trace_url": "https://github.com/userland-run/nano/actions/runs/28277951452"
+    },
+    {
+      "test_id": "test_syscalls",
+      "features": [
+        "emulator.process.exit"
+      ],
+      "status": "passed",
+      "retries": 0,
+      "trace_url": "https://github.com/userland-run/nano/actions/runs/28277951452"
+    },
+    {
+      "test_id": "test_float",
+      "features": [
+        "emulator.cpu.fpu"
+      ],
+      "status": "passed",
+      "retries": 0,
+      "trace_url": "https://github.com/userland-run/nano/actions/runs/28277951452"
+    },
+    {
+      "test_id": "busybox echo",
+      "features": [
+        "busybox.echo"
+      ],
+      "status": "passed",
+      "retries": 0,
+      "trace_url": "https://github.com/userland-run/nano/actions/runs/28277951452"
+    },
+    {
+      "test_id": "busybox true",
+      "features": [
+        "busybox.true"
+      ],
+      "status": "passed",
+      "retries": 0,
+      "trace_url": "https://github.com/userland-run/nano/actions/runs/28277951452"
+    },
+    {
+      "test_id": "busybox false",
+      "features": [
+        "busybox.false"
+      ],
+      "status": "passed",
+      "retries": 0,
+      "trace_url": "https://github.com/userland-run/nano/actions/runs/28277951452"
+    },
+    {
+      "test_id": "busybox uname",
+      "features": [
+        "busybox.uname",
+        "emulator.syscall.uname"
+      ],
+      "status": "passed",
+      "retries": 0,
+      "trace_url": "https://github.com/userland-run/nano/actions/runs/28277951452"
+    },
+    {
+      "test_id": "busybox basename",
+      "features": [
+        "busybox.basename"
+      ],
+      "status": "passed",
+      "retries": 0,
+      "trace_url": "https://github.com/userland-run/nano/actions/runs/28277951452"
+    },
+    {
+      "test_id": "busybox dirname",
+      "features": [
+        "busybox.dirname"
+      ],
+      "status": "passed",
+      "retries": 0,
+      "trace_url": "https://github.com/userland-run/nano/actions/runs/28277951452"
+    },
+    {
+      "test_id": "busybox cat",
+      "features": [
+        "busybox.cat"
+      ],
+      "status": "passed",
+      "retries": 0,
+      "trace_url": "https://github.com/userland-run/nano/actions/runs/28277951452"
+    },
+    {
+      "test_id": "busybox head",
+      "features": [
+        "busybox.head"
+      ],
+      "status": "passed",
+      "retries": 0,
+      "trace_url": "https://github.com/userland-run/nano/actions/runs/28277951452"
+    },
+    {
+      "test_id": "busybox tail",
+      "features": [
+        "busybox.tail"
+      ],
+      "status": "passed",
+      "retries": 0,
+      "trace_url": "https://github.com/userland-run/nano/actions/runs/28277951452"
+    },
+    {
+      "test_id": "busybox sort",
+      "features": [
+        "busybox.sort"
+      ],
+      "status": "passed",
+      "retries": 0,
+      "trace_url": "https://github.com/userland-run/nano/actions/runs/28277951452"
+    },
+    {
+      "test_id": "busybox id",
+      "features": [
+        "busybox.id"
+      ],
+      "status": "passed",
+      "retries": 0,
+      "trace_url": "https://github.com/userland-run/nano/actions/runs/28277951452"
+    },
+    {
+      "test_id": "busybox pwd",
+      "features": [
+        "busybox.pwd",
+        "emulator.syscall.getcwd"
+      ],
+      "status": "passed",
+      "retries": 0,
+      "trace_url": "https://github.com/userland-run/nano/actions/runs/28277951452"
+    },
+    {
+      "test_id": "busybox env",
+      "features": [
+        "busybox.env"
+      ],
+      "status": "passed",
+      "retries": 0,
+      "trace_url": "https://github.com/userland-run/nano/actions/runs/28277951452"
+    },
+    {
+      "test_id": "busybox whoami",
+      "features": [
+        "busybox.whoami"
+      ],
+      "status": "passed",
+      "retries": 0,
+      "trace_url": "https://github.com/userland-run/nano/actions/runs/28277951452"
+    },
+    {
+      "test_id": "busybox hostname",
+      "features": [
+        "busybox.hostname"
+      ],
+      "status": "passed",
+      "retries": 0,
+      "trace_url": "https://github.com/userland-run/nano/actions/runs/28277951452"
+    },
+    {
+      "test_id": "busybox printf",
+      "features": [
+        "busybox.printf"
+      ],
+      "status": "passed",
+      "retries": 0,
+      "trace_url": "https://github.com/userland-run/nano/actions/runs/28277951452"
+    },
+    {
+      "test_id": "busybox seq",
+      "features": [
+        "busybox.seq"
+      ],
+      "status": "passed",
+      "retries": 0,
+      "trace_url": "https://github.com/userland-run/nano/actions/runs/28277951452"
+    }
   ]
 }
