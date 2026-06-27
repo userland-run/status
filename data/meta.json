@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-27T07:23:49.769Z",
+  "generated_at": "2026-06-27T07:24:12.586Z",
   "generator_version": 1,
   "sources": [
     {
@@ -27,14 +27,14 @@
       "source": "terminal",
       "suite": "playwright-e2e",
       "commit": "6640c09",
-      "age_min": 215,
+      "age_min": 216,
       "health": "ok"
     },
     {
       "source": "catalog",
       "suite": "catalog-conformance",
       "commit": "89e5d20",
-      "age_min": 35,
+      "age_min": 36,
       "health": "ok"
     }
   ]

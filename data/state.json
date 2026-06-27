@@ -1,6 +1,6 @@
 {
   "contract": 1,
-  "generated_at": "2026-06-27T07:23:49.769Z",
+  "generated_at": "2026-06-27T07:24:12.586Z",
   "layers": [
     "Core",
     "Runtime",
@@ -162,7 +162,7 @@
       "present": true,
       "commit": "6640c09",
       "finished_at": "2026-06-27T03:48:02.426Z",
-      "age_min": 215,
+      "age_min": 216,
       "passRate": 1,
       "health": "ok"
     },
@@ -174,7 +174,7 @@
       "present": true,
       "commit": "89e5d20",
       "finished_at": "2026-06-27T06:47:58.725Z",
-      "age_min": 35,
+      "age_min": 36,
       "passRate": 1,
       "health": "ok"
     }
@@ -1147,7 +1147,7 @@
             "suite": "catalog-conformance",
             "commit": "89e5d20",
             "finished_at": "2026-06-27T06:47:58.725Z",
-            "age_min": 35
+            "age_min": 36
           },
           "tests": [
             {
@@ -1199,7 +1199,7 @@
             "suite": "catalog-conformance",
             "commit": "89e5d20",
             "finished_at": "2026-06-27T06:47:58.725Z",
-            "age_min": 35
+            "age_min": 36
           },
           "tests": [
             {
@@ -1241,7 +1241,7 @@
             "suite": "catalog-conformance",
             "commit": "89e5d20",
             "finished_at": "2026-06-27T06:47:58.725Z",
-            "age_min": 35
+            "age_min": 36
           },
           "tests": [
             {
@@ -1282,7 +1282,7 @@
             "suite": "catalog-conformance",
             "commit": "89e5d20",
             "finished_at": "2026-06-27T06:47:58.725Z",
-            "age_min": 35
+            "age_min": 36
           },
           "tests": [
             {
@@ -1323,7 +1323,7 @@
             "suite": "catalog-conformance",
             "commit": "89e5d20",
             "finished_at": "2026-06-27T06:47:58.725Z",
-            "age_min": 35
+            "age_min": 36
           },
           "tests": [
             {
@@ -1389,7 +1389,7 @@
             "suite": "catalog-conformance",
             "commit": "89e5d20",
             "finished_at": "2026-06-27T06:47:58.725Z",
-            "age_min": 35
+            "age_min": 36
           },
           "tests": [
             {
@@ -1456,7 +1456,7 @@
             "suite": "catalog-conformance",
             "commit": "89e5d20",
             "finished_at": "2026-06-27T06:47:58.725Z",
-            "age_min": 35
+            "age_min": 36
           },
           "tests": [
             {
@@ -3046,7 +3046,7 @@
             "suite": "playwright-e2e",
             "commit": "6640c09",
             "finished_at": "2026-06-27T03:48:02.426Z",
-            "age_min": 215
+            "age_min": 216
           },
           "tests": [
             {
@@ -3087,7 +3087,7 @@
             "suite": "playwright-e2e",
             "commit": "6640c09",
             "finished_at": "2026-06-27T03:48:02.426Z",
-            "age_min": 215
+            "age_min": 216
           },
           "tests": [
             {
@@ -3127,7 +3127,7 @@
             "suite": "playwright-e2e",
             "commit": "6640c09",
             "finished_at": "2026-06-27T03:48:02.426Z",
-            "age_min": 215
+            "age_min": 216
           },
           "tests": [
             {
@@ -3214,7 +3214,7 @@
             "suite": "playwright-e2e",
             "commit": "6640c09",
             "finished_at": "2026-06-27T03:48:02.426Z",
-            "age_min": 215
+            "age_min": 216
           },
           "tests": [
             {
