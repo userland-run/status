@@ -1,6 +1,6 @@
 {
   "contract": 1,
-  "generated_at": "2026-06-27T10:16:53.558Z",
+  "generated_at": "2026-06-27T10:16:54.486Z",
   "layers": [
     "Core",
     "Runtime",
@@ -124,9 +124,9 @@
       "layer": "Core",
       "title": "Rust unit tests (nextest)",
       "present": true,
-      "commit": "7ccded0",
-      "finished_at": "2026-06-27T07:18:19.972Z",
-      "age_min": 178,
+      "commit": "7f3162a",
+      "finished_at": "2026-06-27T09:10:42.736Z",
+      "age_min": 66,
       "passRate": 1,
       "health": "ok"
     },
@@ -148,9 +148,9 @@
       "layer": "SDK",
       "title": "SDK node:test",
       "present": true,
-      "commit": "2b5c49e",
-      "finished_at": "2026-06-27T04:49:29.486Z",
-      "age_min": 327,
+      "commit": "7b8f9cc",
+      "finished_at": "2026-06-27T08:47:35.841Z",
+      "age_min": 89,
       "passRate": 0.8695652173913043,
       "health": "ok"
     },
@@ -172,9 +172,9 @@
       "layer": "Catalog",
       "title": "Recipe conformance",
       "present": true,
-      "commit": "89e5d20",
-      "finished_at": "2026-06-27T06:47:58.725Z",
-      "age_min": 208,
+      "commit": "2bdd64c",
+      "finished_at": "2026-06-27T09:14:22.924Z",
+      "age_min": 62,
       "passRate": 1,
       "health": "ok"
     }
@@ -1224,22 +1224,23 @@
             "passed",
             "passed",
             "passed",
+            "passed",
             "passed"
           ],
-          "lastRun": "catalog/catalog-conformance@89e5d20@2026-06-27T06:47:58.725Z",
+          "lastRun": "catalog/catalog-conformance@2bdd64c@2026-06-27T09:14:22.924Z",
           "freshness": {
             "source": "catalog",
             "suite": "catalog-conformance",
-            "commit": "89e5d20",
-            "finished_at": "2026-06-27T06:47:58.725Z",
-            "age_min": 208
+            "commit": "2bdd64c",
+            "finished_at": "2026-06-27T09:14:22.924Z",
+            "age_min": 62
           },
           "tests": [
             {
               "test_id": "recipes/hello-c/test/run.json",
               "status": "passed",
-              "duration_ms": 2,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/28281606845"
+              "duration_ms": 3,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/28284862994"
             }
           ]
         }
@@ -1276,22 +1277,23 @@
           },
           "history": [
             "passed",
+            "passed",
             "passed"
           ],
-          "lastRun": "catalog/catalog-conformance@89e5d20@2026-06-27T06:47:58.725Z",
+          "lastRun": "catalog/catalog-conformance@2bdd64c@2026-06-27T09:14:22.924Z",
           "freshness": {
             "source": "catalog",
             "suite": "catalog-conformance",
-            "commit": "89e5d20",
-            "finished_at": "2026-06-27T06:47:58.725Z",
-            "age_min": 208
+            "commit": "2bdd64c",
+            "finished_at": "2026-06-27T09:14:22.924Z",
+            "age_min": 62
           },
           "tests": [
             {
               "test_id": "recipes/busybox/test/run.json",
               "status": "passed",
               "duration_ms": 3,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/28281606845"
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/28284862994"
             }
           ]
         }
@@ -1318,22 +1320,23 @@
           },
           "history": [
             "passed",
+            "passed",
             "passed"
           ],
-          "lastRun": "catalog/catalog-conformance@89e5d20@2026-06-27T06:47:58.725Z",
+          "lastRun": "catalog/catalog-conformance@2bdd64c@2026-06-27T09:14:22.924Z",
           "freshness": {
             "source": "catalog",
             "suite": "catalog-conformance",
-            "commit": "89e5d20",
-            "finished_at": "2026-06-27T06:47:58.725Z",
-            "age_min": 208
+            "commit": "2bdd64c",
+            "finished_at": "2026-06-27T09:14:22.924Z",
+            "age_min": 62
           },
           "tests": [
             {
               "test_id": "recipes/node/test/run.json",
               "status": "passed",
-              "duration_ms": 75,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/28281606845"
+              "duration_ms": 99,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/28284862994"
             }
           ]
         }
@@ -1359,22 +1362,23 @@
             "flaky": 0
           },
           "history": [
+            "passed",
             "passed"
           ],
-          "lastRun": "catalog/catalog-conformance@89e5d20@2026-06-27T06:47:58.725Z",
+          "lastRun": "catalog/catalog-conformance@2bdd64c@2026-06-27T09:14:22.924Z",
           "freshness": {
             "source": "catalog",
             "suite": "catalog-conformance",
-            "commit": "89e5d20",
-            "finished_at": "2026-06-27T06:47:58.725Z",
-            "age_min": 208
+            "commit": "2bdd64c",
+            "finished_at": "2026-06-27T09:14:22.924Z",
+            "age_min": 62
           },
           "tests": [
             {
               "test_id": "recipes/typescript/test/run.json",
               "status": "passed",
-              "duration_ms": 9895,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/28281606845"
+              "duration_ms": 10086,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/28284862994"
             }
           ]
         }
@@ -1400,22 +1404,23 @@
             "flaky": 0
           },
           "history": [
+            "passed",
             "passed"
           ],
-          "lastRun": "catalog/catalog-conformance@89e5d20@2026-06-27T06:47:58.725Z",
+          "lastRun": "catalog/catalog-conformance@2bdd64c@2026-06-27T09:14:22.924Z",
           "freshness": {
             "source": "catalog",
             "suite": "catalog-conformance",
-            "commit": "89e5d20",
-            "finished_at": "2026-06-27T06:47:58.725Z",
-            "age_min": 208
+            "commit": "2bdd64c",
+            "finished_at": "2026-06-27T09:14:22.924Z",
+            "age_min": 62
           },
           "tests": [
             {
               "test_id": "recipes/eslint/test/run.json",
               "status": "passed",
-              "duration_ms": 9715,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/28281606845"
+              "duration_ms": 9968,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/28284862994"
             }
           ]
         }
@@ -1662,46 +1667,47 @@
             "passed",
             "passed",
             "passed",
+            "passed",
             "passed"
           ],
-          "lastRun": "catalog/catalog-conformance@89e5d20@2026-06-27T06:47:58.725Z",
+          "lastRun": "catalog/catalog-conformance@2bdd64c@2026-06-27T09:14:22.924Z",
           "freshness": {
             "source": "catalog",
             "suite": "catalog-conformance",
-            "commit": "89e5d20",
-            "finished_at": "2026-06-27T06:47:58.725Z",
-            "age_min": 208
+            "commit": "2bdd64c",
+            "finished_at": "2026-06-27T09:14:22.924Z",
+            "age_min": 62
           },
           "tests": [
             {
               "test_id": "recipes/busybox/test/run.json",
               "status": "passed",
               "duration_ms": 3,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/28281606845"
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/28284862994"
             },
             {
               "test_id": "recipes/eslint/test/run.json",
               "status": "passed",
-              "duration_ms": 9715,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/28281606845"
+              "duration_ms": 9968,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/28284862994"
             },
             {
               "test_id": "recipes/hello-c/test/run.json",
               "status": "passed",
-              "duration_ms": 2,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/28281606845"
+              "duration_ms": 3,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/28284862994"
             },
             {
               "test_id": "recipes/node/test/run.json",
               "status": "passed",
-              "duration_ms": 75,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/28281606845"
+              "duration_ms": 99,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/28284862994"
             },
             {
               "test_id": "recipes/typescript/test/run.json",
               "status": "passed",
-              "duration_ms": 9895,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/28281606845"
+              "duration_ms": 10086,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/28284862994"
             }
           ]
         }
@@ -1729,46 +1735,47 @@
             "passed",
             "passed",
             "passed",
+            "passed",
             "passed"
           ],
-          "lastRun": "catalog/catalog-conformance@89e5d20@2026-06-27T06:47:58.725Z",
+          "lastRun": "catalog/catalog-conformance@2bdd64c@2026-06-27T09:14:22.924Z",
           "freshness": {
             "source": "catalog",
             "suite": "catalog-conformance",
-            "commit": "89e5d20",
-            "finished_at": "2026-06-27T06:47:58.725Z",
-            "age_min": 208
+            "commit": "2bdd64c",
+            "finished_at": "2026-06-27T09:14:22.924Z",
+            "age_min": 62
           },
           "tests": [
             {
               "test_id": "recipes/busybox/test/run.json",
               "status": "passed",
               "duration_ms": 3,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/28281606845"
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/28284862994"
             },
             {
               "test_id": "recipes/eslint/test/run.json",
               "status": "passed",
-              "duration_ms": 9715,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/28281606845"
+              "duration_ms": 9968,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/28284862994"
             },
             {
               "test_id": "recipes/hello-c/test/run.json",
               "status": "passed",
-              "duration_ms": 2,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/28281606845"
+              "duration_ms": 3,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/28284862994"
             },
             {
               "test_id": "recipes/node/test/run.json",
               "status": "passed",
-              "duration_ms": 75,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/28281606845"
+              "duration_ms": 99,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/28284862994"
             },
             {
               "test_id": "recipes/typescript/test/run.json",
               "status": "passed",
-              "duration_ms": 9895,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/28281606845"
+              "duration_ms": 10086,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/28284862994"
             }
           ]
         }
@@ -1909,52 +1916,53 @@
           "history": [
             "passed",
             "passed",
+            "passed",
             "passed"
           ],
-          "lastRun": "nano/cargo-unit@7ccded0@2026-06-27T07:18:19.972Z",
+          "lastRun": "nano/cargo-unit@7f3162a@2026-06-27T09:10:42.736Z",
           "freshness": {
             "source": "nano",
             "suite": "cargo-unit",
-            "commit": "7ccded0",
-            "finished_at": "2026-06-27T07:18:19.972Z",
-            "age_min": 178
+            "commit": "7f3162a",
+            "finished_at": "2026-06-27T09:10:42.736Z",
+            "age_min": 66
           },
           "tests": [
             {
-              "test_id": "decode::tests::c_addi_expands_to_opimm",
-              "status": "passed",
-              "duration_ms": 5,
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/28282294861"
-            },
-            {
-              "test_id": "decode::tests::c_lw_expands_to_load_opcode",
-              "status": "passed",
-              "duration_ms": 5,
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/28282294861"
-            },
-            {
               "test_id": "decode::tests::c_nop_is_canonical_nop",
               "status": "passed",
-              "duration_ms": 5,
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/28282294861"
+              "duration_ms": 4,
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/28284796491"
             },
             {
               "test_id": "decode::tests::c_sw_expands_to_store_opcode",
               "status": "passed",
-              "duration_ms": 8,
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/28282294861"
+              "duration_ms": 4,
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/28284796491"
+            },
+            {
+              "test_id": "decode::tests::c_addi_expands_to_opimm",
+              "status": "passed",
+              "duration_ms": 4,
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/28284796491"
+            },
+            {
+              "test_id": "decode::tests::c_lw_expands_to_load_opcode",
+              "status": "passed",
+              "duration_ms": 6,
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/28284796491"
             },
             {
               "test_id": "decode::tests::non_compressed_returns_zero",
               "status": "passed",
-              "duration_ms": 5,
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/28282294861"
+              "duration_ms": 4,
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/28284796491"
             },
             {
               "test_id": "decode::tests::illegal_compressed_returns_zero",
               "status": "passed",
-              "duration_ms": 6,
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/28282294861"
+              "duration_ms": 4,
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/28284796491"
             }
           ]
         },
@@ -2168,40 +2176,41 @@
           "history": [
             "passed",
             "passed",
+            "passed",
             "passed"
           ],
-          "lastRun": "nano/cargo-unit@7ccded0@2026-06-27T07:18:19.972Z",
+          "lastRun": "nano/cargo-unit@7f3162a@2026-06-27T09:10:42.736Z",
           "freshness": {
             "source": "nano",
             "suite": "cargo-unit",
-            "commit": "7ccded0",
-            "finished_at": "2026-06-27T07:18:19.972Z",
-            "age_min": 178
+            "commit": "7f3162a",
+            "finished_at": "2026-06-27T09:10:42.736Z",
+            "age_min": 66
           },
           "tests": [
             {
               "test_id": "types::tests::a0_and_sp_register_offsets",
               "status": "passed",
-              "duration_ms": 6,
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/28282294861"
+              "duration_ms": 4,
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/28284796491"
             },
             {
               "test_id": "types::tests::fsrequest_path_buffers_are_256",
               "status": "passed",
-              "duration_ms": 7,
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/28282294861"
+              "duration_ms": 4,
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/28284796491"
             },
             {
               "test_id": "types::tests::host_shared_offsets_are_stable",
               "status": "passed",
-              "duration_ms": 5,
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/28282294861"
+              "duration_ms": 3,
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/28284796491"
             },
             {
               "test_id": "types::tests::vm_size_is_locked",
               "status": "passed",
-              "duration_ms": 6,
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/28282294861"
+              "duration_ms": 4,
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/28284796491"
             }
           ]
         }
@@ -2878,21 +2887,22 @@
           "history": [
             "passed",
             "passed",
+            "passed",
             "passed"
           ],
-          "lastRun": "sdk/sdk-unit@2b5c49e@2026-06-27T04:49:29.486Z",
+          "lastRun": "sdk/sdk-unit@7b8f9cc@2026-06-27T08:47:35.841Z",
           "freshness": {
             "source": "sdk",
             "suite": "sdk-unit",
-            "commit": "2b5c49e",
-            "finished_at": "2026-06-27T04:49:29.486Z",
-            "age_min": 327
+            "commit": "7b8f9cc",
+            "finished_at": "2026-06-27T08:47:35.841Z",
+            "age_min": 89
           },
           "tests": [
             {
               "test_id": "code.test.mjs::run() executes a BusyBox command and captures stdout [feat:sdk.code.run]",
               "status": "passed",
-              "duration_ms": 88
+              "duration_ms": 86
             }
           ]
         }
@@ -2919,26 +2929,27 @@
           "history": [
             "passed",
             "passed",
+            "passed",
             "passed"
           ],
-          "lastRun": "sdk/sdk-unit@2b5c49e@2026-06-27T04:49:29.486Z",
+          "lastRun": "sdk/sdk-unit@7b8f9cc@2026-06-27T08:47:35.841Z",
           "freshness": {
             "source": "sdk",
             "suite": "sdk-unit",
-            "commit": "2b5c49e",
-            "finished_at": "2026-06-27T04:49:29.486Z",
-            "age_min": 327
+            "commit": "7b8f9cc",
+            "finished_at": "2026-06-27T08:47:35.841Z",
+            "age_min": 89
           },
           "tests": [
             {
               "test_id": "code.test.mjs::shExec() runs a real sh pipeline [feat:sdk.code.exec]",
               "status": "passed",
-              "duration_ms": 333
+              "duration_ms": 330
             },
             {
               "test_id": "code.test.mjs::exec() single-quotes argv and runs it through sh [feat:sdk.code.exec]",
               "status": "passed",
-              "duration_ms": 1
+              "duration_ms": 2
             }
           ]
         }
@@ -2965,21 +2976,22 @@
           "history": [
             "passed",
             "passed",
+            "passed",
             "passed"
           ],
-          "lastRun": "sdk/sdk-unit@2b5c49e@2026-06-27T04:49:29.486Z",
+          "lastRun": "sdk/sdk-unit@7b8f9cc@2026-06-27T08:47:35.841Z",
           "freshness": {
             "source": "sdk",
             "suite": "sdk-unit",
-            "commit": "2b5c49e",
-            "finished_at": "2026-06-27T04:49:29.486Z",
-            "age_min": 327
+            "commit": "7b8f9cc",
+            "finished_at": "2026-06-27T08:47:35.841Z",
+            "age_min": 89
           },
           "tests": [
             {
               "test_id": "vfs.test.mjs::writeFile + readText round-trip through MemFS [feat:sdk.vfs.rw]",
               "status": "passed",
-              "duration_ms": 86
+              "duration_ms": 83
             },
             {
               "test_id": "vfs.test.mjs::exists reflects file presence [feat:sdk.vfs.rw]",
@@ -2989,7 +3001,7 @@
             {
               "test_id": "vfs.test.mjs::mkdir + copy + walk via BusyBox [feat:sdk.vfs.rw]",
               "status": "passed",
-              "duration_ms": 332
+              "duration_ms": 331
             },
             {
               "test_id": "vfs.test.mjs::list returns typed directory entries [feat:sdk.vfs.rw]",
@@ -3022,21 +3034,22 @@
           "history": [
             "passed",
             "passed",
+            "passed",
             "passed"
           ],
-          "lastRun": "sdk/sdk-unit@2b5c49e@2026-06-27T04:49:29.486Z",
+          "lastRun": "sdk/sdk-unit@7b8f9cc@2026-06-27T08:47:35.841Z",
           "freshness": {
             "source": "sdk",
             "suite": "sdk-unit",
-            "commit": "2b5c49e",
-            "finished_at": "2026-06-27T04:49:29.486Z",
-            "age_min": 327
+            "commit": "7b8f9cc",
+            "finished_at": "2026-06-27T08:47:35.841Z",
+            "age_min": 89
           },
           "tests": [
             {
               "test_id": "shell.test.mjs::export persists across shell.run() calls [feat:sdk.shell.session]",
               "status": "passed",
-              "duration_ms": 94
+              "duration_ms": 90
             },
             {
               "test_id": "shell.test.mjs::cd tracks cwd across runs [feat:sdk.shell.session]",
@@ -3046,7 +3059,7 @@
             {
               "test_id": "shell.test.mjs::constructor env seeds the session environment [feat:sdk.shell.session]",
               "status": "passed",
-              "duration_ms": 3
+              "duration_ms": 2
             }
           ]
         }
@@ -3073,21 +3086,22 @@
           "history": [
             "passed",
             "passed",
+            "passed",
             "passed"
           ],
-          "lastRun": "sdk/sdk-unit@2b5c49e@2026-06-27T04:49:29.486Z",
+          "lastRun": "sdk/sdk-unit@7b8f9cc@2026-06-27T08:47:35.841Z",
           "freshness": {
             "source": "sdk",
             "suite": "sdk-unit",
-            "commit": "2b5c49e",
-            "finished_at": "2026-06-27T04:49:29.486Z",
-            "age_min": 327
+            "commit": "7b8f9cc",
+            "finished_at": "2026-06-27T08:47:35.841Z",
+            "age_min": 89
           },
           "tests": [
             {
               "test_id": "terminal.test.mjs::clear builtin emits the terminal reset sequence [feat:sdk.mode.terminal]",
               "status": "passed",
-              "duration_ms": 84
+              "duration_ms": 83
             },
             {
               "test_id": "terminal.test.mjs::pwd builtin renders the tracked cwd without spawning [feat:sdk.mode.terminal]",
@@ -3124,21 +3138,22 @@
           "history": [
             "passed",
             "passed",
+            "passed",
             "passed"
           ],
-          "lastRun": "sdk/sdk-unit@2b5c49e@2026-06-27T04:49:29.486Z",
+          "lastRun": "sdk/sdk-unit@7b8f9cc@2026-06-27T08:47:35.841Z",
           "freshness": {
             "source": "sdk",
             "suite": "sdk-unit",
-            "commit": "2b5c49e",
-            "finished_at": "2026-06-27T04:49:29.486Z",
-            "age_min": 327
+            "commit": "7b8f9cc",
+            "finished_at": "2026-06-27T08:47:35.841Z",
+            "age_min": 89
           },
           "tests": [
             {
               "test_id": "serve.test.mjs::parseHttpResponse parses status line, headers, and body [feat:sdk.serve.http]",
               "status": "passed",
-              "duration_ms": 86
+              "duration_ms": 84
             },
             {
               "test_id": "serve.test.mjs::parseHttpResponse decodes Transfer-Encoding: chunked [feat:sdk.serve.http]",
@@ -3176,21 +3191,22 @@
           "history": [
             "passed",
             "passed",
+            "passed",
             "passed"
           ],
-          "lastRun": "sdk/sdk-unit@2b5c49e@2026-06-27T04:49:29.486Z",
+          "lastRun": "sdk/sdk-unit@7b8f9cc@2026-06-27T08:47:35.841Z",
           "freshness": {
             "source": "sdk",
             "suite": "sdk-unit",
-            "commit": "2b5c49e",
-            "finished_at": "2026-06-27T04:49:29.486Z",
-            "age_min": 327
+            "commit": "7b8f9cc",
+            "finished_at": "2026-06-27T08:47:35.841Z",
+            "age_min": 89
           },
           "tests": [
             {
               "test_id": "scripting.test.mjs::script eval marshals a JSON result [feat:sdk.scripting.eval]",
               "status": "passed",
-              "duration_ms": 142
+              "duration_ms": 131
             },
             {
               "test_id": "scripting.test.mjs::registerFunction + defineGlobal drive a long-lived engine [feat:sdk.scripting.eval]",
@@ -3222,21 +3238,22 @@
           "history": [
             "passed",
             "passed",
+            "passed",
             "passed"
           ],
-          "lastRun": "sdk/sdk-unit@2b5c49e@2026-06-27T04:49:29.486Z",
+          "lastRun": "sdk/sdk-unit@7b8f9cc@2026-06-27T08:47:35.841Z",
           "freshness": {
             "source": "sdk",
             "suite": "sdk-unit",
-            "commit": "2b5c49e",
-            "finished_at": "2026-06-27T04:49:29.486Z",
-            "age_min": 327
+            "commit": "7b8f9cc",
+            "finished_at": "2026-06-27T08:47:35.841Z",
+            "age_min": 89
           },
           "tests": [
             {
               "test_id": "scripting.test.mjs::a script with no run grant cannot reach nano.run [feat:sdk.scripting.capability]",
               "status": "passed",
-              "duration_ms": 2
+              "duration_ms": 1
             },
             {
               "test_id": "scripting.test.mjs::fs:readonly + run grants let a script drive the VM [feat:sdk.scripting.capability]",
@@ -3269,15 +3286,16 @@
           "history": [
             "skipped",
             "skipped",
+            "skipped",
             "skipped"
           ],
-          "lastRun": "sdk/sdk-unit@2b5c49e@2026-06-27T04:49:29.486Z",
+          "lastRun": "sdk/sdk-unit@7b8f9cc@2026-06-27T08:47:35.841Z",
           "freshness": {
             "source": "sdk",
             "suite": "sdk-unit",
-            "commit": "2b5c49e",
-            "finished_at": "2026-06-27T04:49:29.486Z",
-            "age_min": 327
+            "commit": "7b8f9cc",
+            "finished_at": "2026-06-27T08:47:35.841Z",
+            "age_min": 89
           },
           "tests": [
             {
