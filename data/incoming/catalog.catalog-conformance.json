@@ -2,10 +2,10 @@
   "contract": 1,
   "source": "catalog",
   "suite": "catalog-conformance",
-  "commit": "a471dbd",
+  "commit": "12b6972",
   "branch": "main",
-  "run_id": "28280162335",
-  "finished_at": "2026-06-27T05:53:21.406Z",
+  "run_id": "28280051629",
+  "finished_at": "2026-06-27T05:53:32.261Z",
   "results": [
     {
       "test_id": "recipes/busybox/test/run.json",
@@ -17,19 +17,7 @@
       "status": "passed",
       "duration_ms": 3,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28280162335"
-    },
-    {
-      "test_id": "recipes/eslint/test/run.json",
-      "features": [
-        "catalog.recipe.eslint",
-        "catalog.pipeline.conformance",
-        "catalog.pipeline.gate"
-      ],
-      "status": "failed",
-      "duration_ms": 11374,
-      "retries": 0,
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28280162335"
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28280051629"
     },
     {
       "test_id": "recipes/hello-c/test/run.json",
@@ -39,21 +27,21 @@
         "catalog.pipeline.gate"
       ],
       "status": "passed",
-      "duration_ms": 2,
+      "duration_ms": 3,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28280162335"
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28280051629"
     },
     {
-      "test_id": "recipes/typescript/test/run.json",
+      "test_id": "recipes/node/test/run.json",
       "features": [
-        "catalog.recipe.typescript",
+        "catalog.recipe.node",
         "catalog.pipeline.conformance",
         "catalog.pipeline.gate"
       ],
-      "status": "failed",
-      "duration_ms": 10023,
+      "status": "passed",
+      "duration_ms": 91,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28280162335"
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28280051629"
     }
   ]
 }
