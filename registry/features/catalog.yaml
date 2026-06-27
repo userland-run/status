@@ -27,7 +27,6 @@
 - { id: catalog.recipe.dasel, title: "dasel (data selector)", area: catalog, status: shipped, since: "2026-06" }
 - { id: catalog.recipe.gix, title: "gix (gitoxide)", area: catalog, status: shipped, since: "2026-06", notes: "local git offline; remote-over-HTTPS needs the network bridge + CORS proxy" }
 - { id: catalog.recipe.nfetch, title: "nfetch (HTTP shim)", area: catalog, status: shipped, since: "2026-06", notes: "talks the /dev/__net__ bridge; conformed via NET record/replay fixtures" }
-- { id: catalog.recipe.mdcat, title: "mdcat (markdown cat)", area: catalog, status: in-progress, since: "2026-06", notes: "2021-era crate deps don't compile on rust 1.96 (c_char/c_long)" }
 - { id: catalog.recipe.htmlq, title: "htmlq (HTML select)", area: catalog, status: in-progress, since: "2026-06", notes: "stale crate deps don't compile on rust 1.96" }
 
 # Network-bridge story (Tier 1 + 1.5) and bottling.

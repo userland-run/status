@@ -1,8 +1,8 @@
 # userland.run — status
 
-> Generated 2026-06-27T10:16:54.486Z · live at https://status.userland.run
+> Generated 2026-06-27T11:46:34.519Z · live at https://status.userland.run
 
-**45 / 46 tested features green** (98%) · 107 shipped (83%) · 0 failing now · 63 shipped-but-untested · 0 drift
+**45 / 46 tested features green** (98%) · 107 shipped (84%) · 0 failing now · 63 shipped-but-untested · 0 drift
 
 ## Red now
 Nothing failing. 🟢
@@ -36,15 +36,15 @@ No drift. 🟢
 | Dev toolchain | 5 | 0% | 0% (0/0) |
 | TypeScript SDK | 9 | 78% | 89% (8/9) |
 | WebGPU console | 9 | 56% | 100% (4/4) |
-| App conformance & distribution | 30 | 87% | 100% (7/7) |
+| App conformance & distribution | 29 | 90% | 100% (7/7) |
 
 ## Suites
 | Suite | Layer | Health | Pass rate | Age (min) |
 | ----- | ----- | ------ | --------- | --------- |
-| nano/cargo-unit | Core | ok | 100% | 66 |
-| nano/node-harness | Runtime | ok | 100% | 236 |
-| sdk/sdk-unit | SDK | ok | 87% | 89 |
-| terminal/playwright-e2e | Terminal | ok | 100% | 388 |
-| catalog/catalog-conformance | Catalog | ok | 100% | 62 |
+| nano/cargo-unit | Core | ok | 100% | 155 |
+| nano/node-harness | Runtime | ok | 100% | 326 |
+| sdk/sdk-unit | SDK | ok | 87% | 178 |
+| terminal/playwright-e2e | Terminal | ok | 100% | 478 |
+| catalog/catalog-conformance | Catalog | ok | 100% | 152 |
 
 _Regenerated on every result push. Edit features in `registry/`, never this file._
