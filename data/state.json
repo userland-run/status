@@ -1,6 +1,6 @@
 {
   "contract": 1,
-  "generated_at": "2026-06-27T07:23:31.383Z",
+  "generated_at": "2026-06-27T07:23:49.769Z",
   "layers": [
     "Core",
     "Runtime",
@@ -12,11 +12,11 @@
     "total": 110,
     "shipped": 90,
     "shippedPct": 0.8181818181818182,
-    "tested": 44,
-    "green": 43,
-    "greenPct": 0.9772727272727273,
+    "tested": 46,
+    "green": 45,
+    "greenPct": 0.9782608695652174,
     "failingNow": 0,
-    "untestedShipped": 48,
+    "untestedShipped": 46,
     "driftCount": 0
   },
   "areaRollups": [
@@ -113,8 +113,8 @@
       },
       "shippedPct": 0.8181818181818182,
       "greenPct": 1,
-      "tested": 5,
-      "green": 5
+      "tested": 7,
+      "green": 7
     }
   ],
   "suiteHealth": [
@@ -124,9 +124,9 @@
       "layer": "Core",
       "title": "Rust unit tests (nextest)",
       "present": true,
-      "commit": "5bdf731",
-      "finished_at": "2026-06-27T04:30:53.898Z",
-      "age_min": 172,
+      "commit": "7ccded0",
+      "finished_at": "2026-06-27T07:18:19.972Z",
+      "age_min": 5,
       "passRate": 1,
       "health": "ok"
     },
@@ -136,9 +136,9 @@
       "layer": "Runtime",
       "title": "ELF + BusyBox integration (nightly)",
       "present": true,
-      "commit": "d44f22e",
-      "finished_at": "2026-06-27T04:00:49.074Z",
-      "age_min": 202,
+      "commit": "5bdf731",
+      "finished_at": "2026-06-27T06:20:29.674Z",
+      "age_min": 63,
       "passRate": 1,
       "health": "ok"
     },
@@ -172,9 +172,9 @@
       "layer": "Catalog",
       "title": "Recipe conformance",
       "present": true,
-      "commit": "7c25ecf",
-      "finished_at": "2026-06-27T05:31:42.586Z",
-      "age_min": 111,
+      "commit": "89e5d20",
+      "finished_at": "2026-06-27T06:47:58.725Z",
+      "age_min": 35,
       "passRate": 1,
       "health": "ok"
     }
@@ -194,16 +194,6 @@
     {
       "id": "catalog.recipe.ripgrep",
       "title": "ripgrep",
-      "area": "catalog"
-    },
-    {
-      "id": "catalog.recipe.typescript",
-      "title": "TypeScript 5.9.3 (tsc)",
-      "area": "catalog"
-    },
-    {
-      "id": "catalog.recipe.eslint",
-      "title": "ESLint 10.0.0",
       "area": "catalog"
     },
     {
@@ -456,21 +446,22 @@
           },
           "history": [
             "passed",
+            "passed",
             "passed"
           ],
-          "lastRun": "nano/node-harness@d44f22e@2026-06-27T04:00:49.074Z",
+          "lastRun": "nano/node-harness@5bdf731@2026-06-27T06:20:29.674Z",
           "freshness": {
             "source": "nano",
             "suite": "node-harness",
-            "commit": "d44f22e",
-            "finished_at": "2026-06-27T04:00:49.074Z",
-            "age_min": 202
+            "commit": "5bdf731",
+            "finished_at": "2026-06-27T06:20:29.674Z",
+            "age_min": 63
           },
           "tests": [
             {
               "test_id": "busybox echo",
               "status": "passed",
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/28277951452"
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/28281006064"
             }
           ]
         }
@@ -495,21 +486,22 @@
           },
           "history": [
             "passed",
+            "passed",
             "passed"
           ],
-          "lastRun": "nano/node-harness@d44f22e@2026-06-27T04:00:49.074Z",
+          "lastRun": "nano/node-harness@5bdf731@2026-06-27T06:20:29.674Z",
           "freshness": {
             "source": "nano",
             "suite": "node-harness",
-            "commit": "d44f22e",
-            "finished_at": "2026-06-27T04:00:49.074Z",
-            "age_min": 202
+            "commit": "5bdf731",
+            "finished_at": "2026-06-27T06:20:29.674Z",
+            "age_min": 63
           },
           "tests": [
             {
               "test_id": "busybox true",
               "status": "passed",
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/28277951452"
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/28281006064"
             }
           ]
         }
@@ -534,21 +526,22 @@
           },
           "history": [
             "passed",
+            "passed",
             "passed"
           ],
-          "lastRun": "nano/node-harness@d44f22e@2026-06-27T04:00:49.074Z",
+          "lastRun": "nano/node-harness@5bdf731@2026-06-27T06:20:29.674Z",
           "freshness": {
             "source": "nano",
             "suite": "node-harness",
-            "commit": "d44f22e",
-            "finished_at": "2026-06-27T04:00:49.074Z",
-            "age_min": 202
+            "commit": "5bdf731",
+            "finished_at": "2026-06-27T06:20:29.674Z",
+            "age_min": 63
           },
           "tests": [
             {
               "test_id": "busybox false",
               "status": "passed",
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/28277951452"
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/28281006064"
             }
           ]
         }
@@ -573,21 +566,22 @@
           },
           "history": [
             "passed",
+            "passed",
             "passed"
           ],
-          "lastRun": "nano/node-harness@d44f22e@2026-06-27T04:00:49.074Z",
+          "lastRun": "nano/node-harness@5bdf731@2026-06-27T06:20:29.674Z",
           "freshness": {
             "source": "nano",
             "suite": "node-harness",
-            "commit": "d44f22e",
-            "finished_at": "2026-06-27T04:00:49.074Z",
-            "age_min": 202
+            "commit": "5bdf731",
+            "finished_at": "2026-06-27T06:20:29.674Z",
+            "age_min": 63
           },
           "tests": [
             {
               "test_id": "busybox uname",
               "status": "passed",
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/28277951452"
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/28281006064"
             }
           ]
         }
@@ -612,21 +606,22 @@
           },
           "history": [
             "passed",
+            "passed",
             "passed"
           ],
-          "lastRun": "nano/node-harness@d44f22e@2026-06-27T04:00:49.074Z",
+          "lastRun": "nano/node-harness@5bdf731@2026-06-27T06:20:29.674Z",
           "freshness": {
             "source": "nano",
             "suite": "node-harness",
-            "commit": "d44f22e",
-            "finished_at": "2026-06-27T04:00:49.074Z",
-            "age_min": 202
+            "commit": "5bdf731",
+            "finished_at": "2026-06-27T06:20:29.674Z",
+            "age_min": 63
           },
           "tests": [
             {
               "test_id": "busybox basename",
               "status": "passed",
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/28277951452"
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/28281006064"
             }
           ]
         }
@@ -651,21 +646,22 @@
           },
           "history": [
             "passed",
+            "passed",
             "passed"
           ],
-          "lastRun": "nano/node-harness@d44f22e@2026-06-27T04:00:49.074Z",
+          "lastRun": "nano/node-harness@5bdf731@2026-06-27T06:20:29.674Z",
           "freshness": {
             "source": "nano",
             "suite": "node-harness",
-            "commit": "d44f22e",
-            "finished_at": "2026-06-27T04:00:49.074Z",
-            "age_min": 202
+            "commit": "5bdf731",
+            "finished_at": "2026-06-27T06:20:29.674Z",
+            "age_min": 63
           },
           "tests": [
             {
               "test_id": "busybox dirname",
               "status": "passed",
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/28277951452"
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/28281006064"
             }
           ]
         }
@@ -690,21 +686,22 @@
           },
           "history": [
             "passed",
+            "passed",
             "passed"
           ],
-          "lastRun": "nano/node-harness@d44f22e@2026-06-27T04:00:49.074Z",
+          "lastRun": "nano/node-harness@5bdf731@2026-06-27T06:20:29.674Z",
           "freshness": {
             "source": "nano",
             "suite": "node-harness",
-            "commit": "d44f22e",
-            "finished_at": "2026-06-27T04:00:49.074Z",
-            "age_min": 202
+            "commit": "5bdf731",
+            "finished_at": "2026-06-27T06:20:29.674Z",
+            "age_min": 63
           },
           "tests": [
             {
               "test_id": "busybox cat",
               "status": "passed",
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/28277951452"
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/28281006064"
             }
           ]
         }
@@ -729,21 +726,22 @@
           },
           "history": [
             "passed",
+            "passed",
             "passed"
           ],
-          "lastRun": "nano/node-harness@d44f22e@2026-06-27T04:00:49.074Z",
+          "lastRun": "nano/node-harness@5bdf731@2026-06-27T06:20:29.674Z",
           "freshness": {
             "source": "nano",
             "suite": "node-harness",
-            "commit": "d44f22e",
-            "finished_at": "2026-06-27T04:00:49.074Z",
-            "age_min": 202
+            "commit": "5bdf731",
+            "finished_at": "2026-06-27T06:20:29.674Z",
+            "age_min": 63
           },
           "tests": [
             {
               "test_id": "busybox head",
               "status": "passed",
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/28277951452"
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/28281006064"
             }
           ]
         }
@@ -768,21 +766,22 @@
           },
           "history": [
             "passed",
+            "passed",
             "passed"
           ],
-          "lastRun": "nano/node-harness@d44f22e@2026-06-27T04:00:49.074Z",
+          "lastRun": "nano/node-harness@5bdf731@2026-06-27T06:20:29.674Z",
           "freshness": {
             "source": "nano",
             "suite": "node-harness",
-            "commit": "d44f22e",
-            "finished_at": "2026-06-27T04:00:49.074Z",
-            "age_min": 202
+            "commit": "5bdf731",
+            "finished_at": "2026-06-27T06:20:29.674Z",
+            "age_min": 63
           },
           "tests": [
             {
               "test_id": "busybox tail",
               "status": "passed",
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/28277951452"
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/28281006064"
             }
           ]
         }
@@ -807,21 +806,22 @@
           },
           "history": [
             "passed",
+            "passed",
             "passed"
           ],
-          "lastRun": "nano/node-harness@d44f22e@2026-06-27T04:00:49.074Z",
+          "lastRun": "nano/node-harness@5bdf731@2026-06-27T06:20:29.674Z",
           "freshness": {
             "source": "nano",
             "suite": "node-harness",
-            "commit": "d44f22e",
-            "finished_at": "2026-06-27T04:00:49.074Z",
-            "age_min": 202
+            "commit": "5bdf731",
+            "finished_at": "2026-06-27T06:20:29.674Z",
+            "age_min": 63
           },
           "tests": [
             {
               "test_id": "busybox sort",
               "status": "passed",
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/28277951452"
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/28281006064"
             }
           ]
         }
@@ -846,21 +846,22 @@
           },
           "history": [
             "passed",
+            "passed",
             "passed"
           ],
-          "lastRun": "nano/node-harness@d44f22e@2026-06-27T04:00:49.074Z",
+          "lastRun": "nano/node-harness@5bdf731@2026-06-27T06:20:29.674Z",
           "freshness": {
             "source": "nano",
             "suite": "node-harness",
-            "commit": "d44f22e",
-            "finished_at": "2026-06-27T04:00:49.074Z",
-            "age_min": 202
+            "commit": "5bdf731",
+            "finished_at": "2026-06-27T06:20:29.674Z",
+            "age_min": 63
           },
           "tests": [
             {
               "test_id": "busybox id",
               "status": "passed",
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/28277951452"
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/28281006064"
             }
           ]
         }
@@ -885,21 +886,22 @@
           },
           "history": [
             "passed",
+            "passed",
             "passed"
           ],
-          "lastRun": "nano/node-harness@d44f22e@2026-06-27T04:00:49.074Z",
+          "lastRun": "nano/node-harness@5bdf731@2026-06-27T06:20:29.674Z",
           "freshness": {
             "source": "nano",
             "suite": "node-harness",
-            "commit": "d44f22e",
-            "finished_at": "2026-06-27T04:00:49.074Z",
-            "age_min": 202
+            "commit": "5bdf731",
+            "finished_at": "2026-06-27T06:20:29.674Z",
+            "age_min": 63
           },
           "tests": [
             {
               "test_id": "busybox pwd",
               "status": "passed",
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/28277951452"
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/28281006064"
             }
           ]
         }
@@ -924,21 +926,22 @@
           },
           "history": [
             "passed",
+            "passed",
             "passed"
           ],
-          "lastRun": "nano/node-harness@d44f22e@2026-06-27T04:00:49.074Z",
+          "lastRun": "nano/node-harness@5bdf731@2026-06-27T06:20:29.674Z",
           "freshness": {
             "source": "nano",
             "suite": "node-harness",
-            "commit": "d44f22e",
-            "finished_at": "2026-06-27T04:00:49.074Z",
-            "age_min": 202
+            "commit": "5bdf731",
+            "finished_at": "2026-06-27T06:20:29.674Z",
+            "age_min": 63
           },
           "tests": [
             {
               "test_id": "busybox env",
               "status": "passed",
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/28277951452"
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/28281006064"
             }
           ]
         }
@@ -963,21 +966,22 @@
           },
           "history": [
             "passed",
+            "passed",
             "passed"
           ],
-          "lastRun": "nano/node-harness@d44f22e@2026-06-27T04:00:49.074Z",
+          "lastRun": "nano/node-harness@5bdf731@2026-06-27T06:20:29.674Z",
           "freshness": {
             "source": "nano",
             "suite": "node-harness",
-            "commit": "d44f22e",
-            "finished_at": "2026-06-27T04:00:49.074Z",
-            "age_min": 202
+            "commit": "5bdf731",
+            "finished_at": "2026-06-27T06:20:29.674Z",
+            "age_min": 63
           },
           "tests": [
             {
               "test_id": "busybox whoami",
               "status": "passed",
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/28277951452"
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/28281006064"
             }
           ]
         }
@@ -1002,21 +1006,22 @@
           },
           "history": [
             "passed",
+            "passed",
             "passed"
           ],
-          "lastRun": "nano/node-harness@d44f22e@2026-06-27T04:00:49.074Z",
+          "lastRun": "nano/node-harness@5bdf731@2026-06-27T06:20:29.674Z",
           "freshness": {
             "source": "nano",
             "suite": "node-harness",
-            "commit": "d44f22e",
-            "finished_at": "2026-06-27T04:00:49.074Z",
-            "age_min": 202
+            "commit": "5bdf731",
+            "finished_at": "2026-06-27T06:20:29.674Z",
+            "age_min": 63
           },
           "tests": [
             {
               "test_id": "busybox hostname",
               "status": "passed",
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/28277951452"
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/28281006064"
             }
           ]
         }
@@ -1041,21 +1046,22 @@
           },
           "history": [
             "passed",
+            "passed",
             "passed"
           ],
-          "lastRun": "nano/node-harness@d44f22e@2026-06-27T04:00:49.074Z",
+          "lastRun": "nano/node-harness@5bdf731@2026-06-27T06:20:29.674Z",
           "freshness": {
             "source": "nano",
             "suite": "node-harness",
-            "commit": "d44f22e",
-            "finished_at": "2026-06-27T04:00:49.074Z",
-            "age_min": 202
+            "commit": "5bdf731",
+            "finished_at": "2026-06-27T06:20:29.674Z",
+            "age_min": 63
           },
           "tests": [
             {
               "test_id": "busybox printf",
               "status": "passed",
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/28277951452"
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/28281006064"
             }
           ]
         }
@@ -1080,21 +1086,22 @@
           },
           "history": [
             "passed",
+            "passed",
             "passed"
           ],
-          "lastRun": "nano/node-harness@d44f22e@2026-06-27T04:00:49.074Z",
+          "lastRun": "nano/node-harness@5bdf731@2026-06-27T06:20:29.674Z",
           "freshness": {
             "source": "nano",
             "suite": "node-harness",
-            "commit": "d44f22e",
-            "finished_at": "2026-06-27T04:00:49.074Z",
-            "age_min": 202
+            "commit": "5bdf731",
+            "finished_at": "2026-06-27T06:20:29.674Z",
+            "age_min": 63
           },
           "tests": [
             {
               "test_id": "busybox seq",
               "status": "passed",
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/28277951452"
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/28281006064"
             }
           ]
         }
@@ -1131,22 +1138,23 @@
           "history": [
             "passed",
             "passed",
+            "passed",
             "passed"
           ],
-          "lastRun": "catalog/catalog-conformance@7c25ecf@2026-06-27T05:31:42.586Z",
+          "lastRun": "catalog/catalog-conformance@89e5d20@2026-06-27T06:47:58.725Z",
           "freshness": {
             "source": "catalog",
             "suite": "catalog-conformance",
-            "commit": "7c25ecf",
-            "finished_at": "2026-06-27T05:31:42.586Z",
-            "age_min": 111
+            "commit": "89e5d20",
+            "finished_at": "2026-06-27T06:47:58.725Z",
+            "age_min": 35
           },
           "tests": [
             {
               "test_id": "recipes/hello-c/test/run.json",
               "status": "passed",
-              "duration_ms": 3,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/28279198938"
+              "duration_ms": 2,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/28281606845"
             }
           ]
         }
@@ -1182,22 +1190,23 @@
             "flaky": 0
           },
           "history": [
+            "passed",
             "passed"
           ],
-          "lastRun": "catalog/catalog-conformance@7c25ecf@2026-06-27T05:31:42.586Z",
+          "lastRun": "catalog/catalog-conformance@89e5d20@2026-06-27T06:47:58.725Z",
           "freshness": {
             "source": "catalog",
             "suite": "catalog-conformance",
-            "commit": "7c25ecf",
-            "finished_at": "2026-06-27T05:31:42.586Z",
-            "age_min": 111
+            "commit": "89e5d20",
+            "finished_at": "2026-06-27T06:47:58.725Z",
+            "age_min": 35
           },
           "tests": [
             {
               "test_id": "recipes/busybox/test/run.json",
               "status": "passed",
-              "duration_ms": 4,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/28279198938"
+              "duration_ms": 3,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/28281606845"
             }
           ]
         }
@@ -1223,22 +1232,23 @@
             "flaky": 0
           },
           "history": [
+            "passed",
             "passed"
           ],
-          "lastRun": "catalog/catalog-conformance@7c25ecf@2026-06-27T05:31:42.586Z",
+          "lastRun": "catalog/catalog-conformance@89e5d20@2026-06-27T06:47:58.725Z",
           "freshness": {
             "source": "catalog",
             "suite": "catalog-conformance",
-            "commit": "7c25ecf",
-            "finished_at": "2026-06-27T05:31:42.586Z",
-            "age_min": 111
+            "commit": "89e5d20",
+            "finished_at": "2026-06-27T06:47:58.725Z",
+            "age_min": 35
           },
           "tests": [
             {
               "test_id": "recipes/node/test/run.json",
               "status": "passed",
-              "duration_ms": 99,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/28279198938"
+              "duration_ms": 75,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/28281606845"
             }
           ]
         }
@@ -1253,9 +1263,39 @@
       "status": "shipped",
       "since": "2026-06",
       "notes": "per-tool multi-file recipe, runs on the node recipe",
-      "cells": {},
-      "tested": false,
-      "green": null
+      "cells": {
+        "Catalog": {
+          "layer": "Catalog",
+          "state": "passed",
+          "counts": {
+            "passed": 1,
+            "failed": 0,
+            "skipped": 0,
+            "flaky": 0
+          },
+          "history": [
+            "passed"
+          ],
+          "lastRun": "catalog/catalog-conformance@89e5d20@2026-06-27T06:47:58.725Z",
+          "freshness": {
+            "source": "catalog",
+            "suite": "catalog-conformance",
+            "commit": "89e5d20",
+            "finished_at": "2026-06-27T06:47:58.725Z",
+            "age_min": 35
+          },
+          "tests": [
+            {
+              "test_id": "recipes/typescript/test/run.json",
+              "status": "passed",
+              "duration_ms": 9895,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/28281606845"
+            }
+          ]
+        }
+      },
+      "tested": true,
+      "green": true
     },
     {
       "id": "catalog.recipe.eslint",
@@ -1264,9 +1304,39 @@
       "status": "shipped",
       "since": "2026-06",
       "notes": "per-tool multi-file recipe, runs on the node recipe",
-      "cells": {},
-      "tested": false,
-      "green": null
+      "cells": {
+        "Catalog": {
+          "layer": "Catalog",
+          "state": "passed",
+          "counts": {
+            "passed": 1,
+            "failed": 0,
+            "skipped": 0,
+            "flaky": 0
+          },
+          "history": [
+            "passed"
+          ],
+          "lastRun": "catalog/catalog-conformance@89e5d20@2026-06-27T06:47:58.725Z",
+          "freshness": {
+            "source": "catalog",
+            "suite": "catalog-conformance",
+            "commit": "89e5d20",
+            "finished_at": "2026-06-27T06:47:58.725Z",
+            "age_min": 35
+          },
+          "tests": [
+            {
+              "test_id": "recipes/eslint/test/run.json",
+              "status": "passed",
+              "duration_ms": 9715,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/28281606845"
+            }
+          ]
+        }
+      },
+      "tested": true,
+      "green": true
     },
     {
       "id": "catalog.recipe.prettier",
@@ -1302,7 +1372,7 @@
           "layer": "Catalog",
           "state": "passed",
           "counts": {
-            "passed": 3,
+            "passed": 5,
             "failed": 0,
             "skipped": 0,
             "flaky": 0
@@ -1310,34 +1380,47 @@
           "history": [
             "passed",
             "passed",
+            "passed",
             "passed"
           ],
-          "lastRun": "catalog/catalog-conformance@7c25ecf@2026-06-27T05:31:42.586Z",
+          "lastRun": "catalog/catalog-conformance@89e5d20@2026-06-27T06:47:58.725Z",
           "freshness": {
             "source": "catalog",
             "suite": "catalog-conformance",
-            "commit": "7c25ecf",
-            "finished_at": "2026-06-27T05:31:42.586Z",
-            "age_min": 111
+            "commit": "89e5d20",
+            "finished_at": "2026-06-27T06:47:58.725Z",
+            "age_min": 35
           },
           "tests": [
             {
               "test_id": "recipes/busybox/test/run.json",
               "status": "passed",
-              "duration_ms": 4,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/28279198938"
+              "duration_ms": 3,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/28281606845"
+            },
+            {
+              "test_id": "recipes/eslint/test/run.json",
+              "status": "passed",
+              "duration_ms": 9715,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/28281606845"
             },
             {
               "test_id": "recipes/hello-c/test/run.json",
               "status": "passed",
-              "duration_ms": 3,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/28279198938"
+              "duration_ms": 2,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/28281606845"
             },
             {
               "test_id": "recipes/node/test/run.json",
               "status": "passed",
-              "duration_ms": 99,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/28279198938"
+              "duration_ms": 75,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/28281606845"
+            },
+            {
+              "test_id": "recipes/typescript/test/run.json",
+              "status": "passed",
+              "duration_ms": 9895,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/28281606845"
             }
           ]
         }
@@ -1356,7 +1439,7 @@
           "layer": "Catalog",
           "state": "passed",
           "counts": {
-            "passed": 3,
+            "passed": 5,
             "failed": 0,
             "skipped": 0,
             "flaky": 0
@@ -1364,34 +1447,47 @@
           "history": [
             "passed",
             "passed",
+            "passed",
             "passed"
           ],
-          "lastRun": "catalog/catalog-conformance@7c25ecf@2026-06-27T05:31:42.586Z",
+          "lastRun": "catalog/catalog-conformance@89e5d20@2026-06-27T06:47:58.725Z",
           "freshness": {
             "source": "catalog",
             "suite": "catalog-conformance",
-            "commit": "7c25ecf",
-            "finished_at": "2026-06-27T05:31:42.586Z",
-            "age_min": 111
+            "commit": "89e5d20",
+            "finished_at": "2026-06-27T06:47:58.725Z",
+            "age_min": 35
           },
           "tests": [
             {
               "test_id": "recipes/busybox/test/run.json",
               "status": "passed",
-              "duration_ms": 4,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/28279198938"
+              "duration_ms": 3,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/28281606845"
+            },
+            {
+              "test_id": "recipes/eslint/test/run.json",
+              "status": "passed",
+              "duration_ms": 9715,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/28281606845"
             },
             {
               "test_id": "recipes/hello-c/test/run.json",
               "status": "passed",
-              "duration_ms": 3,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/28279198938"
+              "duration_ms": 2,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/28281606845"
             },
             {
               "test_id": "recipes/node/test/run.json",
               "status": "passed",
-              "duration_ms": 99,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/28279198938"
+              "duration_ms": 75,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/28281606845"
+            },
+            {
+              "test_id": "recipes/typescript/test/run.json",
+              "status": "passed",
+              "duration_ms": 9895,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/28281606845"
             }
           ]
         }
@@ -1488,21 +1584,22 @@
           },
           "history": [
             "passed",
+            "passed",
             "passed"
           ],
-          "lastRun": "nano/node-harness@d44f22e@2026-06-27T04:00:49.074Z",
+          "lastRun": "nano/node-harness@5bdf731@2026-06-27T06:20:29.674Z",
           "freshness": {
             "source": "nano",
             "suite": "node-harness",
-            "commit": "d44f22e",
-            "finished_at": "2026-06-27T04:00:49.074Z",
-            "age_min": 202
+            "commit": "5bdf731",
+            "finished_at": "2026-06-27T06:20:29.674Z",
+            "age_min": 63
           },
           "tests": [
             {
               "test_id": "test_suite",
               "status": "passed",
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/28277951452"
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/28281006064"
             }
           ]
         }
@@ -1530,52 +1627,53 @@
           },
           "history": [
             "passed",
+            "passed",
             "passed"
           ],
-          "lastRun": "nano/cargo-unit@5bdf731@2026-06-27T04:30:53.898Z",
+          "lastRun": "nano/cargo-unit@7ccded0@2026-06-27T07:18:19.972Z",
           "freshness": {
             "source": "nano",
             "suite": "cargo-unit",
-            "commit": "5bdf731",
-            "finished_at": "2026-06-27T04:30:53.898Z",
-            "age_min": 172
+            "commit": "7ccded0",
+            "finished_at": "2026-06-27T07:18:19.972Z",
+            "age_min": 5
           },
           "tests": [
-            {
-              "test_id": "decode::tests::c_nop_is_canonical_nop",
-              "status": "passed",
-              "duration_ms": 5,
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/28278630462"
-            },
             {
               "test_id": "decode::tests::c_addi_expands_to_opimm",
               "status": "passed",
               "duration_ms": 5,
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/28278630462"
-            },
-            {
-              "test_id": "decode::tests::c_sw_expands_to_store_opcode",
-              "status": "passed",
-              "duration_ms": 5,
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/28278630462"
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/28282294861"
             },
             {
               "test_id": "decode::tests::c_lw_expands_to_load_opcode",
               "status": "passed",
+              "duration_ms": 5,
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/28282294861"
+            },
+            {
+              "test_id": "decode::tests::c_nop_is_canonical_nop",
+              "status": "passed",
+              "duration_ms": 5,
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/28282294861"
+            },
+            {
+              "test_id": "decode::tests::c_sw_expands_to_store_opcode",
+              "status": "passed",
               "duration_ms": 8,
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/28278630462"
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/28282294861"
             },
             {
               "test_id": "decode::tests::non_compressed_returns_zero",
               "status": "passed",
               "duration_ms": 5,
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/28278630462"
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/28282294861"
             },
             {
               "test_id": "decode::tests::illegal_compressed_returns_zero",
               "status": "passed",
-              "duration_ms": 5,
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/28278630462"
+              "duration_ms": 6,
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/28282294861"
             }
           ]
         },
@@ -1590,21 +1688,22 @@
           },
           "history": [
             "passed",
+            "passed",
             "passed"
           ],
-          "lastRun": "nano/node-harness@d44f22e@2026-06-27T04:00:49.074Z",
+          "lastRun": "nano/node-harness@5bdf731@2026-06-27T06:20:29.674Z",
           "freshness": {
             "source": "nano",
             "suite": "node-harness",
-            "commit": "d44f22e",
-            "finished_at": "2026-06-27T04:00:49.074Z",
-            "age_min": 202
+            "commit": "5bdf731",
+            "finished_at": "2026-06-27T06:20:29.674Z",
+            "age_min": 63
           },
           "tests": [
             {
               "test_id": "test_rvc",
               "status": "passed",
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/28277951452"
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/28281006064"
             }
           ]
         }
@@ -1632,21 +1731,22 @@
           },
           "history": [
             "passed",
+            "passed",
             "passed"
           ],
-          "lastRun": "nano/node-harness@d44f22e@2026-06-27T04:00:49.074Z",
+          "lastRun": "nano/node-harness@5bdf731@2026-06-27T06:20:29.674Z",
           "freshness": {
             "source": "nano",
             "suite": "node-harness",
-            "commit": "d44f22e",
-            "finished_at": "2026-06-27T04:00:49.074Z",
-            "age_min": 202
+            "commit": "5bdf731",
+            "finished_at": "2026-06-27T06:20:29.674Z",
+            "age_min": 63
           },
           "tests": [
             {
               "test_id": "test_float",
               "status": "passed",
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/28277951452"
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/28281006064"
             }
           ]
         }
@@ -1674,21 +1774,22 @@
           },
           "history": [
             "passed",
+            "passed",
             "passed"
           ],
-          "lastRun": "nano/node-harness@d44f22e@2026-06-27T04:00:49.074Z",
+          "lastRun": "nano/node-harness@5bdf731@2026-06-27T06:20:29.674Z",
           "freshness": {
             "source": "nano",
             "suite": "node-harness",
-            "commit": "d44f22e",
-            "finished_at": "2026-06-27T04:00:49.074Z",
-            "age_min": 202
+            "commit": "5bdf731",
+            "finished_at": "2026-06-27T06:20:29.674Z",
+            "age_min": 63
           },
           "tests": [
             {
               "test_id": "test_memory",
               "status": "passed",
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/28277951452"
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/28281006064"
             }
           ]
         }
@@ -1716,21 +1817,22 @@
           },
           "history": [
             "passed",
+            "passed",
             "passed"
           ],
-          "lastRun": "nano/node-harness@d44f22e@2026-06-27T04:00:49.074Z",
+          "lastRun": "nano/node-harness@5bdf731@2026-06-27T06:20:29.674Z",
           "freshness": {
             "source": "nano",
             "suite": "node-harness",
-            "commit": "d44f22e",
-            "finished_at": "2026-06-27T04:00:49.074Z",
-            "age_min": 202
+            "commit": "5bdf731",
+            "finished_at": "2026-06-27T06:20:29.674Z",
+            "age_min": 63
           },
           "tests": [
             {
               "test_id": "hello",
               "status": "passed",
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/28277951452"
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/28281006064"
             }
           ]
         }
@@ -1784,40 +1886,41 @@
           },
           "history": [
             "passed",
+            "passed",
             "passed"
           ],
-          "lastRun": "nano/cargo-unit@5bdf731@2026-06-27T04:30:53.898Z",
+          "lastRun": "nano/cargo-unit@7ccded0@2026-06-27T07:18:19.972Z",
           "freshness": {
             "source": "nano",
             "suite": "cargo-unit",
-            "commit": "5bdf731",
-            "finished_at": "2026-06-27T04:30:53.898Z",
-            "age_min": 172
+            "commit": "7ccded0",
+            "finished_at": "2026-06-27T07:18:19.972Z",
+            "age_min": 5
           },
           "tests": [
             {
               "test_id": "types::tests::a0_and_sp_register_offsets",
               "status": "passed",
-              "duration_ms": 5,
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/28278630462"
+              "duration_ms": 6,
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/28282294861"
             },
             {
               "test_id": "types::tests::fsrequest_path_buffers_are_256",
               "status": "passed",
-              "duration_ms": 5,
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/28278630462"
-            },
-            {
-              "test_id": "types::tests::vm_size_is_locked",
-              "status": "passed",
-              "duration_ms": 5,
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/28278630462"
+              "duration_ms": 7,
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/28282294861"
             },
             {
               "test_id": "types::tests::host_shared_offsets_are_stable",
               "status": "passed",
               "duration_ms": 5,
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/28278630462"
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/28282294861"
+            },
+            {
+              "test_id": "types::tests::vm_size_is_locked",
+              "status": "passed",
+              "duration_ms": 6,
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/28282294861"
             }
           ]
         }
@@ -1869,21 +1972,22 @@
           },
           "history": [
             "passed",
+            "passed",
             "passed"
           ],
-          "lastRun": "nano/node-harness@d44f22e@2026-06-27T04:00:49.074Z",
+          "lastRun": "nano/node-harness@5bdf731@2026-06-27T06:20:29.674Z",
           "freshness": {
             "source": "nano",
             "suite": "node-harness",
-            "commit": "d44f22e",
-            "finished_at": "2026-06-27T04:00:49.074Z",
-            "age_min": 202
+            "commit": "5bdf731",
+            "finished_at": "2026-06-27T06:20:29.674Z",
+            "age_min": 63
           },
           "tests": [
             {
               "test_id": "test_syscalls",
               "status": "passed",
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/28277951452"
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/28281006064"
             }
           ]
         }
@@ -2157,21 +2261,22 @@
           },
           "history": [
             "passed",
+            "passed",
             "passed"
           ],
-          "lastRun": "nano/node-harness@d44f22e@2026-06-27T04:00:49.074Z",
+          "lastRun": "nano/node-harness@5bdf731@2026-06-27T06:20:29.674Z",
           "freshness": {
             "source": "nano",
             "suite": "node-harness",
-            "commit": "d44f22e",
-            "finished_at": "2026-06-27T04:00:49.074Z",
-            "age_min": 202
+            "commit": "5bdf731",
+            "finished_at": "2026-06-27T06:20:29.674Z",
+            "age_min": 63
           },
           "tests": [
             {
               "test_id": "busybox pwd",
               "status": "passed",
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/28277951452"
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/28281006064"
             }
           ]
         }
@@ -2404,21 +2509,22 @@
           },
           "history": [
             "passed",
+            "passed",
             "passed"
           ],
-          "lastRun": "nano/node-harness@d44f22e@2026-06-27T04:00:49.074Z",
+          "lastRun": "nano/node-harness@5bdf731@2026-06-27T06:20:29.674Z",
           "freshness": {
             "source": "nano",
             "suite": "node-harness",
-            "commit": "d44f22e",
-            "finished_at": "2026-06-27T04:00:49.074Z",
-            "age_min": 202
+            "commit": "5bdf731",
+            "finished_at": "2026-06-27T06:20:29.674Z",
+            "age_min": 63
           },
           "tests": [
             {
               "test_id": "busybox uname",
               "status": "passed",
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/28277951452"
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/28281006064"
             }
           ]
         }
