@@ -1,41 +1,41 @@
 {
-  "generated_at": "2026-06-26T09:13:31.827Z",
+  "generated_at": "2026-06-27T04:31:05.430Z",
   "generator_version": 1,
   "sources": [
     {
       "source": "nano",
       "suite": "cargo-unit",
       "commit": "seed",
-      "age_min": 1633,
+      "age_min": 2791,
       "health": "ok"
     },
     {
       "source": "nano",
       "suite": "node-harness",
       "commit": "seed",
-      "age_min": 1628,
+      "age_min": 2786,
       "health": "ok"
     },
     {
       "source": "sdk",
       "suite": "sdk-unit",
       "commit": "seed",
-      "age_min": 1653,
+      "age_min": 2811,
       "health": "ok"
     },
     {
       "source": "terminal",
       "suite": "playwright-e2e",
       "commit": "seed",
-      "age_min": 1673,
+      "age_min": 2831,
       "health": "ok"
     },
     {
       "source": "catalog",
       "suite": "catalog-conformance",
       "commit": "seed",
-      "age_min": 1753,
-      "health": "ok"
+      "age_min": 2911,
+      "health": "silent"
     }
   ]
 }

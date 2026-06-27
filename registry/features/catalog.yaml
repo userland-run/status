@@ -6,6 +6,9 @@
 
 - { id: catalog.recipe.hello-c, title: "hello-c", area: catalog, status: shipped, since: "2026-06" }
 - { id: catalog.recipe.ripgrep, title: "ripgrep", area: catalog, status: shipped, since: "2026-06" }
+- { id: catalog.recipe.busybox, title: "busybox", area: catalog, status: shipped, since: "2026-06", notes: "guest binary moved from the nano bundle into the catalog" }
+- { id: catalog.recipe.node, title: "node v25.4.0", area: catalog, status: shipped, since: "2026-06", notes: "guest binary moved from the nano bundle into the catalog; lazy-installed" }
+- { id: catalog.recipe.devenv, title: "devenv toolchain (tsc/eslint/prettier)", area: catalog, status: in-progress, since: "2026-06", notes: "multi-file catalog app, lazy per-file install (Phase 4)" }
 - { id: catalog.pipeline.conformance, title: conformance harness, area: catalog, status: shipped, since: "2026-06" }
 - { id: catalog.pipeline.gate, title: syscall gate (pinned manifest), area: catalog, status: shipped, since: "2026-06" }
 - { id: catalog.pipeline.publish, title: package + sign + publish (CDN), area: catalog, status: shipped, since: "2026-06" }
