@@ -2,10 +2,10 @@
   "contract": 1,
   "source": "sdk",
   "suite": "sdk-unit",
-  "commit": "7186d2f",
+  "commit": "7b8f9cc",
   "branch": "main",
-  "run_id": "28283460425",
-  "finished_at": "2026-06-27T08:09:33.161Z",
+  "run_id": "28284293946",
+  "finished_at": "2026-06-27T08:47:35.841Z",
   "results": [
     {
       "test_id": "code.test.mjs::run() executes a BusyBox command and captures stdout [feat:sdk.code.run]",
@@ -13,7 +13,7 @@
         "sdk.code.run"
       ],
       "status": "passed",
-      "duration_ms": 88,
+      "duration_ms": 86,
       "retries": 0
     },
     {
@@ -22,7 +22,7 @@
         "sdk.code.exec"
       ],
       "status": "passed",
-      "duration_ms": 341,
+      "duration_ms": 330,
       "retries": 0
     },
     {
@@ -31,7 +31,7 @@
         "sdk.code.exec"
       ],
       "status": "passed",
-      "duration_ms": 1,
+      "duration_ms": 2,
       "retries": 0
     },
     {
@@ -67,7 +67,7 @@
         "sdk.scripting.eval"
       ],
       "status": "passed",
-      "duration_ms": 128,
+      "duration_ms": 131,
       "retries": 0
     },
     {
@@ -94,7 +94,7 @@
         "sdk.scripting.capability"
       ],
       "status": "passed",
-      "duration_ms": 7,
+      "duration_ms": 8,
       "retries": 0
     },
     {
@@ -103,7 +103,7 @@
         "sdk.serve.http"
       ],
       "status": "passed",
-      "duration_ms": 88,
+      "duration_ms": 84,
       "retries": 0
     },
     {
@@ -112,7 +112,7 @@
         "sdk.serve.http"
       ],
       "status": "passed",
-      "duration_ms": 1,
+      "duration_ms": 0,
       "retries": 0
     },
     {
@@ -121,7 +121,7 @@
         "sdk.serve.http"
       ],
       "status": "passed",
-      "duration_ms": 6,
+      "duration_ms": 4,
       "retries": 0
     },
     {
@@ -139,7 +139,7 @@
         "sdk.shell.session"
       ],
       "status": "passed",
-      "duration_ms": 167,
+      "duration_ms": 175,
       "retries": 0
     },
     {
@@ -148,7 +148,7 @@
         "sdk.shell.session"
       ],
       "status": "passed",
-      "duration_ms": 3,
+      "duration_ms": 2,
       "retries": 0
     },
     {
@@ -175,7 +175,7 @@
         "sdk.mode.terminal"
       ],
       "status": "passed",
-      "duration_ms": 4,
+      "duration_ms": 5,
       "retries": 0
     },
     {
@@ -184,7 +184,7 @@
         "sdk.vfs.rw"
       ],
       "status": "passed",
-      "duration_ms": 82,
+      "duration_ms": 83,
       "retries": 0
     },
     {
