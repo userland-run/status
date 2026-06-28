@@ -1,36 +1,5 @@
 {
   "contract": 1,
-  "generated_at": "2026-06-27T11:47:13.618Z",
-  "findings": [
-    {
-      "fingerprint": "Catalog/catalog.recipe.prettier",
-      "kind": "regression",
-      "id": "catalog.recipe.prettier",
-      "title": "Prettier 3.8.1",
-      "area": "catalog",
-      "layer": "Catalog",
-      "commit": "967a756",
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28287378339"
-    },
-    {
-      "fingerprint": "Catalog/catalog.pipeline.conformance",
-      "kind": "regression",
-      "id": "catalog.pipeline.conformance",
-      "title": "conformance harness",
-      "area": "catalog",
-      "layer": "Catalog",
-      "commit": "967a756",
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28287378339"
-    },
-    {
-      "fingerprint": "Catalog/catalog.pipeline.gate",
-      "kind": "regression",
-      "id": "catalog.pipeline.gate",
-      "title": "syscall gate (pinned manifest)",
-      "area": "catalog",
-      "layer": "Catalog",
-      "commit": "967a756",
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28287378339"
-    }
-  ]
+  "generated_at": "2026-06-28T03:59:12.369Z",
+  "findings": []
 }
