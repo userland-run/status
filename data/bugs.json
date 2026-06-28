@@ -1,5 +1,25 @@
 {
   "contract": 1,
-  "generated_at": "2026-06-28T04:17:19.307Z",
-  "findings": []
+  "generated_at": "2026-06-28T04:25:38.882Z",
+  "findings": [
+    {
+      "fingerprint": "Catalog/catalog.recipe.prettier",
+      "kind": "recovery",
+      "id": "catalog.recipe.prettier",
+      "title": "Prettier 3.8.1",
+      "area": "catalog",
+      "layer": "Catalog",
+      "commit": "6b9806b"
+    },
+    {
+      "fingerprint": "Catalog/catalog.recipe.hck",
+      "kind": "regression",
+      "id": "catalog.recipe.hck",
+      "title": "hck (cut alt)",
+      "area": "catalog",
+      "layer": "Catalog",
+      "commit": "6b9806b",
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28311094475"
+    }
+  ]
 }

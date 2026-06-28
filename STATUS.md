@@ -1,31 +1,31 @@
 # userland.run — status
 
-> Generated 2026-06-28T04:17:19.307Z · live at https://status.userland.run
+> Generated 2026-06-28T04:25:38.882Z · live at https://status.userland.run
 
-**58 / 62 tested features green** (94%) · 129 shipped (83%) · 3 failing now · 69 shipped-but-untested · 0 drift
+**87 / 91 tested features green** (96%) · 129 shipped (83%) · 3 failing now · 48 shipped-but-untested · 0 drift
 
 ## Red now
-- `catalog.recipe.prettier` — Prettier 3.8.1 (Catalog) · https://github.com/userland-run/catalog/actions/runs/28287378339
-- `catalog.pipeline.conformance` — conformance harness (Catalog) · https://github.com/userland-run/catalog/actions/runs/28287378339
-- `catalog.pipeline.gate` — syscall gate (pinned manifest) (Catalog) · https://github.com/userland-run/catalog/actions/runs/28287378339
+- `catalog.recipe.hck` — hck (cut alt) (Catalog) · https://github.com/userland-run/catalog/actions/runs/28311094475
+- `catalog.pipeline.conformance` — conformance harness (Catalog) · https://github.com/userland-run/catalog/actions/runs/28311094475
+- `catalog.pipeline.gate` — syscall gate (pinned manifest) (Catalog) · https://github.com/userland-run/catalog/actions/runs/28311094475
 
-## Shipped but untested (69)
+## Shipped but untested (48)
 - `busybox.shell.ash` — ash shell (/bin/sh)
 - `busybox.ls` — ls
-- `catalog.recipe.htmlq` — htmlq (HTML select)
-- `catalog.recipe.ambr` — ambr (search & replace)
-- `catalog.recipe.b3sum` — b3sum (BLAKE3 hash)
-- `catalog.recipe.bat` — bat (cat + syntax highlight)
-- `catalog.recipe.choose` — choose (cut/awk alt)
-- `catalog.recipe.difftastic` — difftastic (structural diff)
-- `catalog.recipe.dua` — dua (disk usage analyzer)
-- `catalog.recipe.dust` — dust (du alt)
-- `catalog.recipe.grex` — grex (regex builder)
-- `catalog.recipe.hck` — hck (cut alt)
-- `catalog.recipe.jaq` — jaq (jq clone)
-- `catalog.recipe.jql` — jql (JSON query)
-- `catalog.recipe.just` — just (command runner)
-- …and 54 more
+- `catalog.net.bridge` — host-fetch bridge (/dev/__net__)
+- `catalog.net.cors-proxy` — Tier-1.5 CORS-proxy Worker
+- `catalog.pipeline.bottling` — topic bundles
+- `catalog.pipeline.publish` — package + sign + publish (CDN)
+- `emulator.tty.termios` — TTY line discipline (termios)
+- `emulator.term.vte` — VTE terminal grid
+- `emulator.process.fork` — clone/fork
+- `emulator.process.execve` — execve (tty/termios preserved)
+- `emulator.thread.futex` — futex (WAIT/WAKE)
+- `emulator.thread.sched-yield` — sched_yield
+- `emulator.ipc.pipe` — pipe2
+- `emulator.syscall.openat` — openat(2)
+- `emulator.syscall.close` — close(2)
+- …and 33 more
 
 ## Drift (0)
 No drift. 🟢
@@ -38,15 +38,15 @@ No drift. 🟢
 | Dev toolchain | 5 | 0% | 0% (0/0) |
 | TypeScript SDK | 9 | 78% | 89% (8/9) |
 | WebGPU console | 9 | 56% | 100% (4/4) |
-| App conformance & distribution | 57 | 84% | 87% (20/23) |
+| App conformance & distribution | 57 | 84% | 94% (49/52) |
 
 ## Suites
 | Suite | Layer | Health | Pass rate | Age (min) |
 | ----- | ----- | ------ | --------- | --------- |
-| nano/cargo-unit | Core | ok | 100% | 26 |
-| nano/node-harness | Runtime | ok | 100% | 1316 |
-| sdk/sdk-unit | SDK | ok | 87% | 1169 |
-| terminal/playwright-e2e | Terminal | ok | 100% | 1469 |
-| catalog/catalog-conformance | Catalog | ok | 95% | 1023 |
+| nano/cargo-unit | Core | ok | 100% | 35 |
+| nano/node-harness | Runtime | ok | 100% | 1325 |
+| sdk/sdk-unit | SDK | ok | 87% | 1178 |
+| terminal/playwright-e2e | Terminal | ok | 100% | 1477 |
+| catalog/catalog-conformance | Catalog | ok | 98% | 1 |
 
 _Regenerated on every result push. Edit features in `registry/`, never this file._
