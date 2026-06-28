@@ -1,13 +1,11 @@
 # userland.run — status
 
-> Generated 2026-06-28T04:25:38.882Z · live at https://status.userland.run
+> Generated 2026-06-28T04:45:06.351Z · live at https://status.userland.run
 
-**87 / 91 tested features green** (96%) · 129 shipped (83%) · 3 failing now · 48 shipped-but-untested · 0 drift
+**90 / 91 tested features green** (99%) · 129 shipped (83%) · 0 failing now · 48 shipped-but-untested · 0 drift
 
 ## Red now
-- `catalog.recipe.hck` — hck (cut alt) (Catalog) · https://github.com/userland-run/catalog/actions/runs/28311094475
-- `catalog.pipeline.conformance` — conformance harness (Catalog) · https://github.com/userland-run/catalog/actions/runs/28311094475
-- `catalog.pipeline.gate` — syscall gate (pinned manifest) (Catalog) · https://github.com/userland-run/catalog/actions/runs/28311094475
+Nothing failing. 🟢
 
 ## Shipped but untested (48)
 - `busybox.shell.ash` — ash shell (/bin/sh)
@@ -38,15 +36,15 @@ No drift. 🟢
 | Dev toolchain | 5 | 0% | 0% (0/0) |
 | TypeScript SDK | 9 | 78% | 89% (8/9) |
 | WebGPU console | 9 | 56% | 100% (4/4) |
-| App conformance & distribution | 57 | 84% | 94% (49/52) |
+| App conformance & distribution | 57 | 84% | 100% (52/52) |
 
 ## Suites
 | Suite | Layer | Health | Pass rate | Age (min) |
 | ----- | ----- | ------ | --------- | --------- |
-| nano/cargo-unit | Core | ok | 100% | 35 |
-| nano/node-harness | Runtime | ok | 100% | 1325 |
-| sdk/sdk-unit | SDK | ok | 87% | 1178 |
-| terminal/playwright-e2e | Terminal | ok | 100% | 1477 |
-| catalog/catalog-conformance | Catalog | ok | 98% | 1 |
+| nano/cargo-unit | Core | ok | 100% | 54 |
+| nano/node-harness | Runtime | ok | 100% | 1344 |
+| sdk/sdk-unit | SDK | ok | 87% | 1197 |
+| terminal/playwright-e2e | Terminal | ok | 100% | 1497 |
+| catalog/catalog-conformance | Catalog | ok | 100% | 1 |
 
 _Regenerated on every result push. Edit features in `registry/`, never this file._

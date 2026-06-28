@@ -1,25 +1,33 @@
 {
   "contract": 1,
-  "generated_at": "2026-06-28T04:25:38.882Z",
+  "generated_at": "2026-06-28T04:45:06.351Z",
   "findings": [
     {
-      "fingerprint": "Catalog/catalog.recipe.prettier",
-      "kind": "recovery",
-      "id": "catalog.recipe.prettier",
-      "title": "Prettier 3.8.1",
-      "area": "catalog",
-      "layer": "Catalog",
-      "commit": "6b9806b"
-    },
-    {
       "fingerprint": "Catalog/catalog.recipe.hck",
-      "kind": "regression",
+      "kind": "recovery",
       "id": "catalog.recipe.hck",
       "title": "hck (cut alt)",
       "area": "catalog",
       "layer": "Catalog",
-      "commit": "6b9806b",
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28311094475"
+      "commit": "fdfcd29"
+    },
+    {
+      "fingerprint": "Catalog/catalog.pipeline.conformance",
+      "kind": "recovery",
+      "id": "catalog.pipeline.conformance",
+      "title": "conformance harness",
+      "area": "catalog",
+      "layer": "Catalog",
+      "commit": "fdfcd29"
+    },
+    {
+      "fingerprint": "Catalog/catalog.pipeline.gate",
+      "kind": "recovery",
+      "id": "catalog.pipeline.gate",
+      "title": "syscall gate (pinned manifest)",
+      "area": "catalog",
+      "layer": "Catalog",
+      "commit": "fdfcd29"
     }
   ]
 }
