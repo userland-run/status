@@ -10,7 +10,7 @@
 - { id: catalog.recipe.node, title: "node v25.4.0", area: catalog, status: shipped, since: "2026-06", notes: "guest binary moved from the nano bundle into the catalog; lazy-installed" }
 - { id: catalog.recipe.typescript, title: "TypeScript 5.9.3 (tsc)", area: catalog, status: shipped, since: "2026-06", notes: "per-tool multi-file recipe, runs on the node recipe" }
 - { id: catalog.recipe.eslint, title: "ESLint 10.0.0", area: catalog, status: shipped, since: "2026-06", notes: "per-tool multi-file recipe, runs on the node recipe" }
-- { id: catalog.recipe.prettier, title: "Prettier 3.8.1", area: catalog, status: in-progress, since: "2026-06", notes: "blocked: the nano node's small-ICU V8 rejects prettier's \\p{Lu} regex" }
+- { id: catalog.recipe.prettier, title: "Prettier 3.8.1", area: catalog, status: shipped, since: "2026-06", notes: "runs on the node recipe; conforms against the full-ICU node build (prettier --version)" }
 - { id: catalog.recipe.devenv, title: "devenv toolchain (per-tool recipes)", area: catalog, status: deprecated, since: "2026-06", notes: "split into per-tool recipes (typescript/eslint/prettier)", superseded_by: "catalog.recipe.typescript" }
 
 # Marketplace tools (specs/catalog/enhancements.md) — Easy single-binary Rust/Go
@@ -27,7 +27,41 @@
 - { id: catalog.recipe.dasel, title: "dasel (data selector)", area: catalog, status: shipped, since: "2026-06" }
 - { id: catalog.recipe.gix, title: "gix (gitoxide)", area: catalog, status: shipped, since: "2026-06", notes: "local git offline; remote-over-HTTPS needs the network bridge + CORS proxy" }
 - { id: catalog.recipe.nfetch, title: "nfetch (HTTP shim)", area: catalog, status: shipped, since: "2026-06", notes: "talks the /dev/__net__ bridge; conformed via NET record/replay fixtures" }
-- { id: catalog.recipe.htmlq, title: "htmlq (HTML select)", area: catalog, status: in-progress, since: "2026-06", notes: "stale crate deps don't compile on rust 1.96" }
+- { id: catalog.recipe.htmlq, title: "htmlq (HTML select)", area: catalog, status: shipped, since: "2026-06" }
+
+# Marketplace tools — wave 2 (scaffold → CI-build → capture → publish). Single-
+# binary Rust/Go apps, grouped by their recipe [bundle] topic. Conform cleanly.
+- { id: catalog.recipe.ambr, title: "ambr (search & replace)", area: catalog, status: shipped, since: "2026-06" }
+- { id: catalog.recipe.b3sum, title: "b3sum (BLAKE3 hash)", area: catalog, status: shipped, since: "2026-06" }
+- { id: catalog.recipe.bat, title: "bat (cat + syntax highlight)", area: catalog, status: shipped, since: "2026-06" }
+- { id: catalog.recipe.choose, title: "choose (cut/awk alt)", area: catalog, status: shipped, since: "2026-06" }
+- { id: catalog.recipe.difftastic, title: "difftastic (structural diff)", area: catalog, status: shipped, since: "2026-06" }
+- { id: catalog.recipe.dua, title: "dua (disk usage analyzer)", area: catalog, status: shipped, since: "2026-06" }
+- { id: catalog.recipe.dust, title: "dust (du alt)", area: catalog, status: shipped, since: "2026-06" }
+- { id: catalog.recipe.grex, title: "grex (regex builder)", area: catalog, status: shipped, since: "2026-06" }
+- { id: catalog.recipe.hck, title: "hck (cut alt)", area: catalog, status: shipped, since: "2026-06" }
+- { id: catalog.recipe.jaq, title: "jaq (jq clone)", area: catalog, status: shipped, since: "2026-06" }
+- { id: catalog.recipe.jql, title: "jql (JSON query)", area: catalog, status: shipped, since: "2026-06" }
+- { id: catalog.recipe.just, title: "just (command runner)", area: catalog, status: shipped, since: "2026-06" }
+- { id: catalog.recipe.numbat, title: "numbat (scientific calculator)", area: catalog, status: shipped, since: "2026-06" }
+- { id: catalog.recipe.ouch, title: "ouch (archive (de)compress)", area: catalog, status: shipped, since: "2026-06" }
+- { id: catalog.recipe.pastel, title: "pastel (color tool)", area: catalog, status: shipped, since: "2026-06" }
+- { id: catalog.recipe.rage, title: "rage (age encryption)", area: catalog, status: shipped, since: "2026-06" }
+- { id: catalog.recipe.resvg, title: "resvg (SVG render)", area: catalog, status: shipped, since: "2026-06" }
+- { id: catalog.recipe.rnr, title: "rnr (batch rename)", area: catalog, status: shipped, since: "2026-06" }
+- { id: catalog.recipe.tokei, title: "tokei (code stats)", area: catalog, status: shipped, since: "2026-06" }
+- { id: catalog.recipe.xan, title: "xan (CSV toolkit)", area: catalog, status: shipped, since: "2026-06" }
+
+# Wave 2, gated-but-not-functional: these build and load but crash before output,
+# pinned to a deterministic non-zero exit so the gate stays meaningful.
+- { id: catalog.recipe.dyff, title: "dyff (YAML/JSON diff)", area: catalog, status: partial, since: "2026-06", notes: "Go tool; deterministic exit 2 (heap-arena OOM under nano) — --version crashes" }
+- { id: catalog.recipe.fend, title: "fend (unit calculator)", area: catalog, status: partial, since: "2026-06", notes: "deterministic exit 101 (tokio-init panic) — --version crashes" }
+- { id: catalog.recipe.goawk, title: "goawk (AWK)", area: catalog, status: partial, since: "2026-06", notes: "Go tool; deterministic exit 2 (heap-arena OOM under nano) — --version crashes" }
+- { id: catalog.recipe.gojq, title: "gojq (jq in Go)", area: catalog, status: partial, since: "2026-06", notes: "Go tool; deterministic exit 2 (heap-arena OOM under nano) — --version crashes" }
+- { id: catalog.recipe.mlr, title: "mlr (Miller; CSV/JSON)", area: catalog, status: partial, since: "2026-06", notes: "deterministic exit 2 — --version crashes" }
+- { id: catalog.recipe.pup, title: "pup (HTML processor)", area: catalog, status: partial, since: "2026-06", notes: "Go tool; deterministic exit 2 (heap-arena OOM under nano) — --version crashes" }
+- { id: catalog.recipe.shfmt, title: "shfmt (shell formatter)", area: catalog, status: partial, since: "2026-06", notes: "Go tool; deterministic exit 2 (heap-arena OOM under nano) — --version crashes" }
+- { id: catalog.recipe.task, title: "task (Taskfile runner)", area: catalog, status: partial, since: "2026-06", notes: "Go tool; deterministic exit 2 (heap-arena OOM under nano) — --version crashes" }
 
 # Network-bridge story (Tier 1 + 1.5) and bottling.
 - { id: catalog.net.bridge, title: "host-fetch bridge (/dev/__net__)", area: catalog, status: shipped, since: "2026-06", notes: "Tier-1 HTTP via host fetch; verified guest GET example.com" }

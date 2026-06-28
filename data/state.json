@@ -1,6 +1,6 @@
 {
   "contract": 1,
-  "generated_at": "2026-06-28T03:59:12.369Z",
+  "generated_at": "2026-06-28T04:16:35.283Z",
   "layers": [
     "Core",
     "Runtime",
@@ -9,14 +9,14 @@
     "Catalog"
   ],
   "headline": {
-    "total": 128,
-    "shipped": 107,
-    "shippedPct": 0.8359375,
+    "total": 156,
+    "shipped": 129,
+    "shippedPct": 0.8269230769230769,
     "tested": 62,
     "green": 58,
     "greenPct": 0.9354838709677419,
     "failingNow": 3,
-    "untestedShipped": 48,
+    "untestedShipped": 69,
     "driftCount": 0
   },
   "areaRollups": [
@@ -103,15 +103,15 @@
     {
       "id": "catalog",
       "title": "App conformance & distribution",
-      "total": 29,
+      "total": 57,
       "byStatus": {
         "planned": 0,
-        "in-progress": 2,
-        "shipped": 26,
-        "partial": 0,
+        "in-progress": 0,
+        "shipped": 48,
+        "partial": 8,
         "deprecated": 1
       },
-      "shippedPct": 0.896551724137931,
+      "shippedPct": 0.8421052631578947,
       "greenPct": 0.8695652173913043,
       "tested": 23,
       "green": 20
@@ -126,7 +126,7 @@
       "present": true,
       "commit": "6639165",
       "finished_at": "2026-06-28T03:50:19.537Z",
-      "age_min": 8,
+      "age_min": 26,
       "passRate": 1,
       "health": "ok"
     },
@@ -138,7 +138,7 @@
       "present": true,
       "commit": "5bdf731",
       "finished_at": "2026-06-27T06:20:29.674Z",
-      "age_min": 1298,
+      "age_min": 1316,
       "passRate": 1,
       "health": "ok"
     },
@@ -150,7 +150,7 @@
       "present": true,
       "commit": "7b8f9cc",
       "finished_at": "2026-06-27T08:47:35.841Z",
-      "age_min": 1151,
+      "age_min": 1168,
       "passRate": 0.8695652173913043,
       "health": "ok"
     },
@@ -162,7 +162,7 @@
       "present": true,
       "commit": "6640c09",
       "finished_at": "2026-06-27T03:48:02.426Z",
-      "age_min": 1451,
+      "age_min": 1468,
       "passRate": 1,
       "health": "ok"
     },
@@ -174,7 +174,7 @@
       "present": true,
       "commit": "967a756",
       "finished_at": "2026-06-27T11:13:21.006Z",
-      "age_min": 1005,
+      "age_min": 1023,
       "passRate": 0.9523809523809523,
       "health": "ok"
     }
@@ -188,7 +188,7 @@
         "Catalog"
       ],
       "commit": "967a756",
-      "age_min": 1005,
+      "age_min": 1023,
       "trace_url": "https://github.com/userland-run/catalog/actions/runs/28287378339"
     },
     {
@@ -199,7 +199,7 @@
         "Catalog"
       ],
       "commit": "967a756",
-      "age_min": 1005,
+      "age_min": 1023,
       "trace_url": "https://github.com/userland-run/catalog/actions/runs/28287378339"
     },
     {
@@ -210,7 +210,7 @@
         "Catalog"
       ],
       "commit": "967a756",
-      "age_min": 1005,
+      "age_min": 1023,
       "trace_url": "https://github.com/userland-run/catalog/actions/runs/28287378339"
     }
   ],
@@ -224,6 +224,111 @@
       "id": "busybox.ls",
       "title": "ls",
       "area": "busybox"
+    },
+    {
+      "id": "catalog.recipe.htmlq",
+      "title": "htmlq (HTML select)",
+      "area": "catalog"
+    },
+    {
+      "id": "catalog.recipe.ambr",
+      "title": "ambr (search & replace)",
+      "area": "catalog"
+    },
+    {
+      "id": "catalog.recipe.b3sum",
+      "title": "b3sum (BLAKE3 hash)",
+      "area": "catalog"
+    },
+    {
+      "id": "catalog.recipe.bat",
+      "title": "bat (cat + syntax highlight)",
+      "area": "catalog"
+    },
+    {
+      "id": "catalog.recipe.choose",
+      "title": "choose (cut/awk alt)",
+      "area": "catalog"
+    },
+    {
+      "id": "catalog.recipe.difftastic",
+      "title": "difftastic (structural diff)",
+      "area": "catalog"
+    },
+    {
+      "id": "catalog.recipe.dua",
+      "title": "dua (disk usage analyzer)",
+      "area": "catalog"
+    },
+    {
+      "id": "catalog.recipe.dust",
+      "title": "dust (du alt)",
+      "area": "catalog"
+    },
+    {
+      "id": "catalog.recipe.grex",
+      "title": "grex (regex builder)",
+      "area": "catalog"
+    },
+    {
+      "id": "catalog.recipe.hck",
+      "title": "hck (cut alt)",
+      "area": "catalog"
+    },
+    {
+      "id": "catalog.recipe.jaq",
+      "title": "jaq (jq clone)",
+      "area": "catalog"
+    },
+    {
+      "id": "catalog.recipe.jql",
+      "title": "jql (JSON query)",
+      "area": "catalog"
+    },
+    {
+      "id": "catalog.recipe.just",
+      "title": "just (command runner)",
+      "area": "catalog"
+    },
+    {
+      "id": "catalog.recipe.numbat",
+      "title": "numbat (scientific calculator)",
+      "area": "catalog"
+    },
+    {
+      "id": "catalog.recipe.ouch",
+      "title": "ouch (archive (de)compress)",
+      "area": "catalog"
+    },
+    {
+      "id": "catalog.recipe.pastel",
+      "title": "pastel (color tool)",
+      "area": "catalog"
+    },
+    {
+      "id": "catalog.recipe.rage",
+      "title": "rage (age encryption)",
+      "area": "catalog"
+    },
+    {
+      "id": "catalog.recipe.resvg",
+      "title": "resvg (SVG render)",
+      "area": "catalog"
+    },
+    {
+      "id": "catalog.recipe.rnr",
+      "title": "rnr (batch rename)",
+      "area": "catalog"
+    },
+    {
+      "id": "catalog.recipe.tokei",
+      "title": "tokei (code stats)",
+      "area": "catalog"
+    },
+    {
+      "id": "catalog.recipe.xan",
+      "title": "xan (CSV toolkit)",
+      "area": "catalog"
     },
     {
       "id": "catalog.net.bridge",
@@ -499,7 +604,7 @@
             "suite": "node-harness",
             "commit": "5bdf731",
             "finished_at": "2026-06-27T06:20:29.674Z",
-            "age_min": 1298
+            "age_min": 1316
           },
           "tests": [
             {
@@ -539,7 +644,7 @@
             "suite": "node-harness",
             "commit": "5bdf731",
             "finished_at": "2026-06-27T06:20:29.674Z",
-            "age_min": 1298
+            "age_min": 1316
           },
           "tests": [
             {
@@ -579,7 +684,7 @@
             "suite": "node-harness",
             "commit": "5bdf731",
             "finished_at": "2026-06-27T06:20:29.674Z",
-            "age_min": 1298
+            "age_min": 1316
           },
           "tests": [
             {
@@ -619,7 +724,7 @@
             "suite": "node-harness",
             "commit": "5bdf731",
             "finished_at": "2026-06-27T06:20:29.674Z",
-            "age_min": 1298
+            "age_min": 1316
           },
           "tests": [
             {
@@ -659,7 +764,7 @@
             "suite": "node-harness",
             "commit": "5bdf731",
             "finished_at": "2026-06-27T06:20:29.674Z",
-            "age_min": 1298
+            "age_min": 1316
           },
           "tests": [
             {
@@ -699,7 +804,7 @@
             "suite": "node-harness",
             "commit": "5bdf731",
             "finished_at": "2026-06-27T06:20:29.674Z",
-            "age_min": 1298
+            "age_min": 1316
           },
           "tests": [
             {
@@ -739,7 +844,7 @@
             "suite": "node-harness",
             "commit": "5bdf731",
             "finished_at": "2026-06-27T06:20:29.674Z",
-            "age_min": 1298
+            "age_min": 1316
           },
           "tests": [
             {
@@ -779,7 +884,7 @@
             "suite": "node-harness",
             "commit": "5bdf731",
             "finished_at": "2026-06-27T06:20:29.674Z",
-            "age_min": 1298
+            "age_min": 1316
           },
           "tests": [
             {
@@ -819,7 +924,7 @@
             "suite": "node-harness",
             "commit": "5bdf731",
             "finished_at": "2026-06-27T06:20:29.674Z",
-            "age_min": 1298
+            "age_min": 1316
           },
           "tests": [
             {
@@ -859,7 +964,7 @@
             "suite": "node-harness",
             "commit": "5bdf731",
             "finished_at": "2026-06-27T06:20:29.674Z",
-            "age_min": 1298
+            "age_min": 1316
           },
           "tests": [
             {
@@ -899,7 +1004,7 @@
             "suite": "node-harness",
             "commit": "5bdf731",
             "finished_at": "2026-06-27T06:20:29.674Z",
-            "age_min": 1298
+            "age_min": 1316
           },
           "tests": [
             {
@@ -939,7 +1044,7 @@
             "suite": "node-harness",
             "commit": "5bdf731",
             "finished_at": "2026-06-27T06:20:29.674Z",
-            "age_min": 1298
+            "age_min": 1316
           },
           "tests": [
             {
@@ -979,7 +1084,7 @@
             "suite": "node-harness",
             "commit": "5bdf731",
             "finished_at": "2026-06-27T06:20:29.674Z",
-            "age_min": 1298
+            "age_min": 1316
           },
           "tests": [
             {
@@ -1019,7 +1124,7 @@
             "suite": "node-harness",
             "commit": "5bdf731",
             "finished_at": "2026-06-27T06:20:29.674Z",
-            "age_min": 1298
+            "age_min": 1316
           },
           "tests": [
             {
@@ -1059,7 +1164,7 @@
             "suite": "node-harness",
             "commit": "5bdf731",
             "finished_at": "2026-06-27T06:20:29.674Z",
-            "age_min": 1298
+            "age_min": 1316
           },
           "tests": [
             {
@@ -1099,7 +1204,7 @@
             "suite": "node-harness",
             "commit": "5bdf731",
             "finished_at": "2026-06-27T06:20:29.674Z",
-            "age_min": 1298
+            "age_min": 1316
           },
           "tests": [
             {
@@ -1139,7 +1244,7 @@
             "suite": "node-harness",
             "commit": "5bdf731",
             "finished_at": "2026-06-27T06:20:29.674Z",
-            "age_min": 1298
+            "age_min": 1316
           },
           "tests": [
             {
@@ -1192,7 +1297,7 @@
             "suite": "catalog-conformance",
             "commit": "967a756",
             "finished_at": "2026-06-27T11:13:21.006Z",
-            "age_min": 1005
+            "age_min": 1023
           },
           "tests": [
             {
@@ -1232,7 +1337,7 @@
             "suite": "catalog-conformance",
             "commit": "967a756",
             "finished_at": "2026-06-27T11:13:21.006Z",
-            "age_min": 1005
+            "age_min": 1023
           },
           "tests": [
             {
@@ -1276,7 +1381,7 @@
             "suite": "catalog-conformance",
             "commit": "967a756",
             "finished_at": "2026-06-27T11:13:21.006Z",
-            "age_min": 1005
+            "age_min": 1023
           },
           "tests": [
             {
@@ -1320,7 +1425,7 @@
             "suite": "catalog-conformance",
             "commit": "967a756",
             "finished_at": "2026-06-27T11:13:21.006Z",
-            "age_min": 1005
+            "age_min": 1023
           },
           "tests": [
             {
@@ -1363,7 +1468,7 @@
             "suite": "catalog-conformance",
             "commit": "967a756",
             "finished_at": "2026-06-27T11:13:21.006Z",
-            "age_min": 1005
+            "age_min": 1023
           },
           "tests": [
             {
@@ -1406,7 +1511,7 @@
             "suite": "catalog-conformance",
             "commit": "967a756",
             "finished_at": "2026-06-27T11:13:21.006Z",
-            "age_min": 1005
+            "age_min": 1023
           },
           "tests": [
             {
@@ -1425,9 +1530,9 @@
       "id": "catalog.recipe.prettier",
       "title": "Prettier 3.8.1",
       "area": "catalog",
-      "status": "in-progress",
+      "status": "shipped",
       "since": "2026-06",
-      "notes": "blocked: the nano node's small-ICU V8 rejects prettier's \\p{Lu} regex",
+      "notes": "runs on the node recipe; conforms against the full-ICU node build (prettier --version)",
       "cells": {
         "Catalog": {
           "layer": "Catalog",
@@ -1447,7 +1552,7 @@
             "suite": "catalog-conformance",
             "commit": "967a756",
             "finished_at": "2026-06-27T11:13:21.006Z",
-            "age_min": 1005
+            "age_min": 1023
           },
           "tests": [
             {
@@ -1499,7 +1604,7 @@
             "suite": "catalog-conformance",
             "commit": "967a756",
             "finished_at": "2026-06-27T11:13:21.006Z",
-            "age_min": 1005
+            "age_min": 1023
           },
           "tests": [
             {
@@ -1539,7 +1644,7 @@
             "suite": "catalog-conformance",
             "commit": "967a756",
             "finished_at": "2026-06-27T11:13:21.006Z",
-            "age_min": 1005
+            "age_min": 1023
           },
           "tests": [
             {
@@ -1579,7 +1684,7 @@
             "suite": "catalog-conformance",
             "commit": "967a756",
             "finished_at": "2026-06-27T11:13:21.006Z",
-            "age_min": 1005
+            "age_min": 1023
           },
           "tests": [
             {
@@ -1619,7 +1724,7 @@
             "suite": "catalog-conformance",
             "commit": "967a756",
             "finished_at": "2026-06-27T11:13:21.006Z",
-            "age_min": 1005
+            "age_min": 1023
           },
           "tests": [
             {
@@ -1659,7 +1764,7 @@
             "suite": "catalog-conformance",
             "commit": "967a756",
             "finished_at": "2026-06-27T11:13:21.006Z",
-            "age_min": 1005
+            "age_min": 1023
           },
           "tests": [
             {
@@ -1699,7 +1804,7 @@
             "suite": "catalog-conformance",
             "commit": "967a756",
             "finished_at": "2026-06-27T11:13:21.006Z",
-            "age_min": 1005
+            "age_min": 1023
           },
           "tests": [
             {
@@ -1739,7 +1844,7 @@
             "suite": "catalog-conformance",
             "commit": "967a756",
             "finished_at": "2026-06-27T11:13:21.006Z",
-            "age_min": 1005
+            "age_min": 1023
           },
           "tests": [
             {
@@ -1779,7 +1884,7 @@
             "suite": "catalog-conformance",
             "commit": "967a756",
             "finished_at": "2026-06-27T11:13:21.006Z",
-            "age_min": 1005
+            "age_min": 1023
           },
           "tests": [
             {
@@ -1819,7 +1924,7 @@
             "suite": "catalog-conformance",
             "commit": "967a756",
             "finished_at": "2026-06-27T11:13:21.006Z",
-            "age_min": 1005
+            "age_min": 1023
           },
           "tests": [
             {
@@ -1859,7 +1964,7 @@
             "suite": "catalog-conformance",
             "commit": "967a756",
             "finished_at": "2026-06-27T11:13:21.006Z",
-            "age_min": 1005
+            "age_min": 1023
           },
           "tests": [
             {
@@ -1900,7 +2005,7 @@
             "suite": "catalog-conformance",
             "commit": "967a756",
             "finished_at": "2026-06-27T11:13:21.006Z",
-            "age_min": 1005
+            "age_min": 1023
           },
           "tests": [
             {
@@ -1941,7 +2046,7 @@
             "suite": "catalog-conformance",
             "commit": "967a756",
             "finished_at": "2026-06-27T11:13:21.006Z",
-            "age_min": 1005
+            "age_min": 1023
           },
           "tests": [
             {
@@ -1960,9 +2065,296 @@
       "id": "catalog.recipe.htmlq",
       "title": "htmlq (HTML select)",
       "area": "catalog",
-      "status": "in-progress",
+      "status": "shipped",
       "since": "2026-06",
-      "notes": "stale crate deps don't compile on rust 1.96",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "catalog.recipe.ambr",
+      "title": "ambr (search & replace)",
+      "area": "catalog",
+      "status": "shipped",
+      "since": "2026-06",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "catalog.recipe.b3sum",
+      "title": "b3sum (BLAKE3 hash)",
+      "area": "catalog",
+      "status": "shipped",
+      "since": "2026-06",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "catalog.recipe.bat",
+      "title": "bat (cat + syntax highlight)",
+      "area": "catalog",
+      "status": "shipped",
+      "since": "2026-06",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "catalog.recipe.choose",
+      "title": "choose (cut/awk alt)",
+      "area": "catalog",
+      "status": "shipped",
+      "since": "2026-06",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "catalog.recipe.difftastic",
+      "title": "difftastic (structural diff)",
+      "area": "catalog",
+      "status": "shipped",
+      "since": "2026-06",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "catalog.recipe.dua",
+      "title": "dua (disk usage analyzer)",
+      "area": "catalog",
+      "status": "shipped",
+      "since": "2026-06",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "catalog.recipe.dust",
+      "title": "dust (du alt)",
+      "area": "catalog",
+      "status": "shipped",
+      "since": "2026-06",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "catalog.recipe.grex",
+      "title": "grex (regex builder)",
+      "area": "catalog",
+      "status": "shipped",
+      "since": "2026-06",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "catalog.recipe.hck",
+      "title": "hck (cut alt)",
+      "area": "catalog",
+      "status": "shipped",
+      "since": "2026-06",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "catalog.recipe.jaq",
+      "title": "jaq (jq clone)",
+      "area": "catalog",
+      "status": "shipped",
+      "since": "2026-06",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "catalog.recipe.jql",
+      "title": "jql (JSON query)",
+      "area": "catalog",
+      "status": "shipped",
+      "since": "2026-06",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "catalog.recipe.just",
+      "title": "just (command runner)",
+      "area": "catalog",
+      "status": "shipped",
+      "since": "2026-06",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "catalog.recipe.numbat",
+      "title": "numbat (scientific calculator)",
+      "area": "catalog",
+      "status": "shipped",
+      "since": "2026-06",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "catalog.recipe.ouch",
+      "title": "ouch (archive (de)compress)",
+      "area": "catalog",
+      "status": "shipped",
+      "since": "2026-06",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "catalog.recipe.pastel",
+      "title": "pastel (color tool)",
+      "area": "catalog",
+      "status": "shipped",
+      "since": "2026-06",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "catalog.recipe.rage",
+      "title": "rage (age encryption)",
+      "area": "catalog",
+      "status": "shipped",
+      "since": "2026-06",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "catalog.recipe.resvg",
+      "title": "resvg (SVG render)",
+      "area": "catalog",
+      "status": "shipped",
+      "since": "2026-06",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "catalog.recipe.rnr",
+      "title": "rnr (batch rename)",
+      "area": "catalog",
+      "status": "shipped",
+      "since": "2026-06",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "catalog.recipe.tokei",
+      "title": "tokei (code stats)",
+      "area": "catalog",
+      "status": "shipped",
+      "since": "2026-06",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "catalog.recipe.xan",
+      "title": "xan (CSV toolkit)",
+      "area": "catalog",
+      "status": "shipped",
+      "since": "2026-06",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "catalog.recipe.dyff",
+      "title": "dyff (YAML/JSON diff)",
+      "area": "catalog",
+      "status": "partial",
+      "since": "2026-06",
+      "notes": "Go tool; deterministic exit 2 (heap-arena OOM under nano) — --version crashes",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "catalog.recipe.fend",
+      "title": "fend (unit calculator)",
+      "area": "catalog",
+      "status": "partial",
+      "since": "2026-06",
+      "notes": "deterministic exit 101 (tokio-init panic) — --version crashes",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "catalog.recipe.goawk",
+      "title": "goawk (AWK)",
+      "area": "catalog",
+      "status": "partial",
+      "since": "2026-06",
+      "notes": "Go tool; deterministic exit 2 (heap-arena OOM under nano) — --version crashes",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "catalog.recipe.gojq",
+      "title": "gojq (jq in Go)",
+      "area": "catalog",
+      "status": "partial",
+      "since": "2026-06",
+      "notes": "Go tool; deterministic exit 2 (heap-arena OOM under nano) — --version crashes",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "catalog.recipe.mlr",
+      "title": "mlr (Miller; CSV/JSON)",
+      "area": "catalog",
+      "status": "partial",
+      "since": "2026-06",
+      "notes": "deterministic exit 2 — --version crashes",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "catalog.recipe.pup",
+      "title": "pup (HTML processor)",
+      "area": "catalog",
+      "status": "partial",
+      "since": "2026-06",
+      "notes": "Go tool; deterministic exit 2 (heap-arena OOM under nano) — --version crashes",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "catalog.recipe.shfmt",
+      "title": "shfmt (shell formatter)",
+      "area": "catalog",
+      "status": "partial",
+      "since": "2026-06",
+      "notes": "Go tool; deterministic exit 2 (heap-arena OOM under nano) — --version crashes",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "catalog.recipe.task",
+      "title": "task (Taskfile runner)",
+      "area": "catalog",
+      "status": "partial",
+      "since": "2026-06",
+      "notes": "Go tool; deterministic exit 2 (heap-arena OOM under nano) — --version crashes",
       "cells": {},
       "tested": false,
       "green": null
@@ -2024,7 +2416,7 @@
             "suite": "catalog-conformance",
             "commit": "967a756",
             "finished_at": "2026-06-27T11:13:21.006Z",
-            "age_min": 1005
+            "age_min": 1023
           },
           "tests": [
             {
@@ -2064,7 +2456,7 @@
             "suite": "catalog-conformance",
             "commit": "967a756",
             "finished_at": "2026-06-27T11:13:21.006Z",
-            "age_min": 1005
+            "age_min": 1023
           },
           "tests": [
             {
@@ -2108,7 +2500,7 @@
             "suite": "catalog-conformance",
             "commit": "967a756",
             "finished_at": "2026-06-27T11:13:21.006Z",
-            "age_min": 1005
+            "age_min": 1023
           },
           "tests": [
             {
@@ -2272,7 +2664,7 @@
             "suite": "catalog-conformance",
             "commit": "967a756",
             "finished_at": "2026-06-27T11:13:21.006Z",
-            "age_min": 1005
+            "age_min": 1023
           },
           "tests": [
             {
@@ -2505,7 +2897,7 @@
             "suite": "node-harness",
             "commit": "5bdf731",
             "finished_at": "2026-06-27T06:20:29.674Z",
-            "age_min": 1298
+            "age_min": 1316
           },
           "tests": [
             {
@@ -2550,7 +2942,7 @@
             "suite": "cargo-unit",
             "commit": "6639165",
             "finished_at": "2026-06-28T03:50:19.537Z",
-            "age_min": 8
+            "age_min": 26
           },
           "tests": [
             {
@@ -2611,7 +3003,7 @@
             "suite": "node-harness",
             "commit": "5bdf731",
             "finished_at": "2026-06-27T06:20:29.674Z",
-            "age_min": 1298
+            "age_min": 1316
           },
           "tests": [
             {
@@ -2654,7 +3046,7 @@
             "suite": "node-harness",
             "commit": "5bdf731",
             "finished_at": "2026-06-27T06:20:29.674Z",
-            "age_min": 1298
+            "age_min": 1316
           },
           "tests": [
             {
@@ -2697,7 +3089,7 @@
             "suite": "node-harness",
             "commit": "5bdf731",
             "finished_at": "2026-06-27T06:20:29.674Z",
-            "age_min": 1298
+            "age_min": 1316
           },
           "tests": [
             {
@@ -2740,7 +3132,7 @@
             "suite": "node-harness",
             "commit": "5bdf731",
             "finished_at": "2026-06-27T06:20:29.674Z",
-            "age_min": 1298
+            "age_min": 1316
           },
           "tests": [
             {
@@ -2811,7 +3203,7 @@
             "suite": "cargo-unit",
             "commit": "6639165",
             "finished_at": "2026-06-28T03:50:19.537Z",
-            "age_min": 8
+            "age_min": 26
           },
           "tests": [
             {
@@ -2897,7 +3289,7 @@
             "suite": "node-harness",
             "commit": "5bdf731",
             "finished_at": "2026-06-27T06:20:29.674Z",
-            "age_min": 1298
+            "age_min": 1316
           },
           "tests": [
             {
@@ -3186,7 +3578,7 @@
             "suite": "node-harness",
             "commit": "5bdf731",
             "finished_at": "2026-06-27T06:20:29.674Z",
-            "age_min": 1298
+            "age_min": 1316
           },
           "tests": [
             {
@@ -3434,7 +3826,7 @@
             "suite": "node-harness",
             "commit": "5bdf731",
             "finished_at": "2026-06-27T06:20:29.674Z",
-            "age_min": 1298
+            "age_min": 1316
           },
           "tests": [
             {
@@ -3522,7 +3914,7 @@
             "suite": "sdk-unit",
             "commit": "7b8f9cc",
             "finished_at": "2026-06-27T08:47:35.841Z",
-            "age_min": 1151
+            "age_min": 1168
           },
           "tests": [
             {
@@ -3564,7 +3956,7 @@
             "suite": "sdk-unit",
             "commit": "7b8f9cc",
             "finished_at": "2026-06-27T08:47:35.841Z",
-            "age_min": 1151
+            "age_min": 1168
           },
           "tests": [
             {
@@ -3611,7 +4003,7 @@
             "suite": "sdk-unit",
             "commit": "7b8f9cc",
             "finished_at": "2026-06-27T08:47:35.841Z",
-            "age_min": 1151
+            "age_min": 1168
           },
           "tests": [
             {
@@ -3669,7 +4061,7 @@
             "suite": "sdk-unit",
             "commit": "7b8f9cc",
             "finished_at": "2026-06-27T08:47:35.841Z",
-            "age_min": 1151
+            "age_min": 1168
           },
           "tests": [
             {
@@ -3721,7 +4113,7 @@
             "suite": "sdk-unit",
             "commit": "7b8f9cc",
             "finished_at": "2026-06-27T08:47:35.841Z",
-            "age_min": 1151
+            "age_min": 1168
           },
           "tests": [
             {
@@ -3773,7 +4165,7 @@
             "suite": "sdk-unit",
             "commit": "7b8f9cc",
             "finished_at": "2026-06-27T08:47:35.841Z",
-            "age_min": 1151
+            "age_min": 1168
           },
           "tests": [
             {
@@ -3826,7 +4218,7 @@
             "suite": "sdk-unit",
             "commit": "7b8f9cc",
             "finished_at": "2026-06-27T08:47:35.841Z",
-            "age_min": 1151
+            "age_min": 1168
           },
           "tests": [
             {
@@ -3873,7 +4265,7 @@
             "suite": "sdk-unit",
             "commit": "7b8f9cc",
             "finished_at": "2026-06-27T08:47:35.841Z",
-            "age_min": 1151
+            "age_min": 1168
           },
           "tests": [
             {
@@ -3921,7 +4313,7 @@
             "suite": "sdk-unit",
             "commit": "7b8f9cc",
             "finished_at": "2026-06-27T08:47:35.841Z",
-            "age_min": 1151
+            "age_min": 1168
           },
           "tests": [
             {
@@ -3971,7 +4363,7 @@
             "suite": "playwright-e2e",
             "commit": "6640c09",
             "finished_at": "2026-06-27T03:48:02.426Z",
-            "age_min": 1451
+            "age_min": 1468
           },
           "tests": [
             {
@@ -4012,7 +4404,7 @@
             "suite": "playwright-e2e",
             "commit": "6640c09",
             "finished_at": "2026-06-27T03:48:02.426Z",
-            "age_min": 1451
+            "age_min": 1468
           },
           "tests": [
             {
@@ -4052,7 +4444,7 @@
             "suite": "playwright-e2e",
             "commit": "6640c09",
             "finished_at": "2026-06-27T03:48:02.426Z",
-            "age_min": 1451
+            "age_min": 1468
           },
           "tests": [
             {
@@ -4139,7 +4531,7 @@
             "suite": "playwright-e2e",
             "commit": "6640c09",
             "finished_at": "2026-06-27T03:48:02.426Z",
-            "age_min": 1451
+            "age_min": 1468
           },
           "tests": [
             {
