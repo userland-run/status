@@ -2,11 +2,21 @@
   "contract": 1,
   "source": "nano",
   "suite": "cargo-unit",
-  "commit": "54094f8",
+  "commit": "4871f42",
   "branch": "main",
-  "run_id": "28361216702",
-  "finished_at": "2026-06-29T09:11:24.701Z",
+  "run_id": "28391248013",
+  "finished_at": "2026-06-29T17:40:07.630Z",
   "results": [
+    {
+      "test_id": "decode::tests::c_nop_is_canonical_nop",
+      "features": [
+        "emulator.cpu.decode-rvc"
+      ],
+      "status": "passed",
+      "duration_ms": 5,
+      "retries": 0,
+      "trace_url": "https://github.com/userland-run/nano/actions/runs/28391248013"
+    },
     {
       "test_id": "decode::tests::c_addi_expands_to_opimm",
       "features": [
@@ -15,7 +25,7 @@
       "status": "passed",
       "duration_ms": 5,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/nano/actions/runs/28361216702"
+      "trace_url": "https://github.com/userland-run/nano/actions/runs/28391248013"
     },
     {
       "test_id": "decode::tests::c_sw_expands_to_store_opcode",
@@ -25,7 +35,7 @@
       "status": "passed",
       "duration_ms": 5,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/nano/actions/runs/28361216702"
+      "trace_url": "https://github.com/userland-run/nano/actions/runs/28391248013"
     },
     {
       "test_id": "decode::tests::c_lw_expands_to_load_opcode",
@@ -33,19 +43,9 @@
         "emulator.cpu.decode-rvc"
       ],
       "status": "passed",
-      "duration_ms": 5,
-      "retries": 0,
-      "trace_url": "https://github.com/userland-run/nano/actions/runs/28361216702"
-    },
-    {
-      "test_id": "decode::tests::c_nop_is_canonical_nop",
-      "features": [
-        "emulator.cpu.decode-rvc"
-      ],
-      "status": "passed",
       "duration_ms": 7,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/nano/actions/runs/28361216702"
+      "trace_url": "https://github.com/userland-run/nano/actions/runs/28391248013"
     },
     {
       "test_id": "decode::tests::non_compressed_returns_zero",
@@ -55,7 +55,7 @@
       "status": "passed",
       "duration_ms": 5,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/nano/actions/runs/28361216702"
+      "trace_url": "https://github.com/userland-run/nano/actions/runs/28391248013"
     },
     {
       "test_id": "types::tests::a0_and_sp_register_offsets",
@@ -65,7 +65,7 @@
       "status": "passed",
       "duration_ms": 5,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/nano/actions/runs/28361216702"
+      "trace_url": "https://github.com/userland-run/nano/actions/runs/28391248013"
     },
     {
       "test_id": "decode::tests::illegal_compressed_returns_zero",
@@ -73,9 +73,9 @@
         "emulator.cpu.decode-rvc"
       ],
       "status": "passed",
-      "duration_ms": 7,
+      "duration_ms": 6,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/nano/actions/runs/28361216702"
+      "trace_url": "https://github.com/userland-run/nano/actions/runs/28391248013"
     },
     {
       "test_id": "types::tests::fsrequest_path_buffers_are_256",
@@ -85,7 +85,7 @@
       "status": "passed",
       "duration_ms": 5,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/nano/actions/runs/28361216702"
+      "trace_url": "https://github.com/userland-run/nano/actions/runs/28391248013"
     },
     {
       "test_id": "types::tests::host_shared_offsets_are_stable",
@@ -95,7 +95,7 @@
       "status": "passed",
       "duration_ms": 4,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/nano/actions/runs/28361216702"
+      "trace_url": "https://github.com/userland-run/nano/actions/runs/28391248013"
     },
     {
       "test_id": "types::tests::vm_size_is_locked",
@@ -103,9 +103,9 @@
         "emulator.types.layout"
       ],
       "status": "passed",
-      "duration_ms": 5,
+      "duration_ms": 4,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/nano/actions/runs/28361216702"
+      "trace_url": "https://github.com/userland-run/nano/actions/runs/28391248013"
     }
   ]
 }
