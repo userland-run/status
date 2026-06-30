@@ -4,6 +4,8 @@ The **single source of truth for the state of userland.run / NanoVM**: what
 capabilities exist, what is tested, what is green or red, and where the gaps and
 drift are. Live at **https://status.userland.run**.
 
+> 📚 Project documentation: <https://userland.run/docs/>. See [Part of userland.run](#part-of-userlandrun).
+
 It is a *hub*: a feature **registry** is joined against **test results** that each
 producing repo's CI publishes, producing a unified matrix that is rendered as a
 static dashboard and committed as [`STATUS.md`](./STATUS.md).
@@ -52,6 +54,20 @@ npm run build        # static export → out/
 
 IDs are **immutable** — rename via `superseded_by:`, never by editing an id
 (tests in other repos reference them).
+
+## Part of userland.run
+
+This is the monitoring hub for the **[userland.run](https://userland.run)** workspace; each repo
+below is a results **producer** whose CI emits `userland-results.json`:
+
+| Repo | What it is |
+| ---- | ---------- |
+| [nano](https://github.com/userland-run/nano) | The RV64GC → WASM emulator core |
+| [sdk](https://github.com/userland-run/sdk) | `@userland-run/nano-sdk` — typed TypeScript SDK |
+| [terminal](https://github.com/userland-run/terminal) | `<nano-terminal>` web component |
+| [catalog](https://github.com/userland-run/catalog) | Signed app marketplace |
+| [website](https://github.com/userland-run/website) | Landing page + hosted docs at [userland.run/docs](https://userland.run/docs/) |
+| **[status](https://github.com/userland-run/status)** | The status/conformance dashboard — **this repo** |
 
 ## License
 
