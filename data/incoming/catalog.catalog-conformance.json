@@ -2,10 +2,10 @@
   "contract": 1,
   "source": "catalog",
   "suite": "catalog-conformance",
-  "commit": "933dc0e",
+  "commit": "bc69287",
   "branch": "main",
-  "run_id": "28455355003",
-  "finished_at": "2026-06-30T15:24:38.481Z",
+  "run_id": "28456353704",
+  "finished_at": "2026-06-30T15:41:01.218Z",
   "results": [
     {
       "test_id": "recipes/_net-fixture-test/test/run.json",
@@ -17,7 +17,7 @@
       "status": "passed",
       "duration_ms": 5,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28455355003"
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28456353704"
     },
     {
       "test_id": "recipes/_stdin-fixture-test/test/run.json",
@@ -27,9 +27,9 @@
         "catalog.pipeline.gate"
       ],
       "status": "passed",
-      "duration_ms": 4,
+      "duration_ms": 2,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28455355003"
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28456353704"
     },
     {
       "test_id": "recipes/ambr/test/run.json",
@@ -39,9 +39,9 @@
         "catalog.pipeline.gate"
       ],
       "status": "passed",
-      "duration_ms": 18,
+      "duration_ms": 25,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28455355003"
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28456353704"
     },
     {
       "test_id": "recipes/ast-grep/test/run.json",
@@ -51,9 +51,9 @@
         "catalog.pipeline.gate"
       ],
       "status": "passed",
-      "duration_ms": 25,
+      "duration_ms": 20,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28455355003"
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28456353704"
     },
     {
       "test_id": "recipes/b3sum/test/run.json",
@@ -65,7 +65,7 @@
       "status": "passed",
       "duration_ms": 5,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28455355003"
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28456353704"
     },
     {
       "test_id": "recipes/bat/test/run.json",
@@ -75,9 +75,9 @@
         "catalog.pipeline.gate"
       ],
       "status": "passed",
-      "duration_ms": 16,
+      "duration_ms": 19,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28455355003"
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28456353704"
     },
     {
       "test_id": "recipes/busybox/test/run.json",
@@ -89,7 +89,7 @@
       "status": "passed",
       "duration_ms": 2,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28455355003"
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28456353704"
     },
     {
       "test_id": "recipes/choose/test/run.json",
@@ -101,7 +101,7 @@
       "status": "passed",
       "duration_ms": 7,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28455355003"
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28456353704"
     },
     {
       "test_id": "recipes/dasel/test/run.json",
@@ -113,7 +113,7 @@
       "status": "passed",
       "duration_ms": 29,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28455355003"
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28456353704"
     },
     {
       "test_id": "recipes/delta/test/run.json",
@@ -123,9 +123,9 @@
         "catalog.pipeline.gate"
       ],
       "status": "passed",
-      "duration_ms": 35,
+      "duration_ms": 38,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28455355003"
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28456353704"
     },
     {
       "test_id": "recipes/difftastic/test/run.json",
@@ -135,9 +135,9 @@
         "catalog.pipeline.gate"
       ],
       "status": "failed",
-      "duration_ms": 14,
+      "duration_ms": 17,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28455355003"
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28456353704"
     },
     {
       "test_id": "recipes/dua/test/run.json",
@@ -147,9 +147,9 @@
         "catalog.pipeline.gate"
       ],
       "status": "passed",
-      "duration_ms": 9,
+      "duration_ms": 15,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28455355003"
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28456353704"
     },
     {
       "test_id": "recipes/dust/test/run.json",
@@ -159,9 +159,9 @@
         "catalog.pipeline.gate"
       ],
       "status": "passed",
-      "duration_ms": 9,
+      "duration_ms": 13,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28455355003"
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28456353704"
     },
     {
       "test_id": "recipes/dyff/test/run.json",
@@ -171,9 +171,9 @@
         "catalog.pipeline.gate"
       ],
       "status": "passed",
-      "duration_ms": 88,
+      "duration_ms": 32,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28455355003"
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28456353704"
     },
     {
       "test_id": "recipes/eslint/test/run.json",
@@ -183,9 +183,9 @@
         "catalog.pipeline.gate"
       ],
       "status": "passed",
-      "duration_ms": 11470,
+      "duration_ms": 11347,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28455355003"
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28456353704"
     },
     {
       "test_id": "recipes/fd/test/run.json",
@@ -195,9 +195,9 @@
         "catalog.pipeline.gate"
       ],
       "status": "passed",
-      "duration_ms": 14,
+      "duration_ms": 18,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28455355003"
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28456353704"
     },
     {
       "test_id": "recipes/fend/test/run.json",
@@ -207,9 +207,9 @@
         "catalog.pipeline.gate"
       ],
       "status": "passed",
-      "duration_ms": 12,
+      "duration_ms": 13,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28455355003"
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28456353704"
     },
     {
       "test_id": "recipes/gix/test/run.json",
@@ -219,9 +219,9 @@
         "catalog.pipeline.gate"
       ],
       "status": "passed",
-      "duration_ms": 31,
+      "duration_ms": 25,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28455355003"
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28456353704"
     },
     {
       "test_id": "recipes/glow/test/run.json",
@@ -233,7 +233,7 @@
       "status": "passed",
       "duration_ms": 29,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28455355003"
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28456353704"
     },
     {
       "test_id": "recipes/goawk/test/run.json",
@@ -243,9 +243,9 @@
         "catalog.pipeline.gate"
       ],
       "status": "passed",
-      "duration_ms": 24,
+      "duration_ms": 32,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28455355003"
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28456353704"
     },
     {
       "test_id": "recipes/gojq/test/run.json",
@@ -255,9 +255,9 @@
         "catalog.pipeline.gate"
       ],
       "status": "passed",
-      "duration_ms": 23,
+      "duration_ms": 28,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28455355003"
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28456353704"
     },
     {
       "test_id": "recipes/grex/test/run.json",
@@ -269,7 +269,7 @@
       "status": "passed",
       "duration_ms": 11,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28455355003"
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28456353704"
     },
     {
       "test_id": "recipes/gron/test/run.json",
@@ -279,9 +279,9 @@
         "catalog.pipeline.gate"
       ],
       "status": "passed",
-      "duration_ms": 29,
+      "duration_ms": 32,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28455355003"
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28456353704"
     },
     {
       "test_id": "recipes/hck/test/run.json",
@@ -291,9 +291,9 @@
         "catalog.pipeline.gate"
       ],
       "status": "passed",
-      "duration_ms": 8,
+      "duration_ms": 7,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28455355003"
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28456353704"
     },
     {
       "test_id": "recipes/hello-c/test/run.json",
@@ -303,9 +303,9 @@
         "catalog.pipeline.gate"
       ],
       "status": "passed",
-      "duration_ms": 2,
+      "duration_ms": 3,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28455355003"
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28456353704"
     },
     {
       "test_id": "recipes/hexyl/test/run.json",
@@ -315,9 +315,9 @@
         "catalog.pipeline.gate"
       ],
       "status": "passed",
-      "duration_ms": 6,
+      "duration_ms": 5,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28455355003"
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28456353704"
     },
     {
       "test_id": "recipes/htmlq/test/run.json",
@@ -327,9 +327,9 @@
         "catalog.pipeline.gate"
       ],
       "status": "passed",
-      "duration_ms": 9,
+      "duration_ms": 7,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28455355003"
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28456353704"
     },
     {
       "test_id": "recipes/jaq/test/run.json",
@@ -339,9 +339,9 @@
         "catalog.pipeline.gate"
       ],
       "status": "passed",
-      "duration_ms": 8,
+      "duration_ms": 10,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28455355003"
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28456353704"
     },
     {
       "test_id": "recipes/jql/test/run.json",
@@ -353,7 +353,7 @@
       "status": "passed",
       "duration_ms": 12,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28455355003"
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28456353704"
     },
     {
       "test_id": "recipes/just/test/run.json",
@@ -363,9 +363,9 @@
         "catalog.pipeline.gate"
       ],
       "status": "passed",
-      "duration_ms": 17,
+      "duration_ms": 13,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28455355003"
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28456353704"
     },
     {
       "test_id": "recipes/mlr/test/run.json",
@@ -375,9 +375,9 @@
         "catalog.pipeline.gate"
       ],
       "status": "passed",
-      "duration_ms": 36,
+      "duration_ms": 35,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28455355003"
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28456353704"
     },
     {
       "test_id": "recipes/nfetch/test/run.json",
@@ -389,7 +389,7 @@
       "status": "passed",
       "duration_ms": 6,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28455355003"
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28456353704"
     },
     {
       "test_id": "recipes/node/test/run.json",
@@ -399,9 +399,9 @@
         "catalog.pipeline.gate"
       ],
       "status": "passed",
-      "duration_ms": 96,
+      "duration_ms": 103,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28455355003"
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28456353704"
     },
     {
       "test_id": "recipes/numbat/test/run.json",
@@ -411,9 +411,9 @@
         "catalog.pipeline.gate"
       ],
       "status": "passed",
-      "duration_ms": 9,
+      "duration_ms": 6,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28455355003"
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28456353704"
     },
     {
       "test_id": "recipes/ouch/test/run.json",
@@ -423,9 +423,9 @@
         "catalog.pipeline.gate"
       ],
       "status": "passed",
-      "duration_ms": 14,
+      "duration_ms": 16,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28455355003"
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28456353704"
     },
     {
       "test_id": "recipes/oxipng/test/run.json",
@@ -435,9 +435,9 @@
         "catalog.pipeline.gate"
       ],
       "status": "passed",
-      "duration_ms": 8,
+      "duration_ms": 4,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28455355003"
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28456353704"
     },
     {
       "test_id": "recipes/pastel/test/run.json",
@@ -447,9 +447,9 @@
         "catalog.pipeline.gate"
       ],
       "status": "passed",
-      "duration_ms": 19,
+      "duration_ms": 9,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28455355003"
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28456353704"
     },
     {
       "test_id": "recipes/prettier/test/run.json",
@@ -459,9 +459,9 @@
         "catalog.pipeline.gate"
       ],
       "status": "passed",
-      "duration_ms": 7673,
+      "duration_ms": 7313,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28455355003"
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28456353704"
     },
     {
       "test_id": "recipes/pup/test/run.json",
@@ -471,9 +471,9 @@
         "catalog.pipeline.gate"
       ],
       "status": "passed",
-      "duration_ms": 29,
+      "duration_ms": 83,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28455355003"
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28456353704"
     },
     {
       "test_id": "recipes/rage/test/run.json",
@@ -483,9 +483,9 @@
         "catalog.pipeline.gate"
       ],
       "status": "passed",
-      "duration_ms": 46,
+      "duration_ms": 51,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28455355003"
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28456353704"
     },
     {
       "test_id": "recipes/resvg/test/run.json",
@@ -495,9 +495,9 @@
         "catalog.pipeline.gate"
       ],
       "status": "passed",
-      "duration_ms": 4,
+      "duration_ms": 5,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28455355003"
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28456353704"
     },
     {
       "test_id": "recipes/ripgrep/test/run.json",
@@ -507,9 +507,9 @@
         "catalog.pipeline.gate"
       ],
       "status": "passed",
-      "duration_ms": 46,
+      "duration_ms": 49,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28455355003"
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28456353704"
     },
     {
       "test_id": "recipes/rnr/test/run.json",
@@ -519,9 +519,9 @@
         "catalog.pipeline.gate"
       ],
       "status": "passed",
-      "duration_ms": 9,
+      "duration_ms": 11,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28455355003"
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28456353704"
     },
     {
       "test_id": "recipes/sd/test/run.json",
@@ -531,9 +531,9 @@
         "catalog.pipeline.gate"
       ],
       "status": "passed",
-      "duration_ms": 6,
+      "duration_ms": 7,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28455355003"
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28456353704"
     },
     {
       "test_id": "recipes/shfmt/test/run.json",
@@ -543,9 +543,9 @@
         "catalog.pipeline.gate"
       ],
       "status": "passed",
-      "duration_ms": 25,
+      "duration_ms": 27,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28455355003"
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28456353704"
     },
     {
       "test_id": "recipes/task/test/run.json",
@@ -555,9 +555,9 @@
         "catalog.pipeline.gate"
       ],
       "status": "passed",
-      "duration_ms": 33,
+      "duration_ms": 42,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28455355003"
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28456353704"
     },
     {
       "test_id": "recipes/tokei/test/run.json",
@@ -567,9 +567,9 @@
         "catalog.pipeline.gate"
       ],
       "status": "passed",
-      "duration_ms": 8,
+      "duration_ms": 7,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28455355003"
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28456353704"
     },
     {
       "test_id": "recipes/typescript/test/run.json",
@@ -579,9 +579,9 @@
         "catalog.pipeline.gate"
       ],
       "status": "passed",
-      "duration_ms": 8773,
+      "duration_ms": 6153,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28455355003"
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28456353704"
     },
     {
       "test_id": "recipes/xan/test/run.json",
@@ -591,9 +591,9 @@
         "catalog.pipeline.gate"
       ],
       "status": "passed",
-      "duration_ms": 176,
+      "duration_ms": 179,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28455355003"
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28456353704"
     },
     {
       "test_id": "recipes/yq/test/run.json",
@@ -603,9 +603,9 @@
         "catalog.pipeline.gate"
       ],
       "status": "passed",
-      "duration_ms": 37,
+      "duration_ms": 30,
       "retries": 0,
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28455355003"
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28456353704"
     }
   ]
 }
