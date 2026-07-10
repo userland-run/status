@@ -12,3 +12,4 @@
 - { id: sdk.scripting.eval, title: scripting eval + marshal (boa.wasm), area: sdk, status: partial, since: "2026-06", notes: "boa.wasm engine done; ScriptEngine SDK surface not yet fully wired" }
 - { id: sdk.scripting.capability, title: scripting capability gating, area: sdk, status: partial, notes: "capability denial path exists; surface in flux" }
 - { id: sdk.node.runtime, title: node runner path, area: sdk, status: shipped, since: "2026-06", notes: "smoke 12/12; warm-restore exit-134 caveat (check stdout not exitCode)" }
+- { id: sdk.engines.config, title: "engines config — createNano({ engines: { node, routing } })", area: sdk, status: partial, since: "2026-07", spec: "node-host-engine §14", notes: "API shape + vm/nodert/auto policy + routing pins wired (default vm); unit-tested; nodert/auto throw ERR_NODERT_UNWIRED until the host-engine runtime is vendored into the SDK build (K9)" }
