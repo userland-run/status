@@ -15,4 +15,4 @@
 - { id: wasm.cache, title: "compiled-Module cache keyed by content hash", area: wasm, status: shipped, level: tested, since: "2026-07", spec: "wasm-tier §4.1 X5" }
 - { id: wasm.stats, title: "syscall counters + running-instance stats", area: wasm, status: shipped, level: tested, since: "2026-07", spec: "wasm-tier §7 M3" }
 - { id: wasm.http, title: "wasi-http components behind ServeBridge", area: wasm, status: planned, spec: "wasm-tier §8 (W-3)" }
-- { id: wasm.catalog, title: "catalog wasm-app / wasm-component artifact kinds", area: wasm, status: planned, spec: "wasm-tier §9 (W-2/W-3)" }
+- { id: wasm.catalog, title: "catalog wasm-app / wasm-component artifact kinds", area: wasm, status: partial, level: tested, since: "2026-07", spec: "wasm-tier §9 (W-2/W-3)", notes: "Manifest.kind discriminator (elf/wasm-app/service/component) + package.mjs magic-sniff + wasm32-wasip1 abi + manifestKind()/isWasmKind() helpers shipped & tested (both sign/verify sides); wasm-app installs onto PATH (.wasm router runs it). wasm-service→registry + wasm-component→ServeBridge routing pending (W-3)" }
