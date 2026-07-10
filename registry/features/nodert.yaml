@@ -19,6 +19,7 @@
 - { id: nodert.child, title: "child_process — spawnSync/execSync/spawn/fork (cross-tier)", area: nodert, status: shipped, level: tested, since: "2026-07", spec: "node-host-engine §12" }
 - { id: nodert.svc.sqlite, title: "node:sqlite (via DuckDB) + node:zlib (via service)", area: nodert, status: partial, since: "2026-07", notes: "wired to Kernel services; dialect divergences — DIV-SQLITE-DUCKDB" }
 - { id: nodert.differential, title: "differential harness vs VM/host-node oracle", area: nodert, status: shipped, level: tested, since: "2026-07", spec: "node-host-engine §16" }
+- { id: nodert.ordering, title: "ordering harness — event-loop phase interleave, byte-exact vs oracle", area: nodert, status: shipped, level: tested, since: "2026-07", spec: "node-host-engine §16.2" }
 - { id: nodert.tools, title: "run real tools (tsc / eslint / prettier / npm)", area: nodert, status: planned, notes: "M1-final/M2/M3 — needs the module system at scale" }
 - { id: nodert.fork, title: "child_process.fork — IPC ping-pong", area: nodert, status: shipped, level: tested, since: "2026-07", spec: "node-host-engine §12.2" }
 - { id: nodert.cas, title: "CAS + hardlink node_modules (pnpm model)", area: nodert, status: partial, since: "2026-07", notes: "K8-core; OPFS persistence (K8-full) later" }
