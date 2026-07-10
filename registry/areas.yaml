@@ -61,6 +61,13 @@ areas:
     leveled: true
     blurb: Unmodified Node.js lib/ running on the browser's own JS engine at JIT speed, over the Kernel Syscall Bus.
 
+  - id: applets
+    title: BusyBox applets for nodert
+    owner: nano
+    repo: userland-run/nano
+    leveled: true
+    blurb: Real emulated BusyBox available to nodert processes as the "vm" tier — cross-tier pipelines over one shared VFS.
+
   - id: wasm
     title: WASM tier (WASI apps)
     owner: nano

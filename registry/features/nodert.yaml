@@ -22,4 +22,4 @@
 - { id: nodert.tools, title: "run real tools (tsc / eslint / prettier / npm)", area: nodert, status: planned, notes: "M1-final/M2/M3 — needs the module system at scale" }
 - { id: nodert.fork, title: "child_process.fork — IPC ping-pong", area: nodert, status: shipped, level: tested, since: "2026-07", spec: "node-host-engine §12.2" }
 - { id: nodert.cas, title: "CAS + hardlink node_modules (pnpm model)", area: nodert, status: partial, since: "2026-07", notes: "K8-core; OPFS persistence (K8-full) later" }
-- { id: nodert.crosstier, title: "cross-tier chain (node → sh → node), npm lifecycle shape", area: nodert, status: partial, since: "2026-07", notes: "lean sh delegate; real BusyBox via terminal/SDK — DIV-SH-LEAN" }
+- { id: nodert.crosstier, title: "cross-tier chain (node → sh → node), npm lifecycle shape", area: nodert, status: shipped, level: tested, since: "2026-07", spec: "node-host-engine §12.3; real BusyBox via vm-delegate" }

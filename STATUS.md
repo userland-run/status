@@ -1,13 +1,16 @@
 # userland.run — status
 
-> Generated 2026-07-10T18:02:30.561Z · live at https://status.userland.run
+> Generated 2026-07-10T18:17:47.577Z · live at https://status.userland.run
 
-**90 / 91 tested features green** (99%) · 158 shipped (79%) · 0 failing now · 77 shipped-but-untested · 0 drift
+**90 / 91 tested features green** (99%) · 162 shipped (78%) · 0 failing now · 81 shipped-but-untested · 0 drift
 
 ## Red now
 Nothing failing. 🟢
 
-## Shipped but untested (77)
+## Shipped but untested (81)
+- `applets.vm.warm` — warm-VM applet spawn (no per-command boot)
+- `applets.crosstier` — cross-tier shell — busybox applets + nodert node over one VFS
+- `applets.pipeline` — pipelines across tiers (nodert → busybox → nodert)
 - `busybox.shell.ash` — ash shell (/bin/sh)
 - `busybox.ls` — ls
 - `catalog.net.bridge` — host-fetch bridge (/dev/__net__)
@@ -20,10 +23,7 @@ Nothing failing. 🟢
 - `emulator.process.execve` — execve (tty/termios preserved)
 - `emulator.thread.futex` — futex (WAIT/WAKE)
 - `emulator.thread.sched-yield` — sched_yield
-- `emulator.ipc.pipe` — pipe2
-- `emulator.syscall.openat` — openat(2)
-- `emulator.syscall.close` — close(2)
-- …and 62 more
+- …and 66 more
 
 ## Drift (0)
 No drift. 🟢
@@ -38,16 +38,17 @@ No drift. 🟢
 | WebGPU console | 9 | 56% | 100% (4/4) |
 | App conformance & distribution | 57 | 84% | 100% (52/52) |
 | Kernel (shared OS layer) | 16 | 81% | 0% (0/0) |
-| Node host-engine tier | 19 | 58% | 0% (0/0) |
+| Node host-engine tier | 19 | 63% | 0% (0/0) |
+| BusyBox applets for nodert | 6 | 50% | 0% (0/0) |
 | WASM tier (WASI apps) | 10 | 50% | 0% (0/0) |
 
 ## Suites
 | Suite | Layer | Health | Pass rate | Age (min) |
 | ----- | ----- | ------ | --------- | --------- |
-| nano/cargo-unit | Core | silent | 100% | 14933 |
-| nano/node-harness | Runtime | silent | 100% | 15077 |
-| sdk/sdk-unit | SDK | silent | 87% | 15786 |
-| terminal/playwright-e2e | Terminal | silent | 100% | 19574 |
-| catalog/catalog-conformance | Catalog | silent | 100% | 15751 |
+| nano/cargo-unit | Core | silent | 100% | 14948 |
+| nano/node-harness | Runtime | silent | 100% | 15093 |
+| sdk/sdk-unit | SDK | silent | 87% | 15802 |
+| terminal/playwright-e2e | Terminal | silent | 100% | 19589 |
+| catalog/catalog-conformance | Catalog | silent | 100% | 15766 |
 
 _Regenerated on every result push. Edit features in `registry/`, never this file._

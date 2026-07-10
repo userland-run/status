@@ -1,0 +1,12 @@
+# SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-UEL
+# Copyright (C) 2026 And The Next GmbH - https://userland.run
+#
+# BusyBox applets for the nodert tier (UL-SPEC/applets). Real emulated BusyBox
+# as the "vm" spawn delegate, sharing one VFS.
+
+- { id: applets.vm.warm, title: "warm-VM applet spawn (no per-command boot)", area: applets, status: shipped, level: tested, since: "2026-07", spec: "UL-SPEC/applets E1" }
+- { id: applets.crosstier, title: "cross-tier shell — busybox applets + nodert node over one VFS", area: applets, status: shipped, level: tested, since: "2026-07", spec: "UL-SPEC/applets §4, node-host-engine §12.3" }
+- { id: applets.pipeline, title: "pipelines across tiers (nodert → busybox → nodert)", area: applets, status: shipped, level: tested, since: "2026-07", spec: "UL-SPEC/applets T2" }
+- { id: applets.native, title: "kernel-native applet substitutes (cat/wc/ls/... in JS)", area: applets, status: planned, spec: "UL-SPEC/applets S1 class 2" }
+- { id: applets.wasi, title: "svc:wasi applet substitutes (uutils, ripgrep, fd)", area: applets, status: planned, spec: "UL-SPEC/applets S1 class 3" }
+- { id: applets.difftest, title: "applet difftest corpus vs BusyBox oracle", area: applets, status: planned, spec: "UL-SPEC/applets T1" }
