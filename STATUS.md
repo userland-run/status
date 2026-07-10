@@ -1,13 +1,13 @@
 # userland.run — status
 
-> Generated 2026-07-10T18:26:34.406Z · live at https://status.userland.run
+> Generated 2026-07-10T18:43:10.639Z · live at https://status.userland.run
 
-**90 / 91 tested features green** (99%) · 165 shipped (79%) · 0 failing now · 84 shipped-but-untested · 0 drift
+**90 / 91 tested features green** (99%) · 169 shipped (80%) · 0 failing now · 88 shipped-but-untested · 0 drift
 
 ## Red now
 Nothing failing. 🟢
 
-## Shipped but untested (84)
+## Shipped but untested (88)
 - `applets.vm.warm` — warm-VM applet spawn (no per-command boot)
 - `applets.crosstier` — cross-tier shell — busybox applets + nodert node over one VFS
 - `applets.pipeline` — pipelines across tiers (nodert → busybox → nodert)
@@ -23,7 +23,7 @@ Nothing failing. 🟢
 - `emulator.tty.termios` — TTY line discipline (termios)
 - `emulator.term.vte` — VTE terminal grid
 - `emulator.process.fork` — clone/fork
-- …and 69 more
+- …and 73 more
 
 ## Drift (0)
 No drift. 🟢
@@ -40,15 +40,15 @@ No drift. 🟢
 | Kernel (shared OS layer) | 16 | 81% | 0% (0/0) |
 | Node host-engine tier | 19 | 63% | 0% (0/0) |
 | BusyBox applets for nodert | 7 | 86% | 0% (0/0) |
-| WASM tier (WASI apps) | 10 | 50% | 0% (0/0) |
+| WASM tier (WASI apps) | 12 | 75% | 0% (0/0) |
 
 ## Suites
 | Suite | Layer | Health | Pass rate | Age (min) |
 | ----- | ----- | ------ | --------- | --------- |
-| nano/cargo-unit | Core | silent | 100% | 14957 |
-| nano/node-harness | Runtime | silent | 100% | 15101 |
-| sdk/sdk-unit | SDK | silent | 87% | 15810 |
-| terminal/playwright-e2e | Terminal | silent | 100% | 19598 |
-| catalog/catalog-conformance | Catalog | silent | 100% | 15775 |
+| nano/cargo-unit | Core | silent | 100% | 14974 |
+| nano/node-harness | Runtime | silent | 100% | 15118 |
+| sdk/sdk-unit | SDK | silent | 87% | 15827 |
+| terminal/playwright-e2e | Terminal | silent | 100% | 19615 |
+| catalog/catalog-conformance | Catalog | silent | 100% | 15792 |
 
 _Regenerated on every result push. Edit features in `registry/`, never this file._

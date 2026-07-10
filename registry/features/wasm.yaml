@@ -10,7 +10,9 @@
 - { id: wasm.preopen.escape, title: "preopen-escape denial ('..' traversal → ENOTCAPABLE)", area: wasm, status: shipped, level: tested, since: "2026-07", spec: "wasm-tier W2" }
 - { id: wasm.spawn, title: ".wasm PATH routing + cross-tier spawn (node → wasm)", area: wasm, status: shipped, level: tested, since: "2026-07", spec: "wasm-tier §6 T1" }
 - { id: wasm.stdio, title: "stdio via Kernel pipes (pipeline participation)", area: wasm, status: shipped, level: tested, since: "2026-07", spec: "wasm-tier T2" }
-- { id: wasm.threads, title: "wasip1-threads (wasi_thread_spawn, shared memory)", area: wasm, status: planned, spec: "wasm-tier §4.1 X4 (W-2)" }
-- { id: wasm.inspect, title: "wasm inspect — imports/exports/memory/threads/signature", area: wasm, status: planned, spec: "wasm-tier §7 M2 (W-2)" }
+- { id: wasm.threads, title: "wasip1-threads (wasi_thread_spawn, shared SAB memory)", area: wasm, status: shipped, level: tested, since: "2026-07", spec: "wasm-tier §4.1 X4" }
+- { id: wasm.inspect, title: "wasm inspect — imports/exports/memory/threads/wasi-version", area: wasm, status: shipped, level: tested, since: "2026-07", spec: "wasm-tier §7 M2" }
+- { id: wasm.cache, title: "compiled-Module cache keyed by content hash", area: wasm, status: shipped, level: tested, since: "2026-07", spec: "wasm-tier §4.1 X5" }
+- { id: wasm.stats, title: "syscall counters + running-instance stats", area: wasm, status: shipped, level: tested, since: "2026-07", spec: "wasm-tier §7 M3" }
 - { id: wasm.http, title: "wasi-http components behind ServeBridge", area: wasm, status: planned, spec: "wasm-tier §8 (W-3)" }
 - { id: wasm.catalog, title: "catalog wasm-app / wasm-component artifact kinds", area: wasm, status: planned, spec: "wasm-tier §9 (W-2/W-3)" }
