@@ -1,13 +1,13 @@
 # userland.run — status
 
-> Generated 2026-07-10T20:22:44.358Z · live at https://status.userland.run
+> Generated 2026-07-10T20:27:54.117Z · live at https://status.userland.run
 
-**90 / 91 tested features green** (99%) · 175 shipped (81%) · 0 failing now · 94 shipped-but-untested · 0 drift
+**90 / 91 tested features green** (99%) · 176 shipped (81%) · 0 failing now · 95 shipped-but-untested · 0 drift
 
 ## Red now
 Nothing failing. 🟢
 
-## Shipped but untested (94)
+## Shipped but untested (95)
 - `applets.vm.warm` — warm-VM applet spawn (no per-command boot)
 - `applets.crosstier` — cross-tier shell — busybox applets + nodert node over one VFS
 - `applets.pipeline` — pipelines across tiers (nodert → busybox → nodert)
@@ -23,7 +23,7 @@ Nothing failing. 🟢
 - `emulator.tty.termios` — TTY line discipline (termios)
 - `emulator.term.vte` — VTE terminal grid
 - `emulator.process.fork` — clone/fork
-- …and 79 more
+- …and 80 more
 
 ## Drift (0)
 No drift. 🟢
@@ -38,17 +38,17 @@ No drift. 🟢
 | WebGPU console | 9 | 56% | 100% (4/4) |
 | App conformance & distribution | 57 | 84% | 100% (52/52) |
 | Kernel (shared OS layer) | 16 | 81% | 0% (0/0) |
-| Node host-engine tier | 21 | 67% | 0% (0/0) |
+| Node host-engine tier | 22 | 68% | 0% (0/0) |
 | BusyBox applets for nodert | 7 | 86% | 0% (0/0) |
 | WASM tier (WASI apps) | 14 | 79% | 0% (0/0) |
 
 ## Suites
 | Suite | Layer | Health | Pass rate | Age (min) |
 | ----- | ----- | ------ | --------- | --------- |
-| nano/cargo-unit | Core | silent | 100% | 15073 |
-| nano/node-harness | Runtime | silent | 100% | 15218 |
-| sdk/sdk-unit | SDK | silent | 87% | 15926 |
-| terminal/playwright-e2e | Terminal | silent | 100% | 19714 |
-| catalog/catalog-conformance | Catalog | silent | 100% | 15891 |
+| nano/cargo-unit | Core | silent | 100% | 15078 |
+| nano/node-harness | Runtime | silent | 100% | 15223 |
+| sdk/sdk-unit | SDK | silent | 87% | 15932 |
+| terminal/playwright-e2e | Terminal | silent | 100% | 19719 |
+| catalog/catalog-conformance | Catalog | silent | 100% | 15896 |
 
 _Regenerated on every result push. Edit features in `registry/`, never this file._
