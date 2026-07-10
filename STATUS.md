@@ -1,8 +1,8 @@
 # userland.run — status
 
-> Generated 2026-07-10T19:25:50.555Z · live at https://status.userland.run
+> Generated 2026-07-10T19:55:40.550Z · live at https://status.userland.run
 
-**90 / 91 tested features green** (99%) · 173 shipped (81%) · 0 failing now · 92 shipped-but-untested · 0 drift
+**90 / 91 tested features green** (99%) · 173 shipped (80%) · 0 failing now · 92 shipped-but-untested · 0 drift
 
 ## Red now
 Nothing failing. 🟢
@@ -34,7 +34,7 @@ No drift. 🟢
 | RISC-V emulator & Linux syscalls | 57 | 88% | 100% (9/9) |
 | BusyBox applets | 19 | 100% | 100% (17/17) |
 | Dev toolchain | 5 | 0% | 0% (0/0) |
-| TypeScript SDK | 11 | 82% | 89% (8/9) |
+| TypeScript SDK | 12 | 75% | 89% (8/9) |
 | WebGPU console | 9 | 56% | 100% (4/4) |
 | App conformance & distribution | 57 | 84% | 100% (52/52) |
 | Kernel (shared OS layer) | 16 | 81% | 0% (0/0) |
@@ -45,10 +45,10 @@ No drift. 🟢
 ## Suites
 | Suite | Layer | Health | Pass rate | Age (min) |
 | ----- | ----- | ------ | --------- | --------- |
-| nano/cargo-unit | Core | silent | 100% | 15016 |
-| nano/node-harness | Runtime | silent | 100% | 15161 |
-| sdk/sdk-unit | SDK | silent | 87% | 15870 |
-| terminal/playwright-e2e | Terminal | silent | 100% | 19657 |
-| catalog/catalog-conformance | Catalog | silent | 100% | 15834 |
+| nano/cargo-unit | Core | silent | 100% | 15046 |
+| nano/node-harness | Runtime | silent | 100% | 15190 |
+| sdk/sdk-unit | SDK | silent | 87% | 15899 |
+| terminal/playwright-e2e | Terminal | silent | 100% | 19687 |
+| catalog/catalog-conformance | Catalog | silent | 100% | 15864 |
 
 _Regenerated on every result push. Edit features in `registry/`, never this file._
