@@ -1,0 +1,16 @@
+# SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-UEL
+# Copyright (C) 2026 And The Next GmbH - https://userland.run
+#
+# The WASM tier (nano/nodert/src/wasm) — wasm32-wasip1 apps as Kernel
+# processes. specs/nano/wasm-tier (UL-SPEC/wasm-tier) W-1.
+
+- { id: wasm.wasip1.run, title: "run wasm32-wasip1 modules as kind:wasm processes", area: wasm, status: shipped, level: tested, since: "2026-07", spec: "wasm-tier §4" }
+- { id: wasm.wasi.shim, title: "wasi_snapshot_preview1 shim over the Syscall Bus", area: wasm, status: partial, since: "2026-07", notes: "core syscalls (args/env/fd/path/clock/random/exit); fd_readdir + more in W-2" }
+- { id: wasm.caps.preopens, title: "structural preopen capabilities (caps.fs.scopes → preopens)", area: wasm, status: shipped, level: tested, since: "2026-07", spec: "wasm-tier §5 P1/P2" }
+- { id: wasm.preopen.escape, title: "preopen-escape denial ('..' traversal → ENOTCAPABLE)", area: wasm, status: shipped, level: tested, since: "2026-07", spec: "wasm-tier W2" }
+- { id: wasm.spawn, title: ".wasm PATH routing + cross-tier spawn (node → wasm)", area: wasm, status: shipped, level: tested, since: "2026-07", spec: "wasm-tier §6 T1" }
+- { id: wasm.stdio, title: "stdio via Kernel pipes (pipeline participation)", area: wasm, status: shipped, level: tested, since: "2026-07", spec: "wasm-tier T2" }
+- { id: wasm.threads, title: "wasip1-threads (wasi_thread_spawn, shared memory)", area: wasm, status: planned, spec: "wasm-tier §4.1 X4 (W-2)" }
+- { id: wasm.inspect, title: "wasm inspect — imports/exports/memory/threads/signature", area: wasm, status: planned, spec: "wasm-tier §7 M2 (W-2)" }
+- { id: wasm.http, title: "wasi-http components behind ServeBridge", area: wasm, status: planned, spec: "wasm-tier §8 (W-3)" }
+- { id: wasm.catalog, title: "catalog wasm-app / wasm-component artifact kinds", area: wasm, status: planned, spec: "wasm-tier §9 (W-2/W-3)" }

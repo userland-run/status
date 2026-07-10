@@ -1,0 +1,22 @@
+# SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-UEL
+# Copyright (C) 2026 And The Next GmbH - https://userland.run
+#
+# The shared Kernel (nano/kernel) — the tier-agnostic OS layer extracted per
+# specs/nano/node-host-engine.md §4-7,11,13.
+
+- { id: kernel.vfs.mounts, title: "VFS — mount table + kernel fd surface", area: kernel, status: shipped, level: tested, since: "2026-07", spec: "node-host-engine §6" }
+- { id: kernel.vfs.link, title: "VFS — hardlinks / realpath / chmod / utimes / truncate", area: kernel, status: shipped, level: tested, since: "2026-07" }
+- { id: kernel.vfs.watch, title: "VFS — coalesced fs.watch events", area: kernel, status: shipped, level: tested, since: "2026-07", spec: "node-host-engine §6.1" }
+- { id: kernel.bus.async, title: "Syscall Bus — async plane (MessagePort)", area: kernel, status: shipped, level: tested, since: "2026-07", spec: "node-host-engine §5" }
+- { id: kernel.bus.sync, title: "Syscall Bus — sync plane (SAB + Atomics)", area: kernel, status: shipped, level: tested, since: "2026-07", notes: "S2 bench p50 16µs / 1MB read 0.54ms" }
+- { id: kernel.proc.table, title: "process table — pids, waitpid, zombies, ps", area: kernel, status: shipped, level: tested, since: "2026-07", spec: "node-host-engine §7.1" }
+- { id: kernel.caps.engine, title: "capability engine — checkCap at bus dispatch + attenuation", area: kernel, status: shipped, level: tested, since: "2026-07", spec: "node-host-engine §7.3" }
+- { id: kernel.proc.spawn, title: "cross-tier proc.spawn + routing table + execve seam", area: kernel, status: shipped, level: tested, since: "2026-07", spec: "node-host-engine §12" }
+- { id: kernel.proc.signals, title: "signal router + Kernel pipes", area: kernel, status: shipped, level: tested, since: "2026-07", spec: "node-host-engine §7.4" }
+- { id: kernel.net.ports, title: "port table — loopback + fetch-bridge + ServeBridge", area: kernel, status: shipped, level: tested, since: "2026-07", spec: "node-host-engine §11" }
+- { id: kernel.svc.registry, title: "Kernel Services registry (svc.*)", area: kernel, status: shipped, level: tested, since: "2026-07", spec: "node-host-engine §13" }
+- { id: kernel.svc.zlib, title: "zlib service (native CompressionStream / node:zlib)", area: kernel, status: shipped, level: tested, since: "2026-07" }
+- { id: kernel.svc.swc, title: "SWC / TypeScript type-strip service", area: kernel, status: shipped, level: tested, since: "2026-07" }
+- { id: kernel.svc.duckdb, title: "DuckDB service (backs node:sqlite)", area: kernel, status: partial, since: "2026-07", notes: "adapter + mini-SQL; real DuckDB-wasm backend injectable" }
+- { id: kernel.svc.rspack, title: "Rspack service", area: kernel, status: planned, notes: "no browser-wasm build of Rspack exists; documented ERR_NODERT_UNSUPPORTED" }
+- { id: kernel.persist.opfs, title: "OPFS persistence + CAS store", area: kernel, status: planned, spec: "node-host-engine §6.3-6.4 (K8)" }

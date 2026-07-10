@@ -1,0 +1,22 @@
+# SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-UEL
+# Copyright (C) 2026 And The Next GmbH - https://userland.run
+#
+# The nodert tier (nano/nodert) — unmodified Node.js lib/ on the host JS engine.
+# specs/nano/node-host-engine.md §8-10.
+
+- { id: nodert.boot, title: "boot: vendored v25.4.0 lib/ + primordials + internalBinding", area: nodert, status: shipped, level: tested, since: "2026-07", spec: "node-host-engine §8.2" }
+- { id: nodert.uv.loop, title: "event loop — timers, liveness ref-counting, nextTick/microtask ordering", area: nodert, status: shipped, level: tested, since: "2026-07", spec: "node-host-engine §10" }
+- { id: nodert.core.identity, title: "process identity (v25.4.0 linux x64) + Buffer + console", area: nodert, status: shipped, level: tested, since: "2026-07" }
+- { id: nodert.fs, title: "fs (sync + promises + callbacks + watch)", area: nodert, status: partial, since: "2026-07", notes: "bus-backed fs module; upstream lib/fs.js (streams) later — DIV-FS-M0" }
+- { id: nodert.cjs, title: "CJS module loader", area: nodert, status: shipped, level: tested, since: "2026-07" }
+- { id: nodert.upstream, title: "upstream lib/*.js verbatim (events/stream/util/console/path/...)", area: nodert, status: shipped, level: tested, since: "2026-07", spec: "P2: upstream JS, local bindings" }
+- { id: nodert.streams, title: "streams — Readable/Writable/Transform/pipeline (upstream)", area: nodert, status: shipped, level: tested, since: "2026-07", spec: "node-host-engine §M1" }
+- { id: nodert.net, title: "net — loopback sockets over Kernel pipes", area: nodert, status: partial, since: "2026-07", notes: "loopback-only; upstream net.js/tcp_wrap later — DIV-NET-M0" }
+- { id: nodert.http, title: "http — server + client (HTTP/1.1), ServeBridge-reachable", area: nodert, status: partial, since: "2026-07", notes: "lean HTTP/1.1; upstream http.js/llhttp later — DIV-HTTP-M0" }
+- { id: nodert.crypto, title: "crypto — hash/hmac/random subset", area: nodert, status: partial, since: "2026-07", notes: "sha256/sha1/hmac + random; BoringSSL-wasm for the rest — DIV-CRYPTO-M0" }
+- { id: nodert.esm, title: "ESM blob-URL loader — import/export/TLA/dynamic/cycles/TS", area: nodert, status: shipped, level: tested, since: "2026-07", spec: "node-host-engine §9.2" }
+- { id: nodert.workers, title: "worker_threads — nested Kernel processes + messaging", area: nodert, status: shipped, level: tested, since: "2026-07", spec: "node-host-engine §10.3" }
+- { id: nodert.child, title: "child_process — spawnSync/execSync/spawn/fork (cross-tier)", area: nodert, status: shipped, level: tested, since: "2026-07", spec: "node-host-engine §12" }
+- { id: nodert.svc.sqlite, title: "node:sqlite (via DuckDB) + node:zlib (via service)", area: nodert, status: partial, since: "2026-07", notes: "wired to Kernel services; dialect divergences — DIV-SQLITE-DUCKDB" }
+- { id: nodert.differential, title: "differential harness vs VM/host-node oracle", area: nodert, status: shipped, level: tested, since: "2026-07", spec: "node-host-engine §16" }
+- { id: nodert.tools, title: "run real tools (tsc / eslint / prettier / npm)", area: nodert, status: planned, notes: "M1-final/M2/M3 — needs the module system at scale" }

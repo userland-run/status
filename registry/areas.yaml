@@ -46,3 +46,24 @@ areas:
     owner: catalog
     repo: userland-run/catalog
     blurb: Real RISC-V apps verified against the nano runtime and published to the CDN.
+
+  - id: kernel
+    title: Kernel (shared OS layer)
+    owner: nano
+    repo: userland-run/nano
+    leveled: true
+    blurb: The tier-agnostic OS layer — VFS, Syscall Bus, process table, ports, capability engine, services — shared by every execution tier.
+
+  - id: nodert
+    title: Node host-engine tier
+    owner: nano
+    repo: userland-run/nano
+    leveled: true
+    blurb: Unmodified Node.js lib/ running on the browser's own JS engine at JIT speed, over the Kernel Syscall Bus.
+
+  - id: wasm
+    title: WASM tier (WASI apps)
+    owner: nano
+    repo: userland-run/nano
+    leveled: true
+    blurb: wasm32-wasip1 apps as first-class Kernel processes on the browser wasm engine, with structural preopen capabilities.
