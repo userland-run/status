@@ -1,36 +1,5 @@
 {
   "contract": 1,
-  "generated_at": "2026-07-10T20:46:56.902Z",
-  "findings": [
-    {
-      "fingerprint": "Catalog/catalog.recipe.difftastic",
-      "kind": "regression",
-      "id": "catalog.recipe.difftastic",
-      "title": "difftastic (structural diff)",
-      "area": "catalog",
-      "layer": "Catalog",
-      "commit": "1822046",
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28559823077"
-    },
-    {
-      "fingerprint": "Catalog/catalog.pipeline.conformance",
-      "kind": "regression",
-      "id": "catalog.pipeline.conformance",
-      "title": "conformance harness",
-      "area": "catalog",
-      "layer": "Catalog",
-      "commit": "1822046",
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28559823077"
-    },
-    {
-      "fingerprint": "Catalog/catalog.pipeline.gate",
-      "kind": "regression",
-      "id": "catalog.pipeline.gate",
-      "title": "syscall gate (pinned manifest)",
-      "area": "catalog",
-      "layer": "Catalog",
-      "commit": "1822046",
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/28559823077"
-    }
-  ]
+  "generated_at": "2026-07-11T04:54:20.935Z",
+  "findings": []
 }
