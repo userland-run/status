@@ -1,13 +1,13 @@
 # userland.run — status
 
-> Generated 2026-07-11T04:53:31.803Z · live at https://status.userland.run
+> Generated 2026-07-11T04:53:58.551Z · live at https://status.userland.run
 
 **87 / 91 tested features green** (96%) · 177 shipped (80%) · 3 failing now · 96 shipped-but-untested · 0 drift
 
 ## Red now
-- `catalog.recipe.difftastic` — difftastic (structural diff) (Catalog) · https://github.com/userland-run/catalog/actions/runs/28559823077
-- `catalog.pipeline.conformance` — conformance harness (Catalog) · https://github.com/userland-run/catalog/actions/runs/28559823077
-- `catalog.pipeline.gate` — syscall gate (pinned manifest) (Catalog) · https://github.com/userland-run/catalog/actions/runs/28559823077
+- `catalog.recipe.difftastic` — difftastic (structural diff) (Catalog) · https://github.com/userland-run/catalog/actions/runs/29122428442
+- `catalog.pipeline.conformance` — conformance harness (Catalog) · https://github.com/userland-run/catalog/actions/runs/29122428442
+- `catalog.pipeline.gate` — syscall gate (pinned manifest) (Catalog) · https://github.com/userland-run/catalog/actions/runs/29122428442
 
 ## Shipped but untested (96)
 - `applets.vm.warm` — warm-VM applet spawn (no per-command boot)
@@ -47,10 +47,10 @@ No drift. 🟢
 ## Suites
 | Suite | Layer | Health | Pass rate | Age (min) |
 | ----- | ----- | ------ | --------- | --------- |
-| nano/cargo-unit | Core | ok | 100% | 1341 |
+| nano/cargo-unit | Core | ok | 100% | 0 |
 | nano/node-harness | Runtime | ok | 100% | 1341 |
-| sdk/sdk-unit | SDK | ok | 87% | 488 |
+| sdk/sdk-unit | SDK | ok | 87% | 0 |
 | terminal/playwright-e2e | Terminal | silent | 100% | 20225 |
-| catalog/catalog-conformance | Catalog | silent | 98% | 13135 |
+| catalog/catalog-conformance | Catalog | ok | 98% | 483 |
 
 _Regenerated on every result push. Edit features in `registry/`, never this file._
