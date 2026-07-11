@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-UEL
 # Copyright (C) 2026 And The Next GmbH - https://userland.run
 #
-# The nodert tier (nano/nodert) — unmodified Node.js lib/ on the host JS engine.
+# The node runner (nano/runners/node) — the "nodert" host-engine tier — unmodified Node.js lib/ on the host JS engine.
 # specs/nano/node-host-engine.md §8-10.
 
 - { id: nodert.boot, title: "boot: vendored v25.4.0 lib/ + primordials + internalBinding", area: nodert, status: shipped, level: tested, since: "2026-07", spec: "node-host-engine §8.2" }

@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-UEL
 # Copyright (C) 2026 And The Next GmbH - https://userland.run
 #
-# The WASM tier (nano/nodert/src/wasm) — wasm32-wasip1 apps as Kernel
+# The WASM tier (nano/runners/wasm) — wasm32-wasip1 apps as Kernel
 # processes. specs/nano/wasm-tier (UL-SPEC/wasm-tier) W-1.
 
 - { id: wasm.wasip1.run, title: "run wasm32-wasip1 modules as kind:wasm processes", area: wasm, status: shipped, level: tested, since: "2026-07", spec: "wasm-tier §4" }
