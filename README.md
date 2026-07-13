@@ -62,7 +62,7 @@ below is a results **producer** whose CI emits `userland-results.json`:
 
 | Repo | What it is |
 | ---- | ---------- |
-| [nano](https://github.com/userland-run/nano) | The RV64GC → WASM emulator core |
+| [nano](https://github.com/userland-run/nano) | The multi-runner platform — RV64GC emulator core + node/wasm/boa runners |
 | [sdk](https://github.com/userland-run/sdk) | `@userland-run/nano-sdk` — typed TypeScript SDK |
 | [terminal](https://github.com/userland-run/terminal) | `<nano-terminal>` web component |
 | [catalog](https://github.com/userland-run/catalog) | Signed app marketplace |

@@ -63,6 +63,9 @@
 - { id: catalog.recipe.shfmt, title: "shfmt (shell formatter)", area: catalog, status: partial, since: "2026-06", notes: "Go tool; deterministic exit 2 (heap-arena OOM under nano) — --version crashes" }
 - { id: catalog.recipe.task, title: "task (Taskfile runner)", area: catalog, status: partial, since: "2026-06", notes: "Go tool; deterministic exit 2 (heap-arena OOM under nano) — --version crashes" }
 
+# wasm-app recipes (kind:wasm-app, abi wasm32-wasip1) — run on the wasm runner, not the emulator.
+- { id: catalog.recipe.photon, title: "photon (image CLI)", area: catalog, status: partial, since: "2026-07", notes: "FIRST kind:wasm-app recipe — a tiny image-processing CLI (grayscale/invert/blur/sepia/threshold) on the pure-Rust `image` crate, compiled to wasm32-wasip1. package.mjs kind passthrough + recipe + fixture landed; browser-verified via the SDK (Photon demo runs on the wasm runner). PENDING: wasm-app conformance harness (nano-conformance runs on the wasm runner) + CDN publish" }
+
 # Network-bridge story (Tier 1 + 1.5) and bottling.
 - { id: catalog.net.bridge, title: "host-fetch bridge (/dev/__net__)", area: catalog, status: shipped, since: "2026-06", notes: "Tier-1 HTTP via host fetch; verified guest GET example.com" }
 - { id: catalog.net.cors-proxy, title: "Tier-1.5 CORS-proxy Worker", area: catalog, status: shipped, since: "2026-06" }
