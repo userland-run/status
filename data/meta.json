@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-13T09:07:18.026Z",
+  "generated_at": "2026-07-13T09:07:46.423Z",
   "generator_version": 1,
   "sources": [
     {
       "source": "nano",
       "suite": "cargo-unit",
       "commit": "4184095",
-      "age_min": 4,
+      "age_min": 5,
       "health": "ok"
     },
     {
@@ -34,7 +34,7 @@
       "source": "catalog",
       "suite": "catalog-conformance",
       "commit": "3dfe956",
-      "age_min": 2691,
+      "age_min": 2692,
       "health": "ok"
     }
   ]

@@ -1,6 +1,6 @@
 {
   "contract": 1,
-  "generated_at": "2026-07-13T09:07:18.026Z",
+  "generated_at": "2026-07-13T09:07:46.423Z",
   "layers": [
     "Core",
     "Runtime",
@@ -190,7 +190,7 @@
       "present": true,
       "commit": "4184095",
       "finished_at": "2026-07-13T09:02:46.377Z",
-      "age_min": 4,
+      "age_min": 5,
       "passRate": 1,
       "health": "ok"
     },
@@ -238,7 +238,7 @@
       "present": true,
       "commit": "3dfe956",
       "finished_at": "2026-07-11T12:15:26.021Z",
-      "age_min": 2691,
+      "age_min": 2692,
       "passRate": 0.98,
       "health": "ok"
     }
@@ -252,7 +252,7 @@
         "Catalog"
       ],
       "commit": "3dfe956",
-      "age_min": 2691,
+      "age_min": 2692,
       "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
     },
     {
@@ -263,7 +263,7 @@
         "Catalog"
       ],
       "commit": "3dfe956",
-      "age_min": 2691,
+      "age_min": 2692,
       "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
     },
     {
@@ -274,7 +274,7 @@
         "Catalog"
       ],
       "commit": "3dfe956",
-      "age_min": 2691,
+      "age_min": 2692,
       "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
     }
   ],
@@ -1622,7 +1622,7 @@
             "suite": "catalog-conformance",
             "commit": "3dfe956",
             "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2691
+            "age_min": 2692
           },
           "tests": [
             {
@@ -1666,7 +1666,7 @@
             "suite": "catalog-conformance",
             "commit": "3dfe956",
             "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2691
+            "age_min": 2692
           },
           "tests": [
             {
@@ -1711,7 +1711,7 @@
             "suite": "catalog-conformance",
             "commit": "3dfe956",
             "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2691
+            "age_min": 2692
           },
           "tests": [
             {
@@ -1756,7 +1756,7 @@
             "suite": "catalog-conformance",
             "commit": "3dfe956",
             "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2691
+            "age_min": 2692
           },
           "tests": [
             {
@@ -1801,7 +1801,7 @@
             "suite": "catalog-conformance",
             "commit": "3dfe956",
             "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2691
+            "age_min": 2692
           },
           "tests": [
             {
@@ -1846,7 +1846,7 @@
             "suite": "catalog-conformance",
             "commit": "3dfe956",
             "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2691
+            "age_min": 2692
           },
           "tests": [
             {
@@ -1891,7 +1891,7 @@
             "suite": "catalog-conformance",
             "commit": "3dfe956",
             "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2691
+            "age_min": 2692
           },
           "tests": [
             {
@@ -1947,7 +1947,7 @@
             "suite": "catalog-conformance",
             "commit": "3dfe956",
             "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2691
+            "age_min": 2692
           },
           "tests": [
             {
@@ -1991,7 +1991,7 @@
             "suite": "catalog-conformance",
             "commit": "3dfe956",
             "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2691
+            "age_min": 2692
           },
           "tests": [
             {
@@ -2035,7 +2035,7 @@
             "suite": "catalog-conformance",
             "commit": "3dfe956",
             "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2691
+            "age_min": 2692
           },
           "tests": [
             {
@@ -2079,7 +2079,7 @@
             "suite": "catalog-conformance",
             "commit": "3dfe956",
             "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2691
+            "age_min": 2692
           },
           "tests": [
             {
@@ -2123,7 +2123,7 @@
             "suite": "catalog-conformance",
             "commit": "3dfe956",
             "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2691
+            "age_min": 2692
           },
           "tests": [
             {
@@ -2167,7 +2167,7 @@
             "suite": "catalog-conformance",
             "commit": "3dfe956",
             "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2691
+            "age_min": 2692
           },
           "tests": [
             {
@@ -2211,7 +2211,7 @@
             "suite": "catalog-conformance",
             "commit": "3dfe956",
             "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2691
+            "age_min": 2692
           },
           "tests": [
             {
@@ -2255,7 +2255,7 @@
             "suite": "catalog-conformance",
             "commit": "3dfe956",
             "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2691
+            "age_min": 2692
           },
           "tests": [
             {
@@ -2299,7 +2299,7 @@
             "suite": "catalog-conformance",
             "commit": "3dfe956",
             "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2691
+            "age_min": 2692
           },
           "tests": [
             {
@@ -2343,7 +2343,7 @@
             "suite": "catalog-conformance",
             "commit": "3dfe956",
             "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2691
+            "age_min": 2692
           },
           "tests": [
             {
@@ -2388,7 +2388,7 @@
             "suite": "catalog-conformance",
             "commit": "3dfe956",
             "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2691
+            "age_min": 2692
           },
           "tests": [
             {
@@ -2433,7 +2433,7 @@
             "suite": "catalog-conformance",
             "commit": "3dfe956",
             "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2691
+            "age_min": 2692
           },
           "tests": [
             {
@@ -2477,7 +2477,7 @@
             "suite": "catalog-conformance",
             "commit": "3dfe956",
             "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2691
+            "age_min": 2692
           },
           "tests": [
             {
@@ -2521,7 +2521,7 @@
             "suite": "catalog-conformance",
             "commit": "3dfe956",
             "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2691
+            "age_min": 2692
           },
           "tests": [
             {
@@ -2565,7 +2565,7 @@
             "suite": "catalog-conformance",
             "commit": "3dfe956",
             "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2691
+            "age_min": 2692
           },
           "tests": [
             {
@@ -2609,7 +2609,7 @@
             "suite": "catalog-conformance",
             "commit": "3dfe956",
             "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2691
+            "age_min": 2692
           },
           "tests": [
             {
@@ -2653,7 +2653,7 @@
             "suite": "catalog-conformance",
             "commit": "3dfe956",
             "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2691
+            "age_min": 2692
           },
           "tests": [
             {
@@ -2697,7 +2697,7 @@
             "suite": "catalog-conformance",
             "commit": "3dfe956",
             "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2691
+            "age_min": 2692
           },
           "tests": [
             {
@@ -2741,7 +2741,7 @@
             "suite": "catalog-conformance",
             "commit": "3dfe956",
             "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2691
+            "age_min": 2692
           },
           "tests": [
             {
@@ -2785,7 +2785,7 @@
             "suite": "catalog-conformance",
             "commit": "3dfe956",
             "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2691
+            "age_min": 2692
           },
           "tests": [
             {
@@ -2829,7 +2829,7 @@
             "suite": "catalog-conformance",
             "commit": "3dfe956",
             "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2691
+            "age_min": 2692
           },
           "tests": [
             {
@@ -2873,7 +2873,7 @@
             "suite": "catalog-conformance",
             "commit": "3dfe956",
             "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2691
+            "age_min": 2692
           },
           "tests": [
             {
@@ -2917,7 +2917,7 @@
             "suite": "catalog-conformance",
             "commit": "3dfe956",
             "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2691
+            "age_min": 2692
           },
           "tests": [
             {
@@ -2961,7 +2961,7 @@
             "suite": "catalog-conformance",
             "commit": "3dfe956",
             "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2691
+            "age_min": 2692
           },
           "tests": [
             {
@@ -3005,7 +3005,7 @@
             "suite": "catalog-conformance",
             "commit": "3dfe956",
             "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2691
+            "age_min": 2692
           },
           "tests": [
             {
@@ -3049,7 +3049,7 @@
             "suite": "catalog-conformance",
             "commit": "3dfe956",
             "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2691
+            "age_min": 2692
           },
           "tests": [
             {
@@ -3093,7 +3093,7 @@
             "suite": "catalog-conformance",
             "commit": "3dfe956",
             "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2691
+            "age_min": 2692
           },
           "tests": [
             {
@@ -3137,7 +3137,7 @@
             "suite": "catalog-conformance",
             "commit": "3dfe956",
             "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2691
+            "age_min": 2692
           },
           "tests": [
             {
@@ -3181,7 +3181,7 @@
             "suite": "catalog-conformance",
             "commit": "3dfe956",
             "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2691
+            "age_min": 2692
           },
           "tests": [
             {
@@ -3225,7 +3225,7 @@
             "suite": "catalog-conformance",
             "commit": "3dfe956",
             "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2691
+            "age_min": 2692
           },
           "tests": [
             {
@@ -3269,7 +3269,7 @@
             "suite": "catalog-conformance",
             "commit": "3dfe956",
             "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2691
+            "age_min": 2692
           },
           "tests": [
             {
@@ -3313,7 +3313,7 @@
             "suite": "catalog-conformance",
             "commit": "3dfe956",
             "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2691
+            "age_min": 2692
           },
           "tests": [
             {
@@ -3357,7 +3357,7 @@
             "suite": "catalog-conformance",
             "commit": "3dfe956",
             "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2691
+            "age_min": 2692
           },
           "tests": [
             {
@@ -3402,7 +3402,7 @@
             "suite": "catalog-conformance",
             "commit": "3dfe956",
             "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2691
+            "age_min": 2692
           },
           "tests": [
             {
@@ -3447,7 +3447,7 @@
             "suite": "catalog-conformance",
             "commit": "3dfe956",
             "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2691
+            "age_min": 2692
           },
           "tests": [
             {
@@ -3492,7 +3492,7 @@
             "suite": "catalog-conformance",
             "commit": "3dfe956",
             "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2691
+            "age_min": 2692
           },
           "tests": [
             {
@@ -3537,7 +3537,7 @@
             "suite": "catalog-conformance",
             "commit": "3dfe956",
             "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2691
+            "age_min": 2692
           },
           "tests": [
             {
@@ -3582,7 +3582,7 @@
             "suite": "catalog-conformance",
             "commit": "3dfe956",
             "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2691
+            "age_min": 2692
           },
           "tests": [
             {
@@ -3627,7 +3627,7 @@
             "suite": "catalog-conformance",
             "commit": "3dfe956",
             "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2691
+            "age_min": 2692
           },
           "tests": [
             {
@@ -3672,7 +3672,7 @@
             "suite": "catalog-conformance",
             "commit": "3dfe956",
             "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2691
+            "age_min": 2692
           },
           "tests": [
             {
@@ -3717,7 +3717,7 @@
             "suite": "catalog-conformance",
             "commit": "3dfe956",
             "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2691
+            "age_min": 2692
           },
           "tests": [
             {
@@ -3804,7 +3804,7 @@
             "suite": "catalog-conformance",
             "commit": "3dfe956",
             "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2691
+            "age_min": 2692
           },
           "tests": [
             {
@@ -3848,7 +3848,7 @@
             "suite": "catalog-conformance",
             "commit": "3dfe956",
             "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2691
+            "age_min": 2692
           },
           "tests": [
             {
@@ -3892,7 +3892,7 @@
             "suite": "catalog-conformance",
             "commit": "3dfe956",
             "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2691
+            "age_min": 2692
           },
           "tests": [
             {
@@ -4230,7 +4230,7 @@
             "suite": "catalog-conformance",
             "commit": "3dfe956",
             "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2691
+            "age_min": 2692
           },
           "tests": [
             {
@@ -4684,7 +4684,7 @@
             "suite": "cargo-unit",
             "commit": "4184095",
             "finished_at": "2026-07-13T09:02:46.377Z",
-            "age_min": 4
+            "age_min": 5
           },
           "tests": [
             {
@@ -4953,7 +4953,7 @@
             "suite": "cargo-unit",
             "commit": "4184095",
             "finished_at": "2026-07-13T09:02:46.377Z",
-            "age_min": 4
+            "age_min": 5
           },
           "tests": [
             {
