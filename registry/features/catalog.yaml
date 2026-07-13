@@ -63,8 +63,11 @@
 - { id: catalog.recipe.shfmt, title: "shfmt (shell formatter)", area: catalog, status: partial, since: "2026-06", notes: "Go tool; deterministic exit 2 (heap-arena OOM under nano) — --version crashes" }
 - { id: catalog.recipe.task, title: "task (Taskfile runner)", area: catalog, status: partial, since: "2026-06", notes: "Go tool; deterministic exit 2 (heap-arena OOM under nano) — --version crashes" }
 
-# wasm-app recipes (kind:wasm-app, abi wasm32-wasip1) — run on the wasm runner, not the emulator.
-- { id: catalog.recipe.photon, title: "photon (image CLI)", area: catalog, status: partial, since: "2026-07", notes: "FIRST kind:wasm-app recipe — a tiny image-processing CLI (grayscale/invert/blur/sepia/threshold) on the pure-Rust `image` crate, compiled to wasm32-wasip1. package.mjs kind passthrough + recipe + fixture landed; browser-verified via the SDK (Photon demo runs on the wasm runner). PENDING: wasm-app conformance harness (nano-conformance runs on the wasm runner) + CDN publish" }
+# Non-RISC-V-tier recipes — routed by manifest `kind` to the runner named in the
+# index's appMeta (wasm / node / boa), not the emulator. See catalog.index.tiers.
+- { id: catalog.recipe.photon, title: "photon (image CLI, wasm-app)", area: catalog, status: partial, since: "2026-07", notes: "FIRST kind:wasm-app recipe — image CLI (grayscale/invert/blur/sepia/threshold) on the pure-Rust `image` crate → wasm32-wasip1. Conformance now via capture-verdict (runs on the wasm runner); browser-verified via the SDK. PENDING: CDN publish (gen-13)" }
+- { id: catalog.recipe.jfmt, title: "jfmt (JSON formatter, node-app)", area: catalog, status: partial, since: "2026-07", notes: "kind:node-app seed — pure-ESM JSON pretty-printer that runs on the host Node engine. Builds + conforms (capture-verdict, host node) + packages to tier=node. PENDING: CDN publish" }
+- { id: catalog.recipe.calc, title: "calc (arithmetic, boa-app)", area: catalog, status: partial, since: "2026-07", notes: "kind:boa-app seed — sandboxed pure-ECMAScript evaluator (6*7→42) on the Boa runner. Builds + conforms (capture-verdict, Boa) + packages to tier=boa. PENDING: CDN publish" }
 
 # Network-bridge story (Tier 1 + 1.5) and bottling.
 - { id: catalog.net.bridge, title: "host-fetch bridge (/dev/__net__)", area: catalog, status: shipped, since: "2026-06", notes: "Tier-1 HTTP via host fetch; verified guest GET example.com" }
@@ -76,5 +79,7 @@
 - { id: catalog.test.stdin-fixture, title: "scripted-stdin conformance", area: catalog, status: shipped, since: "2026-06" }
 
 - { id: catalog.pipeline.conformance, title: conformance harness, area: catalog, status: shipped, since: "2026-06" }
+- { id: catalog.pipeline.multitier-conformance, title: "multi-tier conformance (capture-verdict)", area: catalog, status: partial, since: "2026-07", notes: "capture-golden dispatches non-elf kinds to capture-verdict, which runs the app on its own runner (wasm via execWasmApp / host Node / Boa via scripting) → verdict.json. Verified locally for photon/jfmt/calc. PENDING: CI wiring (capture.yml provides nano.wasm+boa.wasm) + publish" }
 - { id: catalog.pipeline.gate, title: syscall gate (pinned manifest), area: catalog, status: shipped, since: "2026-06" }
 - { id: catalog.pipeline.publish, title: package + sign + publish (CDN), area: catalog, status: shipped, since: "2026-06" }
+- { id: catalog.index.tiers, title: "runner-tier metadata in the index (appMeta)", area: catalog, status: partial, since: "2026-07", notes: "publish.mjs denormalizes per-app {tier,kind,abi} into the signed index (SDK SignedIndex.appMeta); legacy apps default to riscv. Lets the terminal group/badge apps by runner without fetching each manifest. PENDING: publish gen-13" }

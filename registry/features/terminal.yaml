@@ -12,3 +12,4 @@
 - { id: terminal.phase.3, title: "Phase 3 — chrome & sessions", area: terminal, status: planned }
 - { id: terminal.phase.4, title: "Phase 4 — file tree & live stats", area: terminal, status: planned }
 - { id: terminal.a11y.mirror, title: renderer-agnostic DOM text mirror, area: terminal, status: shipped, since: "2026-05" }
+- { id: terminal.catalog.tiers, title: "runner-aware catalog browse (tier facet + badges)", area: terminal, status: shipped, since: "2026-07", notes: "catalog sidebar reads the index appMeta: a Runners facet (All/RISC-V VM/Node/wasm/Boa, tier∧category∧search filter) + a color-tinted tier badge per app row + per-runner tally in browse(). Browser-verified against a signed 4-tier fixture (wasm chip narrowed to esbuild+photon). Install-routing for wasm/boa from the shell is the nano _doExecve gap" }

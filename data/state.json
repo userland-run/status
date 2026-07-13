@@ -1,6 +1,6 @@
 {
   "contract": 1,
-  "generated_at": "2026-07-13T09:07:46.423Z",
+  "generated_at": "2026-07-13T12:06:58.531Z",
   "layers": [
     "Core",
     "Runtime",
@@ -9,14 +9,14 @@
     "Catalog"
   ],
   "headline": {
-    "total": 223,
-    "shipped": 179,
-    "shippedPct": 0.8026905829596412,
+    "total": 229,
+    "shipped": 181,
+    "shippedPct": 0.7903930131004366,
     "tested": 91,
     "green": 87,
     "greenPct": 0.9560439560439561,
     "failingNow": 3,
-    "untestedShipped": 98,
+    "untestedShipped": 100,
     "driftCount": 0
   },
   "areaRollups": [
@@ -71,15 +71,15 @@
     {
       "id": "sdk",
       "title": "TypeScript SDK",
-      "total": 12,
+      "total": 13,
       "byStatus": {
         "planned": 0,
         "in-progress": 0,
-        "shipped": 9,
+        "shipped": 10,
         "partial": 3,
         "deprecated": 0
       },
-      "shippedPct": 0.75,
+      "shippedPct": 0.7692307692307693,
       "greenPct": 0.8888888888888888,
       "tested": 9,
       "green": 8
@@ -87,15 +87,15 @@
     {
       "id": "terminal",
       "title": "WebGPU console",
-      "total": 9,
+      "total": 10,
       "byStatus": {
         "planned": 3,
         "in-progress": 1,
-        "shipped": 5,
+        "shipped": 6,
         "partial": 0,
         "deprecated": 0
       },
-      "shippedPct": 0.5555555555555556,
+      "shippedPct": 0.6,
       "greenPct": 1,
       "tested": 4,
       "green": 4
@@ -103,15 +103,15 @@
     {
       "id": "catalog",
       "title": "App conformance & distribution",
-      "total": 58,
+      "total": 62,
       "byStatus": {
         "planned": 0,
         "in-progress": 0,
         "shipped": 48,
-        "partial": 9,
+        "partial": 13,
         "deprecated": 1
       },
-      "shippedPct": 0.8275862068965517,
+      "shippedPct": 0.7741935483870968,
       "greenPct": 0.9423076923076923,
       "tested": 52,
       "green": 49
@@ -190,7 +190,7 @@
       "present": true,
       "commit": "4184095",
       "finished_at": "2026-07-13T09:02:46.377Z",
-      "age_min": 5,
+      "age_min": 184,
       "passRate": 1,
       "health": "ok"
     },
@@ -202,7 +202,7 @@
       "present": true,
       "commit": "e117309",
       "finished_at": "2026-07-13T05:58:11.000Z",
-      "age_min": 189,
+      "age_min": 368,
       "passRate": 1,
       "health": "ok"
     },
@@ -212,9 +212,9 @@
       "layer": "SDK",
       "title": "SDK node:test",
       "present": true,
-      "commit": "41a5ba7",
-      "finished_at": "2026-07-13T09:03:10.509Z",
-      "age_min": 4,
+      "commit": "e53df2c",
+      "finished_at": "2026-07-13T10:43:24.801Z",
+      "age_min": 83,
       "passRate": 0.8695652173913043,
       "health": "ok"
     },
@@ -226,7 +226,7 @@
       "present": true,
       "commit": "6640c09",
       "finished_at": "2026-06-27T03:48:02.426Z",
-      "age_min": 23359,
+      "age_min": 23538,
       "passRate": 1,
       "health": "silent"
     },
@@ -236,9 +236,9 @@
       "layer": "Catalog",
       "title": "Recipe conformance",
       "present": true,
-      "commit": "3dfe956",
-      "finished_at": "2026-07-11T12:15:26.021Z",
-      "age_min": 2692,
+      "commit": "2e4c603",
+      "finished_at": "2026-07-13T09:12:33.931Z",
+      "age_min": 174,
       "passRate": 0.98,
       "health": "ok"
     }
@@ -251,9 +251,9 @@
       "layers": [
         "Catalog"
       ],
-      "commit": "3dfe956",
-      "age_min": 2692,
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+      "commit": "2e4c603",
+      "age_min": 174,
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
     },
     {
       "id": "catalog.pipeline.conformance",
@@ -262,9 +262,9 @@
       "layers": [
         "Catalog"
       ],
-      "commit": "3dfe956",
-      "age_min": 2692,
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+      "commit": "2e4c603",
+      "age_min": 174,
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
     },
     {
       "id": "catalog.pipeline.gate",
@@ -273,9 +273,9 @@
       "layers": [
         "Catalog"
       ],
-      "commit": "3dfe956",
-      "age_min": 2692,
-      "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+      "commit": "2e4c603",
+      "age_min": 174,
+      "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
     }
   ],
   "shippedUntested": [
@@ -700,8 +700,18 @@
       "area": "sdk"
     },
     {
+      "id": "sdk.catalog.tiers",
+      "title": "execution-tier catalog metadata (SignedIndex.appMeta + Tier)",
+      "area": "sdk"
+    },
+    {
       "id": "terminal.phase.0",
       "title": "Phase 0 — bootstrap (80x25 grid, ANSI)",
+      "area": "terminal"
+    },
+    {
+      "id": "terminal.catalog.tiers",
+      "title": "runner-aware catalog browse (tier facet + badges)",
       "area": "terminal"
     },
     {
@@ -897,7 +907,7 @@
             "suite": "node-harness",
             "commit": "e117309",
             "finished_at": "2026-07-13T05:58:11.000Z",
-            "age_min": 189
+            "age_min": 368
           },
           "tests": [
             {
@@ -939,7 +949,7 @@
             "suite": "node-harness",
             "commit": "e117309",
             "finished_at": "2026-07-13T05:58:11.000Z",
-            "age_min": 189
+            "age_min": 368
           },
           "tests": [
             {
@@ -981,7 +991,7 @@
             "suite": "node-harness",
             "commit": "e117309",
             "finished_at": "2026-07-13T05:58:11.000Z",
-            "age_min": 189
+            "age_min": 368
           },
           "tests": [
             {
@@ -1023,7 +1033,7 @@
             "suite": "node-harness",
             "commit": "e117309",
             "finished_at": "2026-07-13T05:58:11.000Z",
-            "age_min": 189
+            "age_min": 368
           },
           "tests": [
             {
@@ -1065,7 +1075,7 @@
             "suite": "node-harness",
             "commit": "e117309",
             "finished_at": "2026-07-13T05:58:11.000Z",
-            "age_min": 189
+            "age_min": 368
           },
           "tests": [
             {
@@ -1107,7 +1117,7 @@
             "suite": "node-harness",
             "commit": "e117309",
             "finished_at": "2026-07-13T05:58:11.000Z",
-            "age_min": 189
+            "age_min": 368
           },
           "tests": [
             {
@@ -1149,7 +1159,7 @@
             "suite": "node-harness",
             "commit": "e117309",
             "finished_at": "2026-07-13T05:58:11.000Z",
-            "age_min": 189
+            "age_min": 368
           },
           "tests": [
             {
@@ -1191,7 +1201,7 @@
             "suite": "node-harness",
             "commit": "e117309",
             "finished_at": "2026-07-13T05:58:11.000Z",
-            "age_min": 189
+            "age_min": 368
           },
           "tests": [
             {
@@ -1233,7 +1243,7 @@
             "suite": "node-harness",
             "commit": "e117309",
             "finished_at": "2026-07-13T05:58:11.000Z",
-            "age_min": 189
+            "age_min": 368
           },
           "tests": [
             {
@@ -1275,7 +1285,7 @@
             "suite": "node-harness",
             "commit": "e117309",
             "finished_at": "2026-07-13T05:58:11.000Z",
-            "age_min": 189
+            "age_min": 368
           },
           "tests": [
             {
@@ -1317,7 +1327,7 @@
             "suite": "node-harness",
             "commit": "e117309",
             "finished_at": "2026-07-13T05:58:11.000Z",
-            "age_min": 189
+            "age_min": 368
           },
           "tests": [
             {
@@ -1359,7 +1369,7 @@
             "suite": "node-harness",
             "commit": "e117309",
             "finished_at": "2026-07-13T05:58:11.000Z",
-            "age_min": 189
+            "age_min": 368
           },
           "tests": [
             {
@@ -1401,7 +1411,7 @@
             "suite": "node-harness",
             "commit": "e117309",
             "finished_at": "2026-07-13T05:58:11.000Z",
-            "age_min": 189
+            "age_min": 368
           },
           "tests": [
             {
@@ -1443,7 +1453,7 @@
             "suite": "node-harness",
             "commit": "e117309",
             "finished_at": "2026-07-13T05:58:11.000Z",
-            "age_min": 189
+            "age_min": 368
           },
           "tests": [
             {
@@ -1485,7 +1495,7 @@
             "suite": "node-harness",
             "commit": "e117309",
             "finished_at": "2026-07-13T05:58:11.000Z",
-            "age_min": 189
+            "age_min": 368
           },
           "tests": [
             {
@@ -1527,7 +1537,7 @@
             "suite": "node-harness",
             "commit": "e117309",
             "finished_at": "2026-07-13T05:58:11.000Z",
-            "age_min": 189
+            "age_min": 368
           },
           "tests": [
             {
@@ -1569,7 +1579,7 @@
             "suite": "node-harness",
             "commit": "e117309",
             "finished_at": "2026-07-13T05:58:11.000Z",
-            "age_min": 189
+            "age_min": 368
           },
           "tests": [
             {
@@ -1616,20 +1626,20 @@
             "passed",
             "passed"
           ],
-          "lastRun": "catalog/catalog-conformance@3dfe956@2026-07-11T12:15:26.021Z",
+          "lastRun": "catalog/catalog-conformance@2e4c603@2026-07-13T09:12:33.931Z",
           "freshness": {
             "source": "catalog",
             "suite": "catalog-conformance",
-            "commit": "3dfe956",
-            "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2692
+            "commit": "2e4c603",
+            "finished_at": "2026-07-13T09:12:33.931Z",
+            "age_min": 174
           },
           "tests": [
             {
               "test_id": "recipes/hello-c/test/run.json",
               "status": "passed",
-              "duration_ms": 3,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 2,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             }
           ]
         }
@@ -1660,20 +1670,20 @@
             "passed",
             "passed"
           ],
-          "lastRun": "catalog/catalog-conformance@3dfe956@2026-07-11T12:15:26.021Z",
+          "lastRun": "catalog/catalog-conformance@2e4c603@2026-07-13T09:12:33.931Z",
           "freshness": {
             "source": "catalog",
             "suite": "catalog-conformance",
-            "commit": "3dfe956",
-            "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2692
+            "commit": "2e4c603",
+            "finished_at": "2026-07-13T09:12:33.931Z",
+            "age_min": 174
           },
           "tests": [
             {
               "test_id": "recipes/ripgrep/test/run.json",
               "status": "passed",
               "duration_ms": 42,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             }
           ]
         }
@@ -1705,20 +1715,20 @@
             "passed",
             "passed"
           ],
-          "lastRun": "catalog/catalog-conformance@3dfe956@2026-07-11T12:15:26.021Z",
+          "lastRun": "catalog/catalog-conformance@2e4c603@2026-07-13T09:12:33.931Z",
           "freshness": {
             "source": "catalog",
             "suite": "catalog-conformance",
-            "commit": "3dfe956",
-            "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2692
+            "commit": "2e4c603",
+            "finished_at": "2026-07-13T09:12:33.931Z",
+            "age_min": 174
           },
           "tests": [
             {
               "test_id": "recipes/busybox/test/run.json",
               "status": "passed",
-              "duration_ms": 5,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 3,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             }
           ]
         }
@@ -1750,20 +1760,20 @@
             "passed",
             "passed"
           ],
-          "lastRun": "catalog/catalog-conformance@3dfe956@2026-07-11T12:15:26.021Z",
+          "lastRun": "catalog/catalog-conformance@2e4c603@2026-07-13T09:12:33.931Z",
           "freshness": {
             "source": "catalog",
             "suite": "catalog-conformance",
-            "commit": "3dfe956",
-            "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2692
+            "commit": "2e4c603",
+            "finished_at": "2026-07-13T09:12:33.931Z",
+            "age_min": 174
           },
           "tests": [
             {
               "test_id": "recipes/node/test/run.json",
               "status": "passed",
-              "duration_ms": 71,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 98,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             }
           ]
         }
@@ -1795,20 +1805,20 @@
             "passed",
             "passed"
           ],
-          "lastRun": "catalog/catalog-conformance@3dfe956@2026-07-11T12:15:26.021Z",
+          "lastRun": "catalog/catalog-conformance@2e4c603@2026-07-13T09:12:33.931Z",
           "freshness": {
             "source": "catalog",
             "suite": "catalog-conformance",
-            "commit": "3dfe956",
-            "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2692
+            "commit": "2e4c603",
+            "finished_at": "2026-07-13T09:12:33.931Z",
+            "age_min": 174
           },
           "tests": [
             {
               "test_id": "recipes/typescript/test/run.json",
               "status": "passed",
-              "duration_ms": 6723,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 9929,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             }
           ]
         }
@@ -1840,20 +1850,20 @@
             "passed",
             "passed"
           ],
-          "lastRun": "catalog/catalog-conformance@3dfe956@2026-07-11T12:15:26.021Z",
+          "lastRun": "catalog/catalog-conformance@2e4c603@2026-07-13T09:12:33.931Z",
           "freshness": {
             "source": "catalog",
             "suite": "catalog-conformance",
-            "commit": "3dfe956",
-            "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2692
+            "commit": "2e4c603",
+            "finished_at": "2026-07-13T09:12:33.931Z",
+            "age_min": 174
           },
           "tests": [
             {
               "test_id": "recipes/eslint/test/run.json",
               "status": "passed",
-              "duration_ms": 9563,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 11138,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             }
           ]
         }
@@ -1885,20 +1895,20 @@
             "passed",
             "passed"
           ],
-          "lastRun": "catalog/catalog-conformance@3dfe956@2026-07-11T12:15:26.021Z",
+          "lastRun": "catalog/catalog-conformance@2e4c603@2026-07-13T09:12:33.931Z",
           "freshness": {
             "source": "catalog",
             "suite": "catalog-conformance",
-            "commit": "3dfe956",
-            "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2692
+            "commit": "2e4c603",
+            "finished_at": "2026-07-13T09:12:33.931Z",
+            "age_min": 174
           },
           "tests": [
             {
               "test_id": "recipes/prettier/test/run.json",
               "status": "passed",
-              "duration_ms": 7533,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 7479,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             }
           ]
         }
@@ -1941,20 +1951,20 @@
             "passed",
             "passed"
           ],
-          "lastRun": "catalog/catalog-conformance@3dfe956@2026-07-11T12:15:26.021Z",
+          "lastRun": "catalog/catalog-conformance@2e4c603@2026-07-13T09:12:33.931Z",
           "freshness": {
             "source": "catalog",
             "suite": "catalog-conformance",
-            "commit": "3dfe956",
-            "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2692
+            "commit": "2e4c603",
+            "finished_at": "2026-07-13T09:12:33.931Z",
+            "age_min": 174
           },
           "tests": [
             {
               "test_id": "recipes/fd/test/run.json",
               "status": "passed",
-              "duration_ms": 14,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 20,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             }
           ]
         }
@@ -1985,20 +1995,20 @@
             "passed",
             "passed"
           ],
-          "lastRun": "catalog/catalog-conformance@3dfe956@2026-07-11T12:15:26.021Z",
+          "lastRun": "catalog/catalog-conformance@2e4c603@2026-07-13T09:12:33.931Z",
           "freshness": {
             "source": "catalog",
             "suite": "catalog-conformance",
-            "commit": "3dfe956",
-            "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2692
+            "commit": "2e4c603",
+            "finished_at": "2026-07-13T09:12:33.931Z",
+            "age_min": 174
           },
           "tests": [
             {
               "test_id": "recipes/sd/test/run.json",
               "status": "passed",
-              "duration_ms": 5,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 7,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             }
           ]
         }
@@ -2029,20 +2039,20 @@
             "passed",
             "passed"
           ],
-          "lastRun": "catalog/catalog-conformance@3dfe956@2026-07-11T12:15:26.021Z",
+          "lastRun": "catalog/catalog-conformance@2e4c603@2026-07-13T09:12:33.931Z",
           "freshness": {
             "source": "catalog",
             "suite": "catalog-conformance",
-            "commit": "3dfe956",
-            "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2692
+            "commit": "2e4c603",
+            "finished_at": "2026-07-13T09:12:33.931Z",
+            "age_min": 174
           },
           "tests": [
             {
               "test_id": "recipes/hexyl/test/run.json",
               "status": "passed",
-              "duration_ms": 11,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 8,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             }
           ]
         }
@@ -2073,20 +2083,20 @@
             "passed",
             "passed"
           ],
-          "lastRun": "catalog/catalog-conformance@3dfe956@2026-07-11T12:15:26.021Z",
+          "lastRun": "catalog/catalog-conformance@2e4c603@2026-07-13T09:12:33.931Z",
           "freshness": {
             "source": "catalog",
             "suite": "catalog-conformance",
-            "commit": "3dfe956",
-            "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2692
+            "commit": "2e4c603",
+            "finished_at": "2026-07-13T09:12:33.931Z",
+            "age_min": 174
           },
           "tests": [
             {
               "test_id": "recipes/oxipng/test/run.json",
               "status": "passed",
-              "duration_ms": 6,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 9,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             }
           ]
         }
@@ -2117,20 +2127,20 @@
             "passed",
             "passed"
           ],
-          "lastRun": "catalog/catalog-conformance@3dfe956@2026-07-11T12:15:26.021Z",
+          "lastRun": "catalog/catalog-conformance@2e4c603@2026-07-13T09:12:33.931Z",
           "freshness": {
             "source": "catalog",
             "suite": "catalog-conformance",
-            "commit": "3dfe956",
-            "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2692
+            "commit": "2e4c603",
+            "finished_at": "2026-07-13T09:12:33.931Z",
+            "age_min": 174
           },
           "tests": [
             {
               "test_id": "recipes/ast-grep/test/run.json",
               "status": "passed",
-              "duration_ms": 34,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 33,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             }
           ]
         }
@@ -2161,20 +2171,20 @@
             "passed",
             "passed"
           ],
-          "lastRun": "catalog/catalog-conformance@3dfe956@2026-07-11T12:15:26.021Z",
+          "lastRun": "catalog/catalog-conformance@2e4c603@2026-07-13T09:12:33.931Z",
           "freshness": {
             "source": "catalog",
             "suite": "catalog-conformance",
-            "commit": "3dfe956",
-            "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2692
+            "commit": "2e4c603",
+            "finished_at": "2026-07-13T09:12:33.931Z",
+            "age_min": 174
           },
           "tests": [
             {
               "test_id": "recipes/delta/test/run.json",
               "status": "passed",
-              "duration_ms": 47,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 51,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             }
           ]
         }
@@ -2205,20 +2215,20 @@
             "passed",
             "passed"
           ],
-          "lastRun": "catalog/catalog-conformance@3dfe956@2026-07-11T12:15:26.021Z",
+          "lastRun": "catalog/catalog-conformance@2e4c603@2026-07-13T09:12:33.931Z",
           "freshness": {
             "source": "catalog",
             "suite": "catalog-conformance",
-            "commit": "3dfe956",
-            "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2692
+            "commit": "2e4c603",
+            "finished_at": "2026-07-13T09:12:33.931Z",
+            "age_min": 174
           },
           "tests": [
             {
               "test_id": "recipes/yq/test/run.json",
               "status": "passed",
-              "duration_ms": 33,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 34,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             }
           ]
         }
@@ -2249,20 +2259,20 @@
             "passed",
             "passed"
           ],
-          "lastRun": "catalog/catalog-conformance@3dfe956@2026-07-11T12:15:26.021Z",
+          "lastRun": "catalog/catalog-conformance@2e4c603@2026-07-13T09:12:33.931Z",
           "freshness": {
             "source": "catalog",
             "suite": "catalog-conformance",
-            "commit": "3dfe956",
-            "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2692
+            "commit": "2e4c603",
+            "finished_at": "2026-07-13T09:12:33.931Z",
+            "age_min": 174
           },
           "tests": [
             {
               "test_id": "recipes/gron/test/run.json",
               "status": "passed",
-              "duration_ms": 36,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 34,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             }
           ]
         }
@@ -2293,20 +2303,20 @@
             "passed",
             "passed"
           ],
-          "lastRun": "catalog/catalog-conformance@3dfe956@2026-07-11T12:15:26.021Z",
+          "lastRun": "catalog/catalog-conformance@2e4c603@2026-07-13T09:12:33.931Z",
           "freshness": {
             "source": "catalog",
             "suite": "catalog-conformance",
-            "commit": "3dfe956",
-            "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2692
+            "commit": "2e4c603",
+            "finished_at": "2026-07-13T09:12:33.931Z",
+            "age_min": 174
           },
           "tests": [
             {
               "test_id": "recipes/glow/test/run.json",
               "status": "passed",
-              "duration_ms": 80,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 31,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             }
           ]
         }
@@ -2337,20 +2347,20 @@
             "passed",
             "passed"
           ],
-          "lastRun": "catalog/catalog-conformance@3dfe956@2026-07-11T12:15:26.021Z",
+          "lastRun": "catalog/catalog-conformance@2e4c603@2026-07-13T09:12:33.931Z",
           "freshness": {
             "source": "catalog",
             "suite": "catalog-conformance",
-            "commit": "3dfe956",
-            "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2692
+            "commit": "2e4c603",
+            "finished_at": "2026-07-13T09:12:33.931Z",
+            "age_min": 174
           },
           "tests": [
             {
               "test_id": "recipes/dasel/test/run.json",
               "status": "passed",
-              "duration_ms": 30,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 35,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             }
           ]
         }
@@ -2382,20 +2392,20 @@
             "passed",
             "passed"
           ],
-          "lastRun": "catalog/catalog-conformance@3dfe956@2026-07-11T12:15:26.021Z",
+          "lastRun": "catalog/catalog-conformance@2e4c603@2026-07-13T09:12:33.931Z",
           "freshness": {
             "source": "catalog",
             "suite": "catalog-conformance",
-            "commit": "3dfe956",
-            "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2692
+            "commit": "2e4c603",
+            "finished_at": "2026-07-13T09:12:33.931Z",
+            "age_min": 174
           },
           "tests": [
             {
               "test_id": "recipes/gix/test/run.json",
               "status": "passed",
-              "duration_ms": 32,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 35,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             }
           ]
         }
@@ -2427,20 +2437,20 @@
             "passed",
             "passed"
           ],
-          "lastRun": "catalog/catalog-conformance@3dfe956@2026-07-11T12:15:26.021Z",
+          "lastRun": "catalog/catalog-conformance@2e4c603@2026-07-13T09:12:33.931Z",
           "freshness": {
             "source": "catalog",
             "suite": "catalog-conformance",
-            "commit": "3dfe956",
-            "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2692
+            "commit": "2e4c603",
+            "finished_at": "2026-07-13T09:12:33.931Z",
+            "age_min": 174
           },
           "tests": [
             {
               "test_id": "recipes/nfetch/test/run.json",
               "status": "passed",
-              "duration_ms": 8,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 7,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             }
           ]
         }
@@ -2471,20 +2481,20 @@
             "passed",
             "passed"
           ],
-          "lastRun": "catalog/catalog-conformance@3dfe956@2026-07-11T12:15:26.021Z",
+          "lastRun": "catalog/catalog-conformance@2e4c603@2026-07-13T09:12:33.931Z",
           "freshness": {
             "source": "catalog",
             "suite": "catalog-conformance",
-            "commit": "3dfe956",
-            "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2692
+            "commit": "2e4c603",
+            "finished_at": "2026-07-13T09:12:33.931Z",
+            "age_min": 174
           },
           "tests": [
             {
               "test_id": "recipes/htmlq/test/run.json",
               "status": "passed",
-              "duration_ms": 7,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 8,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             }
           ]
         }
@@ -2515,20 +2525,20 @@
             "passed",
             "passed"
           ],
-          "lastRun": "catalog/catalog-conformance@3dfe956@2026-07-11T12:15:26.021Z",
+          "lastRun": "catalog/catalog-conformance@2e4c603@2026-07-13T09:12:33.931Z",
           "freshness": {
             "source": "catalog",
             "suite": "catalog-conformance",
-            "commit": "3dfe956",
-            "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2692
+            "commit": "2e4c603",
+            "finished_at": "2026-07-13T09:12:33.931Z",
+            "age_min": 174
           },
           "tests": [
             {
               "test_id": "recipes/ambr/test/run.json",
               "status": "passed",
-              "duration_ms": 16,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 18,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             }
           ]
         }
@@ -2559,20 +2569,20 @@
             "passed",
             "passed"
           ],
-          "lastRun": "catalog/catalog-conformance@3dfe956@2026-07-11T12:15:26.021Z",
+          "lastRun": "catalog/catalog-conformance@2e4c603@2026-07-13T09:12:33.931Z",
           "freshness": {
             "source": "catalog",
             "suite": "catalog-conformance",
-            "commit": "3dfe956",
-            "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2692
+            "commit": "2e4c603",
+            "finished_at": "2026-07-13T09:12:33.931Z",
+            "age_min": 174
           },
           "tests": [
             {
               "test_id": "recipes/b3sum/test/run.json",
               "status": "passed",
-              "duration_ms": 8,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 11,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             }
           ]
         }
@@ -2603,20 +2613,20 @@
             "passed",
             "passed"
           ],
-          "lastRun": "catalog/catalog-conformance@3dfe956@2026-07-11T12:15:26.021Z",
+          "lastRun": "catalog/catalog-conformance@2e4c603@2026-07-13T09:12:33.931Z",
           "freshness": {
             "source": "catalog",
             "suite": "catalog-conformance",
-            "commit": "3dfe956",
-            "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2692
+            "commit": "2e4c603",
+            "finished_at": "2026-07-13T09:12:33.931Z",
+            "age_min": 174
           },
           "tests": [
             {
               "test_id": "recipes/bat/test/run.json",
               "status": "passed",
               "duration_ms": 17,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             }
           ]
         }
@@ -2647,20 +2657,20 @@
             "passed",
             "passed"
           ],
-          "lastRun": "catalog/catalog-conformance@3dfe956@2026-07-11T12:15:26.021Z",
+          "lastRun": "catalog/catalog-conformance@2e4c603@2026-07-13T09:12:33.931Z",
           "freshness": {
             "source": "catalog",
             "suite": "catalog-conformance",
-            "commit": "3dfe956",
-            "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2692
+            "commit": "2e4c603",
+            "finished_at": "2026-07-13T09:12:33.931Z",
+            "age_min": 174
           },
           "tests": [
             {
               "test_id": "recipes/choose/test/run.json",
               "status": "passed",
-              "duration_ms": 12,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 7,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             }
           ]
         }
@@ -2686,25 +2696,25 @@
           },
           "history": [
             "passed",
-            "passed",
+            "failed",
             "failed",
             "failed",
             "failed"
           ],
-          "lastRun": "catalog/catalog-conformance@3dfe956@2026-07-11T12:15:26.021Z",
+          "lastRun": "catalog/catalog-conformance@2e4c603@2026-07-13T09:12:33.931Z",
           "freshness": {
             "source": "catalog",
             "suite": "catalog-conformance",
-            "commit": "3dfe956",
-            "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2692
+            "commit": "2e4c603",
+            "finished_at": "2026-07-13T09:12:33.931Z",
+            "age_min": 174
           },
           "tests": [
             {
               "test_id": "recipes/difftastic/test/run.json",
               "status": "failed",
-              "duration_ms": 13,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 12,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             }
           ]
         }
@@ -2735,20 +2745,20 @@
             "passed",
             "passed"
           ],
-          "lastRun": "catalog/catalog-conformance@3dfe956@2026-07-11T12:15:26.021Z",
+          "lastRun": "catalog/catalog-conformance@2e4c603@2026-07-13T09:12:33.931Z",
           "freshness": {
             "source": "catalog",
             "suite": "catalog-conformance",
-            "commit": "3dfe956",
-            "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2692
+            "commit": "2e4c603",
+            "finished_at": "2026-07-13T09:12:33.931Z",
+            "age_min": 174
           },
           "tests": [
             {
               "test_id": "recipes/dua/test/run.json",
               "status": "passed",
-              "duration_ms": 9,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 15,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             }
           ]
         }
@@ -2779,20 +2789,20 @@
             "passed",
             "passed"
           ],
-          "lastRun": "catalog/catalog-conformance@3dfe956@2026-07-11T12:15:26.021Z",
+          "lastRun": "catalog/catalog-conformance@2e4c603@2026-07-13T09:12:33.931Z",
           "freshness": {
             "source": "catalog",
             "suite": "catalog-conformance",
-            "commit": "3dfe956",
-            "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2692
+            "commit": "2e4c603",
+            "finished_at": "2026-07-13T09:12:33.931Z",
+            "age_min": 174
           },
           "tests": [
             {
               "test_id": "recipes/dust/test/run.json",
               "status": "passed",
-              "duration_ms": 11,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 13,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             }
           ]
         }
@@ -2823,20 +2833,20 @@
             "passed",
             "passed"
           ],
-          "lastRun": "catalog/catalog-conformance@3dfe956@2026-07-11T12:15:26.021Z",
+          "lastRun": "catalog/catalog-conformance@2e4c603@2026-07-13T09:12:33.931Z",
           "freshness": {
             "source": "catalog",
             "suite": "catalog-conformance",
-            "commit": "3dfe956",
-            "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2692
+            "commit": "2e4c603",
+            "finished_at": "2026-07-13T09:12:33.931Z",
+            "age_min": 174
           },
           "tests": [
             {
               "test_id": "recipes/grex/test/run.json",
               "status": "passed",
-              "duration_ms": 8,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 9,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             }
           ]
         }
@@ -2861,26 +2871,26 @@
             "flaky": 0
           },
           "history": [
-            "failed",
+            "passed",
             "passed",
             "passed",
             "passed",
             "passed"
           ],
-          "lastRun": "catalog/catalog-conformance@3dfe956@2026-07-11T12:15:26.021Z",
+          "lastRun": "catalog/catalog-conformance@2e4c603@2026-07-13T09:12:33.931Z",
           "freshness": {
             "source": "catalog",
             "suite": "catalog-conformance",
-            "commit": "3dfe956",
-            "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2692
+            "commit": "2e4c603",
+            "finished_at": "2026-07-13T09:12:33.931Z",
+            "age_min": 174
           },
           "tests": [
             {
               "test_id": "recipes/hck/test/run.json",
               "status": "passed",
-              "duration_ms": 10,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 9,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             }
           ]
         }
@@ -2911,20 +2921,20 @@
             "passed",
             "passed"
           ],
-          "lastRun": "catalog/catalog-conformance@3dfe956@2026-07-11T12:15:26.021Z",
+          "lastRun": "catalog/catalog-conformance@2e4c603@2026-07-13T09:12:33.931Z",
           "freshness": {
             "source": "catalog",
             "suite": "catalog-conformance",
-            "commit": "3dfe956",
-            "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2692
+            "commit": "2e4c603",
+            "finished_at": "2026-07-13T09:12:33.931Z",
+            "age_min": 174
           },
           "tests": [
             {
               "test_id": "recipes/jaq/test/run.json",
               "status": "passed",
-              "duration_ms": 11,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 17,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             }
           ]
         }
@@ -2955,20 +2965,20 @@
             "passed",
             "passed"
           ],
-          "lastRun": "catalog/catalog-conformance@3dfe956@2026-07-11T12:15:26.021Z",
+          "lastRun": "catalog/catalog-conformance@2e4c603@2026-07-13T09:12:33.931Z",
           "freshness": {
             "source": "catalog",
             "suite": "catalog-conformance",
-            "commit": "3dfe956",
-            "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2692
+            "commit": "2e4c603",
+            "finished_at": "2026-07-13T09:12:33.931Z",
+            "age_min": 174
           },
           "tests": [
             {
               "test_id": "recipes/jql/test/run.json",
               "status": "passed",
-              "duration_ms": 11,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 15,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             }
           ]
         }
@@ -2999,20 +3009,20 @@
             "passed",
             "passed"
           ],
-          "lastRun": "catalog/catalog-conformance@3dfe956@2026-07-11T12:15:26.021Z",
+          "lastRun": "catalog/catalog-conformance@2e4c603@2026-07-13T09:12:33.931Z",
           "freshness": {
             "source": "catalog",
             "suite": "catalog-conformance",
-            "commit": "3dfe956",
-            "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2692
+            "commit": "2e4c603",
+            "finished_at": "2026-07-13T09:12:33.931Z",
+            "age_min": 174
           },
           "tests": [
             {
               "test_id": "recipes/just/test/run.json",
               "status": "passed",
-              "duration_ms": 13,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 26,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             }
           ]
         }
@@ -3043,20 +3053,20 @@
             "passed",
             "passed"
           ],
-          "lastRun": "catalog/catalog-conformance@3dfe956@2026-07-11T12:15:26.021Z",
+          "lastRun": "catalog/catalog-conformance@2e4c603@2026-07-13T09:12:33.931Z",
           "freshness": {
             "source": "catalog",
             "suite": "catalog-conformance",
-            "commit": "3dfe956",
-            "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2692
+            "commit": "2e4c603",
+            "finished_at": "2026-07-13T09:12:33.931Z",
+            "age_min": 174
           },
           "tests": [
             {
               "test_id": "recipes/numbat/test/run.json",
               "status": "passed",
-              "duration_ms": 7,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 8,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             }
           ]
         }
@@ -3087,20 +3097,20 @@
             "passed",
             "passed"
           ],
-          "lastRun": "catalog/catalog-conformance@3dfe956@2026-07-11T12:15:26.021Z",
+          "lastRun": "catalog/catalog-conformance@2e4c603@2026-07-13T09:12:33.931Z",
           "freshness": {
             "source": "catalog",
             "suite": "catalog-conformance",
-            "commit": "3dfe956",
-            "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2692
+            "commit": "2e4c603",
+            "finished_at": "2026-07-13T09:12:33.931Z",
+            "age_min": 174
           },
           "tests": [
             {
               "test_id": "recipes/ouch/test/run.json",
               "status": "passed",
-              "duration_ms": 9,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 16,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             }
           ]
         }
@@ -3131,20 +3141,20 @@
             "passed",
             "passed"
           ],
-          "lastRun": "catalog/catalog-conformance@3dfe956@2026-07-11T12:15:26.021Z",
+          "lastRun": "catalog/catalog-conformance@2e4c603@2026-07-13T09:12:33.931Z",
           "freshness": {
             "source": "catalog",
             "suite": "catalog-conformance",
-            "commit": "3dfe956",
-            "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2692
+            "commit": "2e4c603",
+            "finished_at": "2026-07-13T09:12:33.931Z",
+            "age_min": 174
           },
           "tests": [
             {
               "test_id": "recipes/pastel/test/run.json",
               "status": "passed",
-              "duration_ms": 17,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 11,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             }
           ]
         }
@@ -3175,20 +3185,20 @@
             "passed",
             "passed"
           ],
-          "lastRun": "catalog/catalog-conformance@3dfe956@2026-07-11T12:15:26.021Z",
+          "lastRun": "catalog/catalog-conformance@2e4c603@2026-07-13T09:12:33.931Z",
           "freshness": {
             "source": "catalog",
             "suite": "catalog-conformance",
-            "commit": "3dfe956",
-            "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2692
+            "commit": "2e4c603",
+            "finished_at": "2026-07-13T09:12:33.931Z",
+            "age_min": 174
           },
           "tests": [
             {
               "test_id": "recipes/rage/test/run.json",
               "status": "passed",
-              "duration_ms": 75,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 58,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             }
           ]
         }
@@ -3219,20 +3229,20 @@
             "passed",
             "passed"
           ],
-          "lastRun": "catalog/catalog-conformance@3dfe956@2026-07-11T12:15:26.021Z",
+          "lastRun": "catalog/catalog-conformance@2e4c603@2026-07-13T09:12:33.931Z",
           "freshness": {
             "source": "catalog",
             "suite": "catalog-conformance",
-            "commit": "3dfe956",
-            "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2692
+            "commit": "2e4c603",
+            "finished_at": "2026-07-13T09:12:33.931Z",
+            "age_min": 174
           },
           "tests": [
             {
               "test_id": "recipes/resvg/test/run.json",
               "status": "passed",
-              "duration_ms": 4,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 5,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             }
           ]
         }
@@ -3263,20 +3273,20 @@
             "passed",
             "passed"
           ],
-          "lastRun": "catalog/catalog-conformance@3dfe956@2026-07-11T12:15:26.021Z",
+          "lastRun": "catalog/catalog-conformance@2e4c603@2026-07-13T09:12:33.931Z",
           "freshness": {
             "source": "catalog",
             "suite": "catalog-conformance",
-            "commit": "3dfe956",
-            "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2692
+            "commit": "2e4c603",
+            "finished_at": "2026-07-13T09:12:33.931Z",
+            "age_min": 174
           },
           "tests": [
             {
               "test_id": "recipes/rnr/test/run.json",
               "status": "passed",
               "duration_ms": 10,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             }
           ]
         }
@@ -3307,20 +3317,20 @@
             "passed",
             "passed"
           ],
-          "lastRun": "catalog/catalog-conformance@3dfe956@2026-07-11T12:15:26.021Z",
+          "lastRun": "catalog/catalog-conformance@2e4c603@2026-07-13T09:12:33.931Z",
           "freshness": {
             "source": "catalog",
             "suite": "catalog-conformance",
-            "commit": "3dfe956",
-            "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2692
+            "commit": "2e4c603",
+            "finished_at": "2026-07-13T09:12:33.931Z",
+            "age_min": 174
           },
           "tests": [
             {
               "test_id": "recipes/tokei/test/run.json",
               "status": "passed",
-              "duration_ms": 16,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 7,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             }
           ]
         }
@@ -3351,20 +3361,20 @@
             "passed",
             "passed"
           ],
-          "lastRun": "catalog/catalog-conformance@3dfe956@2026-07-11T12:15:26.021Z",
+          "lastRun": "catalog/catalog-conformance@2e4c603@2026-07-13T09:12:33.931Z",
           "freshness": {
             "source": "catalog",
             "suite": "catalog-conformance",
-            "commit": "3dfe956",
-            "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2692
+            "commit": "2e4c603",
+            "finished_at": "2026-07-13T09:12:33.931Z",
+            "age_min": 174
           },
           "tests": [
             {
               "test_id": "recipes/xan/test/run.json",
               "status": "passed",
-              "duration_ms": 176,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 156,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             }
           ]
         }
@@ -3396,20 +3406,20 @@
             "passed",
             "passed"
           ],
-          "lastRun": "catalog/catalog-conformance@3dfe956@2026-07-11T12:15:26.021Z",
+          "lastRun": "catalog/catalog-conformance@2e4c603@2026-07-13T09:12:33.931Z",
           "freshness": {
             "source": "catalog",
             "suite": "catalog-conformance",
-            "commit": "3dfe956",
-            "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2692
+            "commit": "2e4c603",
+            "finished_at": "2026-07-13T09:12:33.931Z",
+            "age_min": 174
           },
           "tests": [
             {
               "test_id": "recipes/dyff/test/run.json",
               "status": "passed",
-              "duration_ms": 39,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 36,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             }
           ]
         }
@@ -3441,20 +3451,20 @@
             "passed",
             "passed"
           ],
-          "lastRun": "catalog/catalog-conformance@3dfe956@2026-07-11T12:15:26.021Z",
+          "lastRun": "catalog/catalog-conformance@2e4c603@2026-07-13T09:12:33.931Z",
           "freshness": {
             "source": "catalog",
             "suite": "catalog-conformance",
-            "commit": "3dfe956",
-            "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2692
+            "commit": "2e4c603",
+            "finished_at": "2026-07-13T09:12:33.931Z",
+            "age_min": 174
           },
           "tests": [
             {
               "test_id": "recipes/fend/test/run.json",
               "status": "passed",
-              "duration_ms": 13,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 14,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             }
           ]
         }
@@ -3486,20 +3496,20 @@
             "passed",
             "passed"
           ],
-          "lastRun": "catalog/catalog-conformance@3dfe956@2026-07-11T12:15:26.021Z",
+          "lastRun": "catalog/catalog-conformance@2e4c603@2026-07-13T09:12:33.931Z",
           "freshness": {
             "source": "catalog",
             "suite": "catalog-conformance",
-            "commit": "3dfe956",
-            "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2692
+            "commit": "2e4c603",
+            "finished_at": "2026-07-13T09:12:33.931Z",
+            "age_min": 174
           },
           "tests": [
             {
               "test_id": "recipes/goawk/test/run.json",
               "status": "passed",
-              "duration_ms": 35,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 32,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             }
           ]
         }
@@ -3531,20 +3541,20 @@
             "passed",
             "passed"
           ],
-          "lastRun": "catalog/catalog-conformance@3dfe956@2026-07-11T12:15:26.021Z",
+          "lastRun": "catalog/catalog-conformance@2e4c603@2026-07-13T09:12:33.931Z",
           "freshness": {
             "source": "catalog",
             "suite": "catalog-conformance",
-            "commit": "3dfe956",
-            "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2692
+            "commit": "2e4c603",
+            "finished_at": "2026-07-13T09:12:33.931Z",
+            "age_min": 174
           },
           "tests": [
             {
               "test_id": "recipes/gojq/test/run.json",
               "status": "passed",
-              "duration_ms": 40,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 33,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             }
           ]
         }
@@ -3576,20 +3586,20 @@
             "passed",
             "passed"
           ],
-          "lastRun": "catalog/catalog-conformance@3dfe956@2026-07-11T12:15:26.021Z",
+          "lastRun": "catalog/catalog-conformance@2e4c603@2026-07-13T09:12:33.931Z",
           "freshness": {
             "source": "catalog",
             "suite": "catalog-conformance",
-            "commit": "3dfe956",
-            "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2692
+            "commit": "2e4c603",
+            "finished_at": "2026-07-13T09:12:33.931Z",
+            "age_min": 174
           },
           "tests": [
             {
               "test_id": "recipes/mlr/test/run.json",
               "status": "passed",
-              "duration_ms": 32,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 30,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             }
           ]
         }
@@ -3621,20 +3631,20 @@
             "passed",
             "passed"
           ],
-          "lastRun": "catalog/catalog-conformance@3dfe956@2026-07-11T12:15:26.021Z",
+          "lastRun": "catalog/catalog-conformance@2e4c603@2026-07-13T09:12:33.931Z",
           "freshness": {
             "source": "catalog",
             "suite": "catalog-conformance",
-            "commit": "3dfe956",
-            "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2692
+            "commit": "2e4c603",
+            "finished_at": "2026-07-13T09:12:33.931Z",
+            "age_min": 174
           },
           "tests": [
             {
               "test_id": "recipes/pup/test/run.json",
               "status": "passed",
-              "duration_ms": 32,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 26,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             }
           ]
         }
@@ -3666,20 +3676,20 @@
             "passed",
             "passed"
           ],
-          "lastRun": "catalog/catalog-conformance@3dfe956@2026-07-11T12:15:26.021Z",
+          "lastRun": "catalog/catalog-conformance@2e4c603@2026-07-13T09:12:33.931Z",
           "freshness": {
             "source": "catalog",
             "suite": "catalog-conformance",
-            "commit": "3dfe956",
-            "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2692
+            "commit": "2e4c603",
+            "finished_at": "2026-07-13T09:12:33.931Z",
+            "age_min": 174
           },
           "tests": [
             {
               "test_id": "recipes/shfmt/test/run.json",
               "status": "passed",
-              "duration_ms": 39,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 29,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             }
           ]
         }
@@ -3711,20 +3721,20 @@
             "passed",
             "passed"
           ],
-          "lastRun": "catalog/catalog-conformance@3dfe956@2026-07-11T12:15:26.021Z",
+          "lastRun": "catalog/catalog-conformance@2e4c603@2026-07-13T09:12:33.931Z",
           "freshness": {
             "source": "catalog",
             "suite": "catalog-conformance",
-            "commit": "3dfe956",
-            "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2692
+            "commit": "2e4c603",
+            "finished_at": "2026-07-13T09:12:33.931Z",
+            "age_min": 174
           },
           "tests": [
             {
               "test_id": "recipes/task/test/run.json",
               "status": "passed",
-              "duration_ms": 43,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 97,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             }
           ]
         }
@@ -3734,11 +3744,33 @@
     },
     {
       "id": "catalog.recipe.photon",
-      "title": "photon (image CLI)",
+      "title": "photon (image CLI, wasm-app)",
       "area": "catalog",
       "status": "partial",
       "since": "2026-07",
-      "notes": "FIRST kind:wasm-app recipe — a tiny image-processing CLI (grayscale/invert/blur/sepia/threshold) on the pure-Rust `image` crate, compiled to wasm32-wasip1. package.mjs kind passthrough + recipe + fixture landed; browser-verified via the SDK (Photon demo runs on the wasm runner). PENDING: wasm-app conformance harness (nano-conformance runs on the wasm runner) + CDN publish",
+      "notes": "FIRST kind:wasm-app recipe — image CLI (grayscale/invert/blur/sepia/threshold) on the pure-Rust `image` crate → wasm32-wasip1. Conformance now via capture-verdict (runs on the wasm runner); browser-verified via the SDK. PENDING: CDN publish (gen-13)",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "catalog.recipe.jfmt",
+      "title": "jfmt (JSON formatter, node-app)",
+      "area": "catalog",
+      "status": "partial",
+      "since": "2026-07",
+      "notes": "kind:node-app seed — pure-ESM JSON pretty-printer that runs on the host Node engine. Builds + conforms (capture-verdict, host node) + packages to tier=node. PENDING: CDN publish",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "catalog.recipe.calc",
+      "title": "calc (arithmetic, boa-app)",
+      "area": "catalog",
+      "status": "partial",
+      "since": "2026-07",
+      "notes": "kind:boa-app seed — sandboxed pure-ECMAScript evaluator (6*7→42) on the Boa runner. Builds + conforms (capture-verdict, Boa) + packages to tier=boa. PENDING: CDN publish",
       "cells": {},
       "tested": false,
       "green": null
@@ -3798,20 +3830,20 @@
             "passed",
             "passed"
           ],
-          "lastRun": "catalog/catalog-conformance@3dfe956@2026-07-11T12:15:26.021Z",
+          "lastRun": "catalog/catalog-conformance@2e4c603@2026-07-13T09:12:33.931Z",
           "freshness": {
             "source": "catalog",
             "suite": "catalog-conformance",
-            "commit": "3dfe956",
-            "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2692
+            "commit": "2e4c603",
+            "finished_at": "2026-07-13T09:12:33.931Z",
+            "age_min": 174
           },
           "tests": [
             {
               "test_id": "recipes/_net-fixture-test/test/run.json",
               "status": "passed",
-              "duration_ms": 6,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 5,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             }
           ]
         }
@@ -3842,20 +3874,20 @@
             "passed",
             "passed"
           ],
-          "lastRun": "catalog/catalog-conformance@3dfe956@2026-07-11T12:15:26.021Z",
+          "lastRun": "catalog/catalog-conformance@2e4c603@2026-07-13T09:12:33.931Z",
           "freshness": {
             "source": "catalog",
             "suite": "catalog-conformance",
-            "commit": "3dfe956",
-            "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2692
+            "commit": "2e4c603",
+            "finished_at": "2026-07-13T09:12:33.931Z",
+            "age_min": 174
           },
           "tests": [
             {
               "test_id": "recipes/_stdin-fixture-test/test/run.json",
               "status": "passed",
-              "duration_ms": 3,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 4,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             }
           ]
         }
@@ -3880,326 +3912,337 @@
             "flaky": 0
           },
           "history": [
-            "failed",
             "passed",
+            "failed",
             "failed",
             "failed",
             "failed"
           ],
-          "lastRun": "catalog/catalog-conformance@3dfe956@2026-07-11T12:15:26.021Z",
+          "lastRun": "catalog/catalog-conformance@2e4c603@2026-07-13T09:12:33.931Z",
           "freshness": {
             "source": "catalog",
             "suite": "catalog-conformance",
-            "commit": "3dfe956",
-            "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2692
+            "commit": "2e4c603",
+            "finished_at": "2026-07-13T09:12:33.931Z",
+            "age_min": 174
           },
           "tests": [
             {
               "test_id": "recipes/_net-fixture-test/test/run.json",
               "status": "passed",
-              "duration_ms": 6,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 5,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/_stdin-fixture-test/test/run.json",
               "status": "passed",
-              "duration_ms": 3,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 4,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/ambr/test/run.json",
               "status": "passed",
-              "duration_ms": 16,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 18,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/ast-grep/test/run.json",
               "status": "passed",
-              "duration_ms": 34,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 33,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/b3sum/test/run.json",
               "status": "passed",
-              "duration_ms": 8,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 11,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/bat/test/run.json",
               "status": "passed",
               "duration_ms": 17,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/busybox/test/run.json",
               "status": "passed",
-              "duration_ms": 5,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 3,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/choose/test/run.json",
               "status": "passed",
-              "duration_ms": 12,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 7,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/dasel/test/run.json",
               "status": "passed",
-              "duration_ms": 30,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 35,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/delta/test/run.json",
               "status": "passed",
-              "duration_ms": 47,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 51,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/difftastic/test/run.json",
               "status": "failed",
-              "duration_ms": 13,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 12,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/dua/test/run.json",
               "status": "passed",
-              "duration_ms": 9,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 15,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/dust/test/run.json",
               "status": "passed",
-              "duration_ms": 11,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 13,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/dyff/test/run.json",
               "status": "passed",
-              "duration_ms": 39,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 36,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/eslint/test/run.json",
               "status": "passed",
-              "duration_ms": 9563,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 11138,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/fd/test/run.json",
               "status": "passed",
-              "duration_ms": 14,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 20,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/fend/test/run.json",
               "status": "passed",
-              "duration_ms": 13,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 14,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/gix/test/run.json",
               "status": "passed",
-              "duration_ms": 32,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 35,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/glow/test/run.json",
               "status": "passed",
-              "duration_ms": 80,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 31,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/goawk/test/run.json",
               "status": "passed",
-              "duration_ms": 35,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 32,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/gojq/test/run.json",
               "status": "passed",
-              "duration_ms": 40,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 33,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/grex/test/run.json",
               "status": "passed",
-              "duration_ms": 8,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 9,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/gron/test/run.json",
               "status": "passed",
-              "duration_ms": 36,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 34,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/hck/test/run.json",
               "status": "passed",
-              "duration_ms": 10,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 9,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/hello-c/test/run.json",
               "status": "passed",
-              "duration_ms": 3,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 2,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/hexyl/test/run.json",
               "status": "passed",
-              "duration_ms": 11,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 8,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/htmlq/test/run.json",
               "status": "passed",
-              "duration_ms": 7,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 8,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/jaq/test/run.json",
               "status": "passed",
-              "duration_ms": 11,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 17,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/jql/test/run.json",
               "status": "passed",
-              "duration_ms": 11,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 15,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/just/test/run.json",
               "status": "passed",
-              "duration_ms": 13,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 26,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/mlr/test/run.json",
               "status": "passed",
-              "duration_ms": 32,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 30,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/nfetch/test/run.json",
               "status": "passed",
-              "duration_ms": 8,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 7,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/node/test/run.json",
               "status": "passed",
-              "duration_ms": 71,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 98,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/numbat/test/run.json",
               "status": "passed",
-              "duration_ms": 7,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 8,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/ouch/test/run.json",
               "status": "passed",
-              "duration_ms": 9,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 16,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/oxipng/test/run.json",
               "status": "passed",
-              "duration_ms": 6,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 9,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/pastel/test/run.json",
               "status": "passed",
-              "duration_ms": 17,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 11,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/prettier/test/run.json",
               "status": "passed",
-              "duration_ms": 7533,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 7479,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/pup/test/run.json",
               "status": "passed",
-              "duration_ms": 32,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 26,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/rage/test/run.json",
               "status": "passed",
-              "duration_ms": 75,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 58,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/resvg/test/run.json",
               "status": "passed",
-              "duration_ms": 4,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 5,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/ripgrep/test/run.json",
               "status": "passed",
               "duration_ms": 42,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/rnr/test/run.json",
               "status": "passed",
               "duration_ms": 10,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/sd/test/run.json",
               "status": "passed",
-              "duration_ms": 5,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 7,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/shfmt/test/run.json",
               "status": "passed",
-              "duration_ms": 39,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 29,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/task/test/run.json",
               "status": "passed",
-              "duration_ms": 43,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 97,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/tokei/test/run.json",
               "status": "passed",
-              "duration_ms": 16,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 7,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/typescript/test/run.json",
               "status": "passed",
-              "duration_ms": 6723,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 9929,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/xan/test/run.json",
               "status": "passed",
-              "duration_ms": 176,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 156,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/yq/test/run.json",
               "status": "passed",
-              "duration_ms": 33,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 34,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             }
           ]
         }
       },
       "tested": true,
       "green": false
+    },
+    {
+      "id": "catalog.pipeline.multitier-conformance",
+      "title": "multi-tier conformance (capture-verdict)",
+      "area": "catalog",
+      "status": "partial",
+      "since": "2026-07",
+      "notes": "capture-golden dispatches non-elf kinds to capture-verdict, which runs the app on its own runner (wasm via execWasmApp / host Node / Boa via scripting) → verdict.json. Verified locally for photon/jfmt/calc. PENDING: CI wiring (capture.yml provides nano.wasm+boa.wasm) + publish",
+      "cells": {},
+      "tested": false,
+      "green": null
     },
     {
       "id": "catalog.pipeline.gate",
@@ -4218,320 +4261,320 @@
             "flaky": 0
           },
           "history": [
-            "failed",
             "passed",
+            "failed",
             "failed",
             "failed",
             "failed"
           ],
-          "lastRun": "catalog/catalog-conformance@3dfe956@2026-07-11T12:15:26.021Z",
+          "lastRun": "catalog/catalog-conformance@2e4c603@2026-07-13T09:12:33.931Z",
           "freshness": {
             "source": "catalog",
             "suite": "catalog-conformance",
-            "commit": "3dfe956",
-            "finished_at": "2026-07-11T12:15:26.021Z",
-            "age_min": 2692
+            "commit": "2e4c603",
+            "finished_at": "2026-07-13T09:12:33.931Z",
+            "age_min": 174
           },
           "tests": [
             {
               "test_id": "recipes/_net-fixture-test/test/run.json",
               "status": "passed",
-              "duration_ms": 6,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 5,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/_stdin-fixture-test/test/run.json",
               "status": "passed",
-              "duration_ms": 3,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 4,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/ambr/test/run.json",
               "status": "passed",
-              "duration_ms": 16,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 18,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/ast-grep/test/run.json",
               "status": "passed",
-              "duration_ms": 34,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 33,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/b3sum/test/run.json",
               "status": "passed",
-              "duration_ms": 8,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 11,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/bat/test/run.json",
               "status": "passed",
               "duration_ms": 17,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/busybox/test/run.json",
               "status": "passed",
-              "duration_ms": 5,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 3,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/choose/test/run.json",
               "status": "passed",
-              "duration_ms": 12,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 7,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/dasel/test/run.json",
               "status": "passed",
-              "duration_ms": 30,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 35,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/delta/test/run.json",
               "status": "passed",
-              "duration_ms": 47,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 51,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/difftastic/test/run.json",
               "status": "failed",
-              "duration_ms": 13,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 12,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/dua/test/run.json",
               "status": "passed",
-              "duration_ms": 9,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 15,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/dust/test/run.json",
               "status": "passed",
-              "duration_ms": 11,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 13,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/dyff/test/run.json",
               "status": "passed",
-              "duration_ms": 39,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 36,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/eslint/test/run.json",
               "status": "passed",
-              "duration_ms": 9563,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 11138,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/fd/test/run.json",
               "status": "passed",
-              "duration_ms": 14,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 20,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/fend/test/run.json",
               "status": "passed",
-              "duration_ms": 13,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 14,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/gix/test/run.json",
               "status": "passed",
-              "duration_ms": 32,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 35,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/glow/test/run.json",
               "status": "passed",
-              "duration_ms": 80,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 31,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/goawk/test/run.json",
               "status": "passed",
-              "duration_ms": 35,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 32,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/gojq/test/run.json",
               "status": "passed",
-              "duration_ms": 40,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 33,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/grex/test/run.json",
               "status": "passed",
-              "duration_ms": 8,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 9,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/gron/test/run.json",
               "status": "passed",
-              "duration_ms": 36,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 34,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/hck/test/run.json",
               "status": "passed",
-              "duration_ms": 10,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 9,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/hello-c/test/run.json",
               "status": "passed",
-              "duration_ms": 3,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 2,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/hexyl/test/run.json",
               "status": "passed",
-              "duration_ms": 11,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 8,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/htmlq/test/run.json",
               "status": "passed",
-              "duration_ms": 7,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 8,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/jaq/test/run.json",
               "status": "passed",
-              "duration_ms": 11,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 17,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/jql/test/run.json",
               "status": "passed",
-              "duration_ms": 11,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 15,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/just/test/run.json",
               "status": "passed",
-              "duration_ms": 13,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 26,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/mlr/test/run.json",
               "status": "passed",
-              "duration_ms": 32,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 30,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/nfetch/test/run.json",
               "status": "passed",
-              "duration_ms": 8,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 7,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/node/test/run.json",
               "status": "passed",
-              "duration_ms": 71,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 98,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/numbat/test/run.json",
               "status": "passed",
-              "duration_ms": 7,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 8,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/ouch/test/run.json",
               "status": "passed",
-              "duration_ms": 9,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 16,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/oxipng/test/run.json",
               "status": "passed",
-              "duration_ms": 6,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 9,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/pastel/test/run.json",
               "status": "passed",
-              "duration_ms": 17,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 11,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/prettier/test/run.json",
               "status": "passed",
-              "duration_ms": 7533,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 7479,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/pup/test/run.json",
               "status": "passed",
-              "duration_ms": 32,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 26,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/rage/test/run.json",
               "status": "passed",
-              "duration_ms": 75,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 58,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/resvg/test/run.json",
               "status": "passed",
-              "duration_ms": 4,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 5,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/ripgrep/test/run.json",
               "status": "passed",
               "duration_ms": 42,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/rnr/test/run.json",
               "status": "passed",
               "duration_ms": 10,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/sd/test/run.json",
               "status": "passed",
-              "duration_ms": 5,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 7,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/shfmt/test/run.json",
               "status": "passed",
-              "duration_ms": 39,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 29,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/task/test/run.json",
               "status": "passed",
-              "duration_ms": 43,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 97,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/tokei/test/run.json",
               "status": "passed",
-              "duration_ms": 16,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 7,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/typescript/test/run.json",
               "status": "passed",
-              "duration_ms": 6723,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 9929,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/xan/test/run.json",
               "status": "passed",
-              "duration_ms": 176,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 156,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             },
             {
               "test_id": "recipes/yq/test/run.json",
               "status": "passed",
-              "duration_ms": 33,
-              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29152115107"
+              "duration_ms": 34,
+              "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
             }
           ]
         }
@@ -4545,6 +4588,17 @@
       "area": "catalog",
       "status": "shipped",
       "since": "2026-06",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "catalog.index.tiers",
+      "title": "runner-tier metadata in the index (appMeta)",
+      "area": "catalog",
+      "status": "partial",
+      "since": "2026-07",
+      "notes": "publish.mjs denormalizes per-app {tier,kind,abi} into the signed index (SDK SignedIndex.appMeta); legacy apps default to riscv. Lets the terminal group/badge apps by runner without fetching each manifest. PENDING: publish gen-13",
       "cells": {},
       "tested": false,
       "green": null
@@ -4639,7 +4693,7 @@
             "suite": "node-harness",
             "commit": "e117309",
             "finished_at": "2026-07-13T05:58:11.000Z",
-            "age_min": 189
+            "age_min": 368
           },
           "tests": [
             {
@@ -4684,7 +4738,7 @@
             "suite": "cargo-unit",
             "commit": "4184095",
             "finished_at": "2026-07-13T09:02:46.377Z",
-            "age_min": 5
+            "age_min": 184
           },
           "tests": [
             {
@@ -4747,7 +4801,7 @@
             "suite": "node-harness",
             "commit": "e117309",
             "finished_at": "2026-07-13T05:58:11.000Z",
-            "age_min": 189
+            "age_min": 368
           },
           "tests": [
             {
@@ -4792,7 +4846,7 @@
             "suite": "node-harness",
             "commit": "e117309",
             "finished_at": "2026-07-13T05:58:11.000Z",
-            "age_min": 189
+            "age_min": 368
           },
           "tests": [
             {
@@ -4837,7 +4891,7 @@
             "suite": "node-harness",
             "commit": "e117309",
             "finished_at": "2026-07-13T05:58:11.000Z",
-            "age_min": 189
+            "age_min": 368
           },
           "tests": [
             {
@@ -4882,7 +4936,7 @@
             "suite": "node-harness",
             "commit": "e117309",
             "finished_at": "2026-07-13T05:58:11.000Z",
-            "age_min": 189
+            "age_min": 368
           },
           "tests": [
             {
@@ -4953,7 +5007,7 @@
             "suite": "cargo-unit",
             "commit": "4184095",
             "finished_at": "2026-07-13T09:02:46.377Z",
-            "age_min": 5
+            "age_min": 184
           },
           "tests": [
             {
@@ -5041,7 +5095,7 @@
             "suite": "node-harness",
             "commit": "e117309",
             "finished_at": "2026-07-13T05:58:11.000Z",
-            "age_min": 189
+            "age_min": 368
           },
           "tests": [
             {
@@ -5332,7 +5386,7 @@
             "suite": "node-harness",
             "commit": "e117309",
             "finished_at": "2026-07-13T05:58:11.000Z",
-            "age_min": 189
+            "age_min": 368
           },
           "tests": [
             {
@@ -5582,7 +5636,7 @@
             "suite": "node-harness",
             "commit": "e117309",
             "finished_at": "2026-07-13T05:58:11.000Z",
-            "age_min": 189
+            "age_min": 368
           },
           "tests": [
             {
@@ -6130,19 +6184,19 @@
             "passed",
             "passed"
           ],
-          "lastRun": "sdk/sdk-unit@41a5ba7@2026-07-13T09:03:10.509Z",
+          "lastRun": "sdk/sdk-unit@e53df2c@2026-07-13T10:43:24.801Z",
           "freshness": {
             "source": "sdk",
             "suite": "sdk-unit",
-            "commit": "41a5ba7",
-            "finished_at": "2026-07-13T09:03:10.509Z",
-            "age_min": 4
+            "commit": "e53df2c",
+            "finished_at": "2026-07-13T10:43:24.801Z",
+            "age_min": 83
           },
           "tests": [
             {
               "test_id": "code.test.mjs::run() executes a BusyBox command and captures stdout [feat:sdk.code.run]",
               "status": "passed",
-              "duration_ms": 112
+              "duration_ms": 100
             }
           ]
         }
@@ -6173,19 +6227,19 @@
             "passed",
             "passed"
           ],
-          "lastRun": "sdk/sdk-unit@41a5ba7@2026-07-13T09:03:10.509Z",
+          "lastRun": "sdk/sdk-unit@e53df2c@2026-07-13T10:43:24.801Z",
           "freshness": {
             "source": "sdk",
             "suite": "sdk-unit",
-            "commit": "41a5ba7",
-            "finished_at": "2026-07-13T09:03:10.509Z",
-            "age_min": 4
+            "commit": "e53df2c",
+            "finished_at": "2026-07-13T10:43:24.801Z",
+            "age_min": 83
           },
           "tests": [
             {
               "test_id": "code.test.mjs::shExec() runs a real sh pipeline [feat:sdk.code.exec]",
               "status": "passed",
-              "duration_ms": 341
+              "duration_ms": 343
             },
             {
               "test_id": "code.test.mjs::exec() single-quotes argv and runs it through sh [feat:sdk.code.exec]",
@@ -6221,19 +6275,19 @@
             "passed",
             "passed"
           ],
-          "lastRun": "sdk/sdk-unit@41a5ba7@2026-07-13T09:03:10.509Z",
+          "lastRun": "sdk/sdk-unit@e53df2c@2026-07-13T10:43:24.801Z",
           "freshness": {
             "source": "sdk",
             "suite": "sdk-unit",
-            "commit": "41a5ba7",
-            "finished_at": "2026-07-13T09:03:10.509Z",
-            "age_min": 4
+            "commit": "e53df2c",
+            "finished_at": "2026-07-13T10:43:24.801Z",
+            "age_min": 83
           },
           "tests": [
             {
               "test_id": "vfs.test.mjs::writeFile + readText round-trip through MemFS [feat:sdk.vfs.rw]",
               "status": "passed",
-              "duration_ms": 106
+              "duration_ms": 98
             },
             {
               "test_id": "vfs.test.mjs::exists reflects file presence [feat:sdk.vfs.rw]",
@@ -6243,7 +6297,7 @@
             {
               "test_id": "vfs.test.mjs::mkdir + copy + walk via BusyBox [feat:sdk.vfs.rw]",
               "status": "passed",
-              "duration_ms": 349
+              "duration_ms": 345
             },
             {
               "test_id": "vfs.test.mjs::list returns typed directory entries [feat:sdk.vfs.rw]",
@@ -6280,24 +6334,24 @@
             "passed",
             "passed"
           ],
-          "lastRun": "sdk/sdk-unit@41a5ba7@2026-07-13T09:03:10.509Z",
+          "lastRun": "sdk/sdk-unit@e53df2c@2026-07-13T10:43:24.801Z",
           "freshness": {
             "source": "sdk",
             "suite": "sdk-unit",
-            "commit": "41a5ba7",
-            "finished_at": "2026-07-13T09:03:10.509Z",
-            "age_min": 4
+            "commit": "e53df2c",
+            "finished_at": "2026-07-13T10:43:24.801Z",
+            "age_min": 83
           },
           "tests": [
             {
               "test_id": "shell.test.mjs::export persists across shell.run() calls [feat:sdk.shell.session]",
               "status": "passed",
-              "duration_ms": 101
+              "duration_ms": 127
             },
             {
               "test_id": "shell.test.mjs::cd tracks cwd across runs [feat:sdk.shell.session]",
               "status": "passed",
-              "duration_ms": 172
+              "duration_ms": 183
             },
             {
               "test_id": "shell.test.mjs::constructor env seeds the session environment [feat:sdk.shell.session]",
@@ -6333,19 +6387,19 @@
             "passed",
             "passed"
           ],
-          "lastRun": "sdk/sdk-unit@41a5ba7@2026-07-13T09:03:10.509Z",
+          "lastRun": "sdk/sdk-unit@e53df2c@2026-07-13T10:43:24.801Z",
           "freshness": {
             "source": "sdk",
             "suite": "sdk-unit",
-            "commit": "41a5ba7",
-            "finished_at": "2026-07-13T09:03:10.509Z",
-            "age_min": 4
+            "commit": "e53df2c",
+            "finished_at": "2026-07-13T10:43:24.801Z",
+            "age_min": 83
           },
           "tests": [
             {
               "test_id": "terminal.test.mjs::clear builtin emits the terminal reset sequence [feat:sdk.mode.terminal]",
               "status": "passed",
-              "duration_ms": 111
+              "duration_ms": 104
             },
             {
               "test_id": "terminal.test.mjs::pwd builtin renders the tracked cwd without spawning [feat:sdk.mode.terminal]",
@@ -6355,7 +6409,7 @@
             {
               "test_id": "terminal.test.mjs::onData streams command output as it is produced [feat:sdk.mode.terminal]",
               "status": "passed",
-              "duration_ms": 7
+              "duration_ms": 9
             }
           ]
         }
@@ -6386,19 +6440,19 @@
             "passed",
             "passed"
           ],
-          "lastRun": "sdk/sdk-unit@41a5ba7@2026-07-13T09:03:10.509Z",
+          "lastRun": "sdk/sdk-unit@e53df2c@2026-07-13T10:43:24.801Z",
           "freshness": {
             "source": "sdk",
             "suite": "sdk-unit",
-            "commit": "41a5ba7",
-            "finished_at": "2026-07-13T09:03:10.509Z",
-            "age_min": 4
+            "commit": "e53df2c",
+            "finished_at": "2026-07-13T10:43:24.801Z",
+            "age_min": 83
           },
           "tests": [
             {
               "test_id": "serve.test.mjs::parseHttpResponse parses status line, headers, and body [feat:sdk.serve.http]",
               "status": "passed",
-              "duration_ms": 100
+              "duration_ms": 126
             },
             {
               "test_id": "serve.test.mjs::parseHttpResponse decodes Transfer-Encoding: chunked [feat:sdk.serve.http]",
@@ -6408,7 +6462,7 @@
             {
               "test_id": "serve.test.mjs::startServer rejects when the launch exits before readiness [feat:sdk.serve.http]",
               "status": "passed",
-              "duration_ms": 3
+              "duration_ms": 5
             }
           ]
         }
@@ -6440,19 +6494,19 @@
             "passed",
             "passed"
           ],
-          "lastRun": "sdk/sdk-unit@41a5ba7@2026-07-13T09:03:10.509Z",
+          "lastRun": "sdk/sdk-unit@e53df2c@2026-07-13T10:43:24.801Z",
           "freshness": {
             "source": "sdk",
             "suite": "sdk-unit",
-            "commit": "41a5ba7",
-            "finished_at": "2026-07-13T09:03:10.509Z",
-            "age_min": 4
+            "commit": "e53df2c",
+            "finished_at": "2026-07-13T10:43:24.801Z",
+            "age_min": 83
           },
           "tests": [
             {
               "test_id": "scripting.test.mjs::script eval marshals a JSON result [feat:sdk.scripting.eval]",
               "status": "passed",
-              "duration_ms": 147
+              "duration_ms": 146
             },
             {
               "test_id": "scripting.test.mjs::registerFunction + defineGlobal drive a long-lived engine [feat:sdk.scripting.eval]",
@@ -6488,13 +6542,13 @@
             "passed",
             "passed"
           ],
-          "lastRun": "sdk/sdk-unit@41a5ba7@2026-07-13T09:03:10.509Z",
+          "lastRun": "sdk/sdk-unit@e53df2c@2026-07-13T10:43:24.801Z",
           "freshness": {
             "source": "sdk",
             "suite": "sdk-unit",
-            "commit": "41a5ba7",
-            "finished_at": "2026-07-13T09:03:10.509Z",
-            "age_min": 4
+            "commit": "e53df2c",
+            "finished_at": "2026-07-13T10:43:24.801Z",
+            "age_min": 83
           },
           "tests": [
             {
@@ -6537,13 +6591,13 @@
             "skipped",
             "skipped"
           ],
-          "lastRun": "sdk/sdk-unit@41a5ba7@2026-07-13T09:03:10.509Z",
+          "lastRun": "sdk/sdk-unit@e53df2c@2026-07-13T10:43:24.801Z",
           "freshness": {
             "source": "sdk",
             "suite": "sdk-unit",
-            "commit": "41a5ba7",
-            "finished_at": "2026-07-13T09:03:10.509Z",
-            "age_min": 4
+            "commit": "e53df2c",
+            "finished_at": "2026-07-13T10:43:24.801Z",
+            "age_min": 83
           },
           "tests": [
             {
@@ -6604,6 +6658,17 @@
       "green": null
     },
     {
+      "id": "sdk.catalog.tiers",
+      "title": "execution-tier catalog metadata (SignedIndex.appMeta + Tier)",
+      "area": "sdk",
+      "status": "shipped",
+      "since": "2026-07",
+      "notes": "ArtifactKind += node-app/boa-app; Tier type + kindToTier()/manifestTier(); SignedIndex.appMeta (per-app {tier,kind,abi}, denormalized). Re-exported through the public entry; typecheck + build green. Consumed by the terminal's runner-aware catalog. NOT yet republished to npm (0.2.5 lacks it; terminal uses the local @sdk alias)",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
       "id": "terminal.boot.shell",
       "title": "boots an interactive shell",
       "area": "terminal",
@@ -6629,7 +6694,7 @@
             "suite": "playwright-e2e",
             "commit": "6640c09",
             "finished_at": "2026-06-27T03:48:02.426Z",
-            "age_min": 23359
+            "age_min": 23538
           },
           "tests": [
             {
@@ -6670,7 +6735,7 @@
             "suite": "playwright-e2e",
             "commit": "6640c09",
             "finished_at": "2026-06-27T03:48:02.426Z",
-            "age_min": 23359
+            "age_min": 23538
           },
           "tests": [
             {
@@ -6710,7 +6775,7 @@
             "suite": "playwright-e2e",
             "commit": "6640c09",
             "finished_at": "2026-06-27T03:48:02.426Z",
-            "age_min": 23359
+            "age_min": 23538
           },
           "tests": [
             {
@@ -6797,7 +6862,7 @@
             "suite": "playwright-e2e",
             "commit": "6640c09",
             "finished_at": "2026-06-27T03:48:02.426Z",
-            "age_min": 23359
+            "age_min": 23538
           },
           "tests": [
             {
@@ -6810,6 +6875,17 @@
       },
       "tested": true,
       "green": true
+    },
+    {
+      "id": "terminal.catalog.tiers",
+      "title": "runner-aware catalog browse (tier facet + badges)",
+      "area": "terminal",
+      "status": "shipped",
+      "since": "2026-07",
+      "notes": "catalog sidebar reads the index appMeta: a Runners facet (All/RISC-V VM/Node/wasm/Boa, tier∧category∧search filter) + a color-tinted tier badge per app row + per-runner tally in browse(). Browser-verified against a signed 4-tier fixture (wasm chip narrowed to esbuild+photon). Install-routing for wasm/boa from the shell is the nano _doExecve gap",
+      "cells": {},
+      "tested": false,
+      "green": null
     },
     {
       "id": "wasm.wasip1.run",
