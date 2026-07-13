@@ -1,6 +1,6 @@
 {
   "contract": 1,
-  "generated_at": "2026-07-13T12:06:58.531Z",
+  "generated_at": "2026-07-13T12:07:49.871Z",
   "layers": [
     "Core",
     "Runtime",
@@ -190,7 +190,7 @@
       "present": true,
       "commit": "4184095",
       "finished_at": "2026-07-13T09:02:46.377Z",
-      "age_min": 184,
+      "age_min": 185,
       "passRate": 1,
       "health": "ok"
     },
@@ -202,7 +202,7 @@
       "present": true,
       "commit": "e117309",
       "finished_at": "2026-07-13T05:58:11.000Z",
-      "age_min": 368,
+      "age_min": 369,
       "passRate": 1,
       "health": "ok"
     },
@@ -212,9 +212,9 @@
       "layer": "SDK",
       "title": "SDK node:test",
       "present": true,
-      "commit": "e53df2c",
-      "finished_at": "2026-07-13T10:43:24.801Z",
-      "age_min": 83,
+      "commit": "3003eb4",
+      "finished_at": "2026-07-13T12:07:04.414Z",
+      "age_min": 0,
       "passRate": 0.8695652173913043,
       "health": "ok"
     },
@@ -226,7 +226,7 @@
       "present": true,
       "commit": "6640c09",
       "finished_at": "2026-06-27T03:48:02.426Z",
-      "age_min": 23538,
+      "age_min": 23539,
       "passRate": 1,
       "health": "silent"
     },
@@ -238,7 +238,7 @@
       "present": true,
       "commit": "2e4c603",
       "finished_at": "2026-07-13T09:12:33.931Z",
-      "age_min": 174,
+      "age_min": 175,
       "passRate": 0.98,
       "health": "ok"
     }
@@ -252,7 +252,7 @@
         "Catalog"
       ],
       "commit": "2e4c603",
-      "age_min": 174,
+      "age_min": 175,
       "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
     },
     {
@@ -263,7 +263,7 @@
         "Catalog"
       ],
       "commit": "2e4c603",
-      "age_min": 174,
+      "age_min": 175,
       "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
     },
     {
@@ -274,7 +274,7 @@
         "Catalog"
       ],
       "commit": "2e4c603",
-      "age_min": 174,
+      "age_min": 175,
       "trace_url": "https://github.com/userland-run/catalog/actions/runs/29237792076"
     }
   ],
@@ -907,7 +907,7 @@
             "suite": "node-harness",
             "commit": "e117309",
             "finished_at": "2026-07-13T05:58:11.000Z",
-            "age_min": 368
+            "age_min": 369
           },
           "tests": [
             {
@@ -949,7 +949,7 @@
             "suite": "node-harness",
             "commit": "e117309",
             "finished_at": "2026-07-13T05:58:11.000Z",
-            "age_min": 368
+            "age_min": 369
           },
           "tests": [
             {
@@ -991,7 +991,7 @@
             "suite": "node-harness",
             "commit": "e117309",
             "finished_at": "2026-07-13T05:58:11.000Z",
-            "age_min": 368
+            "age_min": 369
           },
           "tests": [
             {
@@ -1033,7 +1033,7 @@
             "suite": "node-harness",
             "commit": "e117309",
             "finished_at": "2026-07-13T05:58:11.000Z",
-            "age_min": 368
+            "age_min": 369
           },
           "tests": [
             {
@@ -1075,7 +1075,7 @@
             "suite": "node-harness",
             "commit": "e117309",
             "finished_at": "2026-07-13T05:58:11.000Z",
-            "age_min": 368
+            "age_min": 369
           },
           "tests": [
             {
@@ -1117,7 +1117,7 @@
             "suite": "node-harness",
             "commit": "e117309",
             "finished_at": "2026-07-13T05:58:11.000Z",
-            "age_min": 368
+            "age_min": 369
           },
           "tests": [
             {
@@ -1159,7 +1159,7 @@
             "suite": "node-harness",
             "commit": "e117309",
             "finished_at": "2026-07-13T05:58:11.000Z",
-            "age_min": 368
+            "age_min": 369
           },
           "tests": [
             {
@@ -1201,7 +1201,7 @@
             "suite": "node-harness",
             "commit": "e117309",
             "finished_at": "2026-07-13T05:58:11.000Z",
-            "age_min": 368
+            "age_min": 369
           },
           "tests": [
             {
@@ -1243,7 +1243,7 @@
             "suite": "node-harness",
             "commit": "e117309",
             "finished_at": "2026-07-13T05:58:11.000Z",
-            "age_min": 368
+            "age_min": 369
           },
           "tests": [
             {
@@ -1285,7 +1285,7 @@
             "suite": "node-harness",
             "commit": "e117309",
             "finished_at": "2026-07-13T05:58:11.000Z",
-            "age_min": 368
+            "age_min": 369
           },
           "tests": [
             {
@@ -1327,7 +1327,7 @@
             "suite": "node-harness",
             "commit": "e117309",
             "finished_at": "2026-07-13T05:58:11.000Z",
-            "age_min": 368
+            "age_min": 369
           },
           "tests": [
             {
@@ -1369,7 +1369,7 @@
             "suite": "node-harness",
             "commit": "e117309",
             "finished_at": "2026-07-13T05:58:11.000Z",
-            "age_min": 368
+            "age_min": 369
           },
           "tests": [
             {
@@ -1411,7 +1411,7 @@
             "suite": "node-harness",
             "commit": "e117309",
             "finished_at": "2026-07-13T05:58:11.000Z",
-            "age_min": 368
+            "age_min": 369
           },
           "tests": [
             {
@@ -1453,7 +1453,7 @@
             "suite": "node-harness",
             "commit": "e117309",
             "finished_at": "2026-07-13T05:58:11.000Z",
-            "age_min": 368
+            "age_min": 369
           },
           "tests": [
             {
@@ -1495,7 +1495,7 @@
             "suite": "node-harness",
             "commit": "e117309",
             "finished_at": "2026-07-13T05:58:11.000Z",
-            "age_min": 368
+            "age_min": 369
           },
           "tests": [
             {
@@ -1537,7 +1537,7 @@
             "suite": "node-harness",
             "commit": "e117309",
             "finished_at": "2026-07-13T05:58:11.000Z",
-            "age_min": 368
+            "age_min": 369
           },
           "tests": [
             {
@@ -1579,7 +1579,7 @@
             "suite": "node-harness",
             "commit": "e117309",
             "finished_at": "2026-07-13T05:58:11.000Z",
-            "age_min": 368
+            "age_min": 369
           },
           "tests": [
             {
@@ -1632,7 +1632,7 @@
             "suite": "catalog-conformance",
             "commit": "2e4c603",
             "finished_at": "2026-07-13T09:12:33.931Z",
-            "age_min": 174
+            "age_min": 175
           },
           "tests": [
             {
@@ -1676,7 +1676,7 @@
             "suite": "catalog-conformance",
             "commit": "2e4c603",
             "finished_at": "2026-07-13T09:12:33.931Z",
-            "age_min": 174
+            "age_min": 175
           },
           "tests": [
             {
@@ -1721,7 +1721,7 @@
             "suite": "catalog-conformance",
             "commit": "2e4c603",
             "finished_at": "2026-07-13T09:12:33.931Z",
-            "age_min": 174
+            "age_min": 175
           },
           "tests": [
             {
@@ -1766,7 +1766,7 @@
             "suite": "catalog-conformance",
             "commit": "2e4c603",
             "finished_at": "2026-07-13T09:12:33.931Z",
-            "age_min": 174
+            "age_min": 175
           },
           "tests": [
             {
@@ -1811,7 +1811,7 @@
             "suite": "catalog-conformance",
             "commit": "2e4c603",
             "finished_at": "2026-07-13T09:12:33.931Z",
-            "age_min": 174
+            "age_min": 175
           },
           "tests": [
             {
@@ -1856,7 +1856,7 @@
             "suite": "catalog-conformance",
             "commit": "2e4c603",
             "finished_at": "2026-07-13T09:12:33.931Z",
-            "age_min": 174
+            "age_min": 175
           },
           "tests": [
             {
@@ -1901,7 +1901,7 @@
             "suite": "catalog-conformance",
             "commit": "2e4c603",
             "finished_at": "2026-07-13T09:12:33.931Z",
-            "age_min": 174
+            "age_min": 175
           },
           "tests": [
             {
@@ -1957,7 +1957,7 @@
             "suite": "catalog-conformance",
             "commit": "2e4c603",
             "finished_at": "2026-07-13T09:12:33.931Z",
-            "age_min": 174
+            "age_min": 175
           },
           "tests": [
             {
@@ -2001,7 +2001,7 @@
             "suite": "catalog-conformance",
             "commit": "2e4c603",
             "finished_at": "2026-07-13T09:12:33.931Z",
-            "age_min": 174
+            "age_min": 175
           },
           "tests": [
             {
@@ -2045,7 +2045,7 @@
             "suite": "catalog-conformance",
             "commit": "2e4c603",
             "finished_at": "2026-07-13T09:12:33.931Z",
-            "age_min": 174
+            "age_min": 175
           },
           "tests": [
             {
@@ -2089,7 +2089,7 @@
             "suite": "catalog-conformance",
             "commit": "2e4c603",
             "finished_at": "2026-07-13T09:12:33.931Z",
-            "age_min": 174
+            "age_min": 175
           },
           "tests": [
             {
@@ -2133,7 +2133,7 @@
             "suite": "catalog-conformance",
             "commit": "2e4c603",
             "finished_at": "2026-07-13T09:12:33.931Z",
-            "age_min": 174
+            "age_min": 175
           },
           "tests": [
             {
@@ -2177,7 +2177,7 @@
             "suite": "catalog-conformance",
             "commit": "2e4c603",
             "finished_at": "2026-07-13T09:12:33.931Z",
-            "age_min": 174
+            "age_min": 175
           },
           "tests": [
             {
@@ -2221,7 +2221,7 @@
             "suite": "catalog-conformance",
             "commit": "2e4c603",
             "finished_at": "2026-07-13T09:12:33.931Z",
-            "age_min": 174
+            "age_min": 175
           },
           "tests": [
             {
@@ -2265,7 +2265,7 @@
             "suite": "catalog-conformance",
             "commit": "2e4c603",
             "finished_at": "2026-07-13T09:12:33.931Z",
-            "age_min": 174
+            "age_min": 175
           },
           "tests": [
             {
@@ -2309,7 +2309,7 @@
             "suite": "catalog-conformance",
             "commit": "2e4c603",
             "finished_at": "2026-07-13T09:12:33.931Z",
-            "age_min": 174
+            "age_min": 175
           },
           "tests": [
             {
@@ -2353,7 +2353,7 @@
             "suite": "catalog-conformance",
             "commit": "2e4c603",
             "finished_at": "2026-07-13T09:12:33.931Z",
-            "age_min": 174
+            "age_min": 175
           },
           "tests": [
             {
@@ -2398,7 +2398,7 @@
             "suite": "catalog-conformance",
             "commit": "2e4c603",
             "finished_at": "2026-07-13T09:12:33.931Z",
-            "age_min": 174
+            "age_min": 175
           },
           "tests": [
             {
@@ -2443,7 +2443,7 @@
             "suite": "catalog-conformance",
             "commit": "2e4c603",
             "finished_at": "2026-07-13T09:12:33.931Z",
-            "age_min": 174
+            "age_min": 175
           },
           "tests": [
             {
@@ -2487,7 +2487,7 @@
             "suite": "catalog-conformance",
             "commit": "2e4c603",
             "finished_at": "2026-07-13T09:12:33.931Z",
-            "age_min": 174
+            "age_min": 175
           },
           "tests": [
             {
@@ -2531,7 +2531,7 @@
             "suite": "catalog-conformance",
             "commit": "2e4c603",
             "finished_at": "2026-07-13T09:12:33.931Z",
-            "age_min": 174
+            "age_min": 175
           },
           "tests": [
             {
@@ -2575,7 +2575,7 @@
             "suite": "catalog-conformance",
             "commit": "2e4c603",
             "finished_at": "2026-07-13T09:12:33.931Z",
-            "age_min": 174
+            "age_min": 175
           },
           "tests": [
             {
@@ -2619,7 +2619,7 @@
             "suite": "catalog-conformance",
             "commit": "2e4c603",
             "finished_at": "2026-07-13T09:12:33.931Z",
-            "age_min": 174
+            "age_min": 175
           },
           "tests": [
             {
@@ -2663,7 +2663,7 @@
             "suite": "catalog-conformance",
             "commit": "2e4c603",
             "finished_at": "2026-07-13T09:12:33.931Z",
-            "age_min": 174
+            "age_min": 175
           },
           "tests": [
             {
@@ -2707,7 +2707,7 @@
             "suite": "catalog-conformance",
             "commit": "2e4c603",
             "finished_at": "2026-07-13T09:12:33.931Z",
-            "age_min": 174
+            "age_min": 175
           },
           "tests": [
             {
@@ -2751,7 +2751,7 @@
             "suite": "catalog-conformance",
             "commit": "2e4c603",
             "finished_at": "2026-07-13T09:12:33.931Z",
-            "age_min": 174
+            "age_min": 175
           },
           "tests": [
             {
@@ -2795,7 +2795,7 @@
             "suite": "catalog-conformance",
             "commit": "2e4c603",
             "finished_at": "2026-07-13T09:12:33.931Z",
-            "age_min": 174
+            "age_min": 175
           },
           "tests": [
             {
@@ -2839,7 +2839,7 @@
             "suite": "catalog-conformance",
             "commit": "2e4c603",
             "finished_at": "2026-07-13T09:12:33.931Z",
-            "age_min": 174
+            "age_min": 175
           },
           "tests": [
             {
@@ -2883,7 +2883,7 @@
             "suite": "catalog-conformance",
             "commit": "2e4c603",
             "finished_at": "2026-07-13T09:12:33.931Z",
-            "age_min": 174
+            "age_min": 175
           },
           "tests": [
             {
@@ -2927,7 +2927,7 @@
             "suite": "catalog-conformance",
             "commit": "2e4c603",
             "finished_at": "2026-07-13T09:12:33.931Z",
-            "age_min": 174
+            "age_min": 175
           },
           "tests": [
             {
@@ -2971,7 +2971,7 @@
             "suite": "catalog-conformance",
             "commit": "2e4c603",
             "finished_at": "2026-07-13T09:12:33.931Z",
-            "age_min": 174
+            "age_min": 175
           },
           "tests": [
             {
@@ -3015,7 +3015,7 @@
             "suite": "catalog-conformance",
             "commit": "2e4c603",
             "finished_at": "2026-07-13T09:12:33.931Z",
-            "age_min": 174
+            "age_min": 175
           },
           "tests": [
             {
@@ -3059,7 +3059,7 @@
             "suite": "catalog-conformance",
             "commit": "2e4c603",
             "finished_at": "2026-07-13T09:12:33.931Z",
-            "age_min": 174
+            "age_min": 175
           },
           "tests": [
             {
@@ -3103,7 +3103,7 @@
             "suite": "catalog-conformance",
             "commit": "2e4c603",
             "finished_at": "2026-07-13T09:12:33.931Z",
-            "age_min": 174
+            "age_min": 175
           },
           "tests": [
             {
@@ -3147,7 +3147,7 @@
             "suite": "catalog-conformance",
             "commit": "2e4c603",
             "finished_at": "2026-07-13T09:12:33.931Z",
-            "age_min": 174
+            "age_min": 175
           },
           "tests": [
             {
@@ -3191,7 +3191,7 @@
             "suite": "catalog-conformance",
             "commit": "2e4c603",
             "finished_at": "2026-07-13T09:12:33.931Z",
-            "age_min": 174
+            "age_min": 175
           },
           "tests": [
             {
@@ -3235,7 +3235,7 @@
             "suite": "catalog-conformance",
             "commit": "2e4c603",
             "finished_at": "2026-07-13T09:12:33.931Z",
-            "age_min": 174
+            "age_min": 175
           },
           "tests": [
             {
@@ -3279,7 +3279,7 @@
             "suite": "catalog-conformance",
             "commit": "2e4c603",
             "finished_at": "2026-07-13T09:12:33.931Z",
-            "age_min": 174
+            "age_min": 175
           },
           "tests": [
             {
@@ -3323,7 +3323,7 @@
             "suite": "catalog-conformance",
             "commit": "2e4c603",
             "finished_at": "2026-07-13T09:12:33.931Z",
-            "age_min": 174
+            "age_min": 175
           },
           "tests": [
             {
@@ -3367,7 +3367,7 @@
             "suite": "catalog-conformance",
             "commit": "2e4c603",
             "finished_at": "2026-07-13T09:12:33.931Z",
-            "age_min": 174
+            "age_min": 175
           },
           "tests": [
             {
@@ -3412,7 +3412,7 @@
             "suite": "catalog-conformance",
             "commit": "2e4c603",
             "finished_at": "2026-07-13T09:12:33.931Z",
-            "age_min": 174
+            "age_min": 175
           },
           "tests": [
             {
@@ -3457,7 +3457,7 @@
             "suite": "catalog-conformance",
             "commit": "2e4c603",
             "finished_at": "2026-07-13T09:12:33.931Z",
-            "age_min": 174
+            "age_min": 175
           },
           "tests": [
             {
@@ -3502,7 +3502,7 @@
             "suite": "catalog-conformance",
             "commit": "2e4c603",
             "finished_at": "2026-07-13T09:12:33.931Z",
-            "age_min": 174
+            "age_min": 175
           },
           "tests": [
             {
@@ -3547,7 +3547,7 @@
             "suite": "catalog-conformance",
             "commit": "2e4c603",
             "finished_at": "2026-07-13T09:12:33.931Z",
-            "age_min": 174
+            "age_min": 175
           },
           "tests": [
             {
@@ -3592,7 +3592,7 @@
             "suite": "catalog-conformance",
             "commit": "2e4c603",
             "finished_at": "2026-07-13T09:12:33.931Z",
-            "age_min": 174
+            "age_min": 175
           },
           "tests": [
             {
@@ -3637,7 +3637,7 @@
             "suite": "catalog-conformance",
             "commit": "2e4c603",
             "finished_at": "2026-07-13T09:12:33.931Z",
-            "age_min": 174
+            "age_min": 175
           },
           "tests": [
             {
@@ -3682,7 +3682,7 @@
             "suite": "catalog-conformance",
             "commit": "2e4c603",
             "finished_at": "2026-07-13T09:12:33.931Z",
-            "age_min": 174
+            "age_min": 175
           },
           "tests": [
             {
@@ -3727,7 +3727,7 @@
             "suite": "catalog-conformance",
             "commit": "2e4c603",
             "finished_at": "2026-07-13T09:12:33.931Z",
-            "age_min": 174
+            "age_min": 175
           },
           "tests": [
             {
@@ -3836,7 +3836,7 @@
             "suite": "catalog-conformance",
             "commit": "2e4c603",
             "finished_at": "2026-07-13T09:12:33.931Z",
-            "age_min": 174
+            "age_min": 175
           },
           "tests": [
             {
@@ -3880,7 +3880,7 @@
             "suite": "catalog-conformance",
             "commit": "2e4c603",
             "finished_at": "2026-07-13T09:12:33.931Z",
-            "age_min": 174
+            "age_min": 175
           },
           "tests": [
             {
@@ -3924,7 +3924,7 @@
             "suite": "catalog-conformance",
             "commit": "2e4c603",
             "finished_at": "2026-07-13T09:12:33.931Z",
-            "age_min": 174
+            "age_min": 175
           },
           "tests": [
             {
@@ -4273,7 +4273,7 @@
             "suite": "catalog-conformance",
             "commit": "2e4c603",
             "finished_at": "2026-07-13T09:12:33.931Z",
-            "age_min": 174
+            "age_min": 175
           },
           "tests": [
             {
@@ -4693,7 +4693,7 @@
             "suite": "node-harness",
             "commit": "e117309",
             "finished_at": "2026-07-13T05:58:11.000Z",
-            "age_min": 368
+            "age_min": 369
           },
           "tests": [
             {
@@ -4738,7 +4738,7 @@
             "suite": "cargo-unit",
             "commit": "4184095",
             "finished_at": "2026-07-13T09:02:46.377Z",
-            "age_min": 184
+            "age_min": 185
           },
           "tests": [
             {
@@ -4801,7 +4801,7 @@
             "suite": "node-harness",
             "commit": "e117309",
             "finished_at": "2026-07-13T05:58:11.000Z",
-            "age_min": 368
+            "age_min": 369
           },
           "tests": [
             {
@@ -4846,7 +4846,7 @@
             "suite": "node-harness",
             "commit": "e117309",
             "finished_at": "2026-07-13T05:58:11.000Z",
-            "age_min": 368
+            "age_min": 369
           },
           "tests": [
             {
@@ -4891,7 +4891,7 @@
             "suite": "node-harness",
             "commit": "e117309",
             "finished_at": "2026-07-13T05:58:11.000Z",
-            "age_min": 368
+            "age_min": 369
           },
           "tests": [
             {
@@ -4936,7 +4936,7 @@
             "suite": "node-harness",
             "commit": "e117309",
             "finished_at": "2026-07-13T05:58:11.000Z",
-            "age_min": 368
+            "age_min": 369
           },
           "tests": [
             {
@@ -5007,7 +5007,7 @@
             "suite": "cargo-unit",
             "commit": "4184095",
             "finished_at": "2026-07-13T09:02:46.377Z",
-            "age_min": 184
+            "age_min": 185
           },
           "tests": [
             {
@@ -5095,7 +5095,7 @@
             "suite": "node-harness",
             "commit": "e117309",
             "finished_at": "2026-07-13T05:58:11.000Z",
-            "age_min": 368
+            "age_min": 369
           },
           "tests": [
             {
@@ -5386,7 +5386,7 @@
             "suite": "node-harness",
             "commit": "e117309",
             "finished_at": "2026-07-13T05:58:11.000Z",
-            "age_min": 368
+            "age_min": 369
           },
           "tests": [
             {
@@ -5636,7 +5636,7 @@
             "suite": "node-harness",
             "commit": "e117309",
             "finished_at": "2026-07-13T05:58:11.000Z",
-            "age_min": 368
+            "age_min": 369
           },
           "tests": [
             {
@@ -6184,13 +6184,13 @@
             "passed",
             "passed"
           ],
-          "lastRun": "sdk/sdk-unit@e53df2c@2026-07-13T10:43:24.801Z",
+          "lastRun": "sdk/sdk-unit@3003eb4@2026-07-13T12:07:04.414Z",
           "freshness": {
             "source": "sdk",
             "suite": "sdk-unit",
-            "commit": "e53df2c",
-            "finished_at": "2026-07-13T10:43:24.801Z",
-            "age_min": 83
+            "commit": "3003eb4",
+            "finished_at": "2026-07-13T12:07:04.414Z",
+            "age_min": 0
           },
           "tests": [
             {
@@ -6227,19 +6227,19 @@
             "passed",
             "passed"
           ],
-          "lastRun": "sdk/sdk-unit@e53df2c@2026-07-13T10:43:24.801Z",
+          "lastRun": "sdk/sdk-unit@3003eb4@2026-07-13T12:07:04.414Z",
           "freshness": {
             "source": "sdk",
             "suite": "sdk-unit",
-            "commit": "e53df2c",
-            "finished_at": "2026-07-13T10:43:24.801Z",
-            "age_min": 83
+            "commit": "3003eb4",
+            "finished_at": "2026-07-13T12:07:04.414Z",
+            "age_min": 0
           },
           "tests": [
             {
               "test_id": "code.test.mjs::shExec() runs a real sh pipeline [feat:sdk.code.exec]",
               "status": "passed",
-              "duration_ms": 343
+              "duration_ms": 342
             },
             {
               "test_id": "code.test.mjs::exec() single-quotes argv and runs it through sh [feat:sdk.code.exec]",
@@ -6275,19 +6275,19 @@
             "passed",
             "passed"
           ],
-          "lastRun": "sdk/sdk-unit@e53df2c@2026-07-13T10:43:24.801Z",
+          "lastRun": "sdk/sdk-unit@3003eb4@2026-07-13T12:07:04.414Z",
           "freshness": {
             "source": "sdk",
             "suite": "sdk-unit",
-            "commit": "e53df2c",
-            "finished_at": "2026-07-13T10:43:24.801Z",
-            "age_min": 83
+            "commit": "3003eb4",
+            "finished_at": "2026-07-13T12:07:04.414Z",
+            "age_min": 0
           },
           "tests": [
             {
               "test_id": "vfs.test.mjs::writeFile + readText round-trip through MemFS [feat:sdk.vfs.rw]",
               "status": "passed",
-              "duration_ms": 98
+              "duration_ms": 102
             },
             {
               "test_id": "vfs.test.mjs::exists reflects file presence [feat:sdk.vfs.rw]",
@@ -6297,7 +6297,7 @@
             {
               "test_id": "vfs.test.mjs::mkdir + copy + walk via BusyBox [feat:sdk.vfs.rw]",
               "status": "passed",
-              "duration_ms": 345
+              "duration_ms": 342
             },
             {
               "test_id": "vfs.test.mjs::list returns typed directory entries [feat:sdk.vfs.rw]",
@@ -6334,24 +6334,24 @@
             "passed",
             "passed"
           ],
-          "lastRun": "sdk/sdk-unit@e53df2c@2026-07-13T10:43:24.801Z",
+          "lastRun": "sdk/sdk-unit@3003eb4@2026-07-13T12:07:04.414Z",
           "freshness": {
             "source": "sdk",
             "suite": "sdk-unit",
-            "commit": "e53df2c",
-            "finished_at": "2026-07-13T10:43:24.801Z",
-            "age_min": 83
+            "commit": "3003eb4",
+            "finished_at": "2026-07-13T12:07:04.414Z",
+            "age_min": 0
           },
           "tests": [
             {
               "test_id": "shell.test.mjs::export persists across shell.run() calls [feat:sdk.shell.session]",
               "status": "passed",
-              "duration_ms": 127
+              "duration_ms": 102
             },
             {
               "test_id": "shell.test.mjs::cd tracks cwd across runs [feat:sdk.shell.session]",
               "status": "passed",
-              "duration_ms": 183
+              "duration_ms": 196
             },
             {
               "test_id": "shell.test.mjs::constructor env seeds the session environment [feat:sdk.shell.session]",
@@ -6387,29 +6387,29 @@
             "passed",
             "passed"
           ],
-          "lastRun": "sdk/sdk-unit@e53df2c@2026-07-13T10:43:24.801Z",
+          "lastRun": "sdk/sdk-unit@3003eb4@2026-07-13T12:07:04.414Z",
           "freshness": {
             "source": "sdk",
             "suite": "sdk-unit",
-            "commit": "e53df2c",
-            "finished_at": "2026-07-13T10:43:24.801Z",
-            "age_min": 83
+            "commit": "3003eb4",
+            "finished_at": "2026-07-13T12:07:04.414Z",
+            "age_min": 0
           },
           "tests": [
             {
               "test_id": "terminal.test.mjs::clear builtin emits the terminal reset sequence [feat:sdk.mode.terminal]",
               "status": "passed",
-              "duration_ms": 104
+              "duration_ms": 101
             },
             {
               "test_id": "terminal.test.mjs::pwd builtin renders the tracked cwd without spawning [feat:sdk.mode.terminal]",
               "status": "passed",
-              "duration_ms": 1
+              "duration_ms": 0
             },
             {
               "test_id": "terminal.test.mjs::onData streams command output as it is produced [feat:sdk.mode.terminal]",
               "status": "passed",
-              "duration_ms": 9
+              "duration_ms": 5
             }
           ]
         }
@@ -6440,19 +6440,19 @@
             "passed",
             "passed"
           ],
-          "lastRun": "sdk/sdk-unit@e53df2c@2026-07-13T10:43:24.801Z",
+          "lastRun": "sdk/sdk-unit@3003eb4@2026-07-13T12:07:04.414Z",
           "freshness": {
             "source": "sdk",
             "suite": "sdk-unit",
-            "commit": "e53df2c",
-            "finished_at": "2026-07-13T10:43:24.801Z",
-            "age_min": 83
+            "commit": "3003eb4",
+            "finished_at": "2026-07-13T12:07:04.414Z",
+            "age_min": 0
           },
           "tests": [
             {
               "test_id": "serve.test.mjs::parseHttpResponse parses status line, headers, and body [feat:sdk.serve.http]",
               "status": "passed",
-              "duration_ms": 126
+              "duration_ms": 101
             },
             {
               "test_id": "serve.test.mjs::parseHttpResponse decodes Transfer-Encoding: chunked [feat:sdk.serve.http]",
@@ -6462,7 +6462,7 @@
             {
               "test_id": "serve.test.mjs::startServer rejects when the launch exits before readiness [feat:sdk.serve.http]",
               "status": "passed",
-              "duration_ms": 5
+              "duration_ms": 4
             }
           ]
         }
@@ -6494,19 +6494,19 @@
             "passed",
             "passed"
           ],
-          "lastRun": "sdk/sdk-unit@e53df2c@2026-07-13T10:43:24.801Z",
+          "lastRun": "sdk/sdk-unit@3003eb4@2026-07-13T12:07:04.414Z",
           "freshness": {
             "source": "sdk",
             "suite": "sdk-unit",
-            "commit": "e53df2c",
-            "finished_at": "2026-07-13T10:43:24.801Z",
-            "age_min": 83
+            "commit": "3003eb4",
+            "finished_at": "2026-07-13T12:07:04.414Z",
+            "age_min": 0
           },
           "tests": [
             {
               "test_id": "scripting.test.mjs::script eval marshals a JSON result [feat:sdk.scripting.eval]",
               "status": "passed",
-              "duration_ms": 146
+              "duration_ms": 145
             },
             {
               "test_id": "scripting.test.mjs::registerFunction + defineGlobal drive a long-lived engine [feat:sdk.scripting.eval]",
@@ -6542,13 +6542,13 @@
             "passed",
             "passed"
           ],
-          "lastRun": "sdk/sdk-unit@e53df2c@2026-07-13T10:43:24.801Z",
+          "lastRun": "sdk/sdk-unit@3003eb4@2026-07-13T12:07:04.414Z",
           "freshness": {
             "source": "sdk",
             "suite": "sdk-unit",
-            "commit": "e53df2c",
-            "finished_at": "2026-07-13T10:43:24.801Z",
-            "age_min": 83
+            "commit": "3003eb4",
+            "finished_at": "2026-07-13T12:07:04.414Z",
+            "age_min": 0
           },
           "tests": [
             {
@@ -6591,13 +6591,13 @@
             "skipped",
             "skipped"
           ],
-          "lastRun": "sdk/sdk-unit@e53df2c@2026-07-13T10:43:24.801Z",
+          "lastRun": "sdk/sdk-unit@3003eb4@2026-07-13T12:07:04.414Z",
           "freshness": {
             "source": "sdk",
             "suite": "sdk-unit",
-            "commit": "e53df2c",
-            "finished_at": "2026-07-13T10:43:24.801Z",
-            "age_min": 83
+            "commit": "3003eb4",
+            "finished_at": "2026-07-13T12:07:04.414Z",
+            "age_min": 0
           },
           "tests": [
             {
@@ -6694,7 +6694,7 @@
             "suite": "playwright-e2e",
             "commit": "6640c09",
             "finished_at": "2026-06-27T03:48:02.426Z",
-            "age_min": 23538
+            "age_min": 23539
           },
           "tests": [
             {
@@ -6735,7 +6735,7 @@
             "suite": "playwright-e2e",
             "commit": "6640c09",
             "finished_at": "2026-06-27T03:48:02.426Z",
-            "age_min": 23538
+            "age_min": 23539
           },
           "tests": [
             {
@@ -6775,7 +6775,7 @@
             "suite": "playwright-e2e",
             "commit": "6640c09",
             "finished_at": "2026-06-27T03:48:02.426Z",
-            "age_min": 23538
+            "age_min": 23539
           },
           "tests": [
             {
@@ -6862,7 +6862,7 @@
             "suite": "playwright-e2e",
             "commit": "6640c09",
             "finished_at": "2026-06-27T03:48:02.426Z",
-            "age_min": 23538
+            "age_min": 23539
           },
           "tests": [
             {
