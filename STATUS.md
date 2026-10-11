@@ -1,13 +1,13 @@
 # userland.run — status
 
-> Generated 2026-07-13T12:07:49.871Z · live at https://status.userland.run
+> Generated 2026-10-11T05:48:48.504Z · live at https://status.userland.run
 
-**87 / 91 tested features green** (96%) · 181 shipped (79%) · 3 failing now · 100 shipped-but-untested · 0 drift
+**89 / 93 tested features green** (96%) · 181 shipped (79%) · 3 failing now · 100 shipped-but-untested · 1 drift
 
 ## Red now
-- `catalog.recipe.difftastic` — difftastic (structural diff) (Catalog) · https://github.com/userland-run/catalog/actions/runs/29237792076
-- `catalog.pipeline.conformance` — conformance harness (Catalog) · https://github.com/userland-run/catalog/actions/runs/29237792076
-- `catalog.pipeline.gate` — syscall gate (pinned manifest) (Catalog) · https://github.com/userland-run/catalog/actions/runs/29237792076
+- `catalog.recipe.difftastic` — difftastic (structural diff) (Catalog) · https://github.com/userland-run/catalog/actions/runs/37088111445
+- `catalog.pipeline.conformance` — conformance harness (Catalog) · https://github.com/userland-run/catalog/actions/runs/37088111445
+- `catalog.pipeline.gate` — syscall gate (pinned manifest) (Catalog) · https://github.com/userland-run/catalog/actions/runs/37088111445
 
 ## Shipped but untested (100)
 - `applets.vm.warm` — warm-VM applet spawn (no per-command boot)
@@ -27,8 +27,8 @@
 - `emulator.process.fork` — clone/fork
 - …and 85 more
 
-## Drift (0)
-No drift. 🟢
+## Drift (1)
+- in-progress > 60d: `terminal.phase.1` — Phase 1 — Vello/WebGPU renderer (since 2026-06)
 
 ## Areas
 | Area | Features | Shipped | Green (of tested) |
@@ -38,7 +38,7 @@ No drift. 🟢
 | Dev toolchain | 5 | 0% | 0% (0/0) |
 | TypeScript SDK | 13 | 77% | 89% (8/9) |
 | WebGPU console | 10 | 60% | 100% (4/4) |
-| App conformance & distribution | 62 | 77% | 94% (49/52) |
+| App conformance & distribution | 62 | 77% | 94% (51/54) |
 | Kernel (shared OS layer) | 16 | 81% | 0% (0/0) |
 | Node host-engine tier | 24 | 67% | 0% (0/0) |
 | BusyBox applets for nodert | 7 | 86% | 0% (0/0) |
@@ -47,10 +47,10 @@ No drift. 🟢
 ## Suites
 | Suite | Layer | Health | Pass rate | Age (min) |
 | ----- | ----- | ------ | --------- | --------- |
-| nano/cargo-unit | Core | ok | 100% | 185 |
-| nano/node-harness | Runtime | ok | 100% | 369 |
-| sdk/sdk-unit | SDK | ok | 87% | 0 |
-| terminal/playwright-e2e | Terminal | silent | 100% | 23539 |
-| catalog/catalog-conformance | Catalog | ok | 98% | 175 |
+| nano/cargo-unit | Core | ok | 100% | 1238 |
+| nano/node-harness | Runtime | ok | 100% | 1237 |
+| sdk/sdk-unit | SDK | silent | 87% | 66353 |
+| terminal/playwright-e2e | Terminal | silent | 100% | 152760 |
+| catalog/catalog-conformance | Catalog | silent | 98% | 11742 |
 
 _Regenerated on every result push. Edit features in `registry/`, never this file._
