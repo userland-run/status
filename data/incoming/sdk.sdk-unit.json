@@ -2,18 +2,108 @@
   "contract": 1,
   "source": "sdk",
   "suite": "sdk-unit",
-  "commit": "60adc5d",
+  "commit": "a8f3b64",
   "branch": "main",
-  "run_id": "38120909541",
-  "finished_at": "2026-10-11T07:18:41.806Z",
+  "run_id": "38137191274",
+  "finished_at": "2026-10-11T12:07:13.762Z",
   "results": [
+    {
+      "test_id": "agent.test.mjs::defaults register only read tools [feat:sdk.agent.tools]",
+      "features": [
+        "sdk.agent.tools"
+      ],
+      "status": "passed",
+      "duration_ms": 2,
+      "retries": 0
+    },
+    {
+      "test_id": "agent.test.mjs::capability grants add tools; fs:none removes fs tools [feat:sdk.agent.tools]",
+      "features": [
+        "sdk.agent.tools"
+      ],
+      "status": "passed",
+      "duration_ms": 0,
+      "retries": 0
+    },
+    {
+      "test_id": "agent.test.mjs::prefix namespaces tool names [feat:sdk.agent.tools]",
+      "features": [
+        "sdk.agent.tools"
+      ],
+      "status": "passed",
+      "duration_ms": 0,
+      "retries": 0
+    },
+    {
+      "test_id": "agent.test.mjs::read tools work over sync (Nano) fs [feat:sdk.agent.tools]",
+      "features": [
+        "sdk.agent.tools"
+      ],
+      "status": "passed",
+      "duration_ms": 8,
+      "retries": 0
+    },
+    {
+      "test_id": "agent.test.mjs::read tools work over async (worker) fs [feat:sdk.agent.tools]",
+      "features": [
+        "sdk.agent.tools"
+      ],
+      "status": "passed",
+      "duration_ms": 0,
+      "retries": 0
+    },
+    {
+      "test_id": "agent.test.mjs::approve gates mutating calls only [feat:sdk.agent.approve]",
+      "features": [
+        "sdk.agent.approve"
+      ],
+      "status": "passed",
+      "duration_ms": 0,
+      "retries": 0
+    },
+    {
+      "test_id": "agent.test.mjs::errors, exit codes and truncation come back as text [feat:sdk.agent.tools]",
+      "features": [
+        "sdk.agent.tools"
+      ],
+      "status": "passed",
+      "duration_ms": 1,
+      "retries": 0
+    },
+    {
+      "test_id": "agent.test.mjs::run_node treats exit 134 as benign; delete_path refuses / [feat:sdk.agent.tools]",
+      "features": [
+        "sdk.agent.tools"
+      ],
+      "status": "passed",
+      "duration_ms": 0,
+      "retries": 0
+    },
+    {
+      "test_id": "agent.test.mjs::exposeWebMcp registers tools with hints and unregisters [feat:sdk.agent.webmcp]",
+      "features": [
+        "sdk.agent.webmcp"
+      ],
+      "status": "passed",
+      "duration_ms": 1,
+      "retries": 0
+    },
+    {
+      "test_id": "agent.test.mjs::tools drive a real VM [feat:sdk.agent.tools]",
+      "features": [
+        "sdk.agent.tools"
+      ],
+      "status": "passed",
+      "duration_ms": 509,
+      "retries": 0
+    },
     {
       "test_id": "code.test.mjs::run() executes a BusyBox command and captures stdout [feat:sdk.code.run]",
       "features": [
         "sdk.code.run"
       ],
       "status": "passed",
-      "duration_ms": 122,
+      "duration_ms": 102,
       "retries": 0
     },
     {
@@ -22,7 +112,7 @@
         "sdk.code.exec"
       ],
       "status": "passed",
-      "duration_ms": 380,
+      "duration_ms": 345,
       "retries": 0
     },
     {
@@ -40,7 +130,7 @@
         "sdk.code.exec"
       ],
       "status": "passed",
-      "duration_ms": 574,
+      "duration_ms": 500,
       "retries": 0
     },
     {
@@ -76,7 +166,7 @@
         "sdk.scripting.eval"
       ],
       "status": "passed",
-      "duration_ms": 170,
+      "duration_ms": 150,
       "retries": 0
     },
     {
@@ -103,7 +193,7 @@
         "sdk.scripting.capability"
       ],
       "status": "passed",
-      "duration_ms": 9,
+      "duration_ms": 8,
       "retries": 0
     },
     {
@@ -112,7 +202,7 @@
         "sdk.serve.http"
       ],
       "status": "passed",
-      "duration_ms": 124,
+      "duration_ms": 102,
       "retries": 0
     },
     {
@@ -121,7 +211,7 @@
         "sdk.serve.http"
       ],
       "status": "passed",
-      "duration_ms": 0,
+      "duration_ms": 1,
       "retries": 0
     },
     {
@@ -130,7 +220,7 @@
         "sdk.serve.http"
       ],
       "status": "passed",
-      "duration_ms": 5,
+      "duration_ms": 6,
       "retries": 0
     },
     {
@@ -139,7 +229,7 @@
         "sdk.shell.session"
       ],
       "status": "passed",
-      "duration_ms": 131,
+      "duration_ms": 111,
       "retries": 0
     },
     {
@@ -148,7 +238,7 @@
         "sdk.shell.session"
       ],
       "status": "passed",
-      "duration_ms": 191,
+      "duration_ms": 171,
       "retries": 0
     },
     {
@@ -157,7 +247,7 @@
         "sdk.shell.session"
       ],
       "status": "passed",
-      "duration_ms": 3,
+      "duration_ms": 2,
       "retries": 0
     },
     {
@@ -166,7 +256,7 @@
         "sdk.mode.terminal"
       ],
       "status": "passed",
-      "duration_ms": 129,
+      "duration_ms": 106,
       "retries": 0
     },
     {
@@ -175,7 +265,7 @@
         "sdk.mode.terminal"
       ],
       "status": "passed",
-      "duration_ms": 0,
+      "duration_ms": 1,
       "retries": 0
     },
     {
@@ -193,7 +283,7 @@
         "sdk.vfs.rw"
       ],
       "status": "passed",
-      "duration_ms": 126,
+      "duration_ms": 103,
       "retries": 0
     },
     {
@@ -202,7 +292,7 @@
         "sdk.vfs.rw"
       ],
       "status": "passed",
-      "duration_ms": 0,
+      "duration_ms": 1,
       "retries": 0
     },
     {
@@ -211,7 +301,7 @@
         "sdk.vfs.rw"
       ],
       "status": "passed",
-      "duration_ms": 377,
+      "duration_ms": 343,
       "retries": 0
     },
     {
