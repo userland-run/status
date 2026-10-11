@@ -1,41 +1,41 @@
 {
-  "generated_at": "2026-10-11T11:55:08.669Z",
+  "generated_at": "2026-10-11T12:05:59.705Z",
   "generator_version": 1,
   "sources": [
     {
       "source": "nano",
       "suite": "cargo-unit",
       "commit": "46210dc",
-      "age_min": 150,
+      "age_min": 161,
       "health": "ok"
     },
     {
       "source": "nano",
       "suite": "node-harness",
       "commit": "46210dc",
-      "age_min": 149,
+      "age_min": 160,
       "health": "ok"
     },
     {
       "source": "sdk",
       "suite": "sdk-unit",
       "commit": "60adc5d",
-      "age_min": 276,
+      "age_min": 287,
       "health": "ok"
     },
     {
       "source": "terminal",
       "suite": "playwright-e2e",
-      "commit": "6640c09",
-      "age_min": 153127,
-      "health": "silent"
+      "commit": "21464e9",
+      "age_min": 8,
+      "health": "ok"
     },
     {
       "source": "catalog",
       "suite": "catalog-conformance",
-      "commit": "0027adf",
-      "age_min": 12108,
-      "health": "silent"
+      "commit": "d4c467c",
+      "age_min": 2,
+      "health": "ok"
     }
   ]
 }
