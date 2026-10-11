@@ -2,10 +2,10 @@
   "contract": 1,
   "source": "sdk",
   "suite": "sdk-unit",
-  "commit": "a8f3b64",
+  "commit": "41aa3ba",
   "branch": "main",
-  "run_id": "38137191274",
-  "finished_at": "2026-10-11T12:07:13.762Z",
+  "run_id": "38142196570",
+  "finished_at": "2026-10-11T13:12:05.423Z",
   "results": [
     {
       "test_id": "agent.test.mjs::defaults register only read tools [feat:sdk.agent.tools]",
@@ -94,7 +94,7 @@
         "sdk.agent.tools"
       ],
       "status": "passed",
-      "duration_ms": 509,
+      "duration_ms": 493,
       "retries": 0
     },
     {
@@ -103,7 +103,7 @@
         "sdk.code.run"
       ],
       "status": "passed",
-      "duration_ms": 102,
+      "duration_ms": 104,
       "retries": 0
     },
     {
@@ -112,7 +112,7 @@
         "sdk.code.exec"
       ],
       "status": "passed",
-      "duration_ms": 345,
+      "duration_ms": 348,
       "retries": 0
     },
     {
@@ -130,7 +130,7 @@
         "sdk.code.exec"
       ],
       "status": "passed",
-      "duration_ms": 500,
+      "duration_ms": 503,
       "retries": 0
     },
     {
@@ -166,7 +166,7 @@
         "sdk.scripting.eval"
       ],
       "status": "passed",
-      "duration_ms": 150,
+      "duration_ms": 151,
       "retries": 0
     },
     {
@@ -229,7 +229,7 @@
         "sdk.shell.session"
       ],
       "status": "passed",
-      "duration_ms": 111,
+      "duration_ms": 109,
       "retries": 0
     },
     {
@@ -247,7 +247,7 @@
         "sdk.shell.session"
       ],
       "status": "passed",
-      "duration_ms": 2,
+      "duration_ms": 3,
       "retries": 0
     },
     {
@@ -265,7 +265,7 @@
         "sdk.mode.terminal"
       ],
       "status": "passed",
-      "duration_ms": 1,
+      "duration_ms": 0,
       "retries": 0
     },
     {
@@ -274,7 +274,7 @@
         "sdk.mode.terminal"
       ],
       "status": "passed",
-      "duration_ms": 7,
+      "duration_ms": 8,
       "retries": 0
     },
     {
@@ -301,7 +301,7 @@
         "sdk.vfs.rw"
       ],
       "status": "passed",
-      "duration_ms": 343,
+      "duration_ms": 342,
       "retries": 0
     },
     {
