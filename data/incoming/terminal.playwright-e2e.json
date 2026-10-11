@@ -2,11 +2,56 @@
   "contract": 1,
   "source": "terminal",
   "suite": "playwright-e2e",
-  "commit": "6640c09",
+  "commit": "21464e9",
   "branch": "main",
-  "run_id": "28277680310",
-  "finished_at": "2026-06-27T03:48:02.426Z",
+  "run_id": "38137115029",
+  "finished_at": "2026-10-11T11:57:14.238Z",
   "results": [
+    {
+      "test_id": "tests/e2e/assistant.spec.ts::assistant pane opens, resizes, and the composer renders",
+      "features": [
+        "terminal.assistant.panel"
+      ],
+      "status": "passed",
+      "duration_ms": 1223,
+      "retries": 0
+    },
+    {
+      "test_id": "tests/e2e/assistant.spec.ts::mode pill cycles Plan → Ask → Accept-Edits → Auto",
+      "features": [
+        "terminal.assistant.modes"
+      ],
+      "status": "passed",
+      "duration_ms": 1044,
+      "retries": 0
+    },
+    {
+      "test_id": "tests/e2e/assistant.spec.ts::model dropdown opens and lists backends",
+      "features": [
+        "terminal.assistant.modelpicker"
+      ],
+      "status": "passed",
+      "duration_ms": 905,
+      "retries": 0
+    },
+    {
+      "test_id": "tests/e2e/assistant.spec.ts::sidebar gutter resizes the sidebar track",
+      "features": [
+        "terminal.layout.split"
+      ],
+      "status": "passed",
+      "duration_ms": 877,
+      "retries": 0
+    },
+    {
+      "test_id": "tests/e2e/assistant.spec.ts::footer assistant stat + toggle command exist",
+      "features": [
+        "terminal.assistant.footer"
+      ],
+      "status": "passed",
+      "duration_ms": 818,
+      "retries": 0
+    },
     {
       "test_id": "tests/e2e/terminal.spec.ts::shell boots and echoes a typed command",
       "features": [
@@ -14,7 +59,7 @@
         "terminal.cli.echo"
       ],
       "status": "passed",
-      "duration_ms": 661,
+      "duration_ms": 773,
       "retries": 0
     },
     {
@@ -23,7 +68,16 @@
         "terminal.a11y.mirror"
       ],
       "status": "passed",
-      "duration_ms": 588,
+      "duration_ms": 785,
+      "retries": 0
+    },
+    {
+      "test_id": "tests/e2e/terminal.spec.ts::a11y mirror lives inside the terminal's shadow root and is removed on dispose",
+      "features": [
+        "terminal.a11y.mirror"
+      ],
+      "status": "passed",
+      "duration_ms": 659,
       "retries": 0
     },
     {
@@ -32,7 +86,7 @@
         "terminal.palette.command"
       ],
       "status": "passed",
-      "duration_ms": 426,
+      "duration_ms": 938,
       "retries": 0
     }
   ]
