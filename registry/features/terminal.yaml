@@ -18,3 +18,4 @@
 - { id: terminal.assistant.modelpicker, title: assistant model picker, area: terminal, status: shipped, since: "2026-10" }
 - { id: terminal.assistant.footer, title: assistant model stat in the footer, area: terminal, status: shipped, since: "2026-10" }
 - { id: terminal.layout.split, title: resizable terminal / assistant split layout, area: terminal, status: shipped, since: "2026-10" }
+- { id: terminal.files.localfs, title: "map a local folder (File System Access) via the SDK folder bridge; write back changed files", area: terminal, status: shipped, since: "2026-10" }
