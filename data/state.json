@@ -1,6 +1,6 @@
 {
   "contract": 1,
-  "generated_at": "2026-10-11T05:48:48.504Z",
+  "generated_at": "2026-10-11T11:55:08.669Z",
   "layers": [
     "Core",
     "Runtime",
@@ -9,14 +9,14 @@
     "Catalog"
   ],
   "headline": {
-    "total": 229,
-    "shipped": 181,
-    "shippedPct": 0.7903930131004366,
+    "total": 234,
+    "shipped": 186,
+    "shippedPct": 0.7948717948717948,
     "tested": 93,
     "green": 89,
     "greenPct": 0.956989247311828,
     "failingNow": 3,
-    "untestedShipped": 100,
+    "untestedShipped": 105,
     "driftCount": 1
   },
   "areaRollups": [
@@ -87,15 +87,15 @@
     {
       "id": "terminal",
       "title": "WebGPU console",
-      "total": 10,
+      "total": 15,
       "byStatus": {
         "planned": 3,
         "in-progress": 1,
-        "shipped": 6,
+        "shipped": 11,
         "partial": 0,
         "deprecated": 0
       },
-      "shippedPct": 0.6,
+      "shippedPct": 0.7333333333333333,
       "greenPct": 1,
       "tested": 4,
       "green": 4
@@ -188,9 +188,9 @@
       "layer": "Core",
       "title": "Rust unit tests (nextest)",
       "present": true,
-      "commit": "4184095",
-      "finished_at": "2026-10-10T09:10:22.699Z",
-      "age_min": 1238,
+      "commit": "46210dc",
+      "finished_at": "2026-10-11T09:24:25.195Z",
+      "age_min": 150,
       "passRate": 1,
       "health": "ok"
     },
@@ -200,9 +200,9 @@
       "layer": "Runtime",
       "title": "ELF + BusyBox integration (nightly)",
       "present": true,
-      "commit": "4184095",
-      "finished_at": "2026-10-10T09:11:36.021Z",
-      "age_min": 1237,
+      "commit": "46210dc",
+      "finished_at": "2026-10-11T09:25:29.947Z",
+      "age_min": 149,
       "passRate": 1,
       "health": "ok"
     },
@@ -212,11 +212,11 @@
       "layer": "SDK",
       "title": "SDK node:test",
       "present": true,
-      "commit": "3003eb4",
-      "finished_at": "2026-08-26T03:55:02.468Z",
-      "age_min": 66353,
-      "passRate": 0.8695652173913043,
-      "health": "silent"
+      "commit": "60adc5d",
+      "finished_at": "2026-10-11T07:18:41.806Z",
+      "age_min": 276,
+      "passRate": 0.875,
+      "health": "ok"
     },
     {
       "source": "terminal",
@@ -226,7 +226,7 @@
       "present": true,
       "commit": "6640c09",
       "finished_at": "2026-06-27T03:48:02.426Z",
-      "age_min": 152760,
+      "age_min": 153127,
       "passRate": 1,
       "health": "silent"
     },
@@ -238,7 +238,7 @@
       "present": true,
       "commit": "0027adf",
       "finished_at": "2026-10-03T02:06:39.374Z",
-      "age_min": 11742,
+      "age_min": 12108,
       "passRate": 0.9807692307692307,
       "health": "silent"
     }
@@ -252,7 +252,7 @@
         "Catalog"
       ],
       "commit": "0027adf",
-      "age_min": 11742,
+      "age_min": 12108,
       "trace_url": "https://github.com/userland-run/catalog/actions/runs/37088111445"
     },
     {
@@ -263,7 +263,7 @@
         "Catalog"
       ],
       "commit": "0027adf",
-      "age_min": 11742,
+      "age_min": 12108,
       "trace_url": "https://github.com/userland-run/catalog/actions/runs/37088111445"
     },
     {
@@ -274,7 +274,7 @@
         "Catalog"
       ],
       "commit": "0027adf",
-      "age_min": 11742,
+      "age_min": 12108,
       "trace_url": "https://github.com/userland-run/catalog/actions/runs/37088111445"
     }
   ],
@@ -715,6 +715,31 @@
       "area": "terminal"
     },
     {
+      "id": "terminal.assistant.panel",
+      "title": "assistant side panel",
+      "area": "terminal"
+    },
+    {
+      "id": "terminal.assistant.modes",
+      "title": "assistant permission modes (plan / ask / acceptEdits / auto)",
+      "area": "terminal"
+    },
+    {
+      "id": "terminal.assistant.modelpicker",
+      "title": "assistant model picker",
+      "area": "terminal"
+    },
+    {
+      "id": "terminal.assistant.footer",
+      "title": "assistant model stat in the footer",
+      "area": "terminal"
+    },
+    {
+      "id": "terminal.layout.split",
+      "title": "resizable terminal / assistant split layout",
+      "area": "terminal"
+    },
+    {
       "id": "wasm.wasip1.run",
       "title": "run wasm32-wasip1 modules as kind:wasm processes",
       "area": "wasm"
@@ -908,19 +933,19 @@
             "passed",
             "passed"
           ],
-          "lastRun": "nano/node-harness@4184095@2026-10-10T09:11:36.021Z",
+          "lastRun": "nano/node-harness@46210dc@2026-10-11T09:25:29.947Z",
           "freshness": {
             "source": "nano",
             "suite": "node-harness",
-            "commit": "4184095",
-            "finished_at": "2026-10-10T09:11:36.021Z",
-            "age_min": 1237
+            "commit": "46210dc",
+            "finished_at": "2026-10-11T09:25:29.947Z",
+            "age_min": 149
           },
           "tests": [
             {
               "test_id": "busybox echo",
               "status": "passed",
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/38040422072"
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/38128232151"
             }
           ]
         }
@@ -950,19 +975,19 @@
             "passed",
             "passed"
           ],
-          "lastRun": "nano/node-harness@4184095@2026-10-10T09:11:36.021Z",
+          "lastRun": "nano/node-harness@46210dc@2026-10-11T09:25:29.947Z",
           "freshness": {
             "source": "nano",
             "suite": "node-harness",
-            "commit": "4184095",
-            "finished_at": "2026-10-10T09:11:36.021Z",
-            "age_min": 1237
+            "commit": "46210dc",
+            "finished_at": "2026-10-11T09:25:29.947Z",
+            "age_min": 149
           },
           "tests": [
             {
               "test_id": "busybox true",
               "status": "passed",
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/38040422072"
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/38128232151"
             }
           ]
         }
@@ -992,19 +1017,19 @@
             "passed",
             "passed"
           ],
-          "lastRun": "nano/node-harness@4184095@2026-10-10T09:11:36.021Z",
+          "lastRun": "nano/node-harness@46210dc@2026-10-11T09:25:29.947Z",
           "freshness": {
             "source": "nano",
             "suite": "node-harness",
-            "commit": "4184095",
-            "finished_at": "2026-10-10T09:11:36.021Z",
-            "age_min": 1237
+            "commit": "46210dc",
+            "finished_at": "2026-10-11T09:25:29.947Z",
+            "age_min": 149
           },
           "tests": [
             {
               "test_id": "busybox false",
               "status": "passed",
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/38040422072"
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/38128232151"
             }
           ]
         }
@@ -1034,19 +1059,19 @@
             "passed",
             "passed"
           ],
-          "lastRun": "nano/node-harness@4184095@2026-10-10T09:11:36.021Z",
+          "lastRun": "nano/node-harness@46210dc@2026-10-11T09:25:29.947Z",
           "freshness": {
             "source": "nano",
             "suite": "node-harness",
-            "commit": "4184095",
-            "finished_at": "2026-10-10T09:11:36.021Z",
-            "age_min": 1237
+            "commit": "46210dc",
+            "finished_at": "2026-10-11T09:25:29.947Z",
+            "age_min": 149
           },
           "tests": [
             {
               "test_id": "busybox uname",
               "status": "passed",
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/38040422072"
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/38128232151"
             }
           ]
         }
@@ -1076,19 +1101,19 @@
             "passed",
             "passed"
           ],
-          "lastRun": "nano/node-harness@4184095@2026-10-10T09:11:36.021Z",
+          "lastRun": "nano/node-harness@46210dc@2026-10-11T09:25:29.947Z",
           "freshness": {
             "source": "nano",
             "suite": "node-harness",
-            "commit": "4184095",
-            "finished_at": "2026-10-10T09:11:36.021Z",
-            "age_min": 1237
+            "commit": "46210dc",
+            "finished_at": "2026-10-11T09:25:29.947Z",
+            "age_min": 149
           },
           "tests": [
             {
               "test_id": "busybox basename",
               "status": "passed",
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/38040422072"
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/38128232151"
             }
           ]
         }
@@ -1118,19 +1143,19 @@
             "passed",
             "passed"
           ],
-          "lastRun": "nano/node-harness@4184095@2026-10-10T09:11:36.021Z",
+          "lastRun": "nano/node-harness@46210dc@2026-10-11T09:25:29.947Z",
           "freshness": {
             "source": "nano",
             "suite": "node-harness",
-            "commit": "4184095",
-            "finished_at": "2026-10-10T09:11:36.021Z",
-            "age_min": 1237
+            "commit": "46210dc",
+            "finished_at": "2026-10-11T09:25:29.947Z",
+            "age_min": 149
           },
           "tests": [
             {
               "test_id": "busybox dirname",
               "status": "passed",
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/38040422072"
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/38128232151"
             }
           ]
         }
@@ -1160,19 +1185,19 @@
             "passed",
             "passed"
           ],
-          "lastRun": "nano/node-harness@4184095@2026-10-10T09:11:36.021Z",
+          "lastRun": "nano/node-harness@46210dc@2026-10-11T09:25:29.947Z",
           "freshness": {
             "source": "nano",
             "suite": "node-harness",
-            "commit": "4184095",
-            "finished_at": "2026-10-10T09:11:36.021Z",
-            "age_min": 1237
+            "commit": "46210dc",
+            "finished_at": "2026-10-11T09:25:29.947Z",
+            "age_min": 149
           },
           "tests": [
             {
               "test_id": "busybox cat",
               "status": "passed",
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/38040422072"
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/38128232151"
             }
           ]
         }
@@ -1202,19 +1227,19 @@
             "passed",
             "passed"
           ],
-          "lastRun": "nano/node-harness@4184095@2026-10-10T09:11:36.021Z",
+          "lastRun": "nano/node-harness@46210dc@2026-10-11T09:25:29.947Z",
           "freshness": {
             "source": "nano",
             "suite": "node-harness",
-            "commit": "4184095",
-            "finished_at": "2026-10-10T09:11:36.021Z",
-            "age_min": 1237
+            "commit": "46210dc",
+            "finished_at": "2026-10-11T09:25:29.947Z",
+            "age_min": 149
           },
           "tests": [
             {
               "test_id": "busybox head",
               "status": "passed",
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/38040422072"
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/38128232151"
             }
           ]
         }
@@ -1244,19 +1269,19 @@
             "passed",
             "passed"
           ],
-          "lastRun": "nano/node-harness@4184095@2026-10-10T09:11:36.021Z",
+          "lastRun": "nano/node-harness@46210dc@2026-10-11T09:25:29.947Z",
           "freshness": {
             "source": "nano",
             "suite": "node-harness",
-            "commit": "4184095",
-            "finished_at": "2026-10-10T09:11:36.021Z",
-            "age_min": 1237
+            "commit": "46210dc",
+            "finished_at": "2026-10-11T09:25:29.947Z",
+            "age_min": 149
           },
           "tests": [
             {
               "test_id": "busybox tail",
               "status": "passed",
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/38040422072"
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/38128232151"
             }
           ]
         }
@@ -1286,19 +1311,19 @@
             "passed",
             "passed"
           ],
-          "lastRun": "nano/node-harness@4184095@2026-10-10T09:11:36.021Z",
+          "lastRun": "nano/node-harness@46210dc@2026-10-11T09:25:29.947Z",
           "freshness": {
             "source": "nano",
             "suite": "node-harness",
-            "commit": "4184095",
-            "finished_at": "2026-10-10T09:11:36.021Z",
-            "age_min": 1237
+            "commit": "46210dc",
+            "finished_at": "2026-10-11T09:25:29.947Z",
+            "age_min": 149
           },
           "tests": [
             {
               "test_id": "busybox sort",
               "status": "passed",
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/38040422072"
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/38128232151"
             }
           ]
         }
@@ -1328,19 +1353,19 @@
             "passed",
             "passed"
           ],
-          "lastRun": "nano/node-harness@4184095@2026-10-10T09:11:36.021Z",
+          "lastRun": "nano/node-harness@46210dc@2026-10-11T09:25:29.947Z",
           "freshness": {
             "source": "nano",
             "suite": "node-harness",
-            "commit": "4184095",
-            "finished_at": "2026-10-10T09:11:36.021Z",
-            "age_min": 1237
+            "commit": "46210dc",
+            "finished_at": "2026-10-11T09:25:29.947Z",
+            "age_min": 149
           },
           "tests": [
             {
               "test_id": "busybox id",
               "status": "passed",
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/38040422072"
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/38128232151"
             }
           ]
         }
@@ -1370,19 +1395,19 @@
             "passed",
             "passed"
           ],
-          "lastRun": "nano/node-harness@4184095@2026-10-10T09:11:36.021Z",
+          "lastRun": "nano/node-harness@46210dc@2026-10-11T09:25:29.947Z",
           "freshness": {
             "source": "nano",
             "suite": "node-harness",
-            "commit": "4184095",
-            "finished_at": "2026-10-10T09:11:36.021Z",
-            "age_min": 1237
+            "commit": "46210dc",
+            "finished_at": "2026-10-11T09:25:29.947Z",
+            "age_min": 149
           },
           "tests": [
             {
               "test_id": "busybox pwd",
               "status": "passed",
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/38040422072"
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/38128232151"
             }
           ]
         }
@@ -1412,19 +1437,19 @@
             "passed",
             "passed"
           ],
-          "lastRun": "nano/node-harness@4184095@2026-10-10T09:11:36.021Z",
+          "lastRun": "nano/node-harness@46210dc@2026-10-11T09:25:29.947Z",
           "freshness": {
             "source": "nano",
             "suite": "node-harness",
-            "commit": "4184095",
-            "finished_at": "2026-10-10T09:11:36.021Z",
-            "age_min": 1237
+            "commit": "46210dc",
+            "finished_at": "2026-10-11T09:25:29.947Z",
+            "age_min": 149
           },
           "tests": [
             {
               "test_id": "busybox env",
               "status": "passed",
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/38040422072"
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/38128232151"
             }
           ]
         }
@@ -1454,19 +1479,19 @@
             "passed",
             "passed"
           ],
-          "lastRun": "nano/node-harness@4184095@2026-10-10T09:11:36.021Z",
+          "lastRun": "nano/node-harness@46210dc@2026-10-11T09:25:29.947Z",
           "freshness": {
             "source": "nano",
             "suite": "node-harness",
-            "commit": "4184095",
-            "finished_at": "2026-10-10T09:11:36.021Z",
-            "age_min": 1237
+            "commit": "46210dc",
+            "finished_at": "2026-10-11T09:25:29.947Z",
+            "age_min": 149
           },
           "tests": [
             {
               "test_id": "busybox whoami",
               "status": "passed",
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/38040422072"
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/38128232151"
             }
           ]
         }
@@ -1496,19 +1521,19 @@
             "passed",
             "passed"
           ],
-          "lastRun": "nano/node-harness@4184095@2026-10-10T09:11:36.021Z",
+          "lastRun": "nano/node-harness@46210dc@2026-10-11T09:25:29.947Z",
           "freshness": {
             "source": "nano",
             "suite": "node-harness",
-            "commit": "4184095",
-            "finished_at": "2026-10-10T09:11:36.021Z",
-            "age_min": 1237
+            "commit": "46210dc",
+            "finished_at": "2026-10-11T09:25:29.947Z",
+            "age_min": 149
           },
           "tests": [
             {
               "test_id": "busybox hostname",
               "status": "passed",
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/38040422072"
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/38128232151"
             }
           ]
         }
@@ -1538,19 +1563,19 @@
             "passed",
             "passed"
           ],
-          "lastRun": "nano/node-harness@4184095@2026-10-10T09:11:36.021Z",
+          "lastRun": "nano/node-harness@46210dc@2026-10-11T09:25:29.947Z",
           "freshness": {
             "source": "nano",
             "suite": "node-harness",
-            "commit": "4184095",
-            "finished_at": "2026-10-10T09:11:36.021Z",
-            "age_min": 1237
+            "commit": "46210dc",
+            "finished_at": "2026-10-11T09:25:29.947Z",
+            "age_min": 149
           },
           "tests": [
             {
               "test_id": "busybox printf",
               "status": "passed",
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/38040422072"
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/38128232151"
             }
           ]
         }
@@ -1580,19 +1605,19 @@
             "passed",
             "passed"
           ],
-          "lastRun": "nano/node-harness@4184095@2026-10-10T09:11:36.021Z",
+          "lastRun": "nano/node-harness@46210dc@2026-10-11T09:25:29.947Z",
           "freshness": {
             "source": "nano",
             "suite": "node-harness",
-            "commit": "4184095",
-            "finished_at": "2026-10-10T09:11:36.021Z",
-            "age_min": 1237
+            "commit": "46210dc",
+            "finished_at": "2026-10-11T09:25:29.947Z",
+            "age_min": 149
           },
           "tests": [
             {
               "test_id": "busybox seq",
               "status": "passed",
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/38040422072"
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/38128232151"
             }
           ]
         }
@@ -1639,7 +1664,7 @@
             "suite": "catalog-conformance",
             "commit": "0027adf",
             "finished_at": "2026-10-03T02:06:39.374Z",
-            "age_min": 11742
+            "age_min": 12108
           },
           "tests": [
             {
@@ -1683,7 +1708,7 @@
             "suite": "catalog-conformance",
             "commit": "0027adf",
             "finished_at": "2026-10-03T02:06:39.374Z",
-            "age_min": 11742
+            "age_min": 12108
           },
           "tests": [
             {
@@ -1728,7 +1753,7 @@
             "suite": "catalog-conformance",
             "commit": "0027adf",
             "finished_at": "2026-10-03T02:06:39.374Z",
-            "age_min": 11742
+            "age_min": 12108
           },
           "tests": [
             {
@@ -1773,7 +1798,7 @@
             "suite": "catalog-conformance",
             "commit": "0027adf",
             "finished_at": "2026-10-03T02:06:39.374Z",
-            "age_min": 11742
+            "age_min": 12108
           },
           "tests": [
             {
@@ -1818,7 +1843,7 @@
             "suite": "catalog-conformance",
             "commit": "0027adf",
             "finished_at": "2026-10-03T02:06:39.374Z",
-            "age_min": 11742
+            "age_min": 12108
           },
           "tests": [
             {
@@ -1863,7 +1888,7 @@
             "suite": "catalog-conformance",
             "commit": "0027adf",
             "finished_at": "2026-10-03T02:06:39.374Z",
-            "age_min": 11742
+            "age_min": 12108
           },
           "tests": [
             {
@@ -1908,7 +1933,7 @@
             "suite": "catalog-conformance",
             "commit": "0027adf",
             "finished_at": "2026-10-03T02:06:39.374Z",
-            "age_min": 11742
+            "age_min": 12108
           },
           "tests": [
             {
@@ -1964,7 +1989,7 @@
             "suite": "catalog-conformance",
             "commit": "0027adf",
             "finished_at": "2026-10-03T02:06:39.374Z",
-            "age_min": 11742
+            "age_min": 12108
           },
           "tests": [
             {
@@ -2008,7 +2033,7 @@
             "suite": "catalog-conformance",
             "commit": "0027adf",
             "finished_at": "2026-10-03T02:06:39.374Z",
-            "age_min": 11742
+            "age_min": 12108
           },
           "tests": [
             {
@@ -2052,7 +2077,7 @@
             "suite": "catalog-conformance",
             "commit": "0027adf",
             "finished_at": "2026-10-03T02:06:39.374Z",
-            "age_min": 11742
+            "age_min": 12108
           },
           "tests": [
             {
@@ -2096,7 +2121,7 @@
             "suite": "catalog-conformance",
             "commit": "0027adf",
             "finished_at": "2026-10-03T02:06:39.374Z",
-            "age_min": 11742
+            "age_min": 12108
           },
           "tests": [
             {
@@ -2140,7 +2165,7 @@
             "suite": "catalog-conformance",
             "commit": "0027adf",
             "finished_at": "2026-10-03T02:06:39.374Z",
-            "age_min": 11742
+            "age_min": 12108
           },
           "tests": [
             {
@@ -2184,7 +2209,7 @@
             "suite": "catalog-conformance",
             "commit": "0027adf",
             "finished_at": "2026-10-03T02:06:39.374Z",
-            "age_min": 11742
+            "age_min": 12108
           },
           "tests": [
             {
@@ -2228,7 +2253,7 @@
             "suite": "catalog-conformance",
             "commit": "0027adf",
             "finished_at": "2026-10-03T02:06:39.374Z",
-            "age_min": 11742
+            "age_min": 12108
           },
           "tests": [
             {
@@ -2272,7 +2297,7 @@
             "suite": "catalog-conformance",
             "commit": "0027adf",
             "finished_at": "2026-10-03T02:06:39.374Z",
-            "age_min": 11742
+            "age_min": 12108
           },
           "tests": [
             {
@@ -2316,7 +2341,7 @@
             "suite": "catalog-conformance",
             "commit": "0027adf",
             "finished_at": "2026-10-03T02:06:39.374Z",
-            "age_min": 11742
+            "age_min": 12108
           },
           "tests": [
             {
@@ -2360,7 +2385,7 @@
             "suite": "catalog-conformance",
             "commit": "0027adf",
             "finished_at": "2026-10-03T02:06:39.374Z",
-            "age_min": 11742
+            "age_min": 12108
           },
           "tests": [
             {
@@ -2405,7 +2430,7 @@
             "suite": "catalog-conformance",
             "commit": "0027adf",
             "finished_at": "2026-10-03T02:06:39.374Z",
-            "age_min": 11742
+            "age_min": 12108
           },
           "tests": [
             {
@@ -2450,7 +2475,7 @@
             "suite": "catalog-conformance",
             "commit": "0027adf",
             "finished_at": "2026-10-03T02:06:39.374Z",
-            "age_min": 11742
+            "age_min": 12108
           },
           "tests": [
             {
@@ -2494,7 +2519,7 @@
             "suite": "catalog-conformance",
             "commit": "0027adf",
             "finished_at": "2026-10-03T02:06:39.374Z",
-            "age_min": 11742
+            "age_min": 12108
           },
           "tests": [
             {
@@ -2538,7 +2563,7 @@
             "suite": "catalog-conformance",
             "commit": "0027adf",
             "finished_at": "2026-10-03T02:06:39.374Z",
-            "age_min": 11742
+            "age_min": 12108
           },
           "tests": [
             {
@@ -2582,7 +2607,7 @@
             "suite": "catalog-conformance",
             "commit": "0027adf",
             "finished_at": "2026-10-03T02:06:39.374Z",
-            "age_min": 11742
+            "age_min": 12108
           },
           "tests": [
             {
@@ -2626,7 +2651,7 @@
             "suite": "catalog-conformance",
             "commit": "0027adf",
             "finished_at": "2026-10-03T02:06:39.374Z",
-            "age_min": 11742
+            "age_min": 12108
           },
           "tests": [
             {
@@ -2670,7 +2695,7 @@
             "suite": "catalog-conformance",
             "commit": "0027adf",
             "finished_at": "2026-10-03T02:06:39.374Z",
-            "age_min": 11742
+            "age_min": 12108
           },
           "tests": [
             {
@@ -2714,7 +2739,7 @@
             "suite": "catalog-conformance",
             "commit": "0027adf",
             "finished_at": "2026-10-03T02:06:39.374Z",
-            "age_min": 11742
+            "age_min": 12108
           },
           "tests": [
             {
@@ -2758,7 +2783,7 @@
             "suite": "catalog-conformance",
             "commit": "0027adf",
             "finished_at": "2026-10-03T02:06:39.374Z",
-            "age_min": 11742
+            "age_min": 12108
           },
           "tests": [
             {
@@ -2802,7 +2827,7 @@
             "suite": "catalog-conformance",
             "commit": "0027adf",
             "finished_at": "2026-10-03T02:06:39.374Z",
-            "age_min": 11742
+            "age_min": 12108
           },
           "tests": [
             {
@@ -2846,7 +2871,7 @@
             "suite": "catalog-conformance",
             "commit": "0027adf",
             "finished_at": "2026-10-03T02:06:39.374Z",
-            "age_min": 11742
+            "age_min": 12108
           },
           "tests": [
             {
@@ -2890,7 +2915,7 @@
             "suite": "catalog-conformance",
             "commit": "0027adf",
             "finished_at": "2026-10-03T02:06:39.374Z",
-            "age_min": 11742
+            "age_min": 12108
           },
           "tests": [
             {
@@ -2934,7 +2959,7 @@
             "suite": "catalog-conformance",
             "commit": "0027adf",
             "finished_at": "2026-10-03T02:06:39.374Z",
-            "age_min": 11742
+            "age_min": 12108
           },
           "tests": [
             {
@@ -2978,7 +3003,7 @@
             "suite": "catalog-conformance",
             "commit": "0027adf",
             "finished_at": "2026-10-03T02:06:39.374Z",
-            "age_min": 11742
+            "age_min": 12108
           },
           "tests": [
             {
@@ -3022,7 +3047,7 @@
             "suite": "catalog-conformance",
             "commit": "0027adf",
             "finished_at": "2026-10-03T02:06:39.374Z",
-            "age_min": 11742
+            "age_min": 12108
           },
           "tests": [
             {
@@ -3066,7 +3091,7 @@
             "suite": "catalog-conformance",
             "commit": "0027adf",
             "finished_at": "2026-10-03T02:06:39.374Z",
-            "age_min": 11742
+            "age_min": 12108
           },
           "tests": [
             {
@@ -3110,7 +3135,7 @@
             "suite": "catalog-conformance",
             "commit": "0027adf",
             "finished_at": "2026-10-03T02:06:39.374Z",
-            "age_min": 11742
+            "age_min": 12108
           },
           "tests": [
             {
@@ -3154,7 +3179,7 @@
             "suite": "catalog-conformance",
             "commit": "0027adf",
             "finished_at": "2026-10-03T02:06:39.374Z",
-            "age_min": 11742
+            "age_min": 12108
           },
           "tests": [
             {
@@ -3198,7 +3223,7 @@
             "suite": "catalog-conformance",
             "commit": "0027adf",
             "finished_at": "2026-10-03T02:06:39.374Z",
-            "age_min": 11742
+            "age_min": 12108
           },
           "tests": [
             {
@@ -3242,7 +3267,7 @@
             "suite": "catalog-conformance",
             "commit": "0027adf",
             "finished_at": "2026-10-03T02:06:39.374Z",
-            "age_min": 11742
+            "age_min": 12108
           },
           "tests": [
             {
@@ -3286,7 +3311,7 @@
             "suite": "catalog-conformance",
             "commit": "0027adf",
             "finished_at": "2026-10-03T02:06:39.374Z",
-            "age_min": 11742
+            "age_min": 12108
           },
           "tests": [
             {
@@ -3330,7 +3355,7 @@
             "suite": "catalog-conformance",
             "commit": "0027adf",
             "finished_at": "2026-10-03T02:06:39.374Z",
-            "age_min": 11742
+            "age_min": 12108
           },
           "tests": [
             {
@@ -3374,7 +3399,7 @@
             "suite": "catalog-conformance",
             "commit": "0027adf",
             "finished_at": "2026-10-03T02:06:39.374Z",
-            "age_min": 11742
+            "age_min": 12108
           },
           "tests": [
             {
@@ -3419,7 +3444,7 @@
             "suite": "catalog-conformance",
             "commit": "0027adf",
             "finished_at": "2026-10-03T02:06:39.374Z",
-            "age_min": 11742
+            "age_min": 12108
           },
           "tests": [
             {
@@ -3464,7 +3489,7 @@
             "suite": "catalog-conformance",
             "commit": "0027adf",
             "finished_at": "2026-10-03T02:06:39.374Z",
-            "age_min": 11742
+            "age_min": 12108
           },
           "tests": [
             {
@@ -3509,7 +3534,7 @@
             "suite": "catalog-conformance",
             "commit": "0027adf",
             "finished_at": "2026-10-03T02:06:39.374Z",
-            "age_min": 11742
+            "age_min": 12108
           },
           "tests": [
             {
@@ -3554,7 +3579,7 @@
             "suite": "catalog-conformance",
             "commit": "0027adf",
             "finished_at": "2026-10-03T02:06:39.374Z",
-            "age_min": 11742
+            "age_min": 12108
           },
           "tests": [
             {
@@ -3599,7 +3624,7 @@
             "suite": "catalog-conformance",
             "commit": "0027adf",
             "finished_at": "2026-10-03T02:06:39.374Z",
-            "age_min": 11742
+            "age_min": 12108
           },
           "tests": [
             {
@@ -3644,7 +3669,7 @@
             "suite": "catalog-conformance",
             "commit": "0027adf",
             "finished_at": "2026-10-03T02:06:39.374Z",
-            "age_min": 11742
+            "age_min": 12108
           },
           "tests": [
             {
@@ -3689,7 +3714,7 @@
             "suite": "catalog-conformance",
             "commit": "0027adf",
             "finished_at": "2026-10-03T02:06:39.374Z",
-            "age_min": 11742
+            "age_min": 12108
           },
           "tests": [
             {
@@ -3734,7 +3759,7 @@
             "suite": "catalog-conformance",
             "commit": "0027adf",
             "finished_at": "2026-10-03T02:06:39.374Z",
-            "age_min": 11742
+            "age_min": 12108
           },
           "tests": [
             {
@@ -3786,7 +3811,7 @@
             "suite": "catalog-conformance",
             "commit": "0027adf",
             "finished_at": "2026-10-03T02:06:39.374Z",
-            "age_min": 11742
+            "age_min": 12108
           },
           "tests": [
             {
@@ -3827,7 +3852,7 @@
             "suite": "catalog-conformance",
             "commit": "0027adf",
             "finished_at": "2026-10-03T02:06:39.374Z",
-            "age_min": 11742
+            "age_min": 12108
           },
           "tests": [
             {
@@ -3903,7 +3928,7 @@
             "suite": "catalog-conformance",
             "commit": "0027adf",
             "finished_at": "2026-10-03T02:06:39.374Z",
-            "age_min": 11742
+            "age_min": 12108
           },
           "tests": [
             {
@@ -3947,7 +3972,7 @@
             "suite": "catalog-conformance",
             "commit": "0027adf",
             "finished_at": "2026-10-03T02:06:39.374Z",
-            "age_min": 11742
+            "age_min": 12108
           },
           "tests": [
             {
@@ -3991,7 +4016,7 @@
             "suite": "catalog-conformance",
             "commit": "0027adf",
             "finished_at": "2026-10-03T02:06:39.374Z",
-            "age_min": 11742
+            "age_min": 12108
           },
           "tests": [
             {
@@ -4352,7 +4377,7 @@
             "suite": "catalog-conformance",
             "commit": "0027adf",
             "finished_at": "2026-10-03T02:06:39.374Z",
-            "age_min": 11742
+            "age_min": 12108
           },
           "tests": [
             {
@@ -4778,19 +4803,19 @@
             "passed",
             "passed"
           ],
-          "lastRun": "nano/node-harness@4184095@2026-10-10T09:11:36.021Z",
+          "lastRun": "nano/node-harness@46210dc@2026-10-11T09:25:29.947Z",
           "freshness": {
             "source": "nano",
             "suite": "node-harness",
-            "commit": "4184095",
-            "finished_at": "2026-10-10T09:11:36.021Z",
-            "age_min": 1237
+            "commit": "46210dc",
+            "finished_at": "2026-10-11T09:25:29.947Z",
+            "age_min": 149
           },
           "tests": [
             {
               "test_id": "test_suite",
               "status": "passed",
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/38040422072"
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/38128232151"
             }
           ]
         }
@@ -4823,50 +4848,50 @@
             "passed",
             "passed"
           ],
-          "lastRun": "nano/cargo-unit@4184095@2026-10-10T09:10:22.699Z",
+          "lastRun": "nano/cargo-unit@46210dc@2026-10-11T09:24:25.195Z",
           "freshness": {
             "source": "nano",
             "suite": "cargo-unit",
-            "commit": "4184095",
-            "finished_at": "2026-10-10T09:10:22.699Z",
-            "age_min": 1238
+            "commit": "46210dc",
+            "finished_at": "2026-10-11T09:24:25.195Z",
+            "age_min": 150
           },
           "tests": [
             {
+              "test_id": "decode::tests::c_lw_expands_to_load_opcode",
+              "status": "passed",
+              "duration_ms": 6,
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/38128232151"
+            },
+            {
               "test_id": "decode::tests::c_nop_is_canonical_nop",
               "status": "passed",
-              "duration_ms": 4,
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/38040422072"
+              "duration_ms": 6,
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/38128232151"
             },
             {
               "test_id": "decode::tests::c_addi_expands_to_opimm",
               "status": "passed",
-              "duration_ms": 4,
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/38040422072"
-            },
-            {
-              "test_id": "decode::tests::c_lw_expands_to_load_opcode",
-              "status": "passed",
-              "duration_ms": 4,
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/38040422072"
+              "duration_ms": 6,
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/38128232151"
             },
             {
               "test_id": "decode::tests::c_sw_expands_to_store_opcode",
               "status": "passed",
-              "duration_ms": 4,
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/38040422072"
-            },
-            {
-              "test_id": "decode::tests::illegal_compressed_returns_zero",
-              "status": "passed",
-              "duration_ms": 4,
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/38040422072"
+              "duration_ms": 6,
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/38128232151"
             },
             {
               "test_id": "decode::tests::non_compressed_returns_zero",
               "status": "passed",
-              "duration_ms": 4,
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/38040422072"
+              "duration_ms": 5,
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/38128232151"
+            },
+            {
+              "test_id": "decode::tests::illegal_compressed_returns_zero",
+              "status": "passed",
+              "duration_ms": 7,
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/38128232151"
             }
           ]
         },
@@ -4886,19 +4911,19 @@
             "passed",
             "passed"
           ],
-          "lastRun": "nano/node-harness@4184095@2026-10-10T09:11:36.021Z",
+          "lastRun": "nano/node-harness@46210dc@2026-10-11T09:25:29.947Z",
           "freshness": {
             "source": "nano",
             "suite": "node-harness",
-            "commit": "4184095",
-            "finished_at": "2026-10-10T09:11:36.021Z",
-            "age_min": 1237
+            "commit": "46210dc",
+            "finished_at": "2026-10-11T09:25:29.947Z",
+            "age_min": 149
           },
           "tests": [
             {
               "test_id": "test_rvc",
               "status": "passed",
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/38040422072"
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/38128232151"
             }
           ]
         }
@@ -4931,19 +4956,19 @@
             "passed",
             "passed"
           ],
-          "lastRun": "nano/node-harness@4184095@2026-10-10T09:11:36.021Z",
+          "lastRun": "nano/node-harness@46210dc@2026-10-11T09:25:29.947Z",
           "freshness": {
             "source": "nano",
             "suite": "node-harness",
-            "commit": "4184095",
-            "finished_at": "2026-10-10T09:11:36.021Z",
-            "age_min": 1237
+            "commit": "46210dc",
+            "finished_at": "2026-10-11T09:25:29.947Z",
+            "age_min": 149
           },
           "tests": [
             {
               "test_id": "test_float",
               "status": "passed",
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/38040422072"
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/38128232151"
             }
           ]
         }
@@ -4976,19 +5001,19 @@
             "passed",
             "passed"
           ],
-          "lastRun": "nano/node-harness@4184095@2026-10-10T09:11:36.021Z",
+          "lastRun": "nano/node-harness@46210dc@2026-10-11T09:25:29.947Z",
           "freshness": {
             "source": "nano",
             "suite": "node-harness",
-            "commit": "4184095",
-            "finished_at": "2026-10-10T09:11:36.021Z",
-            "age_min": 1237
+            "commit": "46210dc",
+            "finished_at": "2026-10-11T09:25:29.947Z",
+            "age_min": 149
           },
           "tests": [
             {
               "test_id": "test_memory",
               "status": "passed",
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/38040422072"
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/38128232151"
             }
           ]
         }
@@ -5021,19 +5046,19 @@
             "passed",
             "passed"
           ],
-          "lastRun": "nano/node-harness@4184095@2026-10-10T09:11:36.021Z",
+          "lastRun": "nano/node-harness@46210dc@2026-10-11T09:25:29.947Z",
           "freshness": {
             "source": "nano",
             "suite": "node-harness",
-            "commit": "4184095",
-            "finished_at": "2026-10-10T09:11:36.021Z",
-            "age_min": 1237
+            "commit": "46210dc",
+            "finished_at": "2026-10-11T09:25:29.947Z",
+            "age_min": 149
           },
           "tests": [
             {
               "test_id": "hello",
               "status": "passed",
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/38040422072"
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/38128232151"
             }
           ]
         }
@@ -5092,38 +5117,38 @@
             "passed",
             "passed"
           ],
-          "lastRun": "nano/cargo-unit@4184095@2026-10-10T09:10:22.699Z",
+          "lastRun": "nano/cargo-unit@46210dc@2026-10-11T09:24:25.195Z",
           "freshness": {
             "source": "nano",
             "suite": "cargo-unit",
-            "commit": "4184095",
-            "finished_at": "2026-10-10T09:10:22.699Z",
-            "age_min": 1238
+            "commit": "46210dc",
+            "finished_at": "2026-10-11T09:24:25.195Z",
+            "age_min": 150
           },
           "tests": [
             {
               "test_id": "types::tests::a0_and_sp_register_offsets",
               "status": "passed",
-              "duration_ms": 4,
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/38040422072"
+              "duration_ms": 5,
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/38128232151"
             },
             {
               "test_id": "types::tests::fsrequest_path_buffers_are_256",
               "status": "passed",
-              "duration_ms": 4,
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/38040422072"
-            },
-            {
-              "test_id": "types::tests::vm_size_is_locked",
-              "status": "passed",
-              "duration_ms": 3,
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/38040422072"
+              "duration_ms": 7,
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/38128232151"
             },
             {
               "test_id": "types::tests::host_shared_offsets_are_stable",
               "status": "passed",
-              "duration_ms": 3,
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/38040422072"
+              "duration_ms": 4,
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/38128232151"
+            },
+            {
+              "test_id": "types::tests::vm_size_is_locked",
+              "status": "passed",
+              "duration_ms": 4,
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/38128232151"
             }
           ]
         }
@@ -5180,19 +5205,19 @@
             "passed",
             "passed"
           ],
-          "lastRun": "nano/node-harness@4184095@2026-10-10T09:11:36.021Z",
+          "lastRun": "nano/node-harness@46210dc@2026-10-11T09:25:29.947Z",
           "freshness": {
             "source": "nano",
             "suite": "node-harness",
-            "commit": "4184095",
-            "finished_at": "2026-10-10T09:11:36.021Z",
-            "age_min": 1237
+            "commit": "46210dc",
+            "finished_at": "2026-10-11T09:25:29.947Z",
+            "age_min": 149
           },
           "tests": [
             {
               "test_id": "test_syscalls",
               "status": "passed",
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/38040422072"
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/38128232151"
             }
           ]
         }
@@ -5471,19 +5496,19 @@
             "passed",
             "passed"
           ],
-          "lastRun": "nano/node-harness@4184095@2026-10-10T09:11:36.021Z",
+          "lastRun": "nano/node-harness@46210dc@2026-10-11T09:25:29.947Z",
           "freshness": {
             "source": "nano",
             "suite": "node-harness",
-            "commit": "4184095",
-            "finished_at": "2026-10-10T09:11:36.021Z",
-            "age_min": 1237
+            "commit": "46210dc",
+            "finished_at": "2026-10-11T09:25:29.947Z",
+            "age_min": 149
           },
           "tests": [
             {
               "test_id": "busybox pwd",
               "status": "passed",
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/38040422072"
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/38128232151"
             }
           ]
         }
@@ -5721,19 +5746,19 @@
             "passed",
             "passed"
           ],
-          "lastRun": "nano/node-harness@4184095@2026-10-10T09:11:36.021Z",
+          "lastRun": "nano/node-harness@46210dc@2026-10-11T09:25:29.947Z",
           "freshness": {
             "source": "nano",
             "suite": "node-harness",
-            "commit": "4184095",
-            "finished_at": "2026-10-10T09:11:36.021Z",
-            "age_min": 1237
+            "commit": "46210dc",
+            "finished_at": "2026-10-11T09:25:29.947Z",
+            "age_min": 149
           },
           "tests": [
             {
               "test_id": "busybox uname",
               "status": "passed",
-              "trace_url": "https://github.com/userland-run/nano/actions/runs/38040422072"
+              "trace_url": "https://github.com/userland-run/nano/actions/runs/38128232151"
             }
           ]
         }
@@ -6275,19 +6300,19 @@
             "passed",
             "passed"
           ],
-          "lastRun": "sdk/sdk-unit@3003eb4@2026-08-26T03:55:02.468Z",
+          "lastRun": "sdk/sdk-unit@60adc5d@2026-10-11T07:18:41.806Z",
           "freshness": {
             "source": "sdk",
             "suite": "sdk-unit",
-            "commit": "3003eb4",
-            "finished_at": "2026-08-26T03:55:02.468Z",
-            "age_min": 66353
+            "commit": "60adc5d",
+            "finished_at": "2026-10-11T07:18:41.806Z",
+            "age_min": 276
           },
           "tests": [
             {
               "test_id": "code.test.mjs::run() executes a BusyBox command and captures stdout [feat:sdk.code.run]",
               "status": "passed",
-              "duration_ms": 104
+              "duration_ms": 122
             }
           ]
         }
@@ -6306,7 +6331,7 @@
           "layer": "SDK",
           "state": "passed",
           "counts": {
-            "passed": 2,
+            "passed": 3,
             "failed": 0,
             "skipped": 0,
             "flaky": 0
@@ -6318,24 +6343,29 @@
             "passed",
             "passed"
           ],
-          "lastRun": "sdk/sdk-unit@3003eb4@2026-08-26T03:55:02.468Z",
+          "lastRun": "sdk/sdk-unit@60adc5d@2026-10-11T07:18:41.806Z",
           "freshness": {
             "source": "sdk",
             "suite": "sdk-unit",
-            "commit": "3003eb4",
-            "finished_at": "2026-08-26T03:55:02.468Z",
-            "age_min": 66353
+            "commit": "60adc5d",
+            "finished_at": "2026-10-11T07:18:41.806Z",
+            "age_min": 276
           },
           "tests": [
             {
               "test_id": "code.test.mjs::shExec() runs a real sh pipeline [feat:sdk.code.exec]",
               "status": "passed",
-              "duration_ms": 336
+              "duration_ms": 380
             },
             {
               "test_id": "code.test.mjs::exec() single-quotes argv and runs it through sh [feat:sdk.code.exec]",
               "status": "passed",
               "duration_ms": 2
+            },
+            {
+              "test_id": "code.test.mjs::overlapping run/shExec/fs calls are serialized, not clobbered [feat:sdk.code.exec]",
+              "status": "passed",
+              "duration_ms": 574
             }
           ]
         }
@@ -6366,29 +6396,29 @@
             "passed",
             "passed"
           ],
-          "lastRun": "sdk/sdk-unit@3003eb4@2026-08-26T03:55:02.468Z",
+          "lastRun": "sdk/sdk-unit@60adc5d@2026-10-11T07:18:41.806Z",
           "freshness": {
             "source": "sdk",
             "suite": "sdk-unit",
-            "commit": "3003eb4",
-            "finished_at": "2026-08-26T03:55:02.468Z",
-            "age_min": 66353
+            "commit": "60adc5d",
+            "finished_at": "2026-10-11T07:18:41.806Z",
+            "age_min": 276
           },
           "tests": [
             {
               "test_id": "vfs.test.mjs::writeFile + readText round-trip through MemFS [feat:sdk.vfs.rw]",
               "status": "passed",
-              "duration_ms": 97
+              "duration_ms": 126
             },
             {
               "test_id": "vfs.test.mjs::exists reflects file presence [feat:sdk.vfs.rw]",
               "status": "passed",
-              "duration_ms": 1
+              "duration_ms": 0
             },
             {
               "test_id": "vfs.test.mjs::mkdir + copy + walk via BusyBox [feat:sdk.vfs.rw]",
               "status": "passed",
-              "duration_ms": 372
+              "duration_ms": 377
             },
             {
               "test_id": "vfs.test.mjs::list returns typed directory entries [feat:sdk.vfs.rw]",
@@ -6425,29 +6455,29 @@
             "passed",
             "passed"
           ],
-          "lastRun": "sdk/sdk-unit@3003eb4@2026-08-26T03:55:02.468Z",
+          "lastRun": "sdk/sdk-unit@60adc5d@2026-10-11T07:18:41.806Z",
           "freshness": {
             "source": "sdk",
             "suite": "sdk-unit",
-            "commit": "3003eb4",
-            "finished_at": "2026-08-26T03:55:02.468Z",
-            "age_min": 66353
+            "commit": "60adc5d",
+            "finished_at": "2026-10-11T07:18:41.806Z",
+            "age_min": 276
           },
           "tests": [
             {
               "test_id": "shell.test.mjs::export persists across shell.run() calls [feat:sdk.shell.session]",
               "status": "passed",
-              "duration_ms": 106
+              "duration_ms": 131
             },
             {
               "test_id": "shell.test.mjs::cd tracks cwd across runs [feat:sdk.shell.session]",
               "status": "passed",
-              "duration_ms": 169
+              "duration_ms": 191
             },
             {
               "test_id": "shell.test.mjs::constructor env seeds the session environment [feat:sdk.shell.session]",
               "status": "passed",
-              "duration_ms": 2
+              "duration_ms": 3
             }
           ]
         }
@@ -6478,19 +6508,19 @@
             "passed",
             "passed"
           ],
-          "lastRun": "sdk/sdk-unit@3003eb4@2026-08-26T03:55:02.468Z",
+          "lastRun": "sdk/sdk-unit@60adc5d@2026-10-11T07:18:41.806Z",
           "freshness": {
             "source": "sdk",
             "suite": "sdk-unit",
-            "commit": "3003eb4",
-            "finished_at": "2026-08-26T03:55:02.468Z",
-            "age_min": 66353
+            "commit": "60adc5d",
+            "finished_at": "2026-10-11T07:18:41.806Z",
+            "age_min": 276
           },
           "tests": [
             {
               "test_id": "terminal.test.mjs::clear builtin emits the terminal reset sequence [feat:sdk.mode.terminal]",
               "status": "passed",
-              "duration_ms": 100
+              "duration_ms": 129
             },
             {
               "test_id": "terminal.test.mjs::pwd builtin renders the tracked cwd without spawning [feat:sdk.mode.terminal]",
@@ -6500,7 +6530,7 @@
             {
               "test_id": "terminal.test.mjs::onData streams command output as it is produced [feat:sdk.mode.terminal]",
               "status": "passed",
-              "duration_ms": 6
+              "duration_ms": 7
             }
           ]
         }
@@ -6531,24 +6561,24 @@
             "passed",
             "passed"
           ],
-          "lastRun": "sdk/sdk-unit@3003eb4@2026-08-26T03:55:02.468Z",
+          "lastRun": "sdk/sdk-unit@60adc5d@2026-10-11T07:18:41.806Z",
           "freshness": {
             "source": "sdk",
             "suite": "sdk-unit",
-            "commit": "3003eb4",
-            "finished_at": "2026-08-26T03:55:02.468Z",
-            "age_min": 66353
+            "commit": "60adc5d",
+            "finished_at": "2026-10-11T07:18:41.806Z",
+            "age_min": 276
           },
           "tests": [
             {
               "test_id": "serve.test.mjs::parseHttpResponse parses status line, headers, and body [feat:sdk.serve.http]",
               "status": "passed",
-              "duration_ms": 97
+              "duration_ms": 124
             },
             {
               "test_id": "serve.test.mjs::parseHttpResponse decodes Transfer-Encoding: chunked [feat:sdk.serve.http]",
               "status": "passed",
-              "duration_ms": 1
+              "duration_ms": 0
             },
             {
               "test_id": "serve.test.mjs::startServer rejects when the launch exits before readiness [feat:sdk.serve.http]",
@@ -6585,24 +6615,24 @@
             "passed",
             "passed"
           ],
-          "lastRun": "sdk/sdk-unit@3003eb4@2026-08-26T03:55:02.468Z",
+          "lastRun": "sdk/sdk-unit@60adc5d@2026-10-11T07:18:41.806Z",
           "freshness": {
             "source": "sdk",
             "suite": "sdk-unit",
-            "commit": "3003eb4",
-            "finished_at": "2026-08-26T03:55:02.468Z",
-            "age_min": 66353
+            "commit": "60adc5d",
+            "finished_at": "2026-10-11T07:18:41.806Z",
+            "age_min": 276
           },
           "tests": [
             {
               "test_id": "scripting.test.mjs::script eval marshals a JSON result [feat:sdk.scripting.eval]",
               "status": "passed",
-              "duration_ms": 146
+              "duration_ms": 170
             },
             {
               "test_id": "scripting.test.mjs::registerFunction + defineGlobal drive a long-lived engine [feat:sdk.scripting.eval]",
               "status": "passed",
-              "duration_ms": 6
+              "duration_ms": 7
             }
           ]
         }
@@ -6633,24 +6663,24 @@
             "passed",
             "passed"
           ],
-          "lastRun": "sdk/sdk-unit@3003eb4@2026-08-26T03:55:02.468Z",
+          "lastRun": "sdk/sdk-unit@60adc5d@2026-10-11T07:18:41.806Z",
           "freshness": {
             "source": "sdk",
             "suite": "sdk-unit",
-            "commit": "3003eb4",
-            "finished_at": "2026-08-26T03:55:02.468Z",
-            "age_min": 66353
+            "commit": "60adc5d",
+            "finished_at": "2026-10-11T07:18:41.806Z",
+            "age_min": 276
           },
           "tests": [
             {
               "test_id": "scripting.test.mjs::a script with no run grant cannot reach nano.run [feat:sdk.scripting.capability]",
               "status": "passed",
-              "duration_ms": 1
+              "duration_ms": 2
             },
             {
               "test_id": "scripting.test.mjs::fs:readonly + run grants let a script drive the VM [feat:sdk.scripting.capability]",
               "status": "passed",
-              "duration_ms": 8
+              "duration_ms": 9
             }
           ]
         }
@@ -6682,13 +6712,13 @@
             "skipped",
             "skipped"
           ],
-          "lastRun": "sdk/sdk-unit@3003eb4@2026-08-26T03:55:02.468Z",
+          "lastRun": "sdk/sdk-unit@60adc5d@2026-10-11T07:18:41.806Z",
           "freshness": {
             "source": "sdk",
             "suite": "sdk-unit",
-            "commit": "3003eb4",
-            "finished_at": "2026-08-26T03:55:02.468Z",
-            "age_min": 66353
+            "commit": "60adc5d",
+            "finished_at": "2026-10-11T07:18:41.806Z",
+            "age_min": 276
           },
           "tests": [
             {
@@ -6785,7 +6815,7 @@
             "suite": "playwright-e2e",
             "commit": "6640c09",
             "finished_at": "2026-06-27T03:48:02.426Z",
-            "age_min": 152760
+            "age_min": 153127
           },
           "tests": [
             {
@@ -6826,7 +6856,7 @@
             "suite": "playwright-e2e",
             "commit": "6640c09",
             "finished_at": "2026-06-27T03:48:02.426Z",
-            "age_min": 152760
+            "age_min": 153127
           },
           "tests": [
             {
@@ -6866,7 +6896,7 @@
             "suite": "playwright-e2e",
             "commit": "6640c09",
             "finished_at": "2026-06-27T03:48:02.426Z",
-            "age_min": 152760
+            "age_min": 153127
           },
           "tests": [
             {
@@ -6953,7 +6983,7 @@
             "suite": "playwright-e2e",
             "commit": "6640c09",
             "finished_at": "2026-06-27T03:48:02.426Z",
-            "age_min": 152760
+            "age_min": 153127
           },
           "tests": [
             {
@@ -6974,6 +7004,56 @@
       "status": "shipped",
       "since": "2026-07",
       "notes": "catalog sidebar reads the index appMeta: a Runners facet (All/RISC-V VM/Node/wasm/Boa, tier∧category∧search filter) + a color-tinted tier badge per app row + per-runner tally in browse(). Browser-verified against a signed 4-tier fixture (wasm chip narrowed to esbuild+photon). Install-routing for wasm/boa from the shell is the nano _doExecve gap",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "terminal.assistant.panel",
+      "title": "assistant side panel",
+      "area": "terminal",
+      "status": "shipped",
+      "since": "2026-10",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "terminal.assistant.modes",
+      "title": "assistant permission modes (plan / ask / acceptEdits / auto)",
+      "area": "terminal",
+      "status": "shipped",
+      "since": "2026-10",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "terminal.assistant.modelpicker",
+      "title": "assistant model picker",
+      "area": "terminal",
+      "status": "shipped",
+      "since": "2026-10",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "terminal.assistant.footer",
+      "title": "assistant model stat in the footer",
+      "area": "terminal",
+      "status": "shipped",
+      "since": "2026-10",
+      "cells": {},
+      "tested": false,
+      "green": null
+    },
+    {
+      "id": "terminal.layout.split",
+      "title": "resizable terminal / assistant split layout",
+      "area": "terminal",
+      "status": "shipped",
+      "since": "2026-10",
       "cells": {},
       "tested": false,
       "green": null

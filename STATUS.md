@@ -1,15 +1,15 @@
 # userland.run — status
 
-> Generated 2026-10-11T05:48:48.504Z · live at https://status.userland.run
+> Generated 2026-10-11T11:55:08.669Z · live at https://status.userland.run
 
-**89 / 93 tested features green** (96%) · 181 shipped (79%) · 3 failing now · 100 shipped-but-untested · 1 drift
+**89 / 93 tested features green** (96%) · 186 shipped (79%) · 3 failing now · 105 shipped-but-untested · 1 drift
 
 ## Red now
 - `catalog.recipe.difftastic` — difftastic (structural diff) (Catalog) · https://github.com/userland-run/catalog/actions/runs/37088111445
 - `catalog.pipeline.conformance` — conformance harness (Catalog) · https://github.com/userland-run/catalog/actions/runs/37088111445
 - `catalog.pipeline.gate` — syscall gate (pinned manifest) (Catalog) · https://github.com/userland-run/catalog/actions/runs/37088111445
 
-## Shipped but untested (100)
+## Shipped but untested (105)
 - `applets.vm.warm` — warm-VM applet spawn (no per-command boot)
 - `applets.crosstier` — cross-tier shell — busybox applets + nodert node over one VFS
 - `applets.pipeline` — pipelines across tiers (nodert → busybox → nodert)
@@ -25,7 +25,7 @@
 - `emulator.tty.termios` — TTY line discipline (termios)
 - `emulator.term.vte` — VTE terminal grid
 - `emulator.process.fork` — clone/fork
-- …and 85 more
+- …and 90 more
 
 ## Drift (1)
 - in-progress > 60d: `terminal.phase.1` — Phase 1 — Vello/WebGPU renderer (since 2026-06)
@@ -37,7 +37,7 @@
 | BusyBox applets | 19 | 100% | 100% (17/17) |
 | Dev toolchain | 5 | 0% | 0% (0/0) |
 | TypeScript SDK | 13 | 77% | 89% (8/9) |
-| WebGPU console | 10 | 60% | 100% (4/4) |
+| WebGPU console | 15 | 73% | 100% (4/4) |
 | App conformance & distribution | 62 | 77% | 94% (51/54) |
 | Kernel (shared OS layer) | 16 | 81% | 0% (0/0) |
 | Node host-engine tier | 24 | 67% | 0% (0/0) |
@@ -47,10 +47,10 @@
 ## Suites
 | Suite | Layer | Health | Pass rate | Age (min) |
 | ----- | ----- | ------ | --------- | --------- |
-| nano/cargo-unit | Core | ok | 100% | 1238 |
-| nano/node-harness | Runtime | ok | 100% | 1237 |
-| sdk/sdk-unit | SDK | silent | 87% | 66353 |
-| terminal/playwright-e2e | Terminal | silent | 100% | 152760 |
-| catalog/catalog-conformance | Catalog | silent | 98% | 11742 |
+| nano/cargo-unit | Core | ok | 100% | 150 |
+| nano/node-harness | Runtime | ok | 100% | 149 |
+| sdk/sdk-unit | SDK | ok | 88% | 276 |
+| terminal/playwright-e2e | Terminal | silent | 100% | 153127 |
+| catalog/catalog-conformance | Catalog | silent | 98% | 12108 |
 
 _Regenerated on every result push. Edit features in `registry/`, never this file._
