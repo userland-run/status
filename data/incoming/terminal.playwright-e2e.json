@@ -2,10 +2,10 @@
   "contract": 1,
   "source": "terminal",
   "suite": "playwright-e2e",
-  "commit": "21464e9",
+  "commit": "22abb55",
   "branch": "main",
-  "run_id": "38137115029",
-  "finished_at": "2026-10-11T11:57:14.238Z",
+  "run_id": "38148395637",
+  "finished_at": "2026-10-11T14:45:26.619Z",
   "results": [
     {
       "test_id": "tests/e2e/assistant.spec.ts::assistant pane opens, resizes, and the composer renders",
@@ -13,7 +13,7 @@
         "terminal.assistant.panel"
       ],
       "status": "passed",
-      "duration_ms": 1223,
+      "duration_ms": 1130,
       "retries": 0
     },
     {
@@ -22,7 +22,7 @@
         "terminal.assistant.modes"
       ],
       "status": "passed",
-      "duration_ms": 1044,
+      "duration_ms": 1017,
       "retries": 0
     },
     {
@@ -31,7 +31,7 @@
         "terminal.assistant.modelpicker"
       ],
       "status": "passed",
-      "duration_ms": 905,
+      "duration_ms": 1014,
       "retries": 0
     },
     {
@@ -40,7 +40,7 @@
         "terminal.layout.split"
       ],
       "status": "passed",
-      "duration_ms": 877,
+      "duration_ms": 935,
       "retries": 0
     },
     {
@@ -49,7 +49,7 @@
         "terminal.assistant.footer"
       ],
       "status": "passed",
-      "duration_ms": 818,
+      "duration_ms": 817,
       "retries": 0
     },
     {
@@ -59,7 +59,7 @@
         "terminal.cli.echo"
       ],
       "status": "passed",
-      "duration_ms": 773,
+      "duration_ms": 937,
       "retries": 0
     },
     {
@@ -68,7 +68,7 @@
         "terminal.a11y.mirror"
       ],
       "status": "passed",
-      "duration_ms": 785,
+      "duration_ms": 1021,
       "retries": 0
     },
     {
@@ -77,7 +77,7 @@
         "terminal.a11y.mirror"
       ],
       "status": "passed",
-      "duration_ms": 659,
+      "duration_ms": 696,
       "retries": 0
     },
     {
@@ -86,7 +86,16 @@
         "terminal.palette.command"
       ],
       "status": "passed",
-      "duration_ms": 938,
+      "duration_ms": 923,
+      "retries": 0
+    },
+    {
+      "test_id": "tests/e2e/terminal.spec.ts::Map local folder mounts at /work and Save to folder writes every change back",
+      "features": [
+        "terminal.files.localfs"
+      ],
+      "status": "passed",
+      "duration_ms": 2159,
       "retries": 0
     }
   ]
