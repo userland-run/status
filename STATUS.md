@@ -1,6 +1,6 @@
 # userland.run — status
 
-> Generated 2026-10-11T14:33:40.128Z · live at https://status.userland.run
+> Generated 2026-10-11T14:39:59.109Z · live at https://status.userland.run
 
 **97 / 101 tested features green** (96%) · 190 shipped (80%) · 3 failing now · 101 shipped-but-untested · 1 drift
 
@@ -47,10 +47,10 @@
 ## Suites
 | Suite | Layer | Health | Pass rate | Age (min) |
 | ----- | ----- | ------ | --------- | --------- |
-| nano/cargo-unit | Core | ok | 100% | 83 |
-| nano/node-harness | Runtime | ok | 100% | 308 |
-| sdk/sdk-unit | SDK | ok | 91% | 18 |
-| terminal/playwright-e2e | Terminal | ok | 100% | 156 |
-| catalog/catalog-conformance | Catalog | ok | 98% | 149 |
+| nano/cargo-unit | Core | ok | 100% | 90 |
+| nano/node-harness | Runtime | ok | 100% | 314 |
+| sdk/sdk-unit | SDK | ok | 91% | 24 |
+| terminal/playwright-e2e | Terminal | ok | 100% | 162 |
+| catalog/catalog-conformance | Catalog | ok | 98% | 156 |
 
 _Regenerated on every result push. Edit features in `registry/`, never this file._
