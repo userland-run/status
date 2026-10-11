@@ -20,6 +20,10 @@
   background: var(--ok);
 }
 
+.pending {
+  visibility: hidden;
+}
+
 .ok .dot {
   background: var(--ok);
 }

@@ -3,6 +3,7 @@
 
 import type { Metadata, Viewport } from "next";
 import { Newsreader, IBM_Plex_Sans, JetBrains_Mono } from "next/font/google";
+import { STATUS_URL } from "./lib/site";
 import "./tokens.css";
 import "./globals.css";
 
@@ -10,7 +11,7 @@ const display = Newsreader({ subsets: ["latin"], display: "swap", variable: "--f
 const sans = IBM_Plex_Sans({ subsets: ["latin"], weight: ["400", "500", "600", "700"], display: "swap", variable: "--font-sans" });
 const mono = JetBrains_Mono({ subsets: ["latin"], display: "swap", variable: "--font-mono" });
 
-const SITE = "https://status.userland.run";
+const SITE = STATUS_URL;
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE),

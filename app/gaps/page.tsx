@@ -1,10 +1,17 @@
 // SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-UEL
 // Copyright (C) 2026 And The Next GmbH - https://userland.run
 
+import type { Metadata } from "next";
 import { Page } from "../components/Page";
 import { CopyButton } from "../components/CopyButton";
 import { state } from "../lib/state";
 import styles from "./gaps.module.css";
+
+export const metadata: Metadata = {
+  title: "Gaps & drift",
+  description: "The actionable list of failing, untested and drifting userland.run features, each with a ready-made fix prompt.",
+  alternates: { canonical: "/gaps/" },
+};
 
 const featureById = new Map(state.features.map((f) => [f.id, f]));
 

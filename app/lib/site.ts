@@ -4,6 +4,8 @@
 /** Shared links used across the status portal. */
 export const GITHUB_URL = "https://github.com/userland-run/status";
 export const SITE_URL = "https://userland.run";
+/** This portal's own origin (no trailing slash). */
+export const STATUS_URL = "https://status.userland.run";
 export const REPO = (slug: string) => `https://github.com/userland-run/${slug}`;
 
 export const NAV = [

@@ -31,7 +31,15 @@ export function GeneratedBadge() {
     };
   }, []);
 
-  if (!generatedAt) return null;
+  // Until meta.json arrives, render an invisible placeholder of the same shape
+  // so the header doesn't shift when the real badge appears.
+  if (!generatedAt)
+    return (
+      <span className={`${styles.badge} ${styles.pending}`} aria-hidden="true">
+        <span className={styles.dot} />
+        generated 00m ago
+      </span>
+    );
   const ageMin = Math.max(0, Math.floor((Date.now() - Date.parse(generatedAt)) / 60000));
   const level = ageMin > 120 ? "old" : ageMin > 30 ? "stale" : "ok";
   const label = ageMin < 1 ? "just now" : ageMin < 60 ? `${ageMin}m ago` : `${Math.floor(ageMin / 60)}h ago`;

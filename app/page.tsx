@@ -1,12 +1,17 @@
 // SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-UEL
 // Copyright (C) 2026 And The Next GmbH - https://userland.run
 
+import type { Metadata } from "next";
 import Link from "next/link";
 import { Page } from "./components/Page";
 import { state } from "./lib/state";
 import { pct, ageLabel } from "./lib/format";
 import { REPO } from "./lib/site";
 import styles from "./overview.module.css";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+};
 
 const STATUS_ORDER = ["shipped", "partial", "in-progress", "planned", "deprecated"] as const;
 

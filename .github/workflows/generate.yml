@@ -51,7 +51,20 @@ jobs:
             echo "no state changes"
           else
             git commit -m "chore(state): regenerate [skip ci]"
-            git push
+            # Producers keep pushing data/incoming/** while this job runs, so a
+            # plain push can be rejected as non-fast-forward. Rebase our single
+            # state commit onto the new tip and retry. (Their push triggers its
+            # own run, which regenerates state from the newer incoming data.)
+            for attempt in 1 2 3 4 5; do
+              if git pull --rebase origin main && git push origin HEAD:main; then
+                exit 0
+              fi
+              echo "push attempt $attempt failed; retrying"
+              git rebase --abort 2>/dev/null || true
+              sleep $((attempt * 5))
+            done
+            echo "could not push regenerated state after 5 attempts" >&2
+            exit 1
           fi
       - run: npm run build
       - uses: actions/upload-pages-artifact@v3
